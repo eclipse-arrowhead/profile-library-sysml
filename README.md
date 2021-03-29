@@ -8,6 +8,6 @@ The profile and library is developed in MagicDraw. The repository contains both 
 For additional core system create a new SysML package. Provide preferable the following diagrams
 - Requriements
 - Use case
-- BDD with at least SysD, SysDD, SD, IDD and SD-DD. 
+- BDD with at least SysD, SysDD, SD, IDD and SD-DD (for explanation see the Arrowhead documentation structure package) 
 
-Show interaction with mandaroy core systems and implementation of the provided use case.
+Show interaction with mandaroy core systems and implementation of the provided use case in a local cloud IBD
