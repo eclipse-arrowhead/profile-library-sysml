@@ -14,4 +14,7 @@
 		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="/Users/jerkerdelsing/Work/lule/EISLAB/Project/arrowhead/ArrowheadTools/Arrowhead_Tools/WP3 Arrowhead Framework/Task 3.1/Work/SysML_Arrowhead_profile/Profile/JD/profile-library-sysml/profile-library-sysml/Use_cases/Tank_control/UML2.5_XMI/UML2.5_XMI"/>
+	</section>
 </section>
