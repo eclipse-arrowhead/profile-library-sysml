@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DSLCustomization="http://UML_Standard_Profile/MagicDraw_Profile/DSL_Customization/_11_5_be00301_1153310565718_226811_161" xmlns:MagicDrawProfile="http://www.omg.org/spec/UML/20131001/MagicDrawProfile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://UML_Standard_Profile/MagicDraw_Profile/DSL_Customization/_11_5_be00301_1153310565718_226811_161 UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_GzY3-5INEeuZba8Z6q5-BQ http://www.omg.org/spec/UML/20131001/MagicDrawProfile UML_Standard_Profile.MagicDraw_Profile.profile.uml#_GydqcJINEeuZba8Z6q5-BQ">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DSLCustomization="http://UML_Standard_Profile/MagicDraw_Profile/DSL_Customization/_11_5_be00301_1153310565718_226811_161" xmlns:MagicDrawProfile="http://www.omg.org/spec/UML/20131001/MagicDrawProfile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://UML_Standard_Profile/MagicDraw_Profile/DSL_Customization/_11_5_be00301_1153310565718_226811_161 UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_ljuOeJtwEeuwHeJTR3pB4A http://www.omg.org/spec/UML/20131001/MagicDrawProfile UML_Standard_Profile.MagicDraw_Profile.profile.uml#_ljuSXptwEeuwHeJTR3pB4A">
   <uml:Profile xmi:id="_16_8beta_2104050f_1267611143468_569866_21917" name="customizations for traceability" visibility="public" URI="" metamodelReference="_16_8beta_2104050f_1267611143530_995508_21918">
-    <eAnnotations xmi:id="_GzY3wZINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <contents xmi:type="ecore:EPackage" xmi:id="_GzY3wpINEeuZba8Z6q5-BQ" name="customizationsfortraceability" nsURI="http://MD_Customization_for_SysML/customizations_for_traceability/_16_8beta_2104050f_1267611143468_569866_21917" nsPrefix="customizationsfortraceability">
-        <eAnnotations xmi:id="_GzY3w5INEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <details xmi:id="_GzY3xJINEeuZba8Z6q5-BQ" key="originalName" value="customizations for traceability"/>
+    <eAnnotations xmi:id="_litkSptwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_litkS5twEeuwHeJTR3pB4A" name="customizationsfortraceability" nsURI="http://MD_Customization_for_SysML/customizations_for_traceability/_16_8beta_2104050f_1267611143468_569866_21917" nsPrefix="customizationsfortraceability">
+        <eAnnotations xmi:id="_litkTJtwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_litkTZtwEeuwHeJTR3pB4A" key="originalName" value="customizations for traceability"/>
         </eAnnotations>
-        <eSubpackages xmi:id="_GzY3xZINEeuZba8Z6q5-BQ" name="Propertiesdescriptors" nsURI="http:///customizationsfortraceability/Propertiesdescriptors.ecore" nsPrefix="customizationsfortraceability.Propertiesdescriptors">
-          <eAnnotations xmi:id="_GzY3xpINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_GzY3x5INEeuZba8Z6q5-BQ" key="originalName" value="Properties descriptors"/>
+        <eSubpackages xmi:id="_litkTptwEeuwHeJTR3pB4A" name="Propertiesdescriptors" nsURI="http:///customizationsfortraceability/Propertiesdescriptors.ecore" nsPrefix="customizationsfortraceability.Propertiesdescriptors">
+          <eAnnotations xmi:id="_litkT5twEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_litkUJtwEeuwHeJTR3pB4A" key="originalName" value="Properties descriptors"/>
           </eAnnotations>
-          <eAnnotations xmi:id="_GzY3yJINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_16_8beta_2104050f_1267611187304_217363_21929"/>
-          <eSubpackages xmi:id="_GzY3yZINEeuZba8Z6q5-BQ" name="Specification" nsURI="http:///customizationsfortraceability/Propertiesdescriptors/Specification.ecore" nsPrefix="customizationsfortraceability.Propertiesdescriptors.Specification">
-            <eAnnotations xmi:id="_GzY3ypINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_16_8beta_2104050f_1267611215031_537683_21953"/>
-            <eClassifiers xmi:type="ecore:EClass" xmi:id="_GzY3y5INEeuZba8Z6q5-BQ" name="ElementAllAllocatedToElements">
-              <eAnnotations xmi:id="_GzY3zJINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_8beta_2104050f_1267758713459_369018_22795">
-                <details xmi:id="_GzY3zZINEeuZba8Z6q5-BQ" key="originalName" value="Element All AllocatedTo Elements"/>
+          <eAnnotations xmi:id="_litkUZtwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_16_8beta_2104050f_1267611187304_217363_21929"/>
+          <eSubpackages xmi:id="_litkUptwEeuwHeJTR3pB4A" name="Specification" nsURI="http:///customizationsfortraceability/Propertiesdescriptors/Specification.ecore" nsPrefix="customizationsfortraceability.Propertiesdescriptors.Specification">
+            <eAnnotations xmi:id="_litkU5twEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_16_8beta_2104050f_1267611215031_537683_21953"/>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_litkVJtwEeuwHeJTR3pB4A" name="ElementAllAllocatedToElements">
+              <eAnnotations xmi:id="_litkVZtwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_8beta_2104050f_1267758713459_369018_22795">
+                <details xmi:id="_litkVptwEeuwHeJTR3pB4A" key="originalName" value="Element All AllocatedTo Elements"/>
               </eAnnotations>
-              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GzY3zpINEeuZba8Z6q5-BQ" name="AllocatedToElements" upperBound="-1">
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_litkV5twEeuwHeJTR3pB4A" name="AllocatedToElements" upperBound="-1">
                 <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
               </eStructuralFeatures>
-              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_GzY30JINEeuZba8Z6q5-BQ" name="Traceability" ordered="false" lowerBound="1"/>
-              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GzY30ZINEeuZba8Z6q5-BQ" name="AllocatedToAllo" upperBound="-1">
+              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_litkWZtwEeuwHeJTR3pB4A" name="Traceability" ordered="false" lowerBound="1"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_litkWptwEeuwHeJTR3pB4A" name="AllocatedToAllo" upperBound="-1">
                 <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
               </eStructuralFeatures>
             </eClassifiers>
           </eSubpackages>
-          <eSubpackages xmi:id="_GzY305INEeuZba8Z6q5-BQ" name="Realization" nsURI="http:///customizationsfortraceability/Propertiesdescriptors/Realization.ecore" nsPrefix="customizationsfortraceability.Propertiesdescriptors.Realization">
-            <eAnnotations xmi:id="_GzY31JINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_16_8beta_2104050f_1267611206319_826288_21942"/>
-            <eClassifiers xmi:type="ecore:EClass" xmi:id="_GzY31ZINEeuZba8Z6q5-BQ" name="ElementAllAllocatedFromElements">
-              <eAnnotations xmi:id="_GzY31pINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_8beta_2104050f_1267680538850_188162_24865">
-                <details xmi:id="_GzY315INEeuZba8Z6q5-BQ" key="originalName" value="Element All AllocatedFrom Elements"/>
+          <eSubpackages xmi:id="_litkXJtwEeuwHeJTR3pB4A" name="Realization" nsURI="http:///customizationsfortraceability/Propertiesdescriptors/Realization.ecore" nsPrefix="customizationsfortraceability.Propertiesdescriptors.Realization">
+            <eAnnotations xmi:id="_litkXZtwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_16_8beta_2104050f_1267611206319_826288_21942"/>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_litkXptwEeuwHeJTR3pB4A" name="ElementAllAllocatedFromElements">
+              <eAnnotations xmi:id="_litkX5twEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_8beta_2104050f_1267680538850_188162_24865">
+                <details xmi:id="_litkYJtwEeuwHeJTR3pB4A" key="originalName" value="Element All AllocatedFrom Elements"/>
               </eAnnotations>
-              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GzY32JINEeuZba8Z6q5-BQ" name="AllocatedFromElements" upperBound="-1">
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_litkYZtwEeuwHeJTR3pB4A" name="AllocatedFromElements" upperBound="-1">
                 <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
               </eStructuralFeatures>
-              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_GzY32pINEeuZba8Z6q5-BQ" name="Traceability" ordered="false" lowerBound="1"/>
-              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GzY325INEeuZba8Z6q5-BQ" name="AllocatedFromAllo" upperBound="-1">
+              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_litkY5twEeuwHeJTR3pB4A" name="Traceability" ordered="false" lowerBound="1"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_litkZJtwEeuwHeJTR3pB4A" name="AllocatedFromAllo" upperBound="-1">
                 <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
               </eStructuralFeatures>
             </eClassifiers>
@@ -93,37 +93,39 @@
         </packagedElement>
       </packagedElement>
     </packagedElement>
-    <profileApplication xmi:id="_11_5_be00301_1153310565718_226811_161profileApplicationcustomizations_for_traceability">
-      <eAnnotations xmi:id="_HUD6yJINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_GzY3-5INEeuZba8Z6q5-BQ"/>
-      </eAnnotations>
-      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_11_5_be00301_1153310565718_226811_161"/>
-    </profileApplication>
     <profileApplication xmi:id="_be00301_1073394351331_445580_2profileApplicationcustomizations_for_traceability">
-      <eAnnotations xmi:id="_HW7BopINEeuZba8Z6q5-BQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_GydqcJINEeuZba8Z6q5-BQ"/>
+      <eAnnotations xmi:id="_mIrVoJtwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_ljuSXptwEeuwHeJTR3pB4A"/>
       </eAnnotations>
       <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_be00301_1073394351331_445580_2"/>
     </profileApplication>
+    <profileApplication xmi:id="_11_5_be00301_1153310565718_226811_161profileApplicationcustomizations_for_traceability">
+      <eAnnotations xmi:id="_mI1tpptwEeuwHeJTR3pB4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_ljuOeJtwEeuwHeJTR3pB4A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_11_5_be00301_1153310565718_226811_161"/>
+    </profileApplication>
   </uml:Profile>
-  <DSLCustomization:propertyGroup xmi:id="_HUD6yZINEeuZba8Z6q5-BQ" base_Property="_16_8beta_2104050f_1267680538857_198954_24873">
+  <MagicDrawProfile:ED xmi:id="_mIrVoZtwEeuwHeJTR3pB4A" base_Element="_16_8beta_2104050f_1267680538850_188162_24865" ed="Architect, Enterprise" base_Class="_16_8beta_2104050f_1267680538850_188162_24865"/>
+  <MagicDrawProfile:ED xmi:id="_mIrVoptwEeuwHeJTR3pB4A" base_Element="_16_8beta_2104050f_1267758713459_369018_22795" ed="Architect, Enterprise" base_Class="_16_8beta_2104050f_1267758713459_369018_22795"/>
+  <DSLCustomization:propertyGroup xmi:id="_mI1tp5twEeuwHeJTR3pB4A" base_Property="_16_8beta_2104050f_1267680538857_198954_24873">
     <properties>AllocatedFromElements</properties>
   </DSLCustomization:propertyGroup>
-  <DSLCustomization:propertyGroup xmi:id="_HUD6ypINEeuZba8Z6q5-BQ" base_Property="_16_8beta_2104050f_1267680538853_477471_24867" useAsNode="true"/>
-  <DSLCustomization:propertyGroup xmi:id="_HUD6y5INEeuZba8Z6q5-BQ" base_Property="_16_8beta_2104050f_1267758713466_147537_22803">
+  <DSLCustomization:propertyGroup xmi:id="_mI1tqJtwEeuwHeJTR3pB4A" base_Property="_16_8beta_2104050f_1267680538853_477471_24867" useAsNode="true"/>
+  <DSLCustomization:propertyGroup xmi:id="_mI1tqZtwEeuwHeJTR3pB4A" base_Property="_16_8beta_2104050f_1267758713466_147537_22803">
     <properties>AllocatedToElements</properties>
   </DSLCustomization:propertyGroup>
-  <DSLCustomization:propertyGroup xmi:id="_HUD6zJINEeuZba8Z6q5-BQ" base_Property="_16_8beta_2104050f_1267758713463_67814_22797" useAsNode="true"/>
-  <DSLCustomization:Customization xmi:id="_HUJaVpINEeuZba8Z6q5-BQ" base_Class="_16_8beta_2104050f_1267680538850_188162_24865">
+  <DSLCustomization:propertyGroup xmi:id="_mI1tqptwEeuwHeJTR3pB4A" base_Property="_16_8beta_2104050f_1267758713463_67814_22797" useAsNode="true"/>
+  <DSLCustomization:Customization xmi:id="_mI-3mJtwEeuwHeJTR3pB4A" base_Class="_16_8beta_2104050f_1267680538850_188162_24865">
     <customizationTarget xmi:type="uml:Stereotype" href="SysML.profile.uml#_11_5EAPbeta_be00301_1147866677244_999655_1628"/>
   </DSLCustomization:Customization>
-  <DSLCustomization:Customization xmi:id="_HUJaV5INEeuZba8Z6q5-BQ" base_Class="_16_8beta_2104050f_1267758713459_369018_22795">
+  <DSLCustomization:Customization xmi:id="_mI-3mZtwEeuwHeJTR3pB4A" base_Class="_16_8beta_2104050f_1267758713459_369018_22795">
     <customizationTarget xmi:type="uml:Stereotype" href="SysML.profile.uml#_11_5EAPbeta_be00301_1147866677244_999655_1628"/>
   </DSLCustomization:Customization>
-  <DSLCustomization:derivedPropertySpecification xmi:id="_HUQvE5INEeuZba8Z6q5-BQ" base_Property="_16_8beta_2104050f_1267680538851_338376_24866">
+  <DSLCustomization:derivedPropertySpecification xmi:id="_mJHakJtwEeuwHeJTR3pB4A" base_Property="_16_8beta_2104050f_1267680538851_338376_24866">
     <expression>Allocated From Elements;Binary;com.nomagic.magicdraw.derivedproperty.RecursiveExpression(Allocations::Allocated.AllocatedFromAllo,Allocations::Allocated.AllocatedFromElements);NamedElement</expression>
   </DSLCustomization:derivedPropertySpecification>
-  <DSLCustomization:derivedPropertySpecification xmi:id="_HUQvFJINEeuZba8Z6q5-BQ" base_Property="_16_9beta_2104050f_1277377377950_387114_23484">
+  <DSLCustomization:derivedPropertySpecification xmi:id="_mJHakZtwEeuwHeJTR3pB4A" base_Property="_16_9beta_2104050f_1277377377950_387114_23484">
     <expression>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?>
 &lt;callExpressionSpecification xmlns=&quot;http://www.nomagic.com/schemas/MagicDraw/StructuredExpression/2013&quot;>
     &lt;taggedValues>
@@ -144,10 +146,10 @@
 &lt;/callExpressionSpecification>
 </expression>
   </DSLCustomization:derivedPropertySpecification>
-  <DSLCustomization:derivedPropertySpecification xmi:id="_HUQvFZINEeuZba8Z6q5-BQ" base_Property="_16_8beta_2104050f_1267758713461_716556_22796">
+  <DSLCustomization:derivedPropertySpecification xmi:id="_mJHakptwEeuwHeJTR3pB4A" base_Property="_16_8beta_2104050f_1267758713461_716556_22796">
     <expression>Allocated To Elements;Binary;com.nomagic.magicdraw.derivedproperty.RecursiveExpression(Allocations::Allocated.AllocatedToAllo,Allocations::Allocated.AllocatedToElements);NamedElement</expression>
   </DSLCustomization:derivedPropertySpecification>
-  <DSLCustomization:derivedPropertySpecification xmi:id="_HUQvFpINEeuZba8Z6q5-BQ" base_Property="_16_9beta_2104050f_1277377537185_698557_24486">
+  <DSLCustomization:derivedPropertySpecification xmi:id="_mJHak5twEeuwHeJTR3pB4A" base_Property="_16_9beta_2104050f_1277377537185_698557_24486">
     <expression>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?>
 &lt;callExpressionSpecification xmlns=&quot;http://www.nomagic.com/schemas/MagicDraw/StructuredExpression/2013&quot;>
     &lt;taggedValues>
@@ -168,6 +170,4 @@
 &lt;/callExpressionSpecification>
 </expression>
   </DSLCustomization:derivedPropertySpecification>
-  <MagicDrawProfile:ED xmi:id="_HW7okJINEeuZba8Z6q5-BQ" base_Element="_16_8beta_2104050f_1267680538850_188162_24865" ed="Architect, Enterprise" base_Class="_16_8beta_2104050f_1267680538850_188162_24865"/>
-  <MagicDrawProfile:ED xmi:id="_HW7okZINEeuZba8Z6q5-BQ" base_Element="_16_8beta_2104050f_1267758713459_369018_22795" ed="Architect, Enterprise" base_Class="_16_8beta_2104050f_1267758713459_369018_22795"/>
 </xmi:XMI>
