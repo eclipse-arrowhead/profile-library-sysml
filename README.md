@@ -1,4 +1,4 @@
-# Arrowhead-SysML-1.6
+# Arrowhead v4.4.0 - SysML-1.6 profile and library
 Arrowhead SysML profile and library. 
 A profile supporting modelling of Eclipse Arrowhead compliant services, systems, devices and local clouds.
 it's complemented by a library of Eclipse Arrowhead core systems v4.4.0..
