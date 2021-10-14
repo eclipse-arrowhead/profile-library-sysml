@@ -1,0 +1,8 @@
+Port {
+	maskLabel: type ;
+}
+Connector > Label {
+    visible: false;
+}
+
+

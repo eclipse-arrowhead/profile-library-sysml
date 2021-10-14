@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+ -->
+
+<feature
+      id="org.eclipse.papyrus.arrowhead.rcp.feature"
+      label="%featureName"
+      version="1.0.0.202110061052"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <discovery label="2020-06" url="http://download.eclipse.org/staging/2021-03/"/>
+      <discovery label="Eclipse Platform 4.16" url="http://download.eclipse.org/eclipse/updates/4.19"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.e4.ui.css.swt.theme"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.papyrus.arrowhead.rcp"
+         download-size="438"
+         install-size="1764"
+         version="0.0.1.202110061052"/>
+
+</feature>

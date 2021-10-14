@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+       HUANG Yining (CEA LIST) yining.huang@cea.fr
+ -->
+
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.menuContribution1">
+         <command
+               commandId="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.command1"
+               label="Generate ArrowHead code"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            defaultHandler="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.handlers.GenerateCodeHandler"
+            description="Generate ArrowHead code"
+            id="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.command1"
+            name="Generate ArrowHead code">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.papyrus.infra.core.sasheditor.preferences.generalcategory"
+            class="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.preferences.CodegenPreferencePage"
+            id="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.preferences.CodeGenPreferencePage"
+            name="ArrowHead code generation">
+      </page>
+   </extension>
+
+</plugin>

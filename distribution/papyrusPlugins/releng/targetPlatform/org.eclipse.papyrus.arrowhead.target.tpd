@@ -1,0 +1,46 @@
+target "Arrowhead" with requirements source
+
+/*** Manual Updates ***/
+
+location eclipse "https://download.eclipse.org/releases/latest" {
+	org.eclipse.equinox.p2.user.ui.feature.group lazy
+	org.eclipse.core.resources lazy
+	org.eclipse.ui.ide lazy
+	org.eclipse.ui lazy
+	org.eclipse.jst.server_adapters.feature.feature.group lazy
+	org.eclipse.m2e.sdk.feature.feature.group lazy
+	org.eclipse.uml2.sdk.feature.group lazy
+}
+
+location xwt "https://download.eclipse.org/xwt/milestones-1.7.0/1.7.0-S/" {
+    org.eclipse.xwt.feature.feature.group lazy
+}
+
+location xtext "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.25.0" {
+	org.eclipse.xtext.sdk.feature.group
+	org.eclipse.xtend.sdk.feature.group
+	org.eclipse.xtext.redist.feature.group
+	org.eclipse.xtext.runtime.feature.group
+    org.eclipse.xtext.ui.feature.group
+}
+
+location designer "https://download.eclipse.org/modeling/mdt/papyrus/components/designer/2.0.0/" {
+	org.eclipse.papyrus.designer.languages.common.feature.feature.group lazy
+	org.eclipse.papyrus.designer.transformation.main.feature.feature.group lazy
+}
+location marte "https://download.eclipse.org/modeling/mdt/papyrus/components/marte/" {
+	org.eclipse.papyrus.marte.core.feature.feature.group
+}
+	
+	
+	
+
+
+location papyrus_nightly "https://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/master" {
+	org.eclipse.papyrus.sdk.feature.feature.group lazy
+}
+
+location sysml "https://download.eclipse.org/modeling/mdt/papyrus/components/sysml16/2021-03/"{
+	org.eclipse.papyrus.sysml16.feature.feature.group
+	org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group
+}

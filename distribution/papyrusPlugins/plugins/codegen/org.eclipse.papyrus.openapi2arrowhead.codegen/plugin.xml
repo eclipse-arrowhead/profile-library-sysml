@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+       HUANG Yining (CEA LIST) yining.huang@cea.fr
+ -->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="org.eclipse.papyrus.openapi2arrowhead.codegen.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="org.eclipse.papyrus.openapi2arrowhead.codegen.commands.category"
+            name="OpenAPI Generator"
+            id="org.eclipse.papyrus.openapi2arrowhead.codegen.commands.OpenAPIGeneratorCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eclipse.papyrus.openapi2arrowhead.codegen.handlers.OpenAPIGeneratorHandler"
+            commandId="org.eclipse.papyrus.openapi2arrowhead.codegen.commands.OpenAPIGeneratorCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+            <command
+                  commandId="org.eclipse.papyrus.openapi2arrowhead.codegen.commands.OpenAPIGeneratorCommand"
+                  id="org.eclipse.papyrus.openapi2arrowhead.codegen.menus.sampleCommand"
+                  mnemonic="S">
+                  <visibleWhen checkEnabled="false">
+   					<with variable="selection">
+							<test
+                              forcePluginActivation="true"
+                              property="OpenAPIGenerator.properties.isYAML"
+                              value="true">
+							</test>
+					</with>
+   				</visibleWhen>
+            </command>
+      </menuContribution>
+   </extension>
+	
+	<extension
+   		point="org.eclipse.core.expressions.propertyTesters">
+   	 <propertyTester
+   	 		class="org.eclipse.papyrus.openapi2arrowhead.codegen.YAMLTester"
+   	 		id="OpenAPIGenerator.YAMLTester"
+   	 		namespace="OpenAPIGenerator.properties"
+   	 		properties="isYAML"
+   	 		type="org.eclipse.jface.viewers.IStructuredSelection">
+   	 </propertyTester>
+   </extension>
+ <extension
+       point="org.eclipse.ui.commands">
+    <category
+          id="org.eclipse.papyrus.openapi2arrowhead.codegen.category1"
+          name="Sample Category1">
+    </category>
+    <command
+          categoryId="org.eclipse.papyrus.openapi2arrowhead.codegen.category1"
+          id="org.eclipse.papyrus.openapi2arrowhead.codegen.JsonUploadCommand"
+          name="Upload Json File">
+    </command>
+ </extension>
+ <extension
+       point="org.eclipse.ui.handlers">
+    <handler
+          class="org.eclipse.papyrus.openapi2arrowhead.codegen.handlers.JsonUploadHandler"
+          commandId="org.eclipse.papyrus.openapi2arrowhead.codegen.JsonUploadCommand">
+    </handler>
+ </extension>
+ <extension
+       point="org.eclipse.ui.menus">
+    <menuContribution
+          allPopups="false"
+          locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+       <command
+             commandId="org.eclipse.papyrus.openapi2arrowhead.codegen.JsonUploadCommand"
+             id="org.eclipse.papyrus.openapi2arrowhead.codegen.menus.sampleCommand2"
+             style="push">
+          <visibleWhen
+                checkEnabled="false">
+             <with
+                   variable="selection">
+                <test
+                      forcePluginActivation="true"
+                      property="JsonUpload.properties.isJSON"
+                      value="true">
+                </test>
+             </with>
+          </visibleWhen>
+       </command>
+    </menuContribution>
+ </extension>
+ <extension
+       point="org.eclipse.core.expressions.propertyTesters">
+    <propertyTester
+          class="org.eclipse.papyrus.openapi2arrowhead.codegen.JSONTester"
+          id="OpenAPIGenerator.JSONTester"
+          namespace="JsonUpload.properties"
+          properties="isJSON"
+          type="org.eclipse.jface.viewers.IStructuredSelection">
+    </propertyTester>
+ </extension>
+ <extension
+       point="org.eclipse.ui.commands">
+    <category
+          id="org.eclipse.papyrus.openapi2arrowhead.codegen.category2"
+          name="Sample Category2">
+    </category>
+    <command
+          categoryId="org.eclipse.papyrus.openapi2arrowhead.codegen.category2"
+          id="org.eclipse.papyrus.openapi2arrowhead.codegen.JsonUploadCommandOnArrowhead"
+          name="Upload Json File to Arrowhead ">
+    </command>
+ </extension>
+ <extension
+       point="org.eclipse.ui.handlers">
+    <handler
+          class="org.eclipse.papyrus.openapi2arrowhead.codegen.handlers.JsonUploadHandlerOnArrowhead"
+          commandId="org.eclipse.papyrus.openapi2arrowhead.codegen.JsonUploadCommandOnArrowhead">
+    </handler>
+ </extension>
+ <extension
+       point="org.eclipse.ui.menus">
+    <menuContribution
+          allPopups="false"
+          locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+       <command
+             commandId="org.eclipse.papyrus.openapi2arrowhead.codegen.JsonUploadCommandOnArrowhead"
+             id="org.eclipse.papyrus.openapi2arrowhead.codegen.menus.sampleCommand3"
+             style="push">
+          <visibleWhen
+                checkEnabled="false">
+             <with
+                   variable="selection">
+                <test
+                      forcePluginActivation="true"
+                      property="JsonUpload.properties.isJSON"
+                      value="true">
+                </test>
+             </with>
+          </visibleWhen>
+       </command>
+    </menuContribution>
+ </extension>
+ <extension
+       point="org.eclipse.core.expressions.propertyTesters">
+    <propertyTester
+          class="org.eclipse.papyrus.openapi2arrowhead.codegen.JSONTester"
+          id="OpenAPIGenerator.JSONTester"
+          namespace="JsonUpload.properties"
+          properties="isJSON"
+          type="org.eclipse.jface.viewers.IStructuredSelection">
+    </propertyTester>
+ </extension>
+</plugin>

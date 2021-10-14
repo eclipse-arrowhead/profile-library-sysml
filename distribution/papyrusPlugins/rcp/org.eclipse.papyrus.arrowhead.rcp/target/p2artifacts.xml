@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202110061052'>
+    <properties size='5'>
+      <property name='artifact.size' value='449030'/>
+      <property name='download.size' value='449030'/>
+      <property name='maven-groupId' value='org.eclipse.papyrus.arrowhead'/>
+      <property name='maven-artifactId' value='org.eclipse.papyrus.arrowhead.rcp'/>
+      <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+    </properties>
+  </artifact>
+</artifacts>
