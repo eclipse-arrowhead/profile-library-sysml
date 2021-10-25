@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+ -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.eclipse.papyrus.arrowhead</groupId>
+		<artifactId>org.eclipse.papyrus.arrowhead-releng</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>org.eclipse.papyrus.arrowhead.p2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>eclipse-repository</packaging>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>org.jboss.tools.tycho-plugins</id>
+			<url>https://repository.jboss.org/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<includePackedArtifacts>true</includePackedArtifacts>
+				</configuration>
+			</plugin>
+
+			<!-- workaround https://bugs.eclipse.org/bugs/show_bug.cgi?id=453708 -->
+			<plugin>
+				<groupId>org.jboss.tools.tycho-plugins</groupId>
+				<artifactId>repository-utils</artifactId>
+				<version>${jboss.utils.version}</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>generate-repository-facade</goal>
+						</goals>
+						<configuration>
+							<!-- do not generate the pesky web folder and index.html -->
+							<skipWebContentGeneration>true</skipWebContentGeneration>
+							<!-- p2 update site transitive dependencies repositories -->
+							<associateSites>
+								<site>https://download.eclipse.org/technology/m2e/releases/</site>
+								<site>http://download.eclipse.org/releases/2020-06/</site>
+							</associateSites>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.arrowhead.feature"
+      label="%featureName"
+      version="1.0.0.202110061052"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="">
+      %copyright
+   </license>
+
+   <url>
+      <discovery label="2020-06" url="http://download.eclipse.org/staging/2020-06/"/>
+      <discovery label="Eclipse Platform 4.16" url="http://download.eclipse.org/eclipse/updates/4.16"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.115.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.17.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.22.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.uml2.uml.profile.standard"/>
+      <import plugin="org.eclipse.papyrus.sysml16"/>
+      <import plugin="org.eclipse.uml2.types"/>
+      <import plugin="org.eclipse.uml2.uml" version="5.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.uml.extensionpoints" version="2.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.papyrus.designer.languages.arrowhead.codegen"
+         download-size="83"
+         install-size="127"
+         version="1.0.0.202110061052"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui"
+         download-size="7"
+         install-size="8"
+         version="1.0.0.202110061052"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.openapi2arrowhead.codegen"
+         download-size="82"
+         install-size="176"
+         version="1.0.0.202110061052"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.designer.languages.arrowhead.lib"
+         download-size="48389"
+         install-size="53868"
+         version="1.0.0.202110061052"/>
+
+   <plugin
+         id="org.eclipse.papyrus.arrowhead.profile"
+         download-size="300"
+         install-size="1136"
+         version="1.0.0.202110061052"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.arrowhead.s4e.profile"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

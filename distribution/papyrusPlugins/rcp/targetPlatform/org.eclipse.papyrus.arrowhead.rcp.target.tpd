@@ -1,0 +1,26 @@
+target "Arrowhead RCP" with requirements source
+
+include "../../releng/targetPlatform/org.eclipse.papyrus.arrowhead.target.tpd"
+
+/*** Manual Updates ***/
+
+location eclipse "https://download.eclipse.org/releases/latest" {
+	org.eclipse.help.feature.group lazy
+	org.eclipse.sdk.feature.group lazy	
+	org.eclipse.emf.sdk.feature.group lazy
+	org.eclipse.gef.sdk.feature.group lazy
+	org.eclipse.emf.transaction.sdk.feature.group lazy
+	org.eclipse.gmf.runtime.sdk.feature.group lazy 
+	org.eclipse.egit.feature.group lazy
+}
+
+
+/*** Updates from the Simrel repository ***/
+
+//updateFrom("Eclipse",0)
+
+location platform "https://download.eclipse.org/eclipse/updates/latest" {
+	org.eclipse.e4.core.tools.feature.feature.group lazy 
+	org.eclipse.rcp.configuration.feature.group lazy
+	org.eclipse.equinox.executable.feature.group lazy
+}

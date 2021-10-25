@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+ -->
+
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://S4E_LIBRARIES/"
+            target="platform:/plugin/org.eclipse.papyrus.arrowhead.s4e.lib/resources/library/">
+      </mapping>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated s4elibrary -->
+      <package
+            uri="http:///s4elibrary.ecore"
+            class="s4elibrary.S4elibraryPackage"
+            genModel="resources/library/s4elibrary.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="Studio4Education sensor Library"
+            name="Studio4Education_Library"
+            path="pathmap://S4E_LIBRARIES/s4elibrary.uml"
+            provider="CEA LIST">
+      </library>
+   </extension>
+
+</plugin>
