@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+       HUANG Yining (CEA LIST) yining.huang@cea.fr
+ -->
+
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.designer.languages.common.extensionpoints.languageCodegen">
+      <generator
+            class="org.eclipse.papyrus.designer.languages.arrowhead.codegen.OpenAPILangCodegen"
+            id="ArrowHead (OpenAPI)"
+            language="OpenAPI">
+      </generator>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.designer.languages.common.extensionpoints.languageProjectSupport">
+      <client
+            class="org.eclipse.papyrus.designer.languages.arrowhead.codegen.ArrowHeadLangProjectSupport"
+            language="ArrowHead">
+      </client>
+   </extension>
+
+</plugin>

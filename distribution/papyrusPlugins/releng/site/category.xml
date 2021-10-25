@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2021 CEA LIST.
+   
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+   
+     SPDX-License-Identifier: EPL-2.0
+     
+     Contributors:
+       Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
+       Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
+ -->
+<site>
+   <feature id="org.eclipse.papyrus.arrowhead.feature">
+      <category name="org.eclipse.papyrus.arrowhead.category"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.arrowhead.feature.source_1.0.0.qualifier.jar" id="org.eclipse.papyrus.arrowhead.feature.source" version="1.0.0.qualifier">
+      <category name="org.eclipse.papyrus.arrowhead.category"/>
+   </feature>
+   <category-def name="org.eclipse.papyrus.arrowhead.category" label="Arrowhead">
+      <description>
+         Arrowhead
+      </description>
+   </category-def>
+</site>

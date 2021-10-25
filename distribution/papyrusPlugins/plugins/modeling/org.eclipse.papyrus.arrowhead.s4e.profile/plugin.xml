@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://S4E_PROFILE/"
+            target="platform:/plugin/org.eclipse.papyrus.arrowhead.s4e.profile/resources/profile/">
+      </mapping>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated studio4education.profile -->
+      <package
+            uri="http://Papyrus/Studio4EducationProfile"
+            class="org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.Studio4EducationProfilePackage"
+            genModel="resources/profile/studio4education.profile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="SysML profile for devices to be configured in S4E"
+            name="Studio4Education Profile"
+            path="pathmap://S4E_PROFILE/studio4education.profile.uml">
+      </profile>
+   </extension>
+
+</plugin>

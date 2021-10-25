@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.papyrus.designer.languages.arrowhead.lib
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: org.eclipse.papyrus.designer.languages.arrowhead.lib
+Bundle-Vendor: %providerName
+Bundle-Description: %pluginDescription

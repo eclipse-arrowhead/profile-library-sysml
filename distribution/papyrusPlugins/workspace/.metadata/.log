@@ -1,0 +1,185 @@
+!SESSION 2021-09-30 13:01:50.117 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho10776333421434111911secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho10776333421434111911secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301059 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301059) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:01:50.117
+!MESSAGE Add request for Arrowhead 0.0.1.202109301059 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301059) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301059 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301059) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 13:02:05.400
+!MESSAGE Add request for Arrowhead 0.0.1.202109301059 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301059) is satisfiable
+!SESSION 2021-09-30 15:22:22.676 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho8901111954619733012secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho8901111954619733012secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Add request for Arrowhead 0.0.1.202109301320 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301320) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301320 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301320) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:22.676
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Add request for Arrowhead 0.0.1.202109301320 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301320) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301320 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301320) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:22:39.232
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+!SESSION 2021-09-30 15:28:37.542 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho3013685545449354193secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho3013685545449354193secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Add request for Arrowhead 0.0.1.202109301326 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301326 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:37.542
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Add request for Arrowhead 0.0.1.202109301326 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301326 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:28:53.994
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+!SESSION 2021-09-30 15:50:33.092 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho622661050557557121secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho622661050557557121secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Add request for Arrowhead 0.0.1.202109301348 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301348) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301348 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301348) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:33.092
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Add request for Arrowhead 0.0.1.202109301348 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301348) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301348 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301348) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:50:49.298
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+!SESSION 2021-09-30 15:53:48.161 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho1032324595972139698secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\ft238791\AppData\Local\Temp\tycho1032324595972139698secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Add request for Arrowhead 0.0.1.202109301351 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301351) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301351 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301351) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:53:48.161
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Add request for Papyrus SysML 1.6 Requirements Extension Feature 2.0.0.202107291346 (org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group 2.0.0.202107291346) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Add request for Arrowhead 0.0.1.202109301351 (org.eclipse.papyrus.arrowhead.rcp.product 0.0.1.202109301351) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Add request for Papyrus base elements for code generation 2.0.0.202105261452 (org.eclipse.papyrus.designer.languages.common.feature.feature.group 2.0.0.202105261452) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Add request for Arrowhead Modeling 1.0.0.202109301351 (org.eclipse.papyrus.arrowhead.feature.feature.group 1.0.0.202109301351) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Add request for Papyrus for UML 5.2.0.202109300258 (org.eclipse.papyrus.sdk.feature.feature.group 5.2.0.202109300258) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-09-30 15:54:04.861
+!MESSAGE Add request for Papyrus SysML 1.6 Feature 2.1.0.202107291346 (org.eclipse.papyrus.sysml16.feature.feature.group 2.1.0.202107291346) is satisfiable
