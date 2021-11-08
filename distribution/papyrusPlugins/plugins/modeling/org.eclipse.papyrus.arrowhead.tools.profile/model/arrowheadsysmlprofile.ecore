@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="arrowheadsysmlprofile" nsURI="http://Papyrus/ArrowheadSysMLProfile"
+    nsPrefix="ArrowheadSysMLProfile">
+  <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <details key="originalName" value="Arrowhead"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="SysDD" abstract="true" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="create mondatory, support and application SysDD"/>
+    </eAnnotations>
+    <eOperations name="DeployedatDevice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="Deployed at Device"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="Constraint27" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="ports of SysDD must be typed by an IDD"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CertificateLevel" ordered="false"
+        lowerBound="1" eType="#//CertificateLevel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Identifiable"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="CertificateLevel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceDesignDescription" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="change the types of properties inside DeviceDesignDescription&#xD;&#xA;"/>
+    </eAnnotations>
+    <eOperations name="Constraint53" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ports of DeviceDesignDescription must be typed by NetworkDesignDescription"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="networkinterface" ordered="false"
+        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operatingSystem" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="memory" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="processor" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="certificateLevel" ordered="false"
+        lowerBound="1" eType="#//CertificateLevel"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deviceDesign" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="networkDesign" ordered="false"
+        upperBound="-1" eType="#//PhysicalLayerKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PhysicalLayerKind">
+    <eLiterals name="Ethernet"/>
+    <eLiterals name="IEEE802_11" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalCloudDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sysd" ordered="false" upperBound="-1"
+        eType="#//SysD" volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SysD" abstract="true" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable">
+    <eOperations name="Constraint180" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.base_Class.isActive"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemKind" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalCLoudDesignDescription" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesignDescriptiion" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable">
+    <eOperations name="SoLCDpropertyType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="let properties : Set (UML::Property) = self.base_Class.attribute &#xD;&#xA;in &#xD;&#xA;properties->notEmpty() &#xD;&#xA;implies &#xD;&#xA;properties-> forAll(p|p.type->exists(t| not(t.getAppliedStereotype ('Arrowhead::LocalCloudDesign')->isEmpty()) )) &#xD;&#xA;"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsDesignDescription"
+      eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block #//Identifiable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Consumer" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//portsandflows/FullPort"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Provider" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//portsandflows/FullPort"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="#//SD">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="security" ordered="false"
+        eType="#//SecurityKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="certificate" ordered="false"
+        lowerBound="1" eType="#//CertificateKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//portsandflows/InterfaceBlock"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="SecurityKind">
+    <eLiterals name="NOT_SECURE"/>
+    <eLiterals name="CERTIFICATE" value="1"/>
+    <eLiterals name="TOKEN" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CertificateKind">
+    <eLiterals name="DEVICE"/>
+    <eLiterals name="APPLICATION_SYSTEM" value="1"/>
+    <eLiterals name="CORE_SYSTEM" value="2"/>
+    <eLiterals name="MANAGEMENT" value="3"/>
+    <eLiterals name="INTERCLOUD" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MandatoryCoreSystemKind">
+    <eLiterals name="ORCH"/>
+    <eLiterals name="AUTH" value="1"/>
+    <eLiterals name="SR" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ApplicationSystemKind">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="Constraint27"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="self.oclAsType(Class).getAllAttributes()-> select(att|att.oclIsTypeOf(UML::Port)) ->collect(oclAsType(UML::Port).type)-> forAll (portType : Type | portType.getAppliedStereotypes()->select(s|s.name=' SD')->siz()=1)&#xD;&#xA;"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SupportCoreSystemKind">
+    <eLiterals name="QoS"/>
+    <eLiterals name="GATEWAY" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryCoreSystemSysD" eSuperTypes="#//SysD"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SupportCoreSystemSysD" eSuperTypes="#//SysD"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationSysD" eSuperTypes="#//SysD"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryCoreSystemSysDD" eSuperTypes="#//SysDD">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemKind" ordered="false"
+        lowerBound="1" eType="#//MandatoryCoreSystemKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SupportCoreSystemSysDD" eSuperTypes="#//SysDD">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemKind" ordered="false"
+        lowerBound="1" eType="#//SupportCoreSystemKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationSysDD" eSuperTypes="#//SysDD">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemKind" ordered="false"
+        lowerBound="1" eType="#//ApplicationSystemKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataSemantics">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="semanticModel" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ontology" ordered="false"
+        lowerBound="1" eType="#//OntologyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schema" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_NamedElement" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//NamedElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OntologyKind">
+    <eLiterals name="SenML"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" ordered="false"
+        lowerBound="1" eType="#//MethodKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MethodKind">
+    <eLiterals name="POST"/>
+    <eLiterals name="GET" value="1"/>
+    <eLiterals name="DELETE" value="2"/>
+    <eLiterals name="UPDATE" value="3"/>
+    <eLiterals name="PUBLISH" value="4"/>
+    <eLiterals name="SUBSCRIBE" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesignDescription" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//portsandflows/InterfaceBlock">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocol" ordered="false"
+        lowerBound="1" eType="#//ProtocolKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="physicalNetworkInterface"
+        ordered="false" lowerBound="1" eType="#//PhysicalLayerKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Port" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Port"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ProtocolKind">
+    <eLiterals name="HTTP_0_9"/>
+    <eLiterals name="HTTP_1_0" value="1"/>
+    <eLiterals name="HTTP_1_1" value="2"/>
+    <eLiterals name="HTTP_2_0" value="3"/>
+    <eLiterals name="CoAP" value="4"/>
+    <eLiterals name="CoAP_TCP" value="5"/>
+    <eLiterals name="CoAPS" value="6"/>
+    <eLiterals name="CoAPS_TCP" value="7"/>
+    <eLiterals name="MQTT_3_1_1" value="8"/>
+    <eLiterals name="MQTT_5_0" value="9"/>
+    <eLiterals name="Websocket" value="10"/>
+    <eLiterals name="OTHER" value="11"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Deploy">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
+  </eClassifiers>
+</ecore:EPackage>
