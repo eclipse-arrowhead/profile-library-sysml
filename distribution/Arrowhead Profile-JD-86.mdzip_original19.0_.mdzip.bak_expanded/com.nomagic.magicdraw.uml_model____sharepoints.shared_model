@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.5.1">
+  <uml:Profile xmi:id="_19_0_3_8c00284_1582032644615_895680_43132" ID="_19_0_3_8c00284_1582032644615_895680_43132" name="Arrowhead">
+    <owningPackage href="PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  </uml:Profile>
+  <uml:Package xmi:id="_19_0_3_8c00284_1582032064826_40994_14051" ID="_19_0_3_8c00284_1582032064826_40994_14051" name="Unit Imports">
+    <owningPackage href="PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  </uml:Package>
+</xmi:XMI>

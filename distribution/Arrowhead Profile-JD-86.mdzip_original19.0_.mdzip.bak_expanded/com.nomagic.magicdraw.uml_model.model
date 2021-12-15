@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xmi:XMI xmlns:uml='http://www.omg.org/spec/UML/20131001' xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:DSL_Customization='http://www.magicdraw.com/schemas/DSL_Customization.xmi' xmlns:Dependency_Matrix_Profile='http://www.magicdraw.com/schemas/Dependency_Matrix_Profile.xmi' xmlns:Validation_Profile='http://www.magicdraw.com/schemas/Validation_Profile.xmi' xmlns:sysml='http://www.omg.org/spec/SysML/20150709/SysML' xmlns:MD_Customization_for_Requirements__additional_stereotypes='http://www.magicdraw.com/spec/Customization/180/Requirements' xmlns:Ecore_Profile='http://www.magicdraw.com/schemas/Ecore_Profile.xmi' xmlns:MagicDraw_Profile='http://www.omg.org/spec/UML/20131001/MagicDrawProfile' xmlns:MD_Customization_for_SysML__additional_stereotypes='http://www.magicdraw.com/spec/Customization/180/SysML' xmlns:StandardProfile='http://www.omg.org/spec/UML/20131001/StandardProfile'>
+	<xmi:Documentation>
+		<xmi:exporter>MagicDraw UML</xmi:exporter>
+		<xmi:exporterVersion>19.0 v9</xmi:exporterVersion>
+	</xmi:Documentation>
+	<xmi:Extension extender='MagicDraw UML 19.0'>
+		<plugin pluginName='SysML' pluginVersion='19.0'/>
+		<plugin pluginName='Cameo Requirements Modeler' pluginVersion='19.0'/>
+		<req_resource resourceID='1440' resourceName='SysML' resourceValueName='SysML Package Diagram'/>
+		<req_resource resourceID='1480' resourceName='Cameo Requirements Modeler' resourceValueName='Cameo Requirements Modeler'/>
+		<req_resource resourceID='1440' resourceName='SysML' resourceValueName='SysML'/>
+	</xmi:Extension>
+	<uml:Model xmi:type='uml:Model' xmi:id='eee_1045467100313_135436_1' name='Model'>
+		<ownedComment xmi:type='uml:Comment' xmi:id='_19_0_3_8c00284_1582032064828_927963_14108' body='Author:jerker.&#10;Created:2012-10-01, 15:10.&#10;Title:.&#10;Comment:.&#10;'>
+			<annotatedElement xmi:idref='eee_1045467100313_135436_1'/>
+		</ownedComment>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064828_415104_14155'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064827_33875_14076'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Amount of Substance' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064812_596100_13672'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064828_205418_14144'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Acceleration' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064825_907019_13987'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064814_414330_13702'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Amount of Substance Concentration' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064815_915462_13711'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064826_560200_14050'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Area' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064815_922003_13722'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064825_35631_14002'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Electric Current' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064823_7312_13925'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064820_480782_13844'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Electric Current Density' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064825_872751_13975'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064824_509050_13968'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Length' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064823_273674_13926'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064827_160816_14068'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Luminance' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064827_217546_14055'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064825_655509_13998'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Luminous Intensity' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064817_791967_13773'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064826_447485_14048'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Magnetic Field Strength' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064825_290326_14000'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064824_895046_13961'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Mass' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064826_57896_14018'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064826_68798_14014'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Speed and Velocity' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064828_235346_14145'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064819_705604_13826'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Mass Density' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064814_71989_13704'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064816_435238_13741'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Time' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064816_606661_13729'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064820_61929_13861'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Thermodynamic Temperature' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packageImport xmi:type='uml:PackageImport' xmi:id='_19_0_3_8c00284_1582032064828_626609_14152'>
+			<importedPackage href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064812_915552_13674'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='Unit Imports::Basic Units::Basic Volume' referentType='Package'/>
+				</xmi:Extension>
+			</importedPackage>
+		</packageImport>
+		<packagedElement href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032064826_40994_14051'>
+			<xmi:Extension extender='MagicDraw UML 19.0'>
+				<referenceExtension referentPath='Unit Imports' referentType='Package'/>
+			</xmi:Extension>
+		</packagedElement>
+		<packagedElement href='local:/PROJECT-27839d59-fde3-46c4-9567-1d9dca84644f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_3_8c00284_1582032644615_895680_43132'>
+			<xmi:Extension extender='MagicDraw UML 19.0'>
+				<referenceExtension referentPath='Arrowhead' referentType='Profile'/>
+			</xmi:Extension>
+		</packagedElement>
+		<profileApplication xmi:type='uml:ProfileApplication' xmi:id='_19_0_3_8c00284_1582032064811_372840_13654'>
+			<appliedProfile href='http://www.omg.org/spec/SysML/20150709/SysML.xmi#_SysML__0'>
+				<xmi:Extension extender='MagicDraw UML 19.0'>
+					<referenceExtension referentPath='SysML' referentType='Profile' originalID='_11_5EAPbeta_be00301_1147434586638_637562_1900'/>
+				</xmi:Extension>
+			</appliedProfile>
+		</profileApplication>
+	</uml:Model>
+	<xmi:Extension extender='MagicDraw UML 19.0'>
+		<stereotypesHREFS>
+			<stereotype name='MagicDraw_Profile:additionalPackageImport' stereotypeHREF='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0beta_9250292_1504527525562_901741_4507'/>
+			<tag name='MagicDraw_Profile:additionalPackageImport:base_Element' tagID='_10_0EAPbeta_be00301_1123081772098_411862_275' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_10_0EAPbeta_be00301_1123081772098_411862_275'/>
+			<tag name='MagicDraw_Profile:additionalPackageImport:base_Element' tagID='_12_1_8f90291_1173963939937_52316_99' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_1_8f90291_1173963939937_52316_99'/>
+			<tag name='MagicDraw_Profile:additionalPackageImport:treatAsAuxiliaryInOwningProject' tagID='_19_0_8760276_1515156810551_352594_4505' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_8760276_1515156810551_352594_4505'/>
+			<tag name='MagicDraw_Profile:additionalPackageImport:treatAsAuxiliaryInOwningProject' tagID='_19_0_8760276_1516028276191_917381_4503' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_8760276_1516028276191_917381_4503'/>
+			<stereotype name='MagicDraw_Profile:auxiliaryResource' stereotypeHREF='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_1_8f90291_1173963323875_662612_98'/>
+			<tag name='MagicDraw_Profile:auxiliaryResource:base_Element' tagID='_10_0EAPbeta_be00301_1123081772098_411862_275' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_10_0EAPbeta_be00301_1123081772098_411862_275'/>
+			<tag name='MagicDraw_Profile:auxiliaryResource:treatAsAuxiliaryInOwningProject' tagID='_19_0_8760276_1515156810551_352594_4505' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_19_0_8760276_1515156810551_352594_4505'/>
+		</stereotypesHREFS>
+	</xmi:Extension>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064821_156808_13876' base_PackageImport='_19_0_3_8c00284_1582032064816_606661_13729' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064820_668122_13859' base_PackageImport='_19_0_3_8c00284_1582032064825_290326_14000' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064826_959614_14008' base_PackageImport='_19_0_3_8c00284_1582032064825_907019_13987' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064823_647684_13942' base_PackageImport='_19_0_3_8c00284_1582032064815_922003_13722' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064812_856273_13678' base_PackageImport='_19_0_3_8c00284_1582032064828_626609_14152' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064814_32596_13703' base_PackageImport='_19_0_3_8c00284_1582032064826_57896_14018' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064812_496040_13665' base_PackageImport='_19_0_3_8c00284_1582032064828_235346_14145' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064816_194989_13750' base_PackageImport='_19_0_3_8c00284_1582032064814_71989_13704' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064822_841357_13899' base_PackageImport='_19_0_3_8c00284_1582032064823_273674_13926' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064817_255731_13756' base_PackageImport='_19_0_3_8c00284_1582032064817_791967_13773' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064826_753233_14023' base_PackageImport='_19_0_3_8c00284_1582032064828_415104_14155' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064826_564608_14046' base_PackageImport='_19_0_3_8c00284_1582032064812_596100_13672' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064820_525017_13845' base_PackageImport='_19_0_3_8c00284_1582032064823_7312_13925' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064826_241283_14005' base_PackageImport='_19_0_3_8c00284_1582032064827_217546_14055' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064815_986432_13721' base_PackageImport='_19_0_3_8c00284_1582032064815_915462_13711' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:auxiliaryResource xmi:id='_19_0_3_8c00284_1582032644643_851711_43179' base_Element='_19_0_3_8c00284_1582032064811_372840_13654' treatAsAuxiliaryInOwningProject='true'/>
+	<MagicDraw_Profile:additionalPackageImport xmi:id='_19_0_3_8c00284_1582032064819_704669_13834' base_PackageImport='_19_0_3_8c00284_1582032064825_872751_13975' treatAsAuxiliaryInOwningProject='true'/>
+</xmi:XMI>

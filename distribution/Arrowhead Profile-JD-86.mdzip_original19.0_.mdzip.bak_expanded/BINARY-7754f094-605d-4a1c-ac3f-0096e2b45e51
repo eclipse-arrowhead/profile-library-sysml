@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<mdOwnedViews>
+	<mdElement elementClass='DiagramFrame' xmi:id='_19_0_4_25dc056a_1611661429064_87924_42211'>
+		<elementID xmi:idref='_19_0_4_25dc056a_1611661429059_258490_42190'/>
+		<geometry>5, 5, 589, 316</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Note' xmi:id='_19_0_4_25dc056a_1611661489488_427420_42236'>
+		<geometry>147, 98, 427, 203</geometry>
+		<compartment compartmentID='TAGGED_VALUES2'/>
+		<mdOwnedViews/>
+		<text>/********************************************************************************
+ * Copyright (c) {210315} {Jerker Delsing}[Oysteing Haugen and Geza Kulcsar]
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+* 
+* Contact jerker.delsing@ltu.se
+ ********************************************************************************/
+
+</text>
+	</mdElement>
+</mdOwnedViews>

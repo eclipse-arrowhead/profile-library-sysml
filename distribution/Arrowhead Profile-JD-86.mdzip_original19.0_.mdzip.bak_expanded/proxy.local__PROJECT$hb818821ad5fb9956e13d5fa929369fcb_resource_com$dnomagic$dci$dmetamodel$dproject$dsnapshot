@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="_DEUVEGplEeChz7L9xL3tXw" description="" id="PROJECT-b818821ad5fb9956e13d5fa929369fcb">
+  <ownedSections xmi:id="_DF_JAGplEeChz7L9xL3tXw" name="model" featuredBy="_DF9T0GplEeChz7L9xL3tXw"/>
+  <ownedSections xmi:id="_DRAtQGplEeChz7L9xL3tXw" name="commonprojectoptions" shared="true" featuredBy="_DRAGMGplEeChz7L9xL3tXw"/>
+  <ownedSections xmi:id="_DRGM0GplEeChz7L9xL3tXw" name="personalprojectoptions" shared="true" belongsTo="_DRHa8GplEeChz7L9xL3tXw" featuredBy="_DRAGMGplEeChz7L9xL3tXw"/>
+  <ownedSections xmi:id="_DU02QGplEeChz7L9xL3tXw" name="shared_model" shared="true" featuredBy="_DF9T0GplEeChz7L9xL3tXw">
+    <sharePoints xmi:id="_DVLbkGplEeChz7L9xL3tXw" ID="_12_0_8f90291_1163762295984_947862_300">
+      <object href="PROJECT-b818821ad5fb9956e13d5fa929369fcb?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0_8f90291_1163762295984_947862_300"/>
+      <options xmi:id="_srK-UNd8EeCBXrQnJ3f4vA" key="preferredPath" value=""/>
+    </sharePoints>
+  </ownedSections>
+  <ownedSections xmi:id="_ENTWYGplEeChz7L9xL3tXw" name="commoncodeengineering" featuredBy="_ENRhMGplEeChz7L9xL3tXw"/>
+  <userParts xmi:id="_DRHa8GplEeChz7L9xL3tXw" user="_DRGz4GplEeChz7L9xL3tXw" sections="_DRGM0GplEeChz7L9xL3tXw"/>
+  <projectUsages xmi:id="_DVe9kGplEeChz7L9xL3tXw" usedProjectURI="file:/Applications/Cameo%20Systems%20Modeler/profiles/UML_Standard_Profile.mdzip" reshared="true" readonly="true" alternateLocation="file:/D:/17.01/test/profiles/UML_Standard_Profile.mdzip" preferredProjectRepositoryType="" loadedAutomatically="true" withPrivateDependencies="true">
+    <usedProject href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_VWTUgU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_EAV4cGplEeChz7L9xL3tXw" sharePointID="magicdraw_uml_standard_profile_v_0001" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_uml_standard_profile_v_0001"/>
+      <mountedOn href="PROJECT-b818821ad5fb9956e13d5fa929369fcb?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_uUWXwM_KEemjrajxwPeNIQ" key="preferredPath" value="::"/>
+    </mountPoints>
+    <properties xmi:id="_EIl1gGplEeChz7L9xL3tXw" key="loadIndex" value="true"/>
+    <properties xmi:id="_EImckGplEeChz7L9xL3tXw" key="usedVersion" value="19.0 SP3"/>
+    <properties xmi:id="_JX9dYGplEeChz7L9xL3tXw" key="LOCAL_PROJECT_ID" value="PROJECT-877558e9224f114d50dea1f39a1c119"/>
+  </projectUsages>
+  <projectUsages xmi:id="_EIpf4GplEeChz7L9xL3tXw" usedProjectURI="file:/Applications/Cameo%20Systems%20Modeler/profiles/SysML%20Profile.mdzip" reshared="true" readonly="true" alternateLocation="file:/D:/17.01/test/profiles/SysML%20Profile.mdzip" preferredProjectRepositoryType="" automatic="true" resharedAutomatically="true">
+    <usedProject href="PROJECT-44892a3bf693c0a47eb2f3bf10930f?resource=com.nomagic.ci.metamodel.project#_9KzeQEDfEeGkjcjD5m9aww"/>
+    <mountPoints xmi:id="_hLQp0GLDEeGHLIEy3hjkLA" sharePointID="_11_5EAPbeta_be00301_1147434586638_637562_1900" containmentFeatureID="61" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-44892a3bf693c0a47eb2f3bf10930f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5EAPbeta_be00301_1147434586638_637562_1900"/>
+      <mountedOn href="PROJECT-b818821ad5fb9956e13d5fa929369fcb?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_uUWXws_KEemjrajxwPeNIQ" key="preferredPath" value="::"/>
+      <mountedSharePoint href="PROJECT-44892a3bf693c0a47eb2f3bf10930f?resource=com.nomagic.ci.metamodel.project#_MGqHMGqEEeCTiIdtUv8J3w"/>
+    </mountPoints>
+    <properties xmi:id="_EJUOQGplEeChz7L9xL3tXw" key="loadIndex" value="false"/>
+    <properties xmi:id="_EJUOQWplEeChz7L9xL3tXw" key="autoLoadKind"/>
+    <properties xmi:id="_EJU1UGplEeChz7L9xL3tXw" key="usedVersion" value="19.0 SP3"/>
+    <properties xmi:id="_JX9dYWplEeChz7L9xL3tXw" key="LOCAL_PROJECT_ID" value="PROJECT-44892a3bf693c0a47eb2f3bf10930f"/>
+    <properties xmi:id="_GX-rIbi6EeCs4MExC17DOw" key="indexVersion" value="86"/>
+    <properties xmi:id="_GX-rIri6EeCs4MExC17DOw" key="indexTypes" value="ExecutionEnvironment&#xA;Model&#xA;BehavioredClassifier&#xA;DataType&#xA;UseCase&#xA;Device&#xA;Association&#xA;ProtocolStateMachine&#xA;Generalization&#xA;InformationItem&#xA;Stereotype&#xA;OpaqueBehavior&#xA;Realization&#xA;ComponentRealization&#xA;PrimitiveType&#xA;Extension&#xA;Actor&#xA;AssociationClass&#xA;EncapsulatedClassifier&#xA;Package&#xA;Component&#xA;StructuredClassifier&#xA;Interaction&#xA;Signal&#xA;CommunicationPath&#xA;Classifier&#xA;Profile&#xA;Enumeration&#xA;InterfaceRealization&#xA;Interface&#xA;DeploymentSpecification&#xA;Artifact&#xA;Activity&#xA;Substitution&#xA;Behavior&#xA;StateMachine&#xA;Node&#xA;Class&#xA;Collaboration&#xA;FunctionBehavior"/>
+  </projectUsages>
+  <projectUsages xmi:id="_EJXRkGplEeChz7L9xL3tXw" usedProjectURI="file:/Applications/Cameo%20Systems%20Modeler/profiles/MD_customization_for_SysML.mdzip" reshared="true" readonly="true" alternateLocation="file:/D:/17.01/test/profiles/MD_customization_for_SysML.mdzip" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-9b4d2b1641e6203934d95e7bde5fe08?resource=com.nomagic.ci.metamodel.project#_obuDIG5dEeG47bdgtH4bfg"/>
+    <mountPoints xmi:id="_UKVsQm5rEeGoPryh2pWWMg" sharePointID="_12_0EAPbeta_be00301_1156851270584_552173_1" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-9b4d2b1641e6203934d95e7bde5fe08?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0EAPbeta_be00301_1156851270584_552173_1"/>
+      <mountedOn href="PROJECT-b818821ad5fb9956e13d5fa929369fcb?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_uUWXwc_KEemjrajxwPeNIQ" key="preferredPath" value="::"/>
+      <mountedSharePoint href="PROJECT-9b4d2b1641e6203934d95e7bde5fe08?resource=com.nomagic.ci.metamodel.project#_QxSDQGqEEeCTiIdtUv8J3w"/>
+    </mountPoints>
+    <properties xmi:id="_EJ4O8GplEeChz7L9xL3tXw" key="autoLoadKind"/>
+    <properties xmi:id="_EJ42AGplEeChz7L9xL3tXw" key="usedVersion" value="19.0 SP3"/>
+    <properties xmi:id="_JX9dYmplEeChz7L9xL3tXw" key="LOCAL_PROJECT_ID" value="PROJECT-9b4d2b1641e6203934d95e7bde5fe08"/>
+  </projectUsages>
+  <features xmi:id="_DF9T0GplEeChz7L9xL3tXw" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_DF_JAGplEeChz7L9xL3tXw _DU02QGplEeChz7L9xL3tXw" internalVersion="1"/>
+  <features xmi:id="_DRAGMGplEeChz7L9xL3tXw" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_DRAtQGplEeChz7L9xL3tXw _DRGM0GplEeChz7L9xL3tXw" internalVersion="1"/>
+  <features xmi:id="_ENQ6IGplEeChz7L9xL3tXw" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"/>
+  <features xmi:id="_ENRhMGplEeChz7L9xL3tXw" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" sections="_ENTWYGplEeChz7L9xL3tXw" internalVersion="1"/>
+  <features xmi:id="_yYrJ4L2LEeikApzsy52DfA" name="DMN Code Engineering" namespace="com.nomagic.magicdraw.ce.dmn" version="1.0" internalVersion="1"/>
+  <properties xmi:id="_DVQ7IGplEeChz7L9xL3tXw" key="standardProfile" value="true"/>
+  <properties xmi:id="_DVQ7IWplEeChz7L9xL3tXw" key="internalVersion" value="19.0 SP3"/>
+  <properties xmi:id="_JZDCgGplEeChz7L9xL3tXw" key="MODULES_DIRS" value="&lt;project.dir>&lt;>&lt;install.root>\profiles&lt;>&lt;install.root>\modelLibraries&lt;>D:\180_branch\md\core\profiles\&lt;>C:\Users\vaiaug\IdeaProjects\md-sourcecode\md_sysml\profiles\"/>
+  <properties xmi:id="_GX06ILi6EeCs4MExC17DOw" key="fileVersion" value="274"/>
+  <properties xmi:id="_GX-rILi6EeCs4MExC17DOw" key="exporterDescription" value="ac ed 0 5 73 72 0 2e 63 6f 6d 2e 6e 6f 6d 61 67 69 63 2e 70 65 72 73 69 73 74 65 6e 63 65 2e 58 6d 69 45 78 70 6f 72 74 65 72 44 65 73 63 72 69 70 74 69 6f 6e f5 3e fd c8 e7 3c 3b d7 2 0 5 4c 0 5 6d 4e 61 6d 65 74 0 12 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e 67 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 50 6c 75 67 69 6e 4d 61 70 74 0 f 4c 6a 61 76 61 2f 75 74 69 6c 2f 4d 61 70 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 52 65 73 6f 75 72 63 65 73 74 0 10 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69 73 74 3b 4c 0 10 6d 55 4d 4c 4e 61 6d 65 73 70 61 63 65 55 52 49 71 0 7e 0 1 4c 0 8 6d 56 65 72 73 69 6f 6e 71 0 7e 0 1 78 70 74 0 d 4d 61 67 69 63 44 72 61 77 20 55 4d 4c 73 72 0 11 6a 61 76 61 2e 75 74 69 6c 2e 48 61 73 68 4d 61 70 5 7 da c1 c3 16 60 d1 3 0 2 46 0 a 6c 6f 61 64 46 61 63 74 6f 72 49 0 9 74 68 72 65 73 68 6f 6c 64 78 70 3f 40 0 0 0 0 0 3 77 8 0 0 0 4 0 0 0 2 74 0 5 53 79 73 4d 4c 74 0 4 31 39 2e 30 74 0 1a 43 61 6d 65 6f 20 52 65 71 75 69 72 65 6d 65 6e 74 73 20 4d 6f 64 65 6c 65 72 74 0 4 31 39 2e 30 78 73 72 0 13 6a 61 76 61 2e 75 74 69 6c 2e 41 72 72 61 79 4c 69 73 74 78 81 d2 1d 99 c7 61 9d 3 0 1 49 0 4 73 69 7a 65 78 70 0 0 0 0 77 4 0 0 0 0 78 70 74 0 7 31 39 2e 30 20 76 39 "/>
+  <properties xmi:id="_GX-rI7i6EeCs4MExC17DOw" key="MODEL_ROOT_HREF" value="local:/PROJECT-b818821ad5fb9956e13d5fa929369fcb?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  <properties xmi:id="_e0k7IA39EeKLDsHdJE-rGg" key="CI_VERSION" value="V1702_SP1"/>
+  <properties xmi:id="_9UiEMNR1EeS3SsWhWWd5Bg" key="fileFormatVersion" value="18.1 beta.esi"/>
+  <properties xmi:id="_xbPTIHJDEeWEzdureLSNJw" key="saveID" value="293ecee1-214e-42ad-91b4-6fbdca564b37"/>
+  <properties xmi:id="_IYCqkL2UEeiAidvV-uF7Zg" key="compatibleVersion" value="19.0"/>
+  <projectUsers xmi:id="_DRGz4GplEeChz7L9xL3tXw" userId="default"/>
+</project:Project>

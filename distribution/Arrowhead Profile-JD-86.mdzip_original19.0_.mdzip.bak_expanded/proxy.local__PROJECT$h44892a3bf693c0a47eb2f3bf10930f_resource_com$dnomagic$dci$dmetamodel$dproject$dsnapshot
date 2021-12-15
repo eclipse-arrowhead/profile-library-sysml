@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="_9KzeQEDfEeGkjcjD5m9aww" description="" id="PROJECT-44892a3bf693c0a47eb2f3bf10930f">
+  <ownedSections xmi:id="_9K9PQUDfEeGkjcjD5m9aww" name="model" featuredBy="_9K9PQEDfEeGkjcjD5m9aww"/>
+  <ownedSections xmi:id="_9OPMwUDfEeGkjcjD5m9aww" name="commonprojectoptions" shared="true" featuredBy="_9OPMwEDfEeGkjcjD5m9aww"/>
+  <ownedSections xmi:id="_9OPMxUDfEeGkjcjD5m9aww" name="personalprojectoptions" shared="true" belongsTo="_9OPMxEDfEeGkjcjD5m9aww" featuredBy="_9OPMwEDfEeGkjcjD5m9aww"/>
+  <ownedSections xmi:id="_9R0FMEDfEeGkjcjD5m9aww" name="shared_model" shared="true" featuredBy="_9K9PQEDfEeGkjcjD5m9aww">
+    <sharePoints xmi:id="_9SHAIEDfEeGkjcjD5m9aww" ID="_11_5EAPbeta_be00301_1147434586638_637562_1900">
+      <object href="PROJECT-44892a3bf693c0a47eb2f3bf10930f?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5EAPbeta_be00301_1147434586638_637562_1900"/>
+      <options xmi:id="_9SHAIUDfEeGkjcjD5m9aww" key="preferredPath" value=""/>
+    </sharePoints>
+  </ownedSections>
+  <ownedSections xmi:id="_9yJLEkDfEeGkjcjD5m9aww" name="commoncodeengineering" featuredBy="_9yJLEUDfEeGkjcjD5m9aww"/>
+  <ownedSections xmi:id="_rtZ9oCPGEem2EMtP_Vry3w" name="commondmncodeengineering" featuredBy="_UMpd8O2gEeiAevJ9IKswKQ"/>
+  <userParts xmi:id="_9OPMxEDfEeGkjcjD5m9aww" user="_9OPMw0DfEeGkjcjD5m9aww" sections="_9OPMxUDfEeGkjcjD5m9aww"/>
+  <projectUsages xmi:id="_9SZ7EEDfEeGkjcjD5m9aww" usedProjectURI="file:/Applications/Cameo%20Systems%20Modeler/profiles/UML_Standard_Profile.mdzip" reshared="true" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true" withPrivateDependencies="true">
+    <usedProject href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_VWTUgU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_9SjsEkDfEeGkjcjD5m9aww" sharePointID="magicdraw_uml_standard_profile_v_0001" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_uml_standard_profile_v_0001"/>
+      <mountedOn href="PROJECT-44892a3bf693c0a47eb2f3bf10930f?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_fWLMgHcbEemupIyeqcB8QQ" key="preferredPath" value="::"/>
+      <mountedSharePoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_9SjsEEDfEeGkjcjD5m9aww"/>
+    </mountPoints>
+    <properties xmi:id="_9wXCYEDfEeGkjcjD5m9aww" key="loadIndex" value="false"/>
+    <properties xmi:id="_9wXCYUDfEeGkjcjD5m9aww" key="usedVersion" value="19.0 SP3"/>
+    <properties xmi:id="_VzYhEEDhEeGkjcjD5m9aww" key="LOCAL_PROJECT_ID" value="PROJECT-877558e9224f114d50dea1f39a1c119"/>
+  </projectUsages>
+  <features xmi:id="_9K9PQEDfEeGkjcjD5m9aww" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_9K9PQUDfEeGkjcjD5m9aww _9R0FMEDfEeGkjcjD5m9aww" internalVersion="1"/>
+  <features xmi:id="_9OPMwEDfEeGkjcjD5m9aww" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_9OPMwUDfEeGkjcjD5m9aww _9OPMxUDfEeGkjcjD5m9aww" internalVersion="1"/>
+  <features xmi:id="_9yJLEEDfEeGkjcjD5m9aww" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"/>
+  <features xmi:id="_9yJLEUDfEeGkjcjD5m9aww" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" sections="_9yJLEkDfEeGkjcjD5m9aww" internalVersion="1"/>
+  <features xmi:id="_UMpd8O2gEeiAevJ9IKswKQ" name="DMN Code Engineering" namespace="com.nomagic.magicdraw.ce.dmn" version="1.0" sections="_rtZ9oCPGEem2EMtP_Vry3w" internalVersion="1"/>
+  <properties xmi:id="_9SHAIkDfEeGkjcjD5m9aww" key="standardProfile" value="true"/>
+  <properties xmi:id="_9SHAI0DfEeGkjcjD5m9aww" key="internalVersion" value="19.0 SP3"/>
+  <properties xmi:id="_VzYhEUDhEeGkjcjD5m9aww" key="fileVersion" value="287"/>
+  <properties xmi:id="_VzrcAEDhEeGkjcjD5m9aww" key="exporterDescription" value="ac ed 0 5 73 72 0 2e 63 6f 6d 2e 6e 6f 6d 61 67 69 63 2e 70 65 72 73 69 73 74 65 6e 63 65 2e 58 6d 69 45 78 70 6f 72 74 65 72 44 65 73 63 72 69 70 74 69 6f 6e f5 3e fd c8 e7 3c 3b d7 2 0 5 4c 0 5 6d 4e 61 6d 65 74 0 12 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e 67 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 50 6c 75 67 69 6e 4d 61 70 74 0 f 4c 6a 61 76 61 2f 75 74 69 6c 2f 4d 61 70 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 52 65 73 6f 75 72 63 65 73 74 0 10 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69 73 74 3b 4c 0 10 6d 55 4d 4c 4e 61 6d 65 73 70 61 63 65 55 52 49 71 0 7e 0 1 4c 0 8 6d 56 65 72 73 69 6f 6e 71 0 7e 0 1 78 70 74 0 d 4d 61 67 69 63 44 72 61 77 20 55 4d 4c 73 72 0 11 6a 61 76 61 2e 75 74 69 6c 2e 48 61 73 68 4d 61 70 5 7 da c1 c3 16 60 d1 3 0 2 46 0 a 6c 6f 61 64 46 61 63 74 6f 72 49 0 9 74 68 72 65 73 68 6f 6c 64 78 70 3f 40 0 0 0 0 0 0 77 8 0 0 0 10 0 0 0 0 78 73 72 0 13 6a 61 76 61 2e 75 74 69 6c 2e 41 72 72 61 79 4c 69 73 74 78 81 d2 1d 99 c7 61 9d 3 0 1 49 0 4 73 69 7a 65 78 70 0 0 0 0 77 4 0 0 0 0 78 70 74 0 7 31 39 2e 30 20 76 39 "/>
+  <properties xmi:id="_V1UawEDhEeGkjcjD5m9aww" key="MODEL_ROOT_HREF" value="local:/PROJECT-44892a3bf693c0a47eb2f3bf10930f?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  <properties xmi:id="_V2NyoEDhEeGkjcjD5m9aww" key="MODULES_DIRS" value="&lt;install.root>\profiles&lt;>&lt;project.dir>&lt;>&lt;install.root>\modelLibraries"/>
+  <properties xmi:id="_G7SrkAeLEeKx-u4O9SuExA" key="CI_VERSION" value="V1702_SP1"/>
+  <properties xmi:id="_tr3BUOQ7EeS_cbLuT_ak3g" key="fileFormatVersion" value="18.1 beta.esi"/>
+  <properties xmi:id="_zmxWkHJDEeWEzdureLSNJw" key="saveID" value="e219bcc3-ab7a-4634-b682-b03c4c9cba8d"/>
+  <properties xmi:id="_xeTlQCPGEem2EMtP_Vry3w" key="compatibleVersion" value="19.0"/>
+  <projectUsers xmi:id="_9OPMw0DfEeGkjcjD5m9aww" userId="default"/>
+</project:Project>
