@@ -1,0 +1,32 @@
+Class> Compartment[kind="operations"]{
+	visible:false;
+	
+}
+Class> Compartment[kind="attributes"]{
+	visible:true;
+	showTitle:true;
+}
+Class> Compartment[kind="nestedclassifiers"]{
+	visible:false;
+	
+}
+Association > Label:sourceMultiplicity {
+	visible:true;
+}
+
+Association > Label:targetMultiplicity {
+	visible:true;
+}
+
+Association > Label:sourceRole {
+	visible:false;
+}
+
+Association > Label:targetRole {
+	visible:false;
+}
+
+Association > Label:name {
+	visible:true;
+}
+
