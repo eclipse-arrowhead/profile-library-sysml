@@ -342,7 +342,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HiODMD1OEeywba4O3NkZ_A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_3GWbwD1PEeywba4O3NkZ_A" memberEnd="_3GXC0j1PEeywba4O3NkZ_A _3GkeMD1PEeywba4O3NkZ_A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_3GWbwD1PEeywba4O3NkZ_A" visibility="public" memberEnd="_3GXC0j1PEeywba4O3NkZ_A _3GkeMD1PEeywba4O3NkZ_A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3GXC0D1PEeywba4O3NkZ_A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3GXC0T1PEeywba4O3NkZ_A" key="nature" value="UML_Nature"/>
     </eAnnotations>
