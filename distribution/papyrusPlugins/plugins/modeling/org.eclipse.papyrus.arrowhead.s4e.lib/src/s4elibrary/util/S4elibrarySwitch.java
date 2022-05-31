@@ -1,17 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2021 CEA LIST.
- *
- *  All rights reserved. This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License 2.0
- *  which accompanies this distribution, and is available at
- *  https://www.eclipse.org/legal/epl-2.0/
- *
- *  SPDX-License-Identifier: EPL-2.0
- *  
- *  Contributors:
- *    Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
- *    Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
- *******************************************************************************/
 /**
  */
 package s4elibrary.util;
@@ -80,57 +66,117 @@ public class S4elibrarySwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case S4elibraryPackage.HIGHVOLTAGECONTROLRELAY: {
-				Highvoltagecontrolrelay highvoltagecontrolrelay = (Highvoltagecontrolrelay)theEObject;
-				T result = caseHighvoltagecontrolrelay(highvoltagecontrolrelay);
+			case S4elibraryPackage.TEMPERATUREDS18B20: {
+				temperatureds18b20 temperatureds18b20 = (temperatureds18b20)theEObject;
+				T result = casetemperatureds18b20(temperatureds18b20);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.CONTINUOUSROTATIONSERVOMOTORSERVO: {
-				Continuousrotationservomotorservo continuousrotationservomotorservo = (Continuousrotationservomotorservo)theEObject;
-				T result = caseContinuousrotationservomotorservo(continuousrotationservomotorservo);
+			case S4elibraryPackage.TEMPERATUREDHT11: {
+				temperaturedht11 temperaturedht11 = (temperaturedht11)theEObject;
+				T result = casetemperaturedht11(temperaturedht11);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.ANGULARSERVOMOTORSERVO: {
-				Angularservomotorservo angularservomotorservo = (Angularservomotorservo)theEObject;
-				T result = caseAngularservomotorservo(angularservomotorservo);
+			case S4elibraryPackage.HUMIDITYDHT11: {
+				humiditydht11 humiditydht11 = (humiditydht11)theEObject;
+				T result = casehumiditydht11(humiditydht11);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.HUMIDITYSENSOR_XNUCLEOIKS01A3: {
-				humiditysensorXNUCLEOIKS01A3 humiditysensorXNUCLEOIKS01A3 = (humiditysensorXNUCLEOIKS01A3)theEObject;
-				T result = casehumiditysensorXNUCLEOIKS01A3(humiditysensorXNUCLEOIKS01A3);
+			case S4elibraryPackage.TEMPERATUREDHT21: {
+				temperaturedht21 temperaturedht21 = (temperaturedht21)theEObject;
+				T result = casetemperaturedht21(temperaturedht21);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.TEMPERATURESENSOR_XNUCLEOIKS01A3: {
-				temperaturesensorXNUCLEOIKS01A3 temperaturesensorXNUCLEOIKS01A3 = (temperaturesensorXNUCLEOIKS01A3)theEObject;
-				T result = casetemperaturesensorXNUCLEOIKS01A3(temperaturesensorXNUCLEOIKS01A3);
+			case S4elibraryPackage.HUMIDITYDHT21: {
+				humiditydht21 humiditydht21 = (humiditydht21)theEObject;
+				T result = casehumiditydht21(humiditydht21);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.MAGNETOMETERSENSOR_XNUCLEOIKS01A3: {
-				magnetometersensorXNUCLEOIKS01A3 magnetometersensorXNUCLEOIKS01A3 = (magnetometersensorXNUCLEOIKS01A3)theEObject;
-				T result = casemagnetometersensorXNUCLEOIKS01A3(magnetometersensorXNUCLEOIKS01A3);
+			case S4elibraryPackage.TEMPERATUREDHT22: {
+				temperaturedht22 temperaturedht22 = (temperaturedht22)theEObject;
+				T result = casetemperaturedht22(temperaturedht22);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.ACCELEROMETERSENSOR_XNUCLEOIKS01A3: {
-				accelerometersensorXNUCLEOIKS01A3 accelerometersensorXNUCLEOIKS01A3 = (accelerometersensorXNUCLEOIKS01A3)theEObject;
-				T result = caseaccelerometersensorXNUCLEOIKS01A3(accelerometersensorXNUCLEOIKS01A3);
+			case S4elibraryPackage.HUMIDITYDHT22: {
+				humiditydht22 humiditydht22 = (humiditydht22)theEObject;
+				T result = casehumiditydht22(humiditydht22);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3: {
-				angular_gyroscopesensorXNUCLEOIKS01A3 angular_gyroscopesensorXNUCLEOIKS01A3 = (angular_gyroscopesensorXNUCLEOIKS01A3)theEObject;
-				T result = caseangular_gyroscopesensorXNUCLEOIKS01A3(angular_gyroscopesensorXNUCLEOIKS01A3);
+			case S4elibraryPackage.TEMPERATUREDHT: {
+				temperaturedht temperaturedht = (temperaturedht)theEObject;
+				T result = casetemperaturedht(temperaturedht);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case S4elibraryPackage.TEMPERATURESENSORDS18B20: {
-				temperaturesensords18b20 temperaturesensords18b20 = (temperaturesensords18b20)theEObject;
-				T result = casetemperaturesensords18b20(temperaturesensords18b20);
+			case S4elibraryPackage.HUMIDITYDHT: {
+				humiditydht humiditydht = (humiditydht)theEObject;
+				T result = casehumiditydht(humiditydht);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.STATICRELAY: {
+				staticrelay staticrelay = (staticrelay)theEObject;
+				T result = casestaticrelay(staticrelay);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.MOSFETRELAY: {
+				mosfetrelay mosfetrelay = (mosfetrelay)theEObject;
+				T result = casemosfetrelay(mosfetrelay);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.ANGULARSERVO: {
+				angularservo angularservo = (angularservo)theEObject;
+				T result = caseangularservo(angularservo);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.CONTINUOUSSERVO: {
+				continuousservo continuousservo = (continuousservo)theEObject;
+				T result = casecontinuousservo(continuousservo);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.TEMPERATUREX_NUCLEO_IKS01A3: {
+				temperaturex_nucleo_iks01a3 temperaturex_nucleo_iks01a3 = (temperaturex_nucleo_iks01a3)theEObject;
+				T result = casetemperaturex_nucleo_iks01a3(temperaturex_nucleo_iks01a3);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.HUMIDITYX_NUCLEO_IKS01A3: {
+				humidityx_nucleo_iks01a3 humidityx_nucleo_iks01a3 = (humidityx_nucleo_iks01a3)theEObject;
+				T result = casehumidityx_nucleo_iks01a3(humidityx_nucleo_iks01a3);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.PRESSUREX_NUCLEO_IKS01A3: {
+				pressurex_nucleo_iks01a3 pressurex_nucleo_iks01a3 = (pressurex_nucleo_iks01a3)theEObject;
+				T result = casepressurex_nucleo_iks01a3(pressurex_nucleo_iks01a3);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.ACCELEROMETERX_NUCLEO_IKS01A3: {
+				accelerometerx_nucleo_iks01a3 accelerometerx_nucleo_iks01a3 = (accelerometerx_nucleo_iks01a3)theEObject;
+				T result = caseaccelerometerx_nucleo_iks01a3(accelerometerx_nucleo_iks01a3);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.GYROX_NUCLEO_IKS01A3: {
+				gyrox_nucleo_iks01a3 gyrox_nucleo_iks01a3 = (gyrox_nucleo_iks01a3)theEObject;
+				T result = casegyrox_nucleo_iks01a3(gyrox_nucleo_iks01a3);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case S4elibraryPackage.MAGNETX_NUCLEO_IKS01A3: {
+				magnetx_nucleo_iks01a3 magnetx_nucleo_iks01a3 = (magnetx_nucleo_iks01a3)theEObject;
+				T result = casemagnetx_nucleo_iks01a3(magnetx_nucleo_iks01a3);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -139,137 +185,287 @@ public class S4elibrarySwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Highvoltagecontrolrelay</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>temperatureds18b20</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Highvoltagecontrolrelay</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>temperatureds18b20</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseHighvoltagecontrolrelay(Highvoltagecontrolrelay object) {
+	public T casetemperatureds18b20(temperatureds18b20 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Continuousrotationservomotorservo</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>temperaturedht11</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Continuousrotationservomotorservo</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>temperaturedht11</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseContinuousrotationservomotorservo(Continuousrotationservomotorservo object) {
+	public T casetemperaturedht11(temperaturedht11 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Angularservomotorservo</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>humiditydht11</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Angularservomotorservo</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>humiditydht11</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAngularservomotorservo(Angularservomotorservo object) {
+	public T casehumiditydht11(humiditydht11 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>humiditysensor XNUCLEOIKS01A3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>temperaturedht21</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>humiditysensor XNUCLEOIKS01A3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>temperaturedht21</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casehumiditysensorXNUCLEOIKS01A3(humiditysensorXNUCLEOIKS01A3 object) {
+	public T casetemperaturedht21(temperaturedht21 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>temperaturesensor XNUCLEOIKS01A3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>humiditydht21</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>temperaturesensor XNUCLEOIKS01A3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>humiditydht21</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casetemperaturesensorXNUCLEOIKS01A3(temperaturesensorXNUCLEOIKS01A3 object) {
+	public T casehumiditydht21(humiditydht21 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>magnetometersensor XNUCLEOIKS01A3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>temperaturedht22</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>magnetometersensor XNUCLEOIKS01A3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>temperaturedht22</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casemagnetometersensorXNUCLEOIKS01A3(magnetometersensorXNUCLEOIKS01A3 object) {
+	public T casetemperaturedht22(temperaturedht22 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>accelerometersensor XNUCLEOIKS01A3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>humiditydht22</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>accelerometersensor XNUCLEOIKS01A3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>humiditydht22</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseaccelerometersensorXNUCLEOIKS01A3(accelerometersensorXNUCLEOIKS01A3 object) {
+	public T casehumiditydht22(humiditydht22 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>temperaturedht</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>temperaturedht</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseangular_gyroscopesensorXNUCLEOIKS01A3(angular_gyroscopesensorXNUCLEOIKS01A3 object) {
+	public T casetemperaturedht(temperaturedht object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>temperaturesensords18b20</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>humiditydht</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>temperaturesensords18b20</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>humiditydht</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casetemperaturesensords18b20(temperaturesensords18b20 object) {
+	public T casehumiditydht(humiditydht object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>staticrelay</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>staticrelay</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casestaticrelay(staticrelay object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>mosfetrelay</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>mosfetrelay</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casemosfetrelay(mosfetrelay object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>angularservo</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>angularservo</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseangularservo(angularservo object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>continuousservo</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>continuousservo</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casecontinuousservo(continuousservo object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>temperaturex nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>temperaturex nucleo iks01a3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casetemperaturex_nucleo_iks01a3(temperaturex_nucleo_iks01a3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>humidityx nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>humidityx nucleo iks01a3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casehumidityx_nucleo_iks01a3(humidityx_nucleo_iks01a3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>pressurex nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>pressurex nucleo iks01a3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casepressurex_nucleo_iks01a3(pressurex_nucleo_iks01a3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>accelerometerx nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>accelerometerx nucleo iks01a3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseaccelerometerx_nucleo_iks01a3(accelerometerx_nucleo_iks01a3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>gyrox nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>gyrox nucleo iks01a3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casegyrox_nucleo_iks01a3(gyrox_nucleo_iks01a3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>magnetx nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>magnetx nucleo iks01a3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casemagnetx_nucleo_iks01a3(magnetx_nucleo_iks01a3 object) {
 		return null;
 	}
 

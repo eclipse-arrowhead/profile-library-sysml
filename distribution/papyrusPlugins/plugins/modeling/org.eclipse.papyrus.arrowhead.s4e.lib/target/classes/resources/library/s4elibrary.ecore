@@ -1,76 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="s4elibrary" nsURI="http:///s4elibrary.ecore" nsPrefix="s4elibrary">
-  <eClassifiers xsi:type="ecore:EClass" name="Highvoltagecontrolrelay">
+  <eClassifiers xsi:type="ecore:EClass" name="temperatureds18b20">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="High voltage control.relay"/>
+      <details key="originalName" value="temperature.ds18b20"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="220V relay"/>
+      <details key="documentation" value="temperature sensor&#xD;&#xA;"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Continuousrotationservomotorservo">
+  <eClassifiers xsi:type="ecore:EClass" name="temperaturedht11">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Continuous rotation servomotor.servo"/>
+      <details key="originalName" value="temperature.dht11"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="servomotor"/>
+      <details key="documentation" value="temperature sensor&#xD;&#xA;"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Angularservomotorservo">
+  <eClassifiers xsi:type="ecore:EClass" name="humiditydht11">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Angular servomotor.servo"/>
+      <details key="originalName" value="humidity.dht11"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="temperaturedht21">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="temperature.dht21"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="servomotor"/>
+      <details key="documentation" value="temperature sensor&#xD;&#xA;"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="humiditysensorXNUCLEOIKS01A3">
+  <eClassifiers xsi:type="ecore:EClass" name="humiditydht21">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="humidity sensor.X-NUCLEO-IKS01A3"/>
+      <details key="originalName" value="humidity.dht21"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="temperaturedht22">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="temperature.dht22"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="ST shield: humidity, temperature, magnetometer, accelerometer, gyroscope"/>
+      <details key="documentation" value="temperature sensor&#xD;&#xA;"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="temperaturesensorXNUCLEOIKS01A3">
+  <eClassifiers xsi:type="ecore:EClass" name="humiditydht22">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="temperature sensor.X-NUCLEO-IKS01A3"/>
+      <details key="originalName" value="humidity.dht22"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="ST shield: humidity, temperature, magnetometer, accelerometer, gyroscope"/>
+      <details key="documentation" value="humidity sensor"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="magnetometersensorXNUCLEOIKS01A3">
+  <eClassifiers xsi:type="ecore:EClass" name="temperaturedht">
     <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="magnetometer sensor.X-NUCLEO-IKS01A3"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="ST shield: humidity, temperature, magnetometer, accelerometer, gyroscope"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="accelerometersensorXNUCLEOIKS01A3">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="accelerometer sensor.X-NUCLEO-IKS01A3"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="ST shield: humidity, temperature, magnetometer, accelerometer, gyroscope"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="angular_gyroscopesensorXNUCLEOIKS01A3">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="angular_gyroscope sensor.X-NUCLEO-IKS01A3"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="ST shield: humidity, temperature, magnetometer, accelerometer, gyroscope"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="temperaturesensords18b20">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="temperature sensor.ds18b20"/>
+      <details key="originalName" value="temperature.dht"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="temperature sensor"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="humiditydht">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="humidity.dht"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="staticrelay">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="static.relay"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="mosfetrelay">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="mosfet.relay"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="angularservo">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="angular.servo"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="continuousservo">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="continuous.servo"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="temperaturex_nucleo_iks01a3">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="temperature.x_nucleo_iks01a3"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="humidityx_nucleo_iks01a3">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="humidity.x_nucleo_iks01a3"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="pressurex_nucleo_iks01a3">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="pressure.x_nucleo_iks01a3"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="accelerometerx_nucleo_iks01a3">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="accelerometer.x_nucleo_iks01a3"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="gyrox_nucleo_iks01a3">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="gyro.x_nucleo_iks01a3"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="magnetx_nucleo_iks01a3">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="magnet.x_nucleo_iks01a3"/>
     </eAnnotations>
   </eClassifiers>
 </ecore:EPackage>

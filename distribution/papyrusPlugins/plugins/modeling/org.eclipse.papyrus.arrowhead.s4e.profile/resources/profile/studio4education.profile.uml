@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Profile xmi:id="_s6xo8DC0EeygCbgFGuzi7Q" name="studio4education">
+  <uml:Profile xmi:id="_s6xo8DC0EeygCbgFGuzi7Q" name="studio4education" metaclassReference="_yK_LQKOoEeydw-5S688-ew">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o-UlADC1EeygCbgFGuzi7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-xc6ITC1EeygCbgFGuzi7Q" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xc6IjC1EeygCbgFGuzi7Q" key="Version" value="0.0.0"/>
@@ -41,6 +41,9 @@
         </eClassifiers>
       </contents>
     </eAnnotations>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_yK_LQKOoEeydw-5S688-ew" alias="Property">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </elementImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_s-TeEDC0EeygCbgFGuzi7Q">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -48,8 +51,8 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_CverYDC1EeygCbgFGuzi7Q" name="Device">
-      <generalization xmi:type="uml:Generalization" xmi:id="_nMy9ADC1EeygCbgFGuzi7Q">
-        <general xmi:type="uml:Stereotype" href="pathmap://ARROWHEADSYSMLPROFILE_PROFILE/Arrowhead.profile.uml#_19_0_3_8c00284_1582032644643_908437_43180"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_UoGEQEEzEeyJ4PyazDMGuw">
+        <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_XW_h8DC1EeygCbgFGuzi7Q" name="label">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -57,6 +60,10 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Zpo6ADC1EeygCbgFGuzi7Q" name="kind" type="_EW_bwDC1EeygCbgFGuzi7Q"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_bGSeMDC1EeygCbgFGuzi7Q" name="level">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_y8KJgaOoEeydw-5S688-ew" name="base_Property" association="_y8I7YKOoEeydw-5S688-ew">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y8KJgqOoEeydw-5S688-ew"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_EW_bwDC1EeygCbgFGuzi7Q" name="DeviceKind">
@@ -66,6 +73,11 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Lmo5UDC1EeygCbgFGuzi7Q" name="Actuator">
         <specification xmi:type="uml:LiteralString" xmi:id="_TTID4DC1EeygCbgFGuzi7Q" name="Actuator" value="Actuator"/>
       </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Esop4KObEeydw-5S688-ew" name="Communication"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HQKWkKObEeydw-5S688-ew" name="X"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_y8I7YKOoEeydw-5S688-ew" name="E_Device_Property9" memberEnd="_y8KJgKOoEeydw-5S688-ew _y8KJgaOoEeydw-5S688-ew">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_y8KJgKOoEeydw-5S688-ew" name="extension_Device" type="_CverYDC1EeygCbgFGuzi7Q" aggregation="composite" association="_y8I7YKOoEeydw-5S688-ew"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_zsRK4DC0EeygCbgFGuzi7Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zsUOMDC0EeygCbgFGuzi7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -78,12 +90,6 @@
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
-    </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_WSnZYDDtEeyUydmb-UNknw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WSrDwDDtEeyUydmb-UNknw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://Papyrus/ArrowheadSysMLProfile#/"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="pathmap://ARROWHEADSYSMLPROFILE_PROFILE/Arrowhead.profile.uml#_19_0_3_8c00284_1582032644615_895680_43132"/>
     </profileApplication>
   </uml:Profile>
   <Ecore:EPackage xmi:id="__Z298DC1EeygCbgFGuzi7Q" base_Package="_s6xo8DC0EeygCbgFGuzi7Q" packageName="studio4educationprofile" nsPrefix="Studio4EducationProfile" nsURI="http://Papyrus/Studio4EducationProfile" basePackage="org.eclipse.papyrus.arrowhead.s4e.profile" prefix="Studio4EducationProfile"/>

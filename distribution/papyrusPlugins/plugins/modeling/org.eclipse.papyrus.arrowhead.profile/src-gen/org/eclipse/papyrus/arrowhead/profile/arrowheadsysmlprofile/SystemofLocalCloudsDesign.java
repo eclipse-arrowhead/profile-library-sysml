@@ -19,7 +19,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  * </ul>
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getSystemofLocalCloudsDesign()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='System-of-LocalClouds-Design'"
+ * @model
  * @generated
  */
 public interface SystemofLocalCloudsDesign extends Block {

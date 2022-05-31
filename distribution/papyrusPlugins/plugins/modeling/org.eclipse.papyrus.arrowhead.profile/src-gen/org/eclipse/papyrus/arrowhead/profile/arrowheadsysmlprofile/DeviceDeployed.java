@@ -20,7 +20,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  * </ul>
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getDeviceDeployed()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Device-Deployed'"
+ * @model
  * @generated
  */
 public interface DeviceDeployed extends Block {

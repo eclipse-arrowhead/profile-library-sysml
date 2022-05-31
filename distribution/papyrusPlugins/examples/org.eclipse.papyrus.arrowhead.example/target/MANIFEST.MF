@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-Description: %pluginDescription
 Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.example
-Bundle-Version: 1.0.0.202110061052
+Bundle-Version: 1.0.0.202205231242
 Bundle-Activator: org.eclipse.papyrus.arrowhead.example.Activator
 Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-11

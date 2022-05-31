@@ -21,11 +21,11 @@
     <details key="UNION_PROPERTIES" value="REPORT"/>
     <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
     <details key="NON_API_INVARIANTS" value="PROCESS"/>
-    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="REPORT"/>
     <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
     <details key="OPERATION_BODIES" value="REPORT"/>
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
-    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="UNTYPED_PROPERTIES" value="PROCESS"/>
     <details key="REDEFINING_PROPERTIES" value="IGNORE"/>
     <details key="INVOCATION_DELEGATES" value="IGNORE"/>
     <details key="VALIDATION_DELEGATES" value="PROCESS"/>
@@ -259,9 +259,9 @@
           propertySortChoices="true" ecoreFeature="ecore:EReference arrowheadsysmlprofile.ecore#//DeployedLocalCloud/base_Property"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="arrowheadsysmlprofile.ecore#//DataSemantics">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute arrowheadsysmlprofile.ecore#//DataSemantics/SemanticModel"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute arrowheadsysmlprofile.ecore#//DataSemantics/Ontology"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute arrowheadsysmlprofile.ecore#//DataSemantics/Schema"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute arrowheadsysmlprofile.ecore#//DataSemantics/semanticModel"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute arrowheadsysmlprofile.ecore#//DataSemantics/ontology"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute arrowheadsysmlprofile.ecore#//DataSemantics/schema"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference arrowheadsysmlprofile.ecore#//DataSemantics/base_Class"/>
     </genClasses>
@@ -482,9 +482,9 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference arrowheadsysmlprofile.ecore#//FunctionalDesign/base_Package"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="arrowheadsysmlprofile.ecore#//ProcurementEngineering">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="arrowheadsysmlprofile.ecore#//ProcurementAndEngineering">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference arrowheadsysmlprofile.ecore#//ProcurementEngineering/base_Package"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference arrowheadsysmlprofile.ecore#//ProcurementAndEngineering/base_Package"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="arrowheadsysmlprofile.ecore#//Maintenance">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"

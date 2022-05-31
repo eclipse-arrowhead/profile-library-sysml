@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ArrowheadSysMLProfile="http://Papyrus/ArrowheadSysMLProfile" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ArrowheadSysMLProfile="http://Papyrus/ArrowheadSysMLProfile" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Studio4EducationProfile="http://Papyrus/Studio4EducationProfile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
   <uml:Model xmi:id="_L3HvEAIqEeuds-2fZm-Gkg" name="Studio4EducationAHTModel">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_L5zPoAIqEeuds-2fZm-Gkg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -253,6 +253,12 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://ARROWHEADSYSMLPROFILE_PROFILE/Arrowhead.profile.uml#_19_0_3_8c00284_1582032644615_895680_43132"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_NK68kLDHEeyLxLyRa2BQsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NK_OALDHEeyLxLyRa2BQsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://Papyrus/Studio4EducationProfile#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://S4E_PROFILE/studio4education.profile.uml#_s6xo8DC0EeygCbgFGuzi7Q"/>
+    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_S7RuUAIqEeuds-2fZm-Gkg" base_Class="_S5m6YAIqEeuds-2fZm-Gkg"/>
   <Blocks:Block xmi:id="_VxYYwAIqEeuds-2fZm-Gkg" base_Class="_VxS5MAIqEeuds-2fZm-Gkg"/>
@@ -297,11 +303,6 @@
   <ArrowheadSysMLProfile:DeployedEntity xmi:id="_z7M3cKmsEeuwTPEyfNtDEA" base_Property="_wrdQ0GrpEeurGrOVnEqn0g"/>
   <ArrowheadSysMLProfile:DeployedEntity xmi:id="_2M4mMKmsEeuwTPEyfNtDEA" base_Property="_uztvQGrtEeurGrOVnEqn0g"/>
   <ArrowheadSysMLProfile:DeployedEntity xmi:id="_o9xrIKmtEeuwTPEyfNtDEA" base_Property="_iTjIYGrvEeurGrOVnEqn0g"/>
-  <ArrowheadSysMLProfile:DeployedEntity xmi:id="_rS69kKmtEeuwTPEyfNtDEA" base_Property="_qOtRMAItEeuds-2fZm-Gkg"/>
-  <ArrowheadSysMLProfile:DeployedEntity xmi:id="_sNqHgKmtEeuwTPEyfNtDEA" base_Property="_rl0OEAItEeuds-2fZm-Gkg"/>
-  <ArrowheadSysMLProfile:DeployedEntity xmi:id="_s954sKmtEeuwTPEyfNtDEA" base_Property="_lmfv8AItEeuds-2fZm-Gkg"/>
-  <ArrowheadSysMLProfile:DeployedEntity xmi:id="_txFpIKmtEeuwTPEyfNtDEA" base_Property="_nQArcAItEeuds-2fZm-Gkg"/>
-  <ArrowheadSysMLProfile:DeployedEntity xmi:id="_unKVgKmtEeuwTPEyfNtDEA" base_Property="_t5PCMAItEeuds-2fZm-Gkg"/>
   <ArrowheadSysMLProfile:SysDD xmi:id="_UW_tAKmwEeuwTPEyfNtDEA" base_Class="_fAxpgGrCEeucGNu-eDfgYA"/>
   <ArrowheadSysMLProfile:DeployedEntity xmi:id="_c_UNsKmwEeuwTPEyfNtDEA" base_Property="_OhZzkGrvEeurGrOVnEqn0g"/>
   <ArrowheadSysMLProfile:InterfaceDesignDescription xmi:id="_RjCFUAsQEeyb450EZ2WDaA" base_Class="_jC3AcAIrEeuds-2fZm-Gkg"/>
@@ -309,4 +310,9 @@
   <ArrowheadSysMLProfile:InterfaceDesignDescription xmi:id="_Wkw50AsQEeyb450EZ2WDaA" base_Class="_kDkaEAIsEeuds-2fZm-Gkg"/>
   <ArrowheadSysMLProfile:InterfaceDesignDescription xmi:id="_YIbE8AsQEeyb450EZ2WDaA" base_Class="_Sq2ckGrsEeurGrOVnEqn0g"/>
   <ArrowheadSysMLProfile:InterfaceDesignDescription xmi:id="_Zpl8wAsQEeyb450EZ2WDaA" base_Class="_ZQMG8GruEeurGrOVnEqn0g"/>
+  <Studio4EducationProfile:Device xmi:id="_P5eNgLDHEeyLxLyRa2BQsg" label="temperature.ds18b20" level="1,2,3" base_Property="_lmfv8AItEeuds-2fZm-Gkg"/>
+  <Studio4EducationProfile:Device xmi:id="_SKyI0LDHEeyLxLyRa2BQsg" label="temperature.ds18b20" level="1,2,3" base_Property="_nQArcAItEeuds-2fZm-Gkg"/>
+  <Studio4EducationProfile:Device xmi:id="_TjXsYLDHEeyLxLyRa2BQsg" base_Property="_t5PCMAItEeuds-2fZm-Gkg"/>
+  <Studio4EducationProfile:Device xmi:id="_VdFAALDHEeyLxLyRa2BQsg" label="control" level="1,2,3" base_Property="_qOtRMAItEeuds-2fZm-Gkg"/>
+  <Studio4EducationProfile:Device xmi:id="_XvFe4LDHEeyLxLyRa2BQsg" label="boiler" level="1" base_Property="_rl0OEAItEeuds-2fZm-Gkg"/>
 </xmi:XMI>

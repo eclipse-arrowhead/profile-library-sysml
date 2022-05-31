@@ -115,7 +115,6 @@ public interface ServiceRegistryForm extends DataSemantics {
 
 	/**
 	 * Returns the value of the '<em><b>Encoding</b></em>' attribute.
-	 * The default value is <code>""</code>.
 	 * The literals are from the enumeration {@link org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.EncodingKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -127,7 +126,7 @@ public interface ServiceRegistryForm extends DataSemantics {
 	 * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.EncodingKind
 	 * @see #setEncoding(EncodingKind)
 	 * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getServiceRegistryForm_Encoding()
-	 * @model default="" required="true" ordered="false"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	EncodingKind getEncoding();

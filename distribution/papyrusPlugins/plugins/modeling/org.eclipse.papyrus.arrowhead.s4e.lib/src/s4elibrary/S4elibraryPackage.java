@@ -1,17 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2021 CEA LIST.
- *
- *  All rights reserved. This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License 2.0
- *  which accompanies this distribution, and is available at
- *  https://www.eclipse.org/legal/epl-2.0/
- *
- *  SPDX-License-Identifier: EPL-2.0
- *  
- *  Contributors:
- *    Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
- *    Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
- *******************************************************************************/
 /**
  */
 package s4elibrary;
@@ -69,347 +55,727 @@ public interface S4elibraryPackage extends EPackage {
 	S4elibraryPackage eINSTANCE = s4elibrary.impl.S4elibraryPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.HighvoltagecontrolrelayImpl <em>Highvoltagecontrolrelay</em>}' class.
+	 * The meta object id for the '{@link s4elibrary.impl.temperatureds18b20Impl <em>temperatureds18b20</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.HighvoltagecontrolrelayImpl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#getHighvoltagecontrolrelay()
+	 * @see s4elibrary.impl.temperatureds18b20Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperatureds18b20()
 	 * @generated
 	 */
-	int HIGHVOLTAGECONTROLRELAY = 0;
+	int TEMPERATUREDS18B20 = 0;
 
 	/**
-	 * The number of structural features of the '<em>Highvoltagecontrolrelay</em>' class.
+	 * The number of structural features of the '<em>temperatureds18b20</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HIGHVOLTAGECONTROLRELAY_FEATURE_COUNT = 0;
+	int TEMPERATUREDS18B20_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Highvoltagecontrolrelay</em>' class.
+	 * The number of operations of the '<em>temperatureds18b20</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HIGHVOLTAGECONTROLRELAY_OPERATION_COUNT = 0;
+	int TEMPERATUREDS18B20_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.ContinuousrotationservomotorservoImpl <em>Continuousrotationservomotorservo</em>}' class.
+	 * The meta object id for the '{@link s4elibrary.impl.temperaturedht11Impl <em>temperaturedht11</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.ContinuousrotationservomotorservoImpl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#getContinuousrotationservomotorservo()
+	 * @see s4elibrary.impl.temperaturedht11Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht11()
 	 * @generated
 	 */
-	int CONTINUOUSROTATIONSERVOMOTORSERVO = 1;
+	int TEMPERATUREDHT11 = 1;
 
 	/**
-	 * The number of structural features of the '<em>Continuousrotationservomotorservo</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONTINUOUSROTATIONSERVOMOTORSERVO_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Continuousrotationservomotorservo</em>' class.
+	 * The number of structural features of the '<em>temperaturedht11</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUOUSROTATIONSERVOMOTORSERVO_OPERATION_COUNT = 0;
+	int TEMPERATUREDHT11_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.AngularservomotorservoImpl <em>Angularservomotorservo</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.AngularservomotorservoImpl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#getAngularservomotorservo()
-	 * @generated
-	 */
-	int ANGULARSERVOMOTORSERVO = 2;
-
-	/**
-	 * The number of structural features of the '<em>Angularservomotorservo</em>' class.
+	 * The number of operations of the '<em>temperaturedht11</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANGULARSERVOMOTORSERVO_FEATURE_COUNT = 0;
+	int TEMPERATUREDHT11_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Angularservomotorservo</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.humiditydht11Impl <em>humiditydht11</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.humiditydht11Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht11()
+	 * @generated
+	 */
+	int HUMIDITYDHT11 = 2;
+
+	/**
+	 * The number of structural features of the '<em>humiditydht11</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANGULARSERVOMOTORSERVO_OPERATION_COUNT = 0;
+	int HUMIDITYDHT11_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.humiditysensorXNUCLEOIKS01A3Impl <em>humiditysensor XNUCLEOIKS01A3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.humiditysensorXNUCLEOIKS01A3Impl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditysensorXNUCLEOIKS01A3()
-	 * @generated
-	 */
-	int HUMIDITYSENSOR_XNUCLEOIKS01A3 = 3;
-
-	/**
-	 * The number of structural features of the '<em>humiditysensor XNUCLEOIKS01A3</em>' class.
+	 * The number of operations of the '<em>humiditydht11</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HUMIDITYSENSOR_XNUCLEOIKS01A3_FEATURE_COUNT = 0;
+	int HUMIDITYDHT11_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>humiditysensor XNUCLEOIKS01A3</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.temperaturedht21Impl <em>temperaturedht21</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.temperaturedht21Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht21()
+	 * @generated
+	 */
+	int TEMPERATUREDHT21 = 3;
+
+	/**
+	 * The number of structural features of the '<em>temperaturedht21</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HUMIDITYSENSOR_XNUCLEOIKS01A3_OPERATION_COUNT = 0;
+	int TEMPERATUREDHT21_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.temperaturesensorXNUCLEOIKS01A3Impl <em>temperaturesensor XNUCLEOIKS01A3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.temperaturesensorXNUCLEOIKS01A3Impl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturesensorXNUCLEOIKS01A3()
-	 * @generated
-	 */
-	int TEMPERATURESENSOR_XNUCLEOIKS01A3 = 4;
-
-	/**
-	 * The number of structural features of the '<em>temperaturesensor XNUCLEOIKS01A3</em>' class.
+	 * The number of operations of the '<em>temperaturedht21</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPERATURESENSOR_XNUCLEOIKS01A3_FEATURE_COUNT = 0;
+	int TEMPERATUREDHT21_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>temperaturesensor XNUCLEOIKS01A3</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.humiditydht21Impl <em>humiditydht21</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.humiditydht21Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht21()
+	 * @generated
+	 */
+	int HUMIDITYDHT21 = 4;
+
+	/**
+	 * The number of structural features of the '<em>humiditydht21</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPERATURESENSOR_XNUCLEOIKS01A3_OPERATION_COUNT = 0;
+	int HUMIDITYDHT21_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.magnetometersensorXNUCLEOIKS01A3Impl <em>magnetometersensor XNUCLEOIKS01A3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.magnetometersensorXNUCLEOIKS01A3Impl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#getmagnetometersensorXNUCLEOIKS01A3()
-	 * @generated
-	 */
-	int MAGNETOMETERSENSOR_XNUCLEOIKS01A3 = 5;
-
-	/**
-	 * The number of structural features of the '<em>magnetometersensor XNUCLEOIKS01A3</em>' class.
+	 * The number of operations of the '<em>humiditydht21</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAGNETOMETERSENSOR_XNUCLEOIKS01A3_FEATURE_COUNT = 0;
+	int HUMIDITYDHT21_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>magnetometersensor XNUCLEOIKS01A3</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.temperaturedht22Impl <em>temperaturedht22</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.temperaturedht22Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht22()
+	 * @generated
+	 */
+	int TEMPERATUREDHT22 = 5;
+
+	/**
+	 * The number of structural features of the '<em>temperaturedht22</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAGNETOMETERSENSOR_XNUCLEOIKS01A3_OPERATION_COUNT = 0;
+	int TEMPERATUREDHT22_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.accelerometersensorXNUCLEOIKS01A3Impl <em>accelerometersensor XNUCLEOIKS01A3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.accelerometersensorXNUCLEOIKS01A3Impl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#getaccelerometersensorXNUCLEOIKS01A3()
-	 * @generated
-	 */
-	int ACCELEROMETERSENSOR_XNUCLEOIKS01A3 = 6;
-
-	/**
-	 * The number of structural features of the '<em>accelerometersensor XNUCLEOIKS01A3</em>' class.
+	 * The number of operations of the '<em>temperaturedht22</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCELEROMETERSENSOR_XNUCLEOIKS01A3_FEATURE_COUNT = 0;
+	int TEMPERATUREDHT22_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>accelerometersensor XNUCLEOIKS01A3</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.humiditydht22Impl <em>humiditydht22</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.humiditydht22Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht22()
+	 * @generated
+	 */
+	int HUMIDITYDHT22 = 6;
+
+	/**
+	 * The number of structural features of the '<em>humiditydht22</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCELEROMETERSENSOR_XNUCLEOIKS01A3_OPERATION_COUNT = 0;
+	int HUMIDITYDHT22_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.angular_gyroscopesensorXNUCLEOIKS01A3Impl <em>angular gyroscopesensor XNUCLEOIKS01A3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.angular_gyroscopesensorXNUCLEOIKS01A3Impl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#getangular_gyroscopesensorXNUCLEOIKS01A3()
-	 * @generated
-	 */
-	int ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3 = 7;
-
-	/**
-	 * The number of structural features of the '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>' class.
+	 * The number of operations of the '<em>humiditydht22</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3_FEATURE_COUNT = 0;
+	int HUMIDITYDHT22_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.temperaturedhtImpl <em>temperaturedht</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.temperaturedhtImpl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht()
+	 * @generated
+	 */
+	int TEMPERATUREDHT = 7;
+
+	/**
+	 * The number of structural features of the '<em>temperaturedht</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3_OPERATION_COUNT = 0;
+	int TEMPERATUREDHT_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link s4elibrary.impl.temperaturesensords18b20Impl <em>temperaturesensords18b20</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see s4elibrary.impl.temperaturesensords18b20Impl
-	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturesensords18b20()
-	 * @generated
-	 */
-	int TEMPERATURESENSORDS18B20 = 8;
-
-	/**
-	 * The number of structural features of the '<em>temperaturesensords18b20</em>' class.
+	 * The number of operations of the '<em>temperaturedht</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPERATURESENSORDS18B20_FEATURE_COUNT = 0;
+	int TEMPERATUREDHT_OPERATION_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>temperaturesensords18b20</em>' class.
+	 * The meta object id for the '{@link s4elibrary.impl.humiditydhtImpl <em>humiditydht</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.humiditydhtImpl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht()
+	 * @generated
+	 */
+	int HUMIDITYDHT = 8;
+
+	/**
+	 * The number of structural features of the '<em>humiditydht</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPERATURESENSORDS18B20_OPERATION_COUNT = 0;
+	int HUMIDITYDHT_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>humiditydht</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMIDITYDHT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.staticrelayImpl <em>staticrelay</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.staticrelayImpl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getstaticrelay()
+	 * @generated
+	 */
+	int STATICRELAY = 9;
+
+	/**
+	 * The number of structural features of the '<em>staticrelay</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATICRELAY_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>staticrelay</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATICRELAY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.mosfetrelayImpl <em>mosfetrelay</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.mosfetrelayImpl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getmosfetrelay()
+	 * @generated
+	 */
+	int MOSFETRELAY = 10;
+
+	/**
+	 * The number of structural features of the '<em>mosfetrelay</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOSFETRELAY_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>mosfetrelay</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOSFETRELAY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.angularservoImpl <em>angularservo</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.angularservoImpl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getangularservo()
+	 * @generated
+	 */
+	int ANGULARSERVO = 11;
+
+	/**
+	 * The number of structural features of the '<em>angularservo</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANGULARSERVO_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>angularservo</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANGULARSERVO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.continuousservoImpl <em>continuousservo</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.continuousservoImpl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getcontinuousservo()
+	 * @generated
+	 */
+	int CONTINUOUSSERVO = 12;
+
+	/**
+	 * The number of structural features of the '<em>continuousservo</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUOUSSERVO_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>continuousservo</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUOUSSERVO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.temperaturex_nucleo_iks01a3Impl <em>temperaturex nucleo iks01a3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.temperaturex_nucleo_iks01a3Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturex_nucleo_iks01a3()
+	 * @generated
+	 */
+	int TEMPERATUREX_NUCLEO_IKS01A3 = 13;
+
+	/**
+	 * The number of structural features of the '<em>temperaturex nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPERATUREX_NUCLEO_IKS01A3_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>temperaturex nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPERATUREX_NUCLEO_IKS01A3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.humidityx_nucleo_iks01a3Impl <em>humidityx nucleo iks01a3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.humidityx_nucleo_iks01a3Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumidityx_nucleo_iks01a3()
+	 * @generated
+	 */
+	int HUMIDITYX_NUCLEO_IKS01A3 = 14;
+
+	/**
+	 * The number of structural features of the '<em>humidityx nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMIDITYX_NUCLEO_IKS01A3_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>humidityx nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMIDITYX_NUCLEO_IKS01A3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.pressurex_nucleo_iks01a3Impl <em>pressurex nucleo iks01a3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.pressurex_nucleo_iks01a3Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getpressurex_nucleo_iks01a3()
+	 * @generated
+	 */
+	int PRESSUREX_NUCLEO_IKS01A3 = 15;
+
+	/**
+	 * The number of structural features of the '<em>pressurex nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRESSUREX_NUCLEO_IKS01A3_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>pressurex nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRESSUREX_NUCLEO_IKS01A3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.accelerometerx_nucleo_iks01a3Impl <em>accelerometerx nucleo iks01a3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.accelerometerx_nucleo_iks01a3Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getaccelerometerx_nucleo_iks01a3()
+	 * @generated
+	 */
+	int ACCELEROMETERX_NUCLEO_IKS01A3 = 16;
+
+	/**
+	 * The number of structural features of the '<em>accelerometerx nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACCELEROMETERX_NUCLEO_IKS01A3_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>accelerometerx nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACCELEROMETERX_NUCLEO_IKS01A3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.gyrox_nucleo_iks01a3Impl <em>gyrox nucleo iks01a3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.gyrox_nucleo_iks01a3Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getgyrox_nucleo_iks01a3()
+	 * @generated
+	 */
+	int GYROX_NUCLEO_IKS01A3 = 17;
+
+	/**
+	 * The number of structural features of the '<em>gyrox nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GYROX_NUCLEO_IKS01A3_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>gyrox nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GYROX_NUCLEO_IKS01A3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link s4elibrary.impl.magnetx_nucleo_iks01a3Impl <em>magnetx nucleo iks01a3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see s4elibrary.impl.magnetx_nucleo_iks01a3Impl
+	 * @see s4elibrary.impl.S4elibraryPackageImpl#getmagnetx_nucleo_iks01a3()
+	 * @generated
+	 */
+	int MAGNETX_NUCLEO_IKS01A3 = 18;
+
+	/**
+	 * The number of structural features of the '<em>magnetx nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAGNETX_NUCLEO_IKS01A3_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>magnetx nucleo iks01a3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAGNETX_NUCLEO_IKS01A3_OPERATION_COUNT = 0;
 
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.Highvoltagecontrolrelay <em>Highvoltagecontrolrelay</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.temperatureds18b20 <em>temperatureds18b20</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Highvoltagecontrolrelay</em>'.
-	 * @see s4elibrary.Highvoltagecontrolrelay
+	 * @return the meta object for class '<em>temperatureds18b20</em>'.
+	 * @see s4elibrary.temperatureds18b20
 	 * @generated
 	 */
-	EClass getHighvoltagecontrolrelay();
+	EClass gettemperatureds18b20();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.Continuousrotationservomotorservo <em>Continuousrotationservomotorservo</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.temperaturedht11 <em>temperaturedht11</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Continuousrotationservomotorservo</em>'.
-	 * @see s4elibrary.Continuousrotationservomotorservo
+	 * @return the meta object for class '<em>temperaturedht11</em>'.
+	 * @see s4elibrary.temperaturedht11
 	 * @generated
 	 */
-	EClass getContinuousrotationservomotorservo();
+	EClass gettemperaturedht11();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.Angularservomotorservo <em>Angularservomotorservo</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.humiditydht11 <em>humiditydht11</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Angularservomotorservo</em>'.
-	 * @see s4elibrary.Angularservomotorservo
+	 * @return the meta object for class '<em>humiditydht11</em>'.
+	 * @see s4elibrary.humiditydht11
 	 * @generated
 	 */
-	EClass getAngularservomotorservo();
+	EClass gethumiditydht11();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.humiditysensorXNUCLEOIKS01A3 <em>humiditysensor XNUCLEOIKS01A3</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.temperaturedht21 <em>temperaturedht21</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>humiditysensor XNUCLEOIKS01A3</em>'.
-	 * @see s4elibrary.humiditysensorXNUCLEOIKS01A3
+	 * @return the meta object for class '<em>temperaturedht21</em>'.
+	 * @see s4elibrary.temperaturedht21
 	 * @generated
 	 */
-	EClass gethumiditysensorXNUCLEOIKS01A3();
+	EClass gettemperaturedht21();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.temperaturesensorXNUCLEOIKS01A3 <em>temperaturesensor XNUCLEOIKS01A3</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.humiditydht21 <em>humiditydht21</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>temperaturesensor XNUCLEOIKS01A3</em>'.
-	 * @see s4elibrary.temperaturesensorXNUCLEOIKS01A3
+	 * @return the meta object for class '<em>humiditydht21</em>'.
+	 * @see s4elibrary.humiditydht21
 	 * @generated
 	 */
-	EClass gettemperaturesensorXNUCLEOIKS01A3();
+	EClass gethumiditydht21();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.magnetometersensorXNUCLEOIKS01A3 <em>magnetometersensor XNUCLEOIKS01A3</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.temperaturedht22 <em>temperaturedht22</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>magnetometersensor XNUCLEOIKS01A3</em>'.
-	 * @see s4elibrary.magnetometersensorXNUCLEOIKS01A3
+	 * @return the meta object for class '<em>temperaturedht22</em>'.
+	 * @see s4elibrary.temperaturedht22
 	 * @generated
 	 */
-	EClass getmagnetometersensorXNUCLEOIKS01A3();
+	EClass gettemperaturedht22();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.accelerometersensorXNUCLEOIKS01A3 <em>accelerometersensor XNUCLEOIKS01A3</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.humiditydht22 <em>humiditydht22</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>accelerometersensor XNUCLEOIKS01A3</em>'.
-	 * @see s4elibrary.accelerometersensorXNUCLEOIKS01A3
+	 * @return the meta object for class '<em>humiditydht22</em>'.
+	 * @see s4elibrary.humiditydht22
 	 * @generated
 	 */
-	EClass getaccelerometersensorXNUCLEOIKS01A3();
+	EClass gethumiditydht22();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.angular_gyroscopesensorXNUCLEOIKS01A3 <em>angular gyroscopesensor XNUCLEOIKS01A3</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.temperaturedht <em>temperaturedht</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>'.
-	 * @see s4elibrary.angular_gyroscopesensorXNUCLEOIKS01A3
+	 * @return the meta object for class '<em>temperaturedht</em>'.
+	 * @see s4elibrary.temperaturedht
 	 * @generated
 	 */
-	EClass getangular_gyroscopesensorXNUCLEOIKS01A3();
+	EClass gettemperaturedht();
 
 	/**
-	 * Returns the meta object for class '{@link s4elibrary.temperaturesensords18b20 <em>temperaturesensords18b20</em>}'.
+	 * Returns the meta object for class '{@link s4elibrary.humiditydht <em>humiditydht</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>temperaturesensords18b20</em>'.
-	 * @see s4elibrary.temperaturesensords18b20
+	 * @return the meta object for class '<em>humiditydht</em>'.
+	 * @see s4elibrary.humiditydht
 	 * @generated
 	 */
-	EClass gettemperaturesensords18b20();
+	EClass gethumiditydht();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.staticrelay <em>staticrelay</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>staticrelay</em>'.
+	 * @see s4elibrary.staticrelay
+	 * @generated
+	 */
+	EClass getstaticrelay();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.mosfetrelay <em>mosfetrelay</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>mosfetrelay</em>'.
+	 * @see s4elibrary.mosfetrelay
+	 * @generated
+	 */
+	EClass getmosfetrelay();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.angularservo <em>angularservo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>angularservo</em>'.
+	 * @see s4elibrary.angularservo
+	 * @generated
+	 */
+	EClass getangularservo();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.continuousservo <em>continuousservo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>continuousservo</em>'.
+	 * @see s4elibrary.continuousservo
+	 * @generated
+	 */
+	EClass getcontinuousservo();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.temperaturex_nucleo_iks01a3 <em>temperaturex nucleo iks01a3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>temperaturex nucleo iks01a3</em>'.
+	 * @see s4elibrary.temperaturex_nucleo_iks01a3
+	 * @generated
+	 */
+	EClass gettemperaturex_nucleo_iks01a3();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.humidityx_nucleo_iks01a3 <em>humidityx nucleo iks01a3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>humidityx nucleo iks01a3</em>'.
+	 * @see s4elibrary.humidityx_nucleo_iks01a3
+	 * @generated
+	 */
+	EClass gethumidityx_nucleo_iks01a3();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.pressurex_nucleo_iks01a3 <em>pressurex nucleo iks01a3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>pressurex nucleo iks01a3</em>'.
+	 * @see s4elibrary.pressurex_nucleo_iks01a3
+	 * @generated
+	 */
+	EClass getpressurex_nucleo_iks01a3();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.accelerometerx_nucleo_iks01a3 <em>accelerometerx nucleo iks01a3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>accelerometerx nucleo iks01a3</em>'.
+	 * @see s4elibrary.accelerometerx_nucleo_iks01a3
+	 * @generated
+	 */
+	EClass getaccelerometerx_nucleo_iks01a3();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.gyrox_nucleo_iks01a3 <em>gyrox nucleo iks01a3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>gyrox nucleo iks01a3</em>'.
+	 * @see s4elibrary.gyrox_nucleo_iks01a3
+	 * @generated
+	 */
+	EClass getgyrox_nucleo_iks01a3();
+
+	/**
+	 * Returns the meta object for class '{@link s4elibrary.magnetx_nucleo_iks01a3 <em>magnetx nucleo iks01a3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>magnetx nucleo iks01a3</em>'.
+	 * @see s4elibrary.magnetx_nucleo_iks01a3
+	 * @generated
+	 */
+	EClass getmagnetx_nucleo_iks01a3();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -435,94 +801,194 @@ public interface S4elibraryPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.HighvoltagecontrolrelayImpl <em>Highvoltagecontrolrelay</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.temperatureds18b20Impl <em>temperatureds18b20</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.HighvoltagecontrolrelayImpl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#getHighvoltagecontrolrelay()
+		 * @see s4elibrary.impl.temperatureds18b20Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperatureds18b20()
 		 * @generated
 		 */
-		EClass HIGHVOLTAGECONTROLRELAY = eINSTANCE.getHighvoltagecontrolrelay();
+		EClass TEMPERATUREDS18B20 = eINSTANCE.gettemperatureds18b20();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.ContinuousrotationservomotorservoImpl <em>Continuousrotationservomotorservo</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.temperaturedht11Impl <em>temperaturedht11</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.ContinuousrotationservomotorservoImpl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#getContinuousrotationservomotorservo()
+		 * @see s4elibrary.impl.temperaturedht11Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht11()
 		 * @generated
 		 */
-		EClass CONTINUOUSROTATIONSERVOMOTORSERVO = eINSTANCE.getContinuousrotationservomotorservo();
+		EClass TEMPERATUREDHT11 = eINSTANCE.gettemperaturedht11();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.AngularservomotorservoImpl <em>Angularservomotorservo</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.humiditydht11Impl <em>humiditydht11</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.AngularservomotorservoImpl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#getAngularservomotorservo()
+		 * @see s4elibrary.impl.humiditydht11Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht11()
 		 * @generated
 		 */
-		EClass ANGULARSERVOMOTORSERVO = eINSTANCE.getAngularservomotorservo();
+		EClass HUMIDITYDHT11 = eINSTANCE.gethumiditydht11();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.humiditysensorXNUCLEOIKS01A3Impl <em>humiditysensor XNUCLEOIKS01A3</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.temperaturedht21Impl <em>temperaturedht21</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.humiditysensorXNUCLEOIKS01A3Impl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditysensorXNUCLEOIKS01A3()
+		 * @see s4elibrary.impl.temperaturedht21Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht21()
 		 * @generated
 		 */
-		EClass HUMIDITYSENSOR_XNUCLEOIKS01A3 = eINSTANCE.gethumiditysensorXNUCLEOIKS01A3();
+		EClass TEMPERATUREDHT21 = eINSTANCE.gettemperaturedht21();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.temperaturesensorXNUCLEOIKS01A3Impl <em>temperaturesensor XNUCLEOIKS01A3</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.humiditydht21Impl <em>humiditydht21</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.temperaturesensorXNUCLEOIKS01A3Impl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturesensorXNUCLEOIKS01A3()
+		 * @see s4elibrary.impl.humiditydht21Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht21()
 		 * @generated
 		 */
-		EClass TEMPERATURESENSOR_XNUCLEOIKS01A3 = eINSTANCE.gettemperaturesensorXNUCLEOIKS01A3();
+		EClass HUMIDITYDHT21 = eINSTANCE.gethumiditydht21();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.magnetometersensorXNUCLEOIKS01A3Impl <em>magnetometersensor XNUCLEOIKS01A3</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.temperaturedht22Impl <em>temperaturedht22</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.magnetometersensorXNUCLEOIKS01A3Impl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#getmagnetometersensorXNUCLEOIKS01A3()
+		 * @see s4elibrary.impl.temperaturedht22Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht22()
 		 * @generated
 		 */
-		EClass MAGNETOMETERSENSOR_XNUCLEOIKS01A3 = eINSTANCE.getmagnetometersensorXNUCLEOIKS01A3();
+		EClass TEMPERATUREDHT22 = eINSTANCE.gettemperaturedht22();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.accelerometersensorXNUCLEOIKS01A3Impl <em>accelerometersensor XNUCLEOIKS01A3</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.humiditydht22Impl <em>humiditydht22</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.accelerometersensorXNUCLEOIKS01A3Impl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#getaccelerometersensorXNUCLEOIKS01A3()
+		 * @see s4elibrary.impl.humiditydht22Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht22()
 		 * @generated
 		 */
-		EClass ACCELEROMETERSENSOR_XNUCLEOIKS01A3 = eINSTANCE.getaccelerometersensorXNUCLEOIKS01A3();
+		EClass HUMIDITYDHT22 = eINSTANCE.gethumiditydht22();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.angular_gyroscopesensorXNUCLEOIKS01A3Impl <em>angular gyroscopesensor XNUCLEOIKS01A3</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.temperaturedhtImpl <em>temperaturedht</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.angular_gyroscopesensorXNUCLEOIKS01A3Impl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#getangular_gyroscopesensorXNUCLEOIKS01A3()
+		 * @see s4elibrary.impl.temperaturedhtImpl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturedht()
 		 * @generated
 		 */
-		EClass ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3 = eINSTANCE.getangular_gyroscopesensorXNUCLEOIKS01A3();
+		EClass TEMPERATUREDHT = eINSTANCE.gettemperaturedht();
 
 		/**
-		 * The meta object literal for the '{@link s4elibrary.impl.temperaturesensords18b20Impl <em>temperaturesensords18b20</em>}' class.
+		 * The meta object literal for the '{@link s4elibrary.impl.humiditydhtImpl <em>humiditydht</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see s4elibrary.impl.temperaturesensords18b20Impl
-		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturesensords18b20()
+		 * @see s4elibrary.impl.humiditydhtImpl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumiditydht()
 		 * @generated
 		 */
-		EClass TEMPERATURESENSORDS18B20 = eINSTANCE.gettemperaturesensords18b20();
+		EClass HUMIDITYDHT = eINSTANCE.gethumiditydht();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.staticrelayImpl <em>staticrelay</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.staticrelayImpl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getstaticrelay()
+		 * @generated
+		 */
+		EClass STATICRELAY = eINSTANCE.getstaticrelay();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.mosfetrelayImpl <em>mosfetrelay</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.mosfetrelayImpl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getmosfetrelay()
+		 * @generated
+		 */
+		EClass MOSFETRELAY = eINSTANCE.getmosfetrelay();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.angularservoImpl <em>angularservo</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.angularservoImpl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getangularservo()
+		 * @generated
+		 */
+		EClass ANGULARSERVO = eINSTANCE.getangularservo();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.continuousservoImpl <em>continuousservo</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.continuousservoImpl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getcontinuousservo()
+		 * @generated
+		 */
+		EClass CONTINUOUSSERVO = eINSTANCE.getcontinuousservo();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.temperaturex_nucleo_iks01a3Impl <em>temperaturex nucleo iks01a3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.temperaturex_nucleo_iks01a3Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gettemperaturex_nucleo_iks01a3()
+		 * @generated
+		 */
+		EClass TEMPERATUREX_NUCLEO_IKS01A3 = eINSTANCE.gettemperaturex_nucleo_iks01a3();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.humidityx_nucleo_iks01a3Impl <em>humidityx nucleo iks01a3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.humidityx_nucleo_iks01a3Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#gethumidityx_nucleo_iks01a3()
+		 * @generated
+		 */
+		EClass HUMIDITYX_NUCLEO_IKS01A3 = eINSTANCE.gethumidityx_nucleo_iks01a3();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.pressurex_nucleo_iks01a3Impl <em>pressurex nucleo iks01a3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.pressurex_nucleo_iks01a3Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getpressurex_nucleo_iks01a3()
+		 * @generated
+		 */
+		EClass PRESSUREX_NUCLEO_IKS01A3 = eINSTANCE.getpressurex_nucleo_iks01a3();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.accelerometerx_nucleo_iks01a3Impl <em>accelerometerx nucleo iks01a3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.accelerometerx_nucleo_iks01a3Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getaccelerometerx_nucleo_iks01a3()
+		 * @generated
+		 */
+		EClass ACCELEROMETERX_NUCLEO_IKS01A3 = eINSTANCE.getaccelerometerx_nucleo_iks01a3();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.gyrox_nucleo_iks01a3Impl <em>gyrox nucleo iks01a3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.gyrox_nucleo_iks01a3Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getgyrox_nucleo_iks01a3()
+		 * @generated
+		 */
+		EClass GYROX_NUCLEO_IKS01A3 = eINSTANCE.getgyrox_nucleo_iks01a3();
+
+		/**
+		 * The meta object literal for the '{@link s4elibrary.impl.magnetx_nucleo_iks01a3Impl <em>magnetx nucleo iks01a3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see s4elibrary.impl.magnetx_nucleo_iks01a3Impl
+		 * @see s4elibrary.impl.S4elibraryPackageImpl#getmagnetx_nucleo_iks01a3()
+		 * @generated
+		 */
+		EClass MAGNETX_NUCLEO_IKS01A3 = eINSTANCE.getmagnetx_nucleo_iks01a3();
 
 	}
 

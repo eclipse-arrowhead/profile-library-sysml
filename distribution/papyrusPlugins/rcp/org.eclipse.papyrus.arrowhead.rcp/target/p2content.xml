@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202110061052' generation='2'>
-    <update id='org.eclipse.papyrus.arrowhead.rcp' range='[0.0.0,0.0.1.202110061052)' severity='0'/>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202205231242' generation='2'>
+    <update id='org.eclipse.papyrus.arrowhead.rcp' range='[0.0.0,0.0.1.202205231242)' severity='0'/>
     <properties size='8'>
       <property name='df_LT.pluginName' value='Arrowhead RCP'/>
       <property name='df_LT.providerName' value='CEA LIST'/>
@@ -13,9 +13,9 @@
       <property name='maven-version' value='0.0.1-SNAPSHOT'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202110061052'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202110061052'/>
-      <provided namespace='osgi.identity' name='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202110061052'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202205231242'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202205231242'/>
+      <provided namespace='osgi.identity' name='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202205231242'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -32,7 +32,7 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202110061052'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.rcp' version='0.0.1.202205231242'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
@@ -41,7 +41,7 @@
           true
         </instruction>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.rcp;singleton:=true&#xA;Bundle-Version: 0.0.1.202110061052&#xA;
+          Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.rcp;singleton:=true&#xA;Bundle-Version: 0.0.1.202205231242&#xA;
         </instruction>
       </instructions>
     </touchpointData>

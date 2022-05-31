@@ -18,7 +18,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  * </ul>
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getDeviceDesignDesciption()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Device-DesignDesciption'"
+ * @model
  * @generated
  */
 public interface DeviceDesignDesciption extends Block {

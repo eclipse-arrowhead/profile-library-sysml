@@ -5,7 +5,7 @@ Bundle-Description: %pluginDescription
 Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.profile;singleton:=tr
  ue
 Automatic-Module-Name: org.eclipse.papyrus.arrowhead.profile
-Bundle-Version: 1.0.0.202110061052
+Bundle-Version: 1.0.0.202205231242
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin

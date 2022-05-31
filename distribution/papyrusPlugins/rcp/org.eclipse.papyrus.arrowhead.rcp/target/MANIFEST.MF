@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Require-Bundle: org.eclipse.e4.ui.css.swt.theme
 Bundle-Vendor: %providerName
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 0.0.1.202110061052
+Bundle-Version: 0.0.1.202205231242
 Eclipse-BundleShape: dir
 Bundle-Name: %pluginName
 Bundle-Localization: plugin

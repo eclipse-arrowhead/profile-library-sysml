@@ -101,6 +101,7 @@ public class JsonUploadHandler extends AbstractHandlerWithState {
 			// execute the jar
 			System.out.println("the service is not available");
 			Runnable runnable = () ->{
+				System.out.println("executing the jar file");
 				executeJar();
 			};
 			Thread t = new Thread(runnable);
@@ -116,7 +117,7 @@ public class JsonUploadHandler extends AbstractHandlerWithState {
 			int compteur = 0;
 			// Post json File
 			// Waiting for the server to start 
-			while (!serviceAvailable()||compteur >120){
+			while (!serviceAvailable() && compteur <20){
 				compteur++;
 				try {
 					Thread.sleep(1000);
@@ -138,7 +139,6 @@ public class JsonUploadHandler extends AbstractHandlerWithState {
 	}
 
 	private void executeJar() {
-		// TODO Auto-generated method stub
 		List<String> cmdList = new ArrayList<String>();
 		cmdList.add("java");
 		cmdList.add("-jar");
@@ -173,7 +173,10 @@ public class JsonUploadHandler extends AbstractHandlerWithState {
 					}
 				}
 
+				
 				String[] cmd = cmdList.toArray(new String[0]);
+				System.out.println("jar file executed cmd:"+ cmd);
+				
 				ProcessBuilder processBuilder = new ProcessBuilder();
 				processBuilder.command(cmd);
 

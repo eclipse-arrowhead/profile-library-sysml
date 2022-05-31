@@ -20,9 +20,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-Design"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="networkdesign" ordered="false"
         lowerBound="1" eType="#//NetworkDesign">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -33,11 +30,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-Design"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   <eClassifiers xsi:type="ecore:EClass" name="SysDD" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="Deployed at Device"/>
@@ -62,9 +55,6 @@
     <eLiterals name="ManagementService" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceDesignDesciption" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-DesignDesciption"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="CertificateLevel" ordered="false"
         lowerBound="1" eType="#//CertificateKind"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="networkDesignDescription"
@@ -74,11 +64,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesignDescriptiion" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-DesignDescriptiion"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkDesignDescriptiion" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   <eClassifiers xsi:type="ecore:EClass" name="InterfaceDesignDescription" eSuperTypes="#//ServiceDescription">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Encoding" ordered="false"
         lowerBound="1" eType="#//EncodingKind" defaultValueLiteral="JSON"/>
@@ -236,11 +222,11 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The DataSemantics stereotype shall be used for IDD parameters: its purpose is to declare the data model (i.e., a language, an ontology, a schema or similar) used for structuring parameter values."/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SemanticModel" ordered="false"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="semanticModel" ordered="false"
         upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Ontology" ordered="false"
-        upperBound="-1" eType="#//OntologyKind" defaultValueLiteral="SenML"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Schema" ordered="false"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ontology" ordered="false"
+        upperBound="-1" eType="#//OntologyKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schema" ordered="false"
         upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
@@ -290,7 +276,7 @@
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
         defaultValueLiteral="_systemname._devicename._protocol._transport._domain"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="encoding" ordered="false"
-        lowerBound="1" eType="#//EncodingKind" defaultValueLiteral=""/>
+        lowerBound="1" eType="#//EncodingKind"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="endOfValidity" ordered="false"
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
         defaultValueLiteral="TTL=3600s"/>
@@ -466,9 +452,6 @@
     <eLiterals name="JSON_Schema" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsDesign" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-Design"/>
-    </eAnnotations>
     <eOperations name="getLCD" ordered="false" lowerBound="1">
       <eParameters name="LCD" ordered="false" lowerBound="1" eType="#//LocalCloudDesign"/>
     </eOperations>
@@ -481,9 +464,6 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsDesignDescription"
       eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-DesignDescription"/>
-    </eAnnotations>
     <eOperations name="getLCDD" ordered="false" lowerBound="1">
       <eParameters name="LCDD" ordered="false" lowerBound="1" eType="#//LocalCLoudDesignDescription"/>
     </eOperations>
@@ -512,15 +492,8 @@
     <eLiterals name="TDMA" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="EngineeringProcedureKind"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationSysDDHTTP" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="ApplicationSysDD-HTTP"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationSysDDHTTP" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsDeployed" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-Deployed"/>
-    </eAnnotations>
     <eOperations name="getLocalCloudDeployed" ordered="false" lowerBound="1">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="getLocalCloud-Deployed"/>
@@ -539,15 +512,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LocalCloudDeployed" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="LocalCloud-Deployed"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocalCloudDeployed" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceDeployed" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-Deployed"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="localclouddeployed" ordered="false"
         lowerBound="1" eType="#//LocalCloudDeployed">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -567,16 +533,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NetworkDeployed" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-Deployed"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SDDD" eSuperTypes="#//ServiceDescription">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="SD-DD"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkDeployed" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SDDD" eSuperTypes="#//ServiceDescription"/>
   <eClassifiers xsi:type="ecore:EClass" name="MQTT_topic">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
@@ -596,9 +554,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemRequirements">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-Requirements"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Package">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -607,9 +562,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NetworkRequirements">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-Requirements"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Package">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -618,9 +570,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LocaCloudRequirements">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="LocaCloud-Requirements"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Package">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -629,20 +578,14 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsRequirements">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-Requirements"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Package">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
-        <details key="body" value="extension_System-of-LocalClouds-Requirements"/>
+        <details key="body" value="extension_SystemofLocalCloudsRequirements"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceRequirements">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-Requirements"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Package">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -651,9 +594,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsMaintenance">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-Maintenance"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -671,9 +611,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsEvolution">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-Evolution"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -691,9 +628,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LocalCloudMaintenance">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="LocalCloud-Maintenance"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -720,9 +654,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LocalCloudEvolution">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="LocalCloud-Evolution"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -749,9 +680,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SysMaintenance">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Sys-Maintenance"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -787,9 +715,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SysImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Sys-Implementation"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="localcloudimplementation"
         ordered="false" lowerBound="1" eType="#//LocalCLoudImplementation">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -810,9 +735,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LocalCLoudImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="LocalCLoud-Implementation"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="systemoflocalcloudsimplementation"
         ordered="false" upperBound="-1" eType="#//SystemofLocalCloudsImplementation">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -823,15 +745,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="System-of-LocalClouds-Implementation"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemofLocalCloudsImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-Implementation"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="networkimplementation"
         ordered="false" lowerBound="1" upperBound="-1" eType="#//NetworkImplementation">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -842,15 +757,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NetworkImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-Implementation"/>
-    </eAnnotations>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkImplementation" eSuperTypes="../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceMaintenance">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-Maintenance"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -877,9 +785,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NetworkMaintenance">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-Maintenance"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -897,9 +802,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SysEvolution">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Sys-Evolution"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -935,9 +837,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeviceEvolution">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Device-Evolution"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -964,9 +863,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NetworkEvolution">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Network-Evolution"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -1007,10 +903,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcurementEngineering">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Procurement&amp;Engineering"/>
-    </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcurementAndEngineering">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Package">
       <eAnnotations source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
@@ -1035,9 +928,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SysDeployed">
-    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details key="originalName" value="Sys-Deployed"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
   </eClassifiers>

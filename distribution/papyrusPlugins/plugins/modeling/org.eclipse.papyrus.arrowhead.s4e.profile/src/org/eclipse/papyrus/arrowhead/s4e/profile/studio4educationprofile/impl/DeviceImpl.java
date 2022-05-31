@@ -5,6 +5,7 @@ package org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.impl;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
@@ -13,6 +14,8 @@ import org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.DeviceK
 import org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.Studio4EducationProfilePackage;
 
 import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
+
+import org.eclipse.uml2.uml.Property;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,6 +28,7 @@ import org.eclipse.papyrus.sysml16.blocks.internal.impl.BlockImpl;
  *   <li>{@link org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.impl.DeviceImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.impl.DeviceImpl#getKind <em>Kind</em>}</li>
  *   <li>{@link org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.impl.DeviceImpl#getLevel <em>Level</em>}</li>
+ *   <li>{@link org.eclipse.papyrus.arrowhead.s4e.profile.studio4educationprofile.impl.DeviceImpl#getBase_Property <em>Base Property</em>}</li>
  * </ul>
  *
  * @generated
@@ -89,6 +93,16 @@ public class DeviceImpl extends BlockImpl implements Device {
 	 * @ordered
 	 */
 	protected String level = LEVEL_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBase_Property() <em>Base Property</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBase_Property()
+	 * @generated
+	 * @ordered
+	 */
+	protected Property base_Property;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,6 +191,44 @@ public class DeviceImpl extends BlockImpl implements Device {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Property getBase_Property() {
+		if (base_Property != null && base_Property.eIsProxy()) {
+			InternalEObject oldBase_Property = (InternalEObject)base_Property;
+			base_Property = (Property)eResolveProxy(oldBase_Property);
+			if (base_Property != oldBase_Property) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Studio4EducationProfilePackage.DEVICE__BASE_PROPERTY, oldBase_Property, base_Property));
+			}
+		}
+		return base_Property;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Property basicGetBase_Property() {
+		return base_Property;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBase_Property(Property newBase_Property) {
+		Property oldBase_Property = base_Property;
+		base_Property = newBase_Property;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Studio4EducationProfilePackage.DEVICE__BASE_PROPERTY, oldBase_Property, base_Property));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -186,6 +238,9 @@ public class DeviceImpl extends BlockImpl implements Device {
 				return getKind();
 			case Studio4EducationProfilePackage.DEVICE__LEVEL:
 				return getLevel();
+			case Studio4EducationProfilePackage.DEVICE__BASE_PROPERTY:
+				if (resolve) return getBase_Property();
+				return basicGetBase_Property();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -206,6 +261,9 @@ public class DeviceImpl extends BlockImpl implements Device {
 				return;
 			case Studio4EducationProfilePackage.DEVICE__LEVEL:
 				setLevel((String)newValue);
+				return;
+			case Studio4EducationProfilePackage.DEVICE__BASE_PROPERTY:
+				setBase_Property((Property)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -228,6 +286,9 @@ public class DeviceImpl extends BlockImpl implements Device {
 			case Studio4EducationProfilePackage.DEVICE__LEVEL:
 				setLevel(LEVEL_EDEFAULT);
 				return;
+			case Studio4EducationProfilePackage.DEVICE__BASE_PROPERTY:
+				setBase_Property((Property)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -246,6 +307,8 @@ public class DeviceImpl extends BlockImpl implements Device {
 				return kind != KIND_EDEFAULT;
 			case Studio4EducationProfilePackage.DEVICE__LEVEL:
 				return LEVEL_EDEFAULT == null ? level != null : !LEVEL_EDEFAULT.equals(level);
+			case Studio4EducationProfilePackage.DEVICE__BASE_PROPERTY:
+				return base_Property != null;
 		}
 		return super.eIsSet(featureID);
 	}

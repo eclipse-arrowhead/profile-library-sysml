@@ -90,6 +90,33 @@ consuming Services&#xD;
     <packageImport xmi:type="uml:PackageImport" xmi:id="_Ls5rgGx3EeuVfbakpr9VtQ">
       <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
     </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-f9cDi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-f9cTi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-gkgDi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-gkgTi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-hLkDi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-hLkTi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-hLkji9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-hyoDi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_L-hyoTi9EeySgpts8VAaVw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_3_8c00284_1582032644643_908437_43180" name="SysD" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_HNr-cKgxEeuBwMG-7DvhPg">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
@@ -282,17 +309,16 @@ consuming Services&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_19_0_3_3ed01a0_1586250915072_938067_42208" annotatedElement="_19_0_3_8c00284_1585226323414_714645_42467">
         <body>The DataSemantics stereotype shall be used for IDD parameters: its purpose is to declare the data model (i.e., a language, an ontology, a schema or similar) used for structuring parameter values.</body>
       </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1585226440203_178193_42498" name="SemanticModel" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1585226440203_178193_42498" name="semanticModel" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_3_219804d8_1586605029517_884615_42123" name="" visibility="public"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_3_219804d8_1586605029519_101668_42124" name="" visibility="public" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1585226637109_941660_42500" name="Ontology" visibility="public" type="_19_0_3_8c00284_1597246189216_650492_42122">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1585226637109_941660_42500" name="ontology" visibility="public" type="_19_0_3_8c00284_1597246189216_650492_42122">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_3_219804d8_1586605038952_511414_42125" name="" visibility="public"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_3_219804d8_1586605038953_614789_42126" name="" visibility="public" value="*"/>
-        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_19_0_3_8c00284_1597246392308_814787_42150" name="" visibility="public" instance="_19_0_3_8c00284_1597246239603_228269_42144"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1585226656958_321500_42502" name="Schema" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1585226656958_321500_42502" name="schema" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_3_219804d8_1586605047704_385084_42127" name="" visibility="public"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_3_219804d8_1586605047704_459154_42128" name="" visibility="public" value="*"/>
@@ -359,9 +385,7 @@ Local cloud identifiers: _gatekeeperâˆ’systemâˆ’name._InterCloudNegotiat
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_8c00284_1589282056875_274646_42393" name="" visibility="public" value="_systemname._devicename._protocol._transport._domain"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1589282056874_996009_42385" name="encoding" visibility="public" type="_19_0_3_8c00284_1589280804137_896650_42272">
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_8c00284_1589282056877_174214_42398" name="" visibility="public" value=""/>
-      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1589282056874_996009_42385" name="encoding" visibility="public" type="_19_0_3_8c00284_1589280804137_896650_42272"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_8c00284_1589282056874_665449_42383" name="endOfValidity" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_19_0_3_8c00284_1589282056875_825110_42396" name="" visibility="public" value="TTL=3600s"/>
@@ -609,7 +633,7 @@ Impossible to process the entity</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_19_0_3_8c00284_1597246464301_393092_42174" name="XML_Schema" visibility="public"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_19_0_3_8c00284_1597246481728_319417_42176" name="JSON_Schema" visibility="public"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_3_8c00284_1603713043866_321979_42221" name="System-of-LocalClouds-Design" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_3_8c00284_1603713043866_321979_42221" name="SystemofLocalCloudsDesign" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_s26j8Ki9EeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -626,7 +650,7 @@ Impossible to process the entity</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_3_8c00284_1603900204489_120424_42314" name="" visibility="public"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_3_8c00284_1603978200190_737542_42116" name="System-of-LocalClouds-DesignDescription" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_3_8c00284_1603978200190_737542_42116" name="SystemofLocalCloudsDesignDescription" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_19_0_3_8c00284_1603978224218_959349_42144">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -673,25 +697,25 @@ Impossible to process the entity</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_25dc056a_1606819041218_482570_42154" name="SysDD1" visibility="public" memberEnd="_19_0_4_25dc056a_1606819041218_895680_42155 _19_0_4_25dc056a_1606819041218_114491_42156">
       <ownedEnd xmi:type="uml:Property" xmi:id="_19_0_4_25dc056a_1606819041218_114491_42156" name="LCDD" visibility="public" type="_19_0_3_8c00284_1585144848536_22952_42139" association="_19_0_4_25dc056a_1606819041218_482570_42154"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607626485471_647020_42117" name="ApplicationSysDD-HTTP" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607626485471_647020_42117" name="ApplicationSysDDHTTP" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_19_0_4_25dc056a_1607627653625_195040_42149">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607973072830_539446_42121" name="Device-Design" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607973072830_539446_42121" name="DeviceDesign" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_SzODULGWEeuE9ttRnMYijA">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_P8sC4KnGEeubII4EkyzQTg" name="network-design" type="_19_0_4_25dc056a_1607976417043_685874_42397" association="_P8qNsKnGEeubII4EkyzQTg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607975883655_393594_42153" name="Device-DesignDesciption" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607975883655_393594_42153" name="DeviceDesignDesciption" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_19_0_4_25dc056a_1607975937935_614509_42186">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_xEqJUKnGEeubII4EkyzQTg" name="CertificateLevel" type="_19_0_3_8c00284_1589448745025_712978_42118"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_46Je4KnGEeubII4EkyzQTg" name="network-DesignDescription" type="_19_0_4_25dc056a_1607976455705_775070_42429"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607975962527_133068_42188" name="System-of-LocalClouds-Deployed" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607975962527_133068_42188" name="SystemofLocalCloudsDeployed" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_mURAMKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -706,7 +730,7 @@ Impossible to process the entity</body>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976063697_122976_42235" name="LocalCloud-Deployed" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976063697_122976_42235" name="LocalCloudDeployed" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_eRBigKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -716,7 +740,7 @@ Impossible to process the entity</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DrXVUIjDEeurALUJC3NjyQ"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976303237_592630_42358" name="Device-Deployed" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976303237_592630_42358" name="DeviceDeployed" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_Vu6-kKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -725,22 +749,22 @@ Impossible to process the entity</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eLmOwApUEeyx0uPONcsDJA" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976417043_685874_42397" name="Network-Design" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976417043_685874_42397" name="NetworkDesign" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_nOIWgKi9EeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976455705_775070_42429" name="Network-DesignDescriptiion" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976455705_775070_42429" name="NetworkDesignDescriptiion" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_19_0_4_25dc056a_1607976530858_516647_42497">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976496273_540648_42461" name="Network-Deployed" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1607976496273_540648_42461" name="NetworkDeployed" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_TrYZgKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1611308097686_295867_42117" name="SD-DD" visibility="public">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1611308097686_295867_42117" name="SDDD" visibility="public">
       <generalization xmi:type="uml:Generalization" xmi:id="_19_0_4_25dc056a_1611495982809_340355_42133" general="_19_0_3_8c00284_1583259219783_223482_50600"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_19_0_4_25dc056a_1611510048955_544929_42139" name="MQTT_topic" visibility="public">
@@ -776,51 +800,51 @@ Impossible to process the entity</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xh2v4SKYEeysLvOKOqCNlg"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_-1rxsKgwEeuBwMG-7DvhPg" name="System-Requirements">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_-1rxsKgwEeuBwMG-7DvhPg" name="SystemRequirements">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_sERGQLGVEeuE9ttRnMYijA" name="base_Package" association="_sEQfMLGVEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sERGQbGVEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_nR6I4KgxEeuBwMG-7DvhPg" name="Network-Requirements">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_nR6I4KgxEeuBwMG-7DvhPg" name="NetworkRequirements">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_v_YQ8LGVEeuE9ttRnMYijA" name="base_Package" association="_v_Xp4LGVEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_YQ8bGVEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ke7awKi8EeuzZJWQpQaidw" name="LocaCloud-Requirements">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ke7awKi8EeuzZJWQpQaidw" name="LocaCloudRequirements">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ppgUALGVEeuE9ttRnMYijA" name="base_Package" association="_ppfs8LGVEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ppgUAbGVEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_UftIgKi9EeuzZJWQpQaidw" name="System-of-LocalClouds-Requirements">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_UftIgKi9EeuzZJWQpQaidw" name="SystemofLocalCloudsRequirements">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_jTz9QLGVEeuE9ttRnMYijA" name="base_Package" association="_jTzWMLGVEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jTz9QbGVEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_hUis8Ki9EeuzZJWQpQaidw" name="Device-Requirements">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_hUis8Ki9EeuzZJWQpQaidw" name="DeviceRequirements">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_t6V3EbGVEeuE9ttRnMYijA" name="base_Package" association="_t6VQALGVEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t6V3ErGVEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_UqTkEKi_EeuzZJWQpQaidw" name="System-of-LocalClouds-Maintenance">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_UqTkEKi_EeuzZJWQpQaidw" name="SystemofLocalCloudsMaintenance">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_TeLY8LGjEeuE9ttRnMYijA" name="base_Class" association="_TeKx4LGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeLY8bGjEeuE9ttRnMYijA"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_vQlDYgr8Eeyx0uPONcsDJA" name="system-of-localclouds-deployed" type="_19_0_4_25dc056a_1607975962527_133068_42188" association="_vQkcUAr8Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Wu21wKi_EeuzZJWQpQaidw" name="System-of-LocalClouds-Evolution">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Wu21wKi_EeuzZJWQpQaidw" name="SystemofLocalCloudsEvolution">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_dWGgUbGjEeuE9ttRnMYijA" name="base_Class" association="_dWF5QLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dWGgUrGjEeuE9ttRnMYijA"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_B3Z0kQr9Eeyx0uPONcsDJA" name="system-of-localclouds-deployed" type="_19_0_4_25dc056a_1607975962527_133068_42188" association="_B3ZNgAr9Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_czHeQKi_EeuzZJWQpQaidw" name="LocalCloud-Maintenance">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_czHeQKi_EeuzZJWQpQaidw" name="LocalCloudMaintenance">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_VJgSUbGjEeuE9ttRnMYijA" name="base_Class" association="_VJfrQLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VJgSUrGjEeuE9ttRnMYijA"/>
@@ -830,7 +854,7 @@ Impossible to process the entity</body>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8G78sQr6Eeyx0uPONcsDJA" name="localcloud-deployed" type="_19_0_4_25dc056a_1607976063697_122976_42235" association="_8G7VoAr6Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ec_mIKi_EeuzZJWQpQaidw" name="LocalCloud-Evolution">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ec_mIKi_EeuzZJWQpQaidw" name="LocalCloudEvolution">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_faFKQbGjEeuE9ttRnMYijA" name="base_Class" association="_faEjMLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_faFKQrGjEeuE9ttRnMYijA"/>
@@ -840,7 +864,7 @@ Impossible to process the entity</body>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_aLzeggr7Eeyx0uPONcsDJA" name="localcloud-deployed" type="_19_0_4_25dc056a_1607976063697_122976_42235" association="_aLy3cAr7Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_yraAMKi_EeuzZJWQpQaidw" name="Sys-Maintenance">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_yraAMKi_EeuzZJWQpQaidw" name="SysMaintenance">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_XSGWgbGjEeuE9ttRnMYijA" name="base_Class" association="_XSFvcLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XSGWgrGjEeuE9ttRnMYijA"/>
@@ -849,7 +873,7 @@ Impossible to process the entity</body>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_bB78oAr4Eeyx0uPONcsDJA" name="localcloud-maintenance" type="_czHeQKi_EeuzZJWQpQaidw" association="_bB7VkAr4Eeyx0uPONcsDJA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_YbLVwgr4Eeyx0uPONcsDJA" name="device-maintenance" type="_0TNrgKi_EeuzZJWQpQaidw" association="_YbKusAr4Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_zeS1sKi_EeuzZJWQpQaidw" name="Sys-Evolution">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_zeS1sKi_EeuzZJWQpQaidw" name="SysEvolution">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_hULfcbGjEeuE9ttRnMYijA" name="base_Class" association="_hUK4YLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hULfcrGjEeuE9ttRnMYijA"/>
@@ -858,7 +882,7 @@ Impossible to process the entity</body>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_QgeeIgr6Eeyx0uPONcsDJA" name="sys-implementation" type="_baByIKjEEeuzZJWQpQaidw" association="_QgdQAAr6Eeyx0uPONcsDJA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_XYUfswr6Eeyx0uPONcsDJA" name="device-evolution" type="_1D_BIKi_EeuzZJWQpQaidw" association="_XYUfsAr6Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_0TNrgKi_EeuzZJWQpQaidw" name="Device-Maintenance">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_0TNrgKi_EeuzZJWQpQaidw" name="DeviceMaintenance">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ZREkobGjEeuE9ttRnMYijA" name="base_Class" association="_ZRD9kLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZREkorGjEeuE9ttRnMYijA"/>
@@ -868,7 +892,7 @@ Impossible to process the entity</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qKjzgAr2Eeyx0uPONcsDJA" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_1D_BIKi_EeuzZJWQpQaidw" name="Device-Evolution">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_1D_BIKi_EeuzZJWQpQaidw" name="DeviceEvolution">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_jRaoMLGjEeuE9ttRnMYijA" name="base_Class" association="_jRaBILGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jRaoMbGjEeuE9ttRnMYijA"/>
@@ -878,14 +902,14 @@ Impossible to process the entity</body>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_dJWxkgr3Eeyx0uPONcsDJA" name="device-deployed" type="_19_0_4_25dc056a_1607976303237_592630_42358" association="_dJWKgAr3Eeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9bEA0Ki_EeuzZJWQpQaidw" name="Network-Maintenance">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9bEA0Ki_EeuzZJWQpQaidw" name="NetworkMaintenance">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_bbyvwrGjEeuE9ttRnMYijA" name="base_Class" association="_bbyvwLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bbzW0LGjEeuE9ttRnMYijA"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_7Edr8QpeEeyx0uPONcsDJA" name="network-deployed" type="_19_0_4_25dc056a_1607976496273_540648_42461" association="_7EdE4ApeEeyx0uPONcsDJA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_-PuX8Ki_EeuzZJWQpQaidw" name="Network-Evolution">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_-PuX8Ki_EeuzZJWQpQaidw" name="NetworkEvolution">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_lR55QrGjEeuE9ttRnMYijA" name="base_Class" association="_lR55QLGjEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lR55Q7GjEeuE9ttRnMYijA"/>
@@ -910,7 +934,7 @@ Impossible to process the entity</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eCglQrGhEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_SDU98KjDEeuzZJWQpQaidw" name="Procurement&amp;Engineering">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_SDU98KjDEeuzZJWQpQaidw" name="ProcurementAndEngineering">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_YyxxALGhEeuE9ttRnMYijA" name="base_Package" association="_YyxJ8LGhEeuE9ttRnMYijA">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YyxxAbGhEeuE9ttRnMYijA"/>
@@ -922,12 +946,12 @@ Impossible to process the entity</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iLGLQ7GhEeuE9ttRnMYijA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZRFIoKjEEeuzZJWQpQaidw" name="System-of-LocalClouds-Implementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZRFIoKjEEeuzZJWQpQaidw" name="SystemofLocalCloudsImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_kBaMwKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aZHHsKjEEeuzZJWQpQaidw" name="LocalCLoud-Implementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aZHHsKjEEeuzZJWQpQaidw" name="LocalCLoudImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_h1qt8KjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -936,14 +960,14 @@ Impossible to process the entity</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z6LgEApYEeyx0uPONcsDJA" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_baByIKjEEeuzZJWQpQaidw" name="Sys-Implementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_baByIKjEEeuzZJWQpQaidw" name="SysImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_gDCSsKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ilsesgpYEeyx0uPONcsDJA" name="localcloud-implementation" type="_aZHHsKjEEeuzZJWQpQaidw" association="_ilr3oApYEeyx0uPONcsDJA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_l3X98qjIEeuzZJWQpQaidw" name="device-implementation" type="_cSgSQKjEEeuzZJWQpQaidw" association="_l3XW4KjIEeuzZJWQpQaidw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_cSgSQKjEEeuzZJWQpQaidw" name="Device-Implementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_cSgSQKjEEeuzZJWQpQaidw" name="DeviceImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_Xj48IKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -951,7 +975,7 @@ Impossible to process the entity</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4SZw0ApaEeyx0uPONcsDJA" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_dPOZMKjEEeuzZJWQpQaidw" name="Network-Implementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_dPOZMKjEEeuzZJWQpQaidw" name="NetworkImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_SA4mkKjGEeuzZJWQpQaidw">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
@@ -977,7 +1001,7 @@ Impossible to process the entity</body>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_P8sp8KnGEeubII4EkyzQTg" name="device-design" type="_19_0_4_25dc056a_1607973072830_539446_42121" association="_P8qNsKnGEeubII4EkyzQTg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_lKXFEKnHEeubII4EkyzQTg" name="Sys-Deployed">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_lKXFEKnHEeubII4EkyzQTg" name="SysDeployed">
       <ownedAttribute xmi:type="uml:Property" xmi:id="__bugEKnHEeubII4EkyzQTg" name="base_Class" visibility="private">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
       </ownedAttribute>
@@ -991,8 +1015,8 @@ Impossible to process the entity</body>
     <packagedElement xmi:type="uml:Extension" xmi:id="_lr-A4LFoEeuE9ttRnMYijA" name="E_ChoreographyDefinition_Collaboration135" memberEnd="_lr_2ELFoEeuE9ttRnMYijA _lsAdILFoEeuE9ttRnMYijA">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_lr_2ELFoEeuE9ttRnMYijA" name="extension_ChoreographyDefinition" type="_WXo7MLFoEeuE9ttRnMYijA" aggregation="composite" association="_lr-A4LFoEeuE9ttRnMYijA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_jTzWMLGVEeuE9ttRnMYijA" name="E_System-of-LocalClouds-Requirements_Package136" memberEnd="_jTzWMbGVEeuE9ttRnMYijA _jTz9QLGVEeuE9ttRnMYijA">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_jTzWMbGVEeuE9ttRnMYijA" name="extension_System-of-LocalClouds-Requirements" type="_UftIgKi9EeuzZJWQpQaidw" aggregation="composite" association="_jTzWMLGVEeuE9ttRnMYijA"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_jTzWMLGVEeuE9ttRnMYijA" name="E_SystemofLocalCloudsRequirements_Package1" memberEnd="_jTzWMbGVEeuE9ttRnMYijA _jTz9QLGVEeuE9ttRnMYijA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_jTzWMbGVEeuE9ttRnMYijA" name="extension_SystemofLocalCloudsRequirements" type="_UftIgKi9EeuzZJWQpQaidw" aggregation="composite" association="_jTzWMLGVEeuE9ttRnMYijA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_ppfs8LGVEeuE9ttRnMYijA" name="E_LocaCloud-Requirements_Package137" memberEnd="_ppfs8bGVEeuE9ttRnMYijA _ppgUALGVEeuE9ttRnMYijA">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ppfs8bGVEeuE9ttRnMYijA" name="extension_LocaCloud-Requirements" type="_ke7awKi8EeuzZJWQpQaidw" aggregation="composite" association="_ppfs8LGVEeuE9ttRnMYijA"/>
@@ -1262,6 +1286,12 @@ Impossible to process the entity</body>
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q3uT0DiJEeyHfKnw9eCxtA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q31okDiJEeyHfKnw9eCxtA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/dsmlvalidation#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DSMLValidation_PROFILES/PapyrusValidationRuleDSML.uml#__sUW0OhNEeCjcc2EgK3Uwg"/>
     </profileApplication>
   </uml:Profile>
   <Ecore:EPackage xmi:id="_NHoZ8KdYEeuu979pqAhP2w" base_Package="_19_0_3_8c00284_1582032644615_895680_43132" packageName="arrowheadsysmlprofile" nsPrefix="ArrowheadSysMLProfile" nsURI="http://Papyrus/ArrowheadSysMLProfile" basePackage="org.eclipse.papyrus.arrowhead.profile" prefix="ArrowheadSysMLProfile"/>

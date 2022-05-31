@@ -1,17 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2021 CEA LIST.
- *
- *  All rights reserved. This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License 2.0
- *  which accompanies this distribution, and is available at
- *  https://www.eclipse.org/legal/epl-2.0/
- *
- *  SPDX-License-Identifier: EPL-2.0
- *  
- *  Contributors:
- *    Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
- *    Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
- *******************************************************************************/
 /**
  */
 package s4elibrary.impl;
@@ -21,17 +7,27 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import s4elibrary.Angularservomotorservo;
-import s4elibrary.Continuousrotationservomotorservo;
-import s4elibrary.Highvoltagecontrolrelay;
 import s4elibrary.S4elibraryFactory;
 import s4elibrary.S4elibraryPackage;
-import s4elibrary.accelerometersensorXNUCLEOIKS01A3;
-import s4elibrary.angular_gyroscopesensorXNUCLEOIKS01A3;
-import s4elibrary.humiditysensorXNUCLEOIKS01A3;
-import s4elibrary.magnetometersensorXNUCLEOIKS01A3;
-import s4elibrary.temperaturesensorXNUCLEOIKS01A3;
-import s4elibrary.temperaturesensords18b20;
+import s4elibrary.accelerometerx_nucleo_iks01a3;
+import s4elibrary.angularservo;
+import s4elibrary.continuousservo;
+import s4elibrary.gyrox_nucleo_iks01a3;
+import s4elibrary.humiditydht;
+import s4elibrary.humiditydht11;
+import s4elibrary.humiditydht21;
+import s4elibrary.humiditydht22;
+import s4elibrary.humidityx_nucleo_iks01a3;
+import s4elibrary.magnetx_nucleo_iks01a3;
+import s4elibrary.mosfetrelay;
+import s4elibrary.pressurex_nucleo_iks01a3;
+import s4elibrary.staticrelay;
+import s4elibrary.temperaturedht;
+import s4elibrary.temperaturedht11;
+import s4elibrary.temperaturedht21;
+import s4elibrary.temperaturedht22;
+import s4elibrary.temperatureds18b20;
+import s4elibrary.temperaturex_nucleo_iks01a3;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,63 +41,133 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass highvoltagecontrolrelayEClass = null;
+	private EClass temperatureds18b20EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass continuousrotationservomotorservoEClass = null;
+	private EClass temperaturedht11EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass angularservomotorservoEClass = null;
+	private EClass humiditydht11EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass humiditysensorXNUCLEOIKS01A3EClass = null;
+	private EClass temperaturedht21EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass temperaturesensorXNUCLEOIKS01A3EClass = null;
+	private EClass humiditydht21EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass magnetometersensorXNUCLEOIKS01A3EClass = null;
+	private EClass temperaturedht22EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass accelerometersensorXNUCLEOIKS01A3EClass = null;
+	private EClass humiditydht22EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass angular_gyroscopesensorXNUCLEOIKS01A3EClass = null;
+	private EClass temperaturedhtEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass temperaturesensords18b20EClass = null;
+	private EClass humiditydhtEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass staticrelayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mosfetrelayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass angularservoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass continuousservoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass temperaturex_nucleo_iks01a3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass humidityx_nucleo_iks01a3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pressurex_nucleo_iks01a3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass accelerometerx_nucleo_iks01a3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass gyrox_nucleo_iks01a3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass magnetx_nucleo_iks01a3EClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -169,8 +235,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getHighvoltagecontrolrelay() {
-		return highvoltagecontrolrelayEClass;
+	public EClass gettemperatureds18b20() {
+		return temperatureds18b20EClass;
 	}
 
 	/**
@@ -178,8 +244,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getContinuousrotationservomotorservo() {
-		return continuousrotationservomotorservoEClass;
+	public EClass gettemperaturedht11() {
+		return temperaturedht11EClass;
 	}
 
 	/**
@@ -187,8 +253,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAngularservomotorservo() {
-		return angularservomotorservoEClass;
+	public EClass gethumiditydht11() {
+		return humiditydht11EClass;
 	}
 
 	/**
@@ -196,8 +262,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass gethumiditysensorXNUCLEOIKS01A3() {
-		return humiditysensorXNUCLEOIKS01A3EClass;
+	public EClass gettemperaturedht21() {
+		return temperaturedht21EClass;
 	}
 
 	/**
@@ -205,8 +271,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass gettemperaturesensorXNUCLEOIKS01A3() {
-		return temperaturesensorXNUCLEOIKS01A3EClass;
+	public EClass gethumiditydht21() {
+		return humiditydht21EClass;
 	}
 
 	/**
@@ -214,8 +280,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getmagnetometersensorXNUCLEOIKS01A3() {
-		return magnetometersensorXNUCLEOIKS01A3EClass;
+	public EClass gettemperaturedht22() {
+		return temperaturedht22EClass;
 	}
 
 	/**
@@ -223,8 +289,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getaccelerometersensorXNUCLEOIKS01A3() {
-		return accelerometersensorXNUCLEOIKS01A3EClass;
+	public EClass gethumiditydht22() {
+		return humiditydht22EClass;
 	}
 
 	/**
@@ -232,8 +298,8 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getangular_gyroscopesensorXNUCLEOIKS01A3() {
-		return angular_gyroscopesensorXNUCLEOIKS01A3EClass;
+	public EClass gettemperaturedht() {
+		return temperaturedhtEClass;
 	}
 
 	/**
@@ -241,8 +307,98 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass gettemperaturesensords18b20() {
-		return temperaturesensords18b20EClass;
+	public EClass gethumiditydht() {
+		return humiditydhtEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getstaticrelay() {
+		return staticrelayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getmosfetrelay() {
+		return mosfetrelayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getangularservo() {
+		return angularservoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getcontinuousservo() {
+		return continuousservoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass gettemperaturex_nucleo_iks01a3() {
+		return temperaturex_nucleo_iks01a3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass gethumidityx_nucleo_iks01a3() {
+		return humidityx_nucleo_iks01a3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getpressurex_nucleo_iks01a3() {
+		return pressurex_nucleo_iks01a3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getaccelerometerx_nucleo_iks01a3() {
+		return accelerometerx_nucleo_iks01a3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getgyrox_nucleo_iks01a3() {
+		return gyrox_nucleo_iks01a3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getmagnetx_nucleo_iks01a3() {
+		return magnetx_nucleo_iks01a3EClass;
 	}
 
 	/**
@@ -273,23 +429,43 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 		isCreated = true;
 
 		// Create classes and their features
-		highvoltagecontrolrelayEClass = createEClass(HIGHVOLTAGECONTROLRELAY);
+		temperatureds18b20EClass = createEClass(TEMPERATUREDS18B20);
 
-		continuousrotationservomotorservoEClass = createEClass(CONTINUOUSROTATIONSERVOMOTORSERVO);
+		temperaturedht11EClass = createEClass(TEMPERATUREDHT11);
 
-		angularservomotorservoEClass = createEClass(ANGULARSERVOMOTORSERVO);
+		humiditydht11EClass = createEClass(HUMIDITYDHT11);
 
-		humiditysensorXNUCLEOIKS01A3EClass = createEClass(HUMIDITYSENSOR_XNUCLEOIKS01A3);
+		temperaturedht21EClass = createEClass(TEMPERATUREDHT21);
 
-		temperaturesensorXNUCLEOIKS01A3EClass = createEClass(TEMPERATURESENSOR_XNUCLEOIKS01A3);
+		humiditydht21EClass = createEClass(HUMIDITYDHT21);
 
-		magnetometersensorXNUCLEOIKS01A3EClass = createEClass(MAGNETOMETERSENSOR_XNUCLEOIKS01A3);
+		temperaturedht22EClass = createEClass(TEMPERATUREDHT22);
 
-		accelerometersensorXNUCLEOIKS01A3EClass = createEClass(ACCELEROMETERSENSOR_XNUCLEOIKS01A3);
+		humiditydht22EClass = createEClass(HUMIDITYDHT22);
 
-		angular_gyroscopesensorXNUCLEOIKS01A3EClass = createEClass(ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3);
+		temperaturedhtEClass = createEClass(TEMPERATUREDHT);
 
-		temperaturesensords18b20EClass = createEClass(TEMPERATURESENSORDS18B20);
+		humiditydhtEClass = createEClass(HUMIDITYDHT);
+
+		staticrelayEClass = createEClass(STATICRELAY);
+
+		mosfetrelayEClass = createEClass(MOSFETRELAY);
+
+		angularservoEClass = createEClass(ANGULARSERVO);
+
+		continuousservoEClass = createEClass(CONTINUOUSSERVO);
+
+		temperaturex_nucleo_iks01a3EClass = createEClass(TEMPERATUREX_NUCLEO_IKS01A3);
+
+		humidityx_nucleo_iks01a3EClass = createEClass(HUMIDITYX_NUCLEO_IKS01A3);
+
+		pressurex_nucleo_iks01a3EClass = createEClass(PRESSUREX_NUCLEO_IKS01A3);
+
+		accelerometerx_nucleo_iks01a3EClass = createEClass(ACCELEROMETERX_NUCLEO_IKS01A3);
+
+		gyrox_nucleo_iks01a3EClass = createEClass(GYROX_NUCLEO_IKS01A3);
+
+		magnetx_nucleo_iks01a3EClass = createEClass(MAGNETX_NUCLEO_IKS01A3);
 	}
 
 	/**
@@ -322,23 +498,43 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 		// Add supertypes to classes
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(highvoltagecontrolrelayEClass, Highvoltagecontrolrelay.class, "Highvoltagecontrolrelay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(temperatureds18b20EClass, temperatureds18b20.class, "temperatureds18b20", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(continuousrotationservomotorservoEClass, Continuousrotationservomotorservo.class, "Continuousrotationservomotorservo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(temperaturedht11EClass, temperaturedht11.class, "temperaturedht11", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(angularservomotorservoEClass, Angularservomotorservo.class, "Angularservomotorservo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(humiditydht11EClass, humiditydht11.class, "humiditydht11", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(humiditysensorXNUCLEOIKS01A3EClass, humiditysensorXNUCLEOIKS01A3.class, "humiditysensorXNUCLEOIKS01A3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(temperaturedht21EClass, temperaturedht21.class, "temperaturedht21", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(temperaturesensorXNUCLEOIKS01A3EClass, temperaturesensorXNUCLEOIKS01A3.class, "temperaturesensorXNUCLEOIKS01A3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(humiditydht21EClass, humiditydht21.class, "humiditydht21", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(magnetometersensorXNUCLEOIKS01A3EClass, magnetometersensorXNUCLEOIKS01A3.class, "magnetometersensorXNUCLEOIKS01A3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(temperaturedht22EClass, temperaturedht22.class, "temperaturedht22", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(accelerometersensorXNUCLEOIKS01A3EClass, accelerometersensorXNUCLEOIKS01A3.class, "accelerometersensorXNUCLEOIKS01A3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(humiditydht22EClass, humiditydht22.class, "humiditydht22", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(angular_gyroscopesensorXNUCLEOIKS01A3EClass, angular_gyroscopesensorXNUCLEOIKS01A3.class, "angular_gyroscopesensorXNUCLEOIKS01A3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(temperaturedhtEClass, temperaturedht.class, "temperaturedht", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(temperaturesensords18b20EClass, temperaturesensords18b20.class, "temperaturesensords18b20", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(humiditydhtEClass, humiditydht.class, "humiditydht", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(staticrelayEClass, staticrelay.class, "staticrelay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mosfetrelayEClass, mosfetrelay.class, "mosfetrelay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(angularservoEClass, angularservo.class, "angularservo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(continuousservoEClass, continuousservo.class, "continuousservo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(temperaturex_nucleo_iks01a3EClass, temperaturex_nucleo_iks01a3.class, "temperaturex_nucleo_iks01a3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(humidityx_nucleo_iks01a3EClass, humidityx_nucleo_iks01a3.class, "humidityx_nucleo_iks01a3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(pressurex_nucleo_iks01a3EClass, pressurex_nucleo_iks01a3.class, "pressurex_nucleo_iks01a3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(accelerometerx_nucleo_iks01a3EClass, accelerometerx_nucleo_iks01a3.class, "accelerometerx_nucleo_iks01a3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(gyrox_nucleo_iks01a3EClass, gyrox_nucleo_iks01a3.class, "gyrox_nucleo_iks01a3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(magnetx_nucleo_iks01a3EClass, magnetx_nucleo_iks01a3.class, "magnetx_nucleo_iks01a3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -357,58 +553,118 @@ public class S4elibraryPackageImpl extends EPackageImpl implements S4elibraryPac
 	protected void createUMLAnnotations() {
 		String source = "http://www.eclipse.org/uml2/2.0.0/UML";
 		addAnnotation
-		  (highvoltagecontrolrelayEClass,
+		  (temperatureds18b20EClass,
 		   source,
 		   new String[] {
-			   "originalName", "High voltage control.relay"
+			   "originalName", "temperature.ds18b20"
 		   });
 		addAnnotation
-		  (continuousrotationservomotorservoEClass,
+		  (temperaturedht11EClass,
 		   source,
 		   new String[] {
-			   "originalName", "Continuous rotation servomotor.servo"
+			   "originalName", "temperature.dht11"
 		   });
 		addAnnotation
-		  (angularservomotorservoEClass,
+		  (humiditydht11EClass,
 		   source,
 		   new String[] {
-			   "originalName", "Angular servomotor.servo"
+			   "originalName", "humidity.dht11"
 		   });
 		addAnnotation
-		  (humiditysensorXNUCLEOIKS01A3EClass,
+		  (temperaturedht21EClass,
 		   source,
 		   new String[] {
-			   "originalName", "humidity sensor.X-NUCLEO-IKS01A3"
+			   "originalName", "temperature.dht21"
 		   });
 		addAnnotation
-		  (temperaturesensorXNUCLEOIKS01A3EClass,
+		  (humiditydht21EClass,
 		   source,
 		   new String[] {
-			   "originalName", "temperature sensor.X-NUCLEO-IKS01A3"
+			   "originalName", "humidity.dht21"
 		   });
 		addAnnotation
-		  (magnetometersensorXNUCLEOIKS01A3EClass,
+		  (temperaturedht22EClass,
 		   source,
 		   new String[] {
-			   "originalName", "magnetometer sensor.X-NUCLEO-IKS01A3"
+			   "originalName", "temperature.dht22"
 		   });
 		addAnnotation
-		  (accelerometersensorXNUCLEOIKS01A3EClass,
+		  (humiditydht22EClass,
 		   source,
 		   new String[] {
-			   "originalName", "accelerometer sensor.X-NUCLEO-IKS01A3"
+			   "originalName", "humidity.dht22"
 		   });
 		addAnnotation
-		  (angular_gyroscopesensorXNUCLEOIKS01A3EClass,
+		  (temperaturedhtEClass,
 		   source,
 		   new String[] {
-			   "originalName", "angular_gyroscope sensor.X-NUCLEO-IKS01A3"
+			   "originalName", "temperature.dht"
 		   });
 		addAnnotation
-		  (temperaturesensords18b20EClass,
+		  (humiditydhtEClass,
 		   source,
 		   new String[] {
-			   "originalName", "temperature sensor.ds18b20"
+			   "originalName", "humidity.dht"
+		   });
+		addAnnotation
+		  (staticrelayEClass,
+		   source,
+		   new String[] {
+			   "originalName", "static.relay"
+		   });
+		addAnnotation
+		  (mosfetrelayEClass,
+		   source,
+		   new String[] {
+			   "originalName", "mosfet.relay"
+		   });
+		addAnnotation
+		  (angularservoEClass,
+		   source,
+		   new String[] {
+			   "originalName", "angular.servo"
+		   });
+		addAnnotation
+		  (continuousservoEClass,
+		   source,
+		   new String[] {
+			   "originalName", "continuous.servo"
+		   });
+		addAnnotation
+		  (temperaturex_nucleo_iks01a3EClass,
+		   source,
+		   new String[] {
+			   "originalName", "temperature.x_nucleo_iks01a3"
+		   });
+		addAnnotation
+		  (humidityx_nucleo_iks01a3EClass,
+		   source,
+		   new String[] {
+			   "originalName", "humidity.x_nucleo_iks01a3"
+		   });
+		addAnnotation
+		  (pressurex_nucleo_iks01a3EClass,
+		   source,
+		   new String[] {
+			   "originalName", "pressure.x_nucleo_iks01a3"
+		   });
+		addAnnotation
+		  (accelerometerx_nucleo_iks01a3EClass,
+		   source,
+		   new String[] {
+			   "originalName", "accelerometer.x_nucleo_iks01a3"
+		   });
+		addAnnotation
+		  (gyrox_nucleo_iks01a3EClass,
+		   source,
+		   new String[] {
+			   "originalName", "gyro.x_nucleo_iks01a3"
+		   });
+		addAnnotation
+		  (magnetx_nucleo_iks01a3EClass,
+		   source,
+		   new String[] {
+			   "originalName", "magnet.x_nucleo_iks01a3"
 		   });
 	}
 

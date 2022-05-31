@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getSysEvolution()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Sys-Evolution'"
+ * @model
  * @generated
  */
 public interface SysEvolution extends EObject {

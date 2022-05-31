@@ -415,148 +415,50 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.configuration' version='0.0.1.202110061052'>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.application' version='0.0.1.202205231242'>
     <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.configuration' version='0.0.1.202110061052'/>
-    </provides>
-    <requires size='18'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.gtk.linux.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.core.runtime' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.common' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.update.configurator' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.apache.felix.scr' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.win32.win32.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.common' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.apache.felix.scr' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.win32.win32.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.event' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.gtk.linux.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.update.configurator' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.core.runtime' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.event' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-    </requires>
-    <touchpoint id='null' version='0.0.0'/>
-  </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.application' version='0.0.1.202110061052'>
-    <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.application' version='0.0.1.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.application' version='0.0.1.202205231242'/>
     </provides>
     <requires size='9'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64.Arrowhead' range='[0.0.1.202110061052,0.0.1.202110061052]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.gtk.linux.x86_64' range='[1.2.400.v20211117-0650,1.2.400.v20211117-0650]'>
         <filter>
           (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
         </filter>
       </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64.Arrowhead' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher' range='[1.6.300.v20210813-1054,1.6.300.v20210813-1054]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher' range='[1.6.400.v20210924-0641,1.6.400.v20210924-0641]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
         <filter>
           (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
         </filter>
       </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64.Arrowhead' range='[0.0.1.202205231242,0.0.1.202205231242]'>
         <filter>
           (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
         </filter>
       </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64.Arrowhead' range='[0.0.1.202205231242,0.0.1.202205231242]'>
         <filter>
           (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
         </filter>
       </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.gtk.linux.x86_64' range='[1.2.300.v20210828-0802,1.2.300.v20210828-0802]'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.2.300.v20210828-0802,1.2.300.v20210828-0802]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
         <filter>
           (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.2.400.v20211117-0650,1.2.400.v20211117-0650]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
         </filter>
       </required>
     </requires>
@@ -590,6 +492,104 @@
         </instruction>
       </instructions>
     </touchpointData>
+  </unit>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.configuration' version='0.0.1.202205231242'>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.configuration' version='0.0.1.202205231242'/>
+    </provides>
+    <requires size='18'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.event' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.gtk.linux.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.apache.felix.scr' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.common' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.common' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.win32.win32.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.update.configurator' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.core.runtime' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.update.configurator' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.win32.win32.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.event' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.apache.felix.scr' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.core.runtime' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.gtk.linux.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+        </filter>
+      </required>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
   </unit>
   <unit id='tooling.source.default' version='1.0.0' singleton='false'>
     <hostRequirements size='1'>
@@ -924,81 +924,24 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.gtk.linux.x86_64' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.event' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.100.v20211021-1418'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.gtk.linux.x86_64' version='0.0.1.202110061052'/>
-      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.ini' version='0.0.1.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.event' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
     </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.100.v20211021-1418'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
     <filter>
       (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='2'>
-        <instruction key='configure'>
-          addJvmArg(jvmArg:-Xms128m);addJvmArg(jvmArg:-Xmx900m);addJvmArg(jvmArg:-Dosgi.bundlefile.limit=200);addProgramArg(programArg:-showsplash);addProgramArg(programArg:org.eclipse.papyrus.rcp);addProgramArg(programArg:--launcher.XXMaxPermSize);addProgramArg(programArg:256m);addProgramArg(programArg:--launcher.defaultAction);addProgramArg(programArg:openFile);
-        </instruction>
-        <instruction key='unconfigure'>
-          removeJvmArg(jvmArg:-Xms128m);removeJvmArg(jvmArg:-Xmx900m);removeJvmArg(jvmArg:-Dosgi.bundlefile.limit=200);removeProgramArg(programArg:-showsplash);removeProgramArg(programArg:org.eclipse.papyrus.rcp);removeProgramArg(programArg:--launcher.XXMaxPermSize);removeProgramArg(programArg:256m);removeProgramArg(programArg:--launcher.defaultAction);removeProgramArg(programArg:openFile);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingwin32.win32.x86_64org.eclipse.core.runtime' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.23.0.v20210730-2035'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.core.runtime' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.23.0.v20210730-2035'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.common' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.15.0.v20210518-0604'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.common' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.15.0.v20210518-0604'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1018,328 +961,64 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.product' version='0.0.1.202110061052'>
-    <update id='org.eclipse.papyrus.arrowhead.rcp.product' range='0.0.0' severity='0'/>
-    <properties size='3'>
-      <property name='org.eclipse.equinox.p2.name' value='Arrowhead'/>
-      <property name='org.eclipse.equinox.p2.type.product' value='true'/>
-      <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-    </properties>
-    <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product' version='0.0.1.202110061052'/>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202205231242'>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202205231242'/>
+      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.executable' version='0.0.1.202205231242'/>
     </provides>
-    <requires size='9'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.configuration' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.platform.feature.group' range='[4.21.0.v20210906-0842,4.21.0.v20210906-0842]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.application' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' range='[1.0.0,1.0.0]'>
+    <requires size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.gtk.linux.x86_64' range='0.0.0'>
         <filter>
-          (org.eclipse.update.install.features=true)
-        </filter>
-      </required>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' range='[1.0.0.202110061052,1.0.0.202110061052]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.p2.user.ui.feature.group' range='[2.4.1300.v20210830-0925,2.4.1300.v20210830-0925]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='tooling.source.default' range='[1.0.0,1.0.0]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='tooling.osgi.bundle.default' range='[1.0.0,1.0.0]'/>
-      <required namespace='osgi.ee' name='JavaSE' range='0.0.0'/>
-    </requires>
-    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='1'>
-        <instruction key='configure'>
-          org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipsec.exe);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipse.exe);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/Resources/Eclipse.icns);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/Resources);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/Info.plist);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/MacOS);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipse);
-        </instruction>
-      </instructions>
-    </touchpointData>
-    <licenses size='1'>
-      <license uri='http://eclipse.org/legal/epl/notice.php' url='http://eclipse.org/legal/epl/notice.php'>
-        &#xA;   Eclipse Foundation Software User Agreement&#xA;November 30, 2017&#xA;&#xA;Usage Of Content&#xA;&#xA;THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION AND/OR&#xA;OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;).&#xA;USE OF THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS&#xA;AGREEMENT AND/OR THE TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR&#xA;NOTICES INDICATED OR REFERENCED BELOW.  BY USING THE CONTENT, YOU&#xA;AGREE THAT YOUR USE OF THE CONTENT IS GOVERNED BY THIS AGREEMENT&#xA;AND/OR THE TERMS AND CONDITIONS OF ANY APPLICABLE LICENSE AGREEMENTS&#xA;OR NOTICES INDICATED OR REFERENCED BELOW.  IF YOU DO NOT AGREE TO THE&#xA;TERMS AND CONDITIONS OF THIS AGREEMENT AND THE TERMS AND CONDITIONS&#xA;OF ANY APPLICABLE LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED&#xA;BELOW, THEN YOU MAY NOT USE THE CONTENT.&#xA;&#xA;Applicable Licenses&#xA;&#xA;Unless otherwise indicated, all Content made available by the&#xA;Eclipse Foundation is provided to you under the terms and conditions of&#xA;the Eclipse Public License Version 2.0 (&quot;EPL&quot;). A copy of the EPL is&#xA;provided with this Content and is also available at https://www.eclipse.org/legal/epl-2.0/.&#xA;For purposes of the EPL, &quot;Program&quot; will mean the Content.&#xA;&#xA;Content includes, but is not limited to, source code, object code,&#xA;documentation and other files maintained in the Eclipse Foundation source code&#xA;repository (&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available&#xA;as downloadable archives (&quot;Downloads&quot;).&#xA;&#xA;      - Content may be structured and packaged into modules to facilitate delivering,&#xA;         extending, and upgrading the Content. Typical modules may include plug-ins (&quot;Plug-ins&quot;),&#xA;         plug-in fragments (&quot;Fragments&quot;), and features (&quot;Features&quot;).&#xA;       - Each Plug-in or Fragment may be packaged as a sub-directory or JAR (Java(TM) ARchive)&#xA;         in a directory named &quot;plugins&quot;.&#xA;       - A Feature is a bundle of one or more Plug-ins and/or Fragments and associated material.&#xA;         Each Feature may be packaged as a sub-directory in a directory named &quot;features&quot;.&#xA;         Within a Feature, files named &quot;feature.xml&quot; may contain a list of the names and version&#xA;         numbers of the Plug-ins and/or Fragments associated with that Feature.&#xA;       - Features may also include other Features (&quot;Included Features&quot;). Within a Feature, files&#xA;         named &quot;feature.xml&quot; may contain a list of the names and version numbers of Included Features.&#xA;&#xA;The terms and conditions governing Plug-ins and Fragments should be&#xA;contained in files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and&#xA;conditions governing Features and Included Features should be contained&#xA;in files named &quot;license.html&quot; (&quot;Feature Licenses&quot;). Abouts and Feature&#xA;Licenses may be located in any directory of a Download or Module&#xA;including, but not limited to the following locations:&#xA;&#xA;       - The top-level (root) directory&#xA;       - Plug-in and Fragment directories&#xA;       - Inside Plug-ins and Fragments packaged as JARs&#xA;       - Sub-directories of the directory named &quot;src&quot; of certain Plug-ins&#xA;       - Feature directories&#xA;&#xA;Note: if a Feature made available by the Eclipse Foundation is installed using the&#xA;Provisioning Technology (as defined below), you must agree to a license (&quot;Feature &#xA;Update License&quot;) during the installation process. If the Feature contains&#xA;Included Features, the Feature Update License should either provide you&#xA;with the terms and conditions governing the Included Features or inform&#xA;you where you can locate them. Feature Update Licenses may be found in&#xA;the &quot;license&quot; property of files named &quot;feature.properties&quot; found within a Feature.&#xA;Such Abouts, Feature Licenses, and Feature Update Licenses contain the&#xA;terms and conditions (or references to such terms and conditions) that&#xA;govern your use of the associated Content in that directory.&#xA;&#xA;THE ABOUTS, FEATURE LICENSES, AND FEATURE UPDATE LICENSES MAY REFER&#xA;TO THE EPL OR OTHER LICENSE AGREEMENTS, NOTICES OR TERMS AND CONDITIONS.&#xA;SOME OF THESE OTHER LICENSE AGREEMENTS MAY INCLUDE (BUT ARE NOT LIMITED TO):&#xA;&#xA;       - Eclipse Distribution License Version 1.0 (available at http://www.eclipse.org/licenses/edl-v1.0.html)&#xA;       - Common Public License Version 1.0 (available at http://www.eclipse.org/legal/cpl-v10.html)&#xA;       - Apache Software License 1.1 (available at http://www.apache.org/licenses/LICENSE)&#xA;       - Apache Software License 2.0 (available at http://www.apache.org/licenses/LICENSE-2.0)&#xA;       - Metro Link Public License 1.00 (available at http://www.opengroup.org/openmotif/supporters/metrolink/license.html)&#xA;       - Mozilla Public License Version 1.1 (available at http://www.mozilla.org/MPL/MPL-1.1.html)&#xA;&#xA;IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR&#xA;TO USE OF THE CONTENT. If no About, Feature License, or Feature Update License&#xA;is provided, please contact the Eclipse Foundation to determine what terms and conditions&#xA;govern that particular Content.&#xA;&#xA;Use of Provisioning Technology&#xA;&#xA;The Eclipse Foundation makes available provisioning software, examples of which include,&#xA;but are not limited to, p2 and the Eclipse Update Manager (&quot;Provisioning Technology&quot;) for&#xA;the purpose of allowing users to install software, documentation, information and/or&#xA;other materials (collectively &quot;Installable Software&quot;). This capability is provided with&#xA;the intent of allowing such users to install, extend and update Eclipse-based products.&#xA;Information about packaging Installable Software is available at&#xA;http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).&#xA;&#xA;You may use Provisioning Technology to allow other parties to install Installable Software.&#xA;You shall be responsible for enabling the applicable license agreements relating to the&#xA;Installable Software to be presented to, and accepted by, the users of the Provisioning Technology&#xA;in accordance with the Specification. By using Provisioning Technology in such a manner and&#xA;making it available in accordance with the Specification, you further acknowledge your&#xA;agreement to, and the acquisition of all necessary rights to permit the following:&#xA;&#xA;       1. A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may execute&#xA;          the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the intent of installing,&#xA;          extending or updating the functionality of an Eclipse-based product.&#xA;       2. During the Provisioning Process, the Provisioning Technology may cause third party&#xA;          Installable Software or a portion thereof to be accessed and copied to the Target Machine.&#xA;       3. Pursuant to the Specification, you will provide to the user the terms and conditions that&#xA;          govern the use of the Installable Software (&quot;Installable Software Agreement&quot;) and such&#xA;          Installable Software Agreement shall be accessed from the Target Machine in accordance&#xA;          with the Specification. Such Installable Software Agreement must inform the user of the&#xA;          terms and conditions that govern the Installable Software and must solicit acceptance by&#xA;          the end user in the manner prescribed in such Installable Software Agreement. Upon such&#xA;          indication of agreement by the user, the provisioning Technology will complete installation&#xA;          of the Installable Software.&#xA;&#xA;Cryptography&#xA;&#xA;Content may contain encryption software. The country in which you are&#xA;currently may have restrictions on the import, possession, and use,&#xA;and/or re-export to another country, of encryption software. BEFORE&#xA;using any encryption software, please check the country&apos;s laws,&#xA;regulations and policies concerning the import, possession, or use, and&#xA;re-export of encryption software, to see if this is permitted.&#xA;&#xA;Java and all Java-based trademarks are trademarks of Oracle Corporation in the United States, other countries, or both.&#xA;         
-      </license>
-    </licenses>
-  </unit>
-  <unit id='toolinggtk.linux.x86_64org.eclipse.update.configurator' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.update.configurator' range='3.4.800.v20210415-1314'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.update.configurator' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.update.configurator' range='3.4.800.v20210415-1314'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          setStartLevel(startLevel:3);markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          setStartLevel(startLevel:-1);markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolinggtk.linux.x86_64org.apache.felix.scr' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.apache.felix.scr' range='2.1.24.v20200924-1939'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.apache.felix.scr' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.apache.felix.scr' range='2.1.24.v20200924-1939'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          setStartLevel(startLevel:1);markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          setStartLevel(startLevel:-1);markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.gtk.linux.x86_64' version='0.0.1.202110061052' singleton='false'>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.gtk.linux.x86_64' version='0.0.1.202110061052'/>
-      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.config' version='0.0.1.202110061052'/>
-    </provides>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='2'>
-        <instruction key='configure'>
-          setProgramProperty(propName:osgi.instance.area.default,propValue:@user.home/workspace-papyrus);setProgramProperty(propName:eclipse.product,propValue:org.eclipse.papyrus.arrowhead.rcp.product);setProgramProperty(propName:osgi.splashPath,propValue:platform${#58}/base/plugins/org.eclipse.papyrus.arrowhead.rcp);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:1.8);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:4);setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);
-        </instruction>
-        <instruction key='unconfigure'>
-          setProgramProperty(propName:osgi.instance.area.default,propValue:);setProgramProperty(propName:eclipse.product,propValue:);setProgramProperty(propName:osgi.splashPath,propValue:);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:);setProgramProperty(propName:eclipse.application,propValue:);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.0.v20210312-1245'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.0.v20210312-1245'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64.Arrowhead' version='0.0.1.202110061052' singleton='false'>
-    <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64.Arrowhead' version='0.0.1.202110061052'/>
-    </provides>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='2'>
-        <instruction key='configure'>
-          setLauncherName(name:Arrowhead)
-        </instruction>
-        <instruction key='unconfigure'>
-          setLauncherName()
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64.Arrowhead' version='0.0.1.202110061052' singleton='false'>
-    <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64.Arrowhead' version='0.0.1.202110061052'/>
-    </provides>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-    </filter>
-    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='2'>
-        <instruction key='configure'>
-          setLauncherName(name:Arrowhead)
-        </instruction>
-        <instruction key='unconfigure'>
-          setLauncherName()
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202110061052'/>
-    </provides>
-    <requires size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-    </filter>
-    <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='2'>
-        <instruction key='uninstall'>
-          cleanupzip(source:@artifact, target:${installFolder});
-        </instruction>
-        <instruction key='install'>
-          unzip(source:@artifact, target:${installFolder});
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202110061052'/>
-    </provides>
-    <requires size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='2'>
-        <instruction key='uninstall'>
-          cleanupzip(source:@artifact, target:${installFolder});
-        </instruction>
-        <instruction key='install'>
-          unzip(source:@artifact, target:${installFolder}); chmod(targetDir:${installFolder}, targetFile:icon.xpm, permissions:755); chmod(targetDir:${installFolder}, targetFile:Arrowhead, permissions:755);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.event' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.0.v20210212-1143'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.event' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.0.v20210212-1143'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          setStartLevel(startLevel:2);markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          setStartLevel(startLevel:-1);markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202110061052'>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202110061052'/>
-      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.executable' version='0.0.1.202110061052'/>
-    </provides>
-    <requires size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='0.0.0'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
         </filter>
       </required>
     </requires>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
     </filter>
     <artifacts size='1'>
-      <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202110061052'/>
+      <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202205231242'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
   </unit>
-  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.common' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.16.0.v20220211-2322'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.common' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.16.0.v20220211-2322'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          setStartLevel(startLevel:2);markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          setStartLevel(startLevel:-1);markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
       <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='1.4.0.v20210315-2228'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
@@ -1348,15 +1027,15 @@
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
       <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='1.4.0.v20210315-2228'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1376,24 +1055,61 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.equinox.launcher.gtk.linux.x86_64' version='1.2.300.v20210828-0802' singleton='false'>
+  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.gtk.linux.x86_64' range='1.2.300.v20210828-0802'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.100.v20211217-1131'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </hostRequirements>
     <properties size='1'>
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.gtk.linux.x86_64' version='1.2.300.v20210828-0802'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.gtk.linux.x86_64' range='1.2.300.v20210828-0802'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.100.v20211217-1131'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <filter>
       (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' version='1.2.400.v20211117-0650' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='1.2.400.v20211117-0650'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' version='1.2.400.v20211117-0650'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='1.2.400.v20211117-0650'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1413,20 +1129,134 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.equinox.launcher' version='1.6.300.v20210813-1054' singleton='false'>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.win32.win32.x86_64' version='0.0.1.202205231242' singleton='false'>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.win32.win32.x86_64' version='0.0.1.202205231242'/>
+      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.ini' version='0.0.1.202205231242'/>
+    </provides>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+    </filter>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='configure'>
+          addJvmArg(jvmArg:-Xms128m);addJvmArg(jvmArg:-Xmx900m);addJvmArg(jvmArg:-Dosgi.bundlefile.limit=200);addProgramArg(programArg:-showsplash);addProgramArg(programArg:org.eclipse.papyrus.rcp);addProgramArg(programArg:--launcher.XXMaxPermSize);addProgramArg(programArg:256m);addProgramArg(programArg:--launcher.defaultAction);addProgramArg(programArg:openFile);
+        </instruction>
+        <instruction key='unconfigure'>
+          removeJvmArg(jvmArg:-Xms128m);removeJvmArg(jvmArg:-Xmx900m);removeJvmArg(jvmArg:-Dosgi.bundlefile.limit=200);removeProgramArg(programArg:-showsplash);removeProgramArg(programArg:org.eclipse.papyrus.rcp);removeProgramArg(programArg:--launcher.XXMaxPermSize);removeProgramArg(programArg:256m);removeProgramArg(programArg:--launcher.defaultAction);removeProgramArg(programArg:openFile);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolinggtk.linux.x86_64org.eclipse.core.runtime' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher' range='1.6.300.v20210813-1054'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.24.100.v20220211-2001'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </hostRequirements>
     <properties size='1'>
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher' version='1.6.300.v20210813-1054'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.core.runtime' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.24.100.v20220211-2001'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.win32.win32.x86_64' version='0.0.1.202205231242' singleton='false'>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.win32.win32.x86_64' version='0.0.1.202205231242'/>
+      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.config' version='0.0.1.202205231242'/>
+    </provides>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+    </filter>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='configure'>
+          setProgramProperty(propName:osgi.instance.area.default,propValue:@user.home/workspace-papyrus);setProgramProperty(propName:eclipse.product,propValue:org.eclipse.papyrus.arrowhead.rcp.product);setProgramProperty(propName:osgi.splashPath,propValue:platform${#58}/base/plugins/org.eclipse.papyrus.arrowhead.rcp);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:11);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:4);setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2022-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2022-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/,enabled:true);
+        </instruction>
+        <instruction key='unconfigure'>
+          setProgramProperty(propName:osgi.instance.area.default,propValue:);setProgramProperty(propName:eclipse.product,propValue:);setProgramProperty(propName:osgi.splashPath,propValue:);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:);setProgramProperty(propName:eclipse.application,propValue:);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2022-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2022-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.100.v20211217-1131'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.100.v20211217-1131'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingorg.eclipse.equinox.launcher' version='1.6.400.v20210924-0641' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher' range='1.6.400.v20210924-0641'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher' version='1.6.400.v20210924-0641'/>
       <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher' range='1.6.300.v20210813-1054'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher' range='1.6.400.v20210924-0641'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <touchpoint id='null' version='0.0.0'/>
@@ -1447,7 +1277,7 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingwin32.win32.x86_64org.apache.felix.scr' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolingwin32.win32.x86_64org.apache.felix.scr' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
       <required namespace='osgi.bundle' name='org.apache.felix.scr' range='2.1.24.v20200924-1939'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
@@ -1456,7 +1286,7 @@
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.apache.felix.scr' version='0.0.1.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.apache.felix.scr' version='0.0.1.202205231242'/>
       <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
@@ -1484,13 +1314,13 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.win32.win32.x86_64' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.gtk.linux.x86_64' version='0.0.1.202205231242' singleton='false'>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.win32.win32.x86_64' version='0.0.1.202110061052'/>
-      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.ini' version='0.0.1.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.ini.gtk.linux.x86_64' version='0.0.1.202205231242'/>
+      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.ini' version='0.0.1.202205231242'/>
     </provides>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
     </filter>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
@@ -1504,44 +1334,44 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202110061052'>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.gtk.linux.x86_64' version='0.0.1.202205231242' singleton='false'>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202110061052'/>
-      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.executable' version='0.0.1.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.gtk.linux.x86_64' version='0.0.1.202205231242'/>
+      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.config' version='0.0.1.202205231242'/>
     </provides>
-    <requires size='1'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.gtk.linux.x86_64' range='0.0.0'>
-        <filter>
-          (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-        </filter>
-      </required>
-    </requires>
     <filter>
       (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
     </filter>
-    <artifacts size='1'>
-      <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202110061052'/>
-    </artifacts>
-    <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='configure'>
+          setProgramProperty(propName:osgi.instance.area.default,propValue:@user.home/workspace-papyrus);setProgramProperty(propName:eclipse.product,propValue:org.eclipse.papyrus.arrowhead.rcp.product);setProgramProperty(propName:osgi.splashPath,propValue:platform${#58}/base/plugins/org.eclipse.papyrus.arrowhead.rcp);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:11);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:4);setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2022-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2022-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/,enabled:true);
+        </instruction>
+        <instruction key='unconfigure'>
+          setProgramProperty(propName:osgi.instance.area.default,propValue:);setProgramProperty(propName:eclipse.product,propValue:);setProgramProperty(propName:osgi.splashPath,propValue:);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:);setProgramProperty(propName:eclipse.application,propValue:);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2022-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2022-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.23/);
+        </instruction>
+      </instructions>
+    </touchpointData>
   </unit>
-  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolinggtk.linux.x86_64org.apache.felix.scr' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='1.4.0.v20210315-2228'/>
+      <required namespace='osgi.bundle' name='org.apache.felix.scr' range='2.1.24.v20200924-1939'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </hostRequirements>
     <properties size='1'>
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.apache.felix.scr' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='1.4.0.v20210315-2228'/>
+      <required namespace='osgi.bundle' name='org.apache.felix.scr' range='2.1.24.v20200924-1939'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1561,61 +1391,24 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.common' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.0.v20210312-1245'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.16.0.v20220211-2322'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </hostRequirements>
     <properties size='1'>
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.p2.reconciler.dropins' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.common' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.reconciler.dropins' range='1.4.0.v20210312-1245'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.16.0.v20220211-2322'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.common' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.15.0.v20210518-0604'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.common' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.15.0.v20210518-0604'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1635,10 +1428,9 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.win32.win32.x86_64' version='0.0.1.202110061052' singleton='false'>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.config.win32.win32.x86_64' version='0.0.1.202110061052'/>
-      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.config' version='0.0.1.202110061052'/>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64.Arrowhead' version='0.0.1.202205231242' singleton='false'>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64.Arrowhead' version='0.0.1.202205231242'/>
     </provides>
     <filter>
       (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
@@ -1647,32 +1439,125 @@
     <touchpointData size='1'>
       <instructions size='2'>
         <instruction key='configure'>
-          setProgramProperty(propName:osgi.instance.area.default,propValue:@user.home/workspace-papyrus);setProgramProperty(propName:eclipse.product,propValue:org.eclipse.papyrus.arrowhead.rcp.product);setProgramProperty(propName:osgi.splashPath,propValue:platform${#58}/base/plugins/org.eclipse.papyrus.arrowhead.rcp);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:1.8);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:4);setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/,enabled:true);addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/,enabled:true);
+          setLauncherName(name:Arrowhead)
         </instruction>
         <instruction key='unconfigure'>
-          setProgramProperty(propName:osgi.instance.area.default,propValue:);setProgramProperty(propName:eclipse.product,propValue:);setProgramProperty(propName:osgi.splashPath,propValue:);setProgramProperty(propName:osgi.requiredJavaVersion,propValue:);setProgramProperty(propName:osgi.bundles.defaultStartLevel,propValue:);setProgramProperty(propName:eclipse.application,propValue:);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2021-03/);removeRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);removeRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.19/);
+          setLauncherName()
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' version='1.2.300.v20210828-0802' singleton='false'>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64.Arrowhead' version='0.0.1.202205231242' singleton='false'>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64.Arrowhead' version='0.0.1.202205231242'/>
+    </provides>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='configure'>
+          setLauncherName(name:Arrowhead)
+        </instruction>
+        <instruction key='unconfigure'>
+          setLauncherName()
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolinggtk.linux.x86_64org.eclipse.update.configurator' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='1.2.300.v20210828-0802'/>
+      <required namespace='osgi.bundle' name='org.eclipse.update.configurator' range='3.4.800.v20210415-1314'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </hostRequirements>
     <properties size='1'>
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' version='1.2.300.v20210828-0802'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.update.configurator' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='1.2.300.v20210828-0802'/>
+      <required namespace='osgi.bundle' name='org.eclipse.update.configurator' range='3.4.800.v20210415-1314'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          setStartLevel(startLevel:3);markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          setStartLevel(startLevel:-1);markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='1.4.0.v20210315-2228'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.simpleconfigurator' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='1.4.0.v20210315-2228'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          setStartLevel(startLevel:1);markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          setStartLevel(startLevel:-1);markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingorg.eclipse.equinox.launcher.gtk.linux.x86_64' version='1.2.400.v20211117-0650' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.gtk.linux.x86_64' range='1.2.400.v20211117-0650'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.gtk.linux.x86_64' version='1.2.400.v20211117-0650'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.gtk.linux.x86_64' range='1.2.400.v20211117-0650'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1692,44 +1577,7 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolinggtk.linux.x86_64org.eclipse.equinox.event' version='0.0.1.202110061052' singleton='false'>
-    <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.0.v20210212-1143'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </hostRequirements>
-    <properties size='1'>
-      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-    </properties>
-    <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.equinox.event' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
-    </provides>
-    <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.0.v20210212-1143'/>
-      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-    </requires>
-    <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
-    </filter>
-    <touchpoint id='null' version='0.0.0'/>
-    <touchpointData size='1'>
-      <instructions size='4'>
-        <instruction key='uninstall'>
-          uninstallBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='install'>
-          installBundle(bundle:${artifact})
-        </instruction>
-        <instruction key='configure'>
-          setStartLevel(startLevel:2);markStarted(started: true);
-        </instruction>
-        <instruction key='unconfigure'>
-          setStartLevel(startLevel:-1);markStarted(started: false);
-        </instruction>
-      </instructions>
-    </touchpointData>
-  </unit>
-  <unit id='toolingwin32.win32.x86_64org.eclipse.update.configurator' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolingwin32.win32.x86_64org.eclipse.update.configurator' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
       <required namespace='osgi.bundle' name='org.eclipse.update.configurator' range='3.4.800.v20210415-1314'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
@@ -1738,7 +1586,7 @@
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.update.configurator' version='0.0.1.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.update.configurator' version='0.0.1.202205231242'/>
       <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
@@ -1766,24 +1614,148 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='toolinggtk.linux.x86_64org.eclipse.core.runtime' version='0.0.1.202110061052' singleton='false'>
+  <unit id='toolingwin32.win32.x86_64org.eclipse.equinox.event' version='0.0.1.202205231242' singleton='false'>
     <hostRequirements size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.23.0.v20210730-2035'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.100.v20211021-1418'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </hostRequirements>
     <properties size='1'>
       <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='toolinggtk.linux.x86_64org.eclipse.core.runtime' version='0.0.1.202110061052'/>
-      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolinggtk.linux.x86_64' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.equinox.event' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.23.0.v20210730-2035'/>
+      <required namespace='osgi.bundle' name='org.eclipse.equinox.event' range='1.6.100.v20211021-1418'/>
       <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
     </requires>
     <filter>
-      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+    </filter>
+    <touchpoint id='null' version='0.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='4'>
+        <instruction key='uninstall'>
+          uninstallBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='install'>
+          installBundle(bundle:${artifact})
+        </instruction>
+        <instruction key='configure'>
+          setStartLevel(startLevel:2);markStarted(started: true);
+        </instruction>
+        <instruction key='unconfigure'>
+          setStartLevel(startLevel:-1);markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.product' version='0.0.1.202205231242'>
+    <update id='org.eclipse.papyrus.arrowhead.rcp.product' range='0.0.0' severity='0'/>
+    <properties size='3'>
+      <property name='org.eclipse.equinox.p2.name' value='Arrowhead'/>
+      <property name='org.eclipse.equinox.p2.type.product' value='true'/>
+      <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product' version='0.0.1.202205231242'/>
+    </provides>
+    <requires size='9'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.p2.user.ui.feature.group' range='[2.4.1500.v20220223-1131,2.4.1500.v20220223-1131]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.application' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' range='[1.0.0,1.0.0]'>
+        <filter>
+          (org.eclipse.update.install.features=true)
+        </filter>
+      </required>
+      <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.configuration' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' range='[1.0.0.202205231242,1.0.0.202205231242]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.platform.feature.group' range='[4.23.0.v20220308-0722,4.23.0.v20220308-0722]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='tooling.source.default' range='[1.0.0,1.0.0]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='tooling.osgi.bundle.default' range='[1.0.0,1.0.0]'/>
+      <required namespace='osgi.ee' name='JavaSE' range='0.0.0'/>
+    </requires>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='configure'>
+          org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipsec.exe);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipse.exe);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/Resources/Eclipse.icns);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/Resources);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/Info.plist);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents/MacOS);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app/Contents);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/Eclipse.app);org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipse);
+        </instruction>
+      </instructions>
+    </touchpointData>
+    <licenses size='1'>
+      <license uri='http://eclipse.org/legal/epl/notice.php' url='http://eclipse.org/legal/epl/notice.php'>
+        &#xA;   Eclipse Foundation Software User Agreement&#xA;November 30, 2017&#xA;&#xA;Usage Of Content&#xA;&#xA;THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION AND/OR&#xA;OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;).&#xA;USE OF THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS&#xA;AGREEMENT AND/OR THE TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR&#xA;NOTICES INDICATED OR REFERENCED BELOW.  BY USING THE CONTENT, YOU&#xA;AGREE THAT YOUR USE OF THE CONTENT IS GOVERNED BY THIS AGREEMENT&#xA;AND/OR THE TERMS AND CONDITIONS OF ANY APPLICABLE LICENSE AGREEMENTS&#xA;OR NOTICES INDICATED OR REFERENCED BELOW.  IF YOU DO NOT AGREE TO THE&#xA;TERMS AND CONDITIONS OF THIS AGREEMENT AND THE TERMS AND CONDITIONS&#xA;OF ANY APPLICABLE LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED&#xA;BELOW, THEN YOU MAY NOT USE THE CONTENT.&#xA;&#xA;Applicable Licenses&#xA;&#xA;Unless otherwise indicated, all Content made available by the&#xA;Eclipse Foundation is provided to you under the terms and conditions of&#xA;the Eclipse Public License Version 2.0 (&quot;EPL&quot;). A copy of the EPL is&#xA;provided with this Content and is also available at https://www.eclipse.org/legal/epl-2.0/.&#xA;For purposes of the EPL, &quot;Program&quot; will mean the Content.&#xA;&#xA;Content includes, but is not limited to, source code, object code,&#xA;documentation and other files maintained in the Eclipse Foundation source code&#xA;repository (&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available&#xA;as downloadable archives (&quot;Downloads&quot;).&#xA;&#xA;      - Content may be structured and packaged into modules to facilitate delivering,&#xA;         extending, and upgrading the Content. Typical modules may include plug-ins (&quot;Plug-ins&quot;),&#xA;         plug-in fragments (&quot;Fragments&quot;), and features (&quot;Features&quot;).&#xA;       - Each Plug-in or Fragment may be packaged as a sub-directory or JAR (Java(TM) ARchive)&#xA;         in a directory named &quot;plugins&quot;.&#xA;       - A Feature is a bundle of one or more Plug-ins and/or Fragments and associated material.&#xA;         Each Feature may be packaged as a sub-directory in a directory named &quot;features&quot;.&#xA;         Within a Feature, files named &quot;feature.xml&quot; may contain a list of the names and version&#xA;         numbers of the Plug-ins and/or Fragments associated with that Feature.&#xA;       - Features may also include other Features (&quot;Included Features&quot;). Within a Feature, files&#xA;         named &quot;feature.xml&quot; may contain a list of the names and version numbers of Included Features.&#xA;&#xA;The terms and conditions governing Plug-ins and Fragments should be&#xA;contained in files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and&#xA;conditions governing Features and Included Features should be contained&#xA;in files named &quot;license.html&quot; (&quot;Feature Licenses&quot;). Abouts and Feature&#xA;Licenses may be located in any directory of a Download or Module&#xA;including, but not limited to the following locations:&#xA;&#xA;       - The top-level (root) directory&#xA;       - Plug-in and Fragment directories&#xA;       - Inside Plug-ins and Fragments packaged as JARs&#xA;       - Sub-directories of the directory named &quot;src&quot; of certain Plug-ins&#xA;       - Feature directories&#xA;&#xA;Note: if a Feature made available by the Eclipse Foundation is installed using the&#xA;Provisioning Technology (as defined below), you must agree to a license (&quot;Feature &#xA;Update License&quot;) during the installation process. If the Feature contains&#xA;Included Features, the Feature Update License should either provide you&#xA;with the terms and conditions governing the Included Features or inform&#xA;you where you can locate them. Feature Update Licenses may be found in&#xA;the &quot;license&quot; property of files named &quot;feature.properties&quot; found within a Feature.&#xA;Such Abouts, Feature Licenses, and Feature Update Licenses contain the&#xA;terms and conditions (or references to such terms and conditions) that&#xA;govern your use of the associated Content in that directory.&#xA;&#xA;THE ABOUTS, FEATURE LICENSES, AND FEATURE UPDATE LICENSES MAY REFER&#xA;TO THE EPL OR OTHER LICENSE AGREEMENTS, NOTICES OR TERMS AND CONDITIONS.&#xA;SOME OF THESE OTHER LICENSE AGREEMENTS MAY INCLUDE (BUT ARE NOT LIMITED TO):&#xA;&#xA;       - Eclipse Distribution License Version 1.0 (available at http://www.eclipse.org/licenses/edl-v1.0.html)&#xA;       - Common Public License Version 1.0 (available at http://www.eclipse.org/legal/cpl-v10.html)&#xA;       - Apache Software License 1.1 (available at http://www.apache.org/licenses/LICENSE)&#xA;       - Apache Software License 2.0 (available at http://www.apache.org/licenses/LICENSE-2.0)&#xA;       - Metro Link Public License 1.00 (available at http://www.opengroup.org/openmotif/supporters/metrolink/license.html)&#xA;       - Mozilla Public License Version 1.1 (available at http://www.mozilla.org/MPL/MPL-1.1.html)&#xA;&#xA;IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR&#xA;TO USE OF THE CONTENT. If no About, Feature License, or Feature Update License&#xA;is provided, please contact the Eclipse Foundation to determine what terms and conditions&#xA;govern that particular Content.&#xA;&#xA;Use of Provisioning Technology&#xA;&#xA;The Eclipse Foundation makes available provisioning software, examples of which include,&#xA;but are not limited to, p2 and the Eclipse Update Manager (&quot;Provisioning Technology&quot;) for&#xA;the purpose of allowing users to install software, documentation, information and/or&#xA;other materials (collectively &quot;Installable Software&quot;). This capability is provided with&#xA;the intent of allowing such users to install, extend and update Eclipse-based products.&#xA;Information about packaging Installable Software is available at&#xA;http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).&#xA;&#xA;You may use Provisioning Technology to allow other parties to install Installable Software.&#xA;You shall be responsible for enabling the applicable license agreements relating to the&#xA;Installable Software to be presented to, and accepted by, the users of the Provisioning Technology&#xA;in accordance with the Specification. By using Provisioning Technology in such a manner and&#xA;making it available in accordance with the Specification, you further acknowledge your&#xA;agreement to, and the acquisition of all necessary rights to permit the following:&#xA;&#xA;       1. A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may execute&#xA;          the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the intent of installing,&#xA;          extending or updating the functionality of an Eclipse-based product.&#xA;       2. During the Provisioning Process, the Provisioning Technology may cause third party&#xA;          Installable Software or a portion thereof to be accessed and copied to the Target Machine.&#xA;       3. Pursuant to the Specification, you will provide to the user the terms and conditions that&#xA;          govern the use of the Installable Software (&quot;Installable Software Agreement&quot;) and such&#xA;          Installable Software Agreement shall be accessed from the Target Machine in accordance&#xA;          with the Specification. Such Installable Software Agreement must inform the user of the&#xA;          terms and conditions that govern the Installable Software and must solicit acceptance by&#xA;          the end user in the manner prescribed in such Installable Software Agreement. Upon such&#xA;          indication of agreement by the user, the provisioning Technology will complete installation&#xA;          of the Installable Software.&#xA;&#xA;Cryptography&#xA;&#xA;Content may contain encryption software. The country in which you are&#xA;currently may have restrictions on the import, possession, and use,&#xA;and/or re-export to another country, of encryption software. BEFORE&#xA;using any encryption software, please check the country&apos;s laws,&#xA;regulations and policies concerning the import, possession, or use, and&#xA;re-export of encryption software, to see if this is permitted.&#xA;&#xA;Java and all Java-based trademarks are trademarks of Oracle Corporation in the United States, other countries, or both.&#xA;         
+      </license>
+    </licenses>
+  </unit>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202205231242'/>
+    </provides>
+    <requires size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+    </filter>
+    <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='uninstall'>
+          cleanupzip(source:@artifact, target:${installFolder});
+        </instruction>
+        <instruction key='install'>
+          unzip(source:@artifact, target:${installFolder});
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202205231242'>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202205231242'/>
+      <provided namespace='toolingorg.eclipse.papyrus.arrowhead.rcp.product' name='org.eclipse.papyrus.arrowhead.rcp.product.executable' version='0.0.1.202205231242'/>
+    </provides>
+    <requires size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='0.0.0'>
+        <filter>
+          (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+        </filter>
+      </required>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+    </filter>
+    <artifacts size='1'>
+      <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202205231242'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+  </unit>
+  <unit id='toolingwin32.win32.x86_64org.eclipse.core.runtime' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.24.100.v20220211-2001'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingwin32.win32.x86_64org.eclipse.core.runtime' version='0.0.1.202205231242'/>
+      <provided namespace='org.eclipse.equinox.p2.flavor' name='toolingwin32.win32.x86_64' version='1.0.0'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.24.100.v20220211-2001'/>
+      <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
     </filter>
     <touchpoint id='null' version='0.0.0'/>
     <touchpointData size='1'>
@@ -1799,6 +1771,34 @@
         </instruction>
         <instruction key='unconfigure'>
           markStarted(started: false);
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+  <unit id='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202205231242' singleton='false'>
+    <hostRequirements size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+    </hostRequirements>
+    <properties size='1'>
+      <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202205231242'/>
+    </provides>
+    <requires size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+    </requires>
+    <filter>
+      (&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))
+    </filter>
+    <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='uninstall'>
+          cleanupzip(source:@artifact, target:${installFolder});
+        </instruction>
+        <instruction key='install'>
+          unzip(source:@artifact, target:${installFolder}); chmod(targetDir:${installFolder}, targetFile:icon.xpm, permissions:755); chmod(targetDir:${installFolder}, targetFile:Arrowhead, permissions:755);
         </instruction>
       </instructions>
     </touchpointData>

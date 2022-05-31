@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='2'>
-  <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202110061052'>
-    <properties size='5'>
-      <property name='maven-groupId' value='org.eclipse.papyrus.arrowhead'/>
-      <property name='maven-artifactId' value='org.eclipse.papyrus.arrowhead.rcp.product'/>
-      <property name='maven-version' value='0.0.1-SNAPSHOT'/>
-      <property name='maven-classifier' value='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64'/>
-      <property name='maven-extension' value='zip'/>
-    </properties>
-  </artifact>
-  <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202110061052'>
+  <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64' version='0.0.1.202205231242'>
     <properties size='5'>
       <property name='maven-groupId' value='org.eclipse.papyrus.arrowhead'/>
       <property name='maven-artifactId' value='org.eclipse.papyrus.arrowhead.rcp.product'/>
       <property name='maven-version' value='0.0.1-SNAPSHOT'/>
       <property name='maven-classifier' value='org.eclipse.papyrus.arrowhead.rcp.product.executable.win32.win32.x86_64'/>
+      <property name='maven-extension' value='zip'/>
+    </properties>
+  </artifact>
+  <artifact classifier='binary' id='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64' version='0.0.1.202205231242'>
+    <properties size='5'>
+      <property name='maven-groupId' value='org.eclipse.papyrus.arrowhead'/>
+      <property name='maven-artifactId' value='org.eclipse.papyrus.arrowhead.rcp.product'/>
+      <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+      <property name='maven-classifier' value='org.eclipse.papyrus.arrowhead.rcp.product.executable.gtk.linux.x86_64'/>
       <property name='maven-extension' value='zip'/>
     </properties>
   </artifact>

@@ -28,7 +28,10 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<!--<module>org.eclipse.papyrus.arrowhead.metamodel</module> -->
 		<module>org.eclipse.papyrus.arrowhead.profile</module>
+		<!--<module>org.eclipse.papyrus.arrowhead.tools.profile</module> -->
 		<module>org.eclipse.papyrus.arrowhead.s4e.lib</module>
+		<module>org.eclipse.papyrus.arrowhead.s4e.profile</module>
 	</modules>
 </project>

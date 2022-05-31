@@ -1,17 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2021 CEA LIST.
- *
- *  All rights reserved. This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License 2.0
- *  which accompanies this distribution, and is available at
- *  https://www.eclipse.org/legal/epl-2.0/
- *
- *  SPDX-License-Identifier: EPL-2.0
- *  
- *  Contributors:
- *    Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
- *    Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
- *******************************************************************************/
 /**
  */
 package s4elibrary;
@@ -36,85 +22,175 @@ public interface S4elibraryFactory extends EFactory {
 	S4elibraryFactory eINSTANCE = s4elibrary.impl.S4elibraryFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Highvoltagecontrolrelay</em>'.
+	 * Returns a new object of class '<em>temperatureds18b20</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Highvoltagecontrolrelay</em>'.
+	 * @return a new object of class '<em>temperatureds18b20</em>'.
 	 * @generated
 	 */
-	Highvoltagecontrolrelay createHighvoltagecontrolrelay();
+	temperatureds18b20 createtemperatureds18b20();
 
 	/**
-	 * Returns a new object of class '<em>Continuousrotationservomotorservo</em>'.
+	 * Returns a new object of class '<em>temperaturedht11</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Continuousrotationservomotorservo</em>'.
+	 * @return a new object of class '<em>temperaturedht11</em>'.
 	 * @generated
 	 */
-	Continuousrotationservomotorservo createContinuousrotationservomotorservo();
+	temperaturedht11 createtemperaturedht11();
 
 	/**
-	 * Returns a new object of class '<em>Angularservomotorservo</em>'.
+	 * Returns a new object of class '<em>humiditydht11</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Angularservomotorservo</em>'.
+	 * @return a new object of class '<em>humiditydht11</em>'.
 	 * @generated
 	 */
-	Angularservomotorservo createAngularservomotorservo();
+	humiditydht11 createhumiditydht11();
 
 	/**
-	 * Returns a new object of class '<em>humiditysensor XNUCLEOIKS01A3</em>'.
+	 * Returns a new object of class '<em>temperaturedht21</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>humiditysensor XNUCLEOIKS01A3</em>'.
+	 * @return a new object of class '<em>temperaturedht21</em>'.
 	 * @generated
 	 */
-	humiditysensorXNUCLEOIKS01A3 createhumiditysensorXNUCLEOIKS01A3();
+	temperaturedht21 createtemperaturedht21();
 
 	/**
-	 * Returns a new object of class '<em>temperaturesensor XNUCLEOIKS01A3</em>'.
+	 * Returns a new object of class '<em>humiditydht21</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>temperaturesensor XNUCLEOIKS01A3</em>'.
+	 * @return a new object of class '<em>humiditydht21</em>'.
 	 * @generated
 	 */
-	temperaturesensorXNUCLEOIKS01A3 createtemperaturesensorXNUCLEOIKS01A3();
+	humiditydht21 createhumiditydht21();
 
 	/**
-	 * Returns a new object of class '<em>magnetometersensor XNUCLEOIKS01A3</em>'.
+	 * Returns a new object of class '<em>temperaturedht22</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>magnetometersensor XNUCLEOIKS01A3</em>'.
+	 * @return a new object of class '<em>temperaturedht22</em>'.
 	 * @generated
 	 */
-	magnetometersensorXNUCLEOIKS01A3 createmagnetometersensorXNUCLEOIKS01A3();
+	temperaturedht22 createtemperaturedht22();
 
 	/**
-	 * Returns a new object of class '<em>accelerometersensor XNUCLEOIKS01A3</em>'.
+	 * Returns a new object of class '<em>humiditydht22</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>accelerometersensor XNUCLEOIKS01A3</em>'.
+	 * @return a new object of class '<em>humiditydht22</em>'.
 	 * @generated
 	 */
-	accelerometersensorXNUCLEOIKS01A3 createaccelerometersensorXNUCLEOIKS01A3();
+	humiditydht22 createhumiditydht22();
 
 	/**
-	 * Returns a new object of class '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>'.
+	 * Returns a new object of class '<em>temperaturedht</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>angular gyroscopesensor XNUCLEOIKS01A3</em>'.
+	 * @return a new object of class '<em>temperaturedht</em>'.
 	 * @generated
 	 */
-	angular_gyroscopesensorXNUCLEOIKS01A3 createangular_gyroscopesensorXNUCLEOIKS01A3();
+	temperaturedht createtemperaturedht();
 
 	/**
-	 * Returns a new object of class '<em>temperaturesensords18b20</em>'.
+	 * Returns a new object of class '<em>humiditydht</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>temperaturesensords18b20</em>'.
+	 * @return a new object of class '<em>humiditydht</em>'.
 	 * @generated
 	 */
-	temperaturesensords18b20 createtemperaturesensords18b20();
+	humiditydht createhumiditydht();
+
+	/**
+	 * Returns a new object of class '<em>staticrelay</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>staticrelay</em>'.
+	 * @generated
+	 */
+	staticrelay createstaticrelay();
+
+	/**
+	 * Returns a new object of class '<em>mosfetrelay</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>mosfetrelay</em>'.
+	 * @generated
+	 */
+	mosfetrelay createmosfetrelay();
+
+	/**
+	 * Returns a new object of class '<em>angularservo</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>angularservo</em>'.
+	 * @generated
+	 */
+	angularservo createangularservo();
+
+	/**
+	 * Returns a new object of class '<em>continuousservo</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>continuousservo</em>'.
+	 * @generated
+	 */
+	continuousservo createcontinuousservo();
+
+	/**
+	 * Returns a new object of class '<em>temperaturex nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>temperaturex nucleo iks01a3</em>'.
+	 * @generated
+	 */
+	temperaturex_nucleo_iks01a3 createtemperaturex_nucleo_iks01a3();
+
+	/**
+	 * Returns a new object of class '<em>humidityx nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>humidityx nucleo iks01a3</em>'.
+	 * @generated
+	 */
+	humidityx_nucleo_iks01a3 createhumidityx_nucleo_iks01a3();
+
+	/**
+	 * Returns a new object of class '<em>pressurex nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>pressurex nucleo iks01a3</em>'.
+	 * @generated
+	 */
+	pressurex_nucleo_iks01a3 createpressurex_nucleo_iks01a3();
+
+	/**
+	 * Returns a new object of class '<em>accelerometerx nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>accelerometerx nucleo iks01a3</em>'.
+	 * @generated
+	 */
+	accelerometerx_nucleo_iks01a3 createaccelerometerx_nucleo_iks01a3();
+
+	/**
+	 * Returns a new object of class '<em>gyrox nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>gyrox nucleo iks01a3</em>'.
+	 * @generated
+	 */
+	gyrox_nucleo_iks01a3 creategyrox_nucleo_iks01a3();
+
+	/**
+	 * Returns a new object of class '<em>magnetx nucleo iks01a3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>magnetx nucleo iks01a3</em>'.
+	 * @generated
+	 */
+	magnetx_nucleo_iks01a3 createmagnetx_nucleo_iks01a3();
 
 	/**
 	 * Returns the package supported by this factory.

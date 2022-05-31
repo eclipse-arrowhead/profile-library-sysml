@@ -10,7 +10,7 @@ package org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile;
  *
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getSDDD()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='SD-DD'"
+ * @model
  * @generated
  */
 public interface SDDD extends ServiceDescription {

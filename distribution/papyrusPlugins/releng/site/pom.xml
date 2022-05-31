@@ -64,7 +64,7 @@
 							<!-- p2 update site transitive dependencies repositories -->
 							<associateSites>
 								<site>https://download.eclipse.org/technology/m2e/releases/</site>
-								<site>http://download.eclipse.org/releases/2020-06/</site>
+								<site>http://download.eclipse.org/releases/2022-03/</site>
 							</associateSites>
 						</configuration>
 					</execution>

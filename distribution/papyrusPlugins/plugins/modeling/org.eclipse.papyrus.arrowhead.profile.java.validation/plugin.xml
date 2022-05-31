@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <category
+            id="org.eclipse.papyrus.arrowhead.profile.java.validation.category1"
+            name="SysML Arrowhead rules">
+      </category>
+      <constraintProvider
+            mode="Batch">
+         <package
+               namespaceUri="http://www.eclipse.org/uml2/5.0.0/UML">
+         </package>
+         <constraints
+               categories="org.eclipse.papyrus.arrowhead.profile.java.validation.category1">
+            <constraint
+                  class="org.eclipse.papyrus.arrowhead.profile.java.validation.constraints.SysDConstraint"
+                  id="org.eclipse.papyrus.arrowhead.profile.java.validation.constraints.SysDPortIsCorrectlyTyped"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="org.eclipse.papyrus.arrowhead.profile.java.validation.constraints.SysDPortIsCorrectlyTyped"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  port of a SysD must be typed by ServiceDescription
+               </message>
+            </constraint></constraints>
+      </constraintProvider>
+   </extension>
+
+</plugin>

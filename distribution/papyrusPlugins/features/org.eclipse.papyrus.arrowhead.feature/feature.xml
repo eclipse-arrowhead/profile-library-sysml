@@ -18,8 +18,8 @@
    </license>
 
    <url>
-      <discovery label="2020-06" url="http://download.eclipse.org/staging/2020-06/"/>
-      <discovery label="Eclipse Platform 4.16" url="http://download.eclipse.org/eclipse/updates/4.16"/>
+      <discovery label="2022-03" url="http://download.eclipse.org/staging/2022-03/"/>
+      <discovery label="Eclipse Platform 4.23" url="http://download.eclipse.org/eclipse/updates/4.23"/>
    </url>
 
    <requires>
@@ -50,6 +50,8 @@
       <import plugin="org.eclipse.papyrus.sysml16"/>
       <import plugin="org.eclipse.uml2.types"/>
       <import plugin="org.eclipse.papyrus.uml.extensionpoints" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.arrowhead.s4e.profile" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.11.100" match="greaterOrEqual"/>
    </requires>
 
    <plugin

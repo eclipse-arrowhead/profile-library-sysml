@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='2'>
-  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen' version='1.0.0.202110061052'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen' version='1.0.0.202205231242'>
     <properties size='5'>
-      <property name='artifact.size' value='85650'/>
-      <property name='download.size' value='85650'/>
+      <property name='artifact.size' value='85938'/>
+      <property name='download.size' value='85938'/>
       <property name='maven-groupId' value='org.eclipse.papyrus.arrowhead'/>
       <property name='maven-artifactId' value='org.eclipse.papyrus.designer.languages.arrowhead.codegen'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
   </artifact>
-  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen.source' version='1.0.0.202110061052'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen.source' version='1.0.0.202205231242'>
     <properties size='6'>
-      <property name='artifact.size' value='70664'/>
-      <property name='download.size' value='70664'/>
+      <property name='artifact.size' value='70555'/>
+      <property name='download.size' value='70555'/>
       <property name='maven-groupId' value='org.eclipse.papyrus.arrowhead'/>
       <property name='maven-artifactId' value='org.eclipse.papyrus.designer.languages.arrowhead.codegen'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
