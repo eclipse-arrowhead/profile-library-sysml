@@ -16,13 +16,6 @@
  -->
 
 <plugin>
-   <extension
-         point="org.eclipse.emf.ecore.uri_mapping">
-      <mapping
-            source="pathmap://S4E_LIBRARIES/"
-            target="platform:/plugin/org.eclipse.papyrus.arrowhead.s4e.lib/resources/library/">
-      </mapping>
-   </extension>
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated s4elibrary -->
       <package
@@ -31,11 +24,25 @@
             genModel="resources/library/s4elibrary.genmodel"/>
    </extension>
    <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://S4E_LIBRARY/"
+            target="platform:/plugin/org.eclipse.papyrus.arrowhead.s4e.lib/resources/library/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <package
+            location="pathmap://S4E_LIBRARY/s4e.library.uml#_rML-wM0gEeuPYNz_y7CCmA"
+            uri="http:///s4elibrary.ecore">
+      </package>
+   </extension>
+   <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
       <library
-            description="Studio4Education sensor Library"
-            name="Studio4Education_Library"
-            path="pathmap://S4E_LIBRARIES/s4elibrary.uml"
+            description="Studio4Education Library"
+            name="S4E Library"
+            path="pathmap://S4E_LIBRARY/s4e.library.uml"
             provider="CEA LIST">
       </library>
    </extension>

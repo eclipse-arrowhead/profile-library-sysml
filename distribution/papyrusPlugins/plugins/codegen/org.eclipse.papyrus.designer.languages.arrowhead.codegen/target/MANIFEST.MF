@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.papyrus.designer.languages.arrowhead.co
  degen;singleton:=true
-Bundle-Version: 1.0.0.202110061052
+Bundle-Version: 1.0.0.202205231242
 Bundle-Vendor: %provideName
 Bundle-Description: %pluginDescription
 Automatic-Module-Name: org.eclipse.papyrus.designer.languages.arrowhead.
@@ -19,7 +19,8 @@ Require-Bundle: org.eclipse.papyrus.designer.languages.common.extensionp
  clipse.papyrus.arrowhead.profile;bundle-version="1.0.0",org.eclipse.swt
  ,org.eclipse.papyrus.uml.tools.utils;bundle-version="3.4.100",org.eclip
  se.papyrus.infra.core.log,com.google.gson;bundle-version="2.8.2",org.sl
- f4j.api,org.eclipse.papyrus.infra.tools;bundle-version="4.0.0"
+ f4j.api,org.eclipse.papyrus.infra.tools;bundle-version="4.0.0",org.ecli
+ pse.papyrus.arrowhead.s4e.profile;bundle-version="1.0.0"
 Export-Package: org.eclipse.papyrus.designer.languages.arrowhead.codegen
  ; uses:="org.osgi.framework,  org.eclipse.core.runtime,  org.eclipse.pa
  pyrus.designer.languages.common.base,  org.eclipse.uml2.uml,  org.eclip

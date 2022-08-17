@@ -11,7 +11,7 @@ import org.eclipse.papyrus.sysml16.blocks.Block;
  *
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getLocalCloudDeployed()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='LocalCloud-Deployed'"
+ * @model
  * @generated
  */
 public interface LocalCloudDeployed extends Block {

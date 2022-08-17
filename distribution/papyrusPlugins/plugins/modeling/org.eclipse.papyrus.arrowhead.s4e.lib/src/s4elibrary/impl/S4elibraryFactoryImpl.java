@@ -1,17 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2021 CEA LIST.
- *
- *  All rights reserved. This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License 2.0
- *  which accompanies this distribution, and is available at
- *  https://www.eclipse.org/legal/epl-2.0/
- *
- *  SPDX-License-Identifier: EPL-2.0
- *  
- *  Contributors:
- *    Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
- *    Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
- *******************************************************************************/
 /**
  */
 package s4elibrary.impl;
@@ -70,15 +56,25 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case S4elibraryPackage.HIGHVOLTAGECONTROLRELAY: return createHighvoltagecontrolrelay();
-			case S4elibraryPackage.CONTINUOUSROTATIONSERVOMOTORSERVO: return createContinuousrotationservomotorservo();
-			case S4elibraryPackage.ANGULARSERVOMOTORSERVO: return createAngularservomotorservo();
-			case S4elibraryPackage.HUMIDITYSENSOR_XNUCLEOIKS01A3: return createhumiditysensorXNUCLEOIKS01A3();
-			case S4elibraryPackage.TEMPERATURESENSOR_XNUCLEOIKS01A3: return createtemperaturesensorXNUCLEOIKS01A3();
-			case S4elibraryPackage.MAGNETOMETERSENSOR_XNUCLEOIKS01A3: return createmagnetometersensorXNUCLEOIKS01A3();
-			case S4elibraryPackage.ACCELEROMETERSENSOR_XNUCLEOIKS01A3: return createaccelerometersensorXNUCLEOIKS01A3();
-			case S4elibraryPackage.ANGULAR_GYROSCOPESENSOR_XNUCLEOIKS01A3: return createangular_gyroscopesensorXNUCLEOIKS01A3();
-			case S4elibraryPackage.TEMPERATURESENSORDS18B20: return createtemperaturesensords18b20();
+			case S4elibraryPackage.TEMPERATUREDS18B20: return createtemperatureds18b20();
+			case S4elibraryPackage.TEMPERATUREDHT11: return createtemperaturedht11();
+			case S4elibraryPackage.HUMIDITYDHT11: return createhumiditydht11();
+			case S4elibraryPackage.TEMPERATUREDHT21: return createtemperaturedht21();
+			case S4elibraryPackage.HUMIDITYDHT21: return createhumiditydht21();
+			case S4elibraryPackage.TEMPERATUREDHT22: return createtemperaturedht22();
+			case S4elibraryPackage.HUMIDITYDHT22: return createhumiditydht22();
+			case S4elibraryPackage.TEMPERATUREDHT: return createtemperaturedht();
+			case S4elibraryPackage.HUMIDITYDHT: return createhumiditydht();
+			case S4elibraryPackage.STATICRELAY: return createstaticrelay();
+			case S4elibraryPackage.MOSFETRELAY: return createmosfetrelay();
+			case S4elibraryPackage.ANGULARSERVO: return createangularservo();
+			case S4elibraryPackage.CONTINUOUSSERVO: return createcontinuousservo();
+			case S4elibraryPackage.TEMPERATUREX_NUCLEO_IKS01A3: return createtemperaturex_nucleo_iks01a3();
+			case S4elibraryPackage.HUMIDITYX_NUCLEO_IKS01A3: return createhumidityx_nucleo_iks01a3();
+			case S4elibraryPackage.PRESSUREX_NUCLEO_IKS01A3: return createpressurex_nucleo_iks01a3();
+			case S4elibraryPackage.ACCELEROMETERX_NUCLEO_IKS01A3: return createaccelerometerx_nucleo_iks01a3();
+			case S4elibraryPackage.GYROX_NUCLEO_IKS01A3: return creategyrox_nucleo_iks01a3();
+			case S4elibraryPackage.MAGNETX_NUCLEO_IKS01A3: return createmagnetx_nucleo_iks01a3();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -89,9 +85,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Highvoltagecontrolrelay createHighvoltagecontrolrelay() {
-		HighvoltagecontrolrelayImpl highvoltagecontrolrelay = new HighvoltagecontrolrelayImpl();
-		return highvoltagecontrolrelay;
+	public temperatureds18b20 createtemperatureds18b20() {
+		temperatureds18b20Impl temperatureds18b20 = new temperatureds18b20Impl();
+		return temperatureds18b20;
 	}
 
 	/**
@@ -99,9 +95,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Continuousrotationservomotorservo createContinuousrotationservomotorservo() {
-		ContinuousrotationservomotorservoImpl continuousrotationservomotorservo = new ContinuousrotationservomotorservoImpl();
-		return continuousrotationservomotorservo;
+	public temperaturedht11 createtemperaturedht11() {
+		temperaturedht11Impl temperaturedht11 = new temperaturedht11Impl();
+		return temperaturedht11;
 	}
 
 	/**
@@ -109,9 +105,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Angularservomotorservo createAngularservomotorservo() {
-		AngularservomotorservoImpl angularservomotorservo = new AngularservomotorservoImpl();
-		return angularservomotorservo;
+	public humiditydht11 createhumiditydht11() {
+		humiditydht11Impl humiditydht11 = new humiditydht11Impl();
+		return humiditydht11;
 	}
 
 	/**
@@ -119,9 +115,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public humiditysensorXNUCLEOIKS01A3 createhumiditysensorXNUCLEOIKS01A3() {
-		humiditysensorXNUCLEOIKS01A3Impl humiditysensorXNUCLEOIKS01A3 = new humiditysensorXNUCLEOIKS01A3Impl();
-		return humiditysensorXNUCLEOIKS01A3;
+	public temperaturedht21 createtemperaturedht21() {
+		temperaturedht21Impl temperaturedht21 = new temperaturedht21Impl();
+		return temperaturedht21;
 	}
 
 	/**
@@ -129,9 +125,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public temperaturesensorXNUCLEOIKS01A3 createtemperaturesensorXNUCLEOIKS01A3() {
-		temperaturesensorXNUCLEOIKS01A3Impl temperaturesensorXNUCLEOIKS01A3 = new temperaturesensorXNUCLEOIKS01A3Impl();
-		return temperaturesensorXNUCLEOIKS01A3;
+	public humiditydht21 createhumiditydht21() {
+		humiditydht21Impl humiditydht21 = new humiditydht21Impl();
+		return humiditydht21;
 	}
 
 	/**
@@ -139,9 +135,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public magnetometersensorXNUCLEOIKS01A3 createmagnetometersensorXNUCLEOIKS01A3() {
-		magnetometersensorXNUCLEOIKS01A3Impl magnetometersensorXNUCLEOIKS01A3 = new magnetometersensorXNUCLEOIKS01A3Impl();
-		return magnetometersensorXNUCLEOIKS01A3;
+	public temperaturedht22 createtemperaturedht22() {
+		temperaturedht22Impl temperaturedht22 = new temperaturedht22Impl();
+		return temperaturedht22;
 	}
 
 	/**
@@ -149,9 +145,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public accelerometersensorXNUCLEOIKS01A3 createaccelerometersensorXNUCLEOIKS01A3() {
-		accelerometersensorXNUCLEOIKS01A3Impl accelerometersensorXNUCLEOIKS01A3 = new accelerometersensorXNUCLEOIKS01A3Impl();
-		return accelerometersensorXNUCLEOIKS01A3;
+	public humiditydht22 createhumiditydht22() {
+		humiditydht22Impl humiditydht22 = new humiditydht22Impl();
+		return humiditydht22;
 	}
 
 	/**
@@ -159,9 +155,9 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public angular_gyroscopesensorXNUCLEOIKS01A3 createangular_gyroscopesensorXNUCLEOIKS01A3() {
-		angular_gyroscopesensorXNUCLEOIKS01A3Impl angular_gyroscopesensorXNUCLEOIKS01A3 = new angular_gyroscopesensorXNUCLEOIKS01A3Impl();
-		return angular_gyroscopesensorXNUCLEOIKS01A3;
+	public temperaturedht createtemperaturedht() {
+		temperaturedhtImpl temperaturedht = new temperaturedhtImpl();
+		return temperaturedht;
 	}
 
 	/**
@@ -169,9 +165,109 @@ public class S4elibraryFactoryImpl extends EFactoryImpl implements S4elibraryFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public temperaturesensords18b20 createtemperaturesensords18b20() {
-		temperaturesensords18b20Impl temperaturesensords18b20 = new temperaturesensords18b20Impl();
-		return temperaturesensords18b20;
+	public humiditydht createhumiditydht() {
+		humiditydhtImpl humiditydht = new humiditydhtImpl();
+		return humiditydht;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public staticrelay createstaticrelay() {
+		staticrelayImpl staticrelay = new staticrelayImpl();
+		return staticrelay;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public mosfetrelay createmosfetrelay() {
+		mosfetrelayImpl mosfetrelay = new mosfetrelayImpl();
+		return mosfetrelay;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public angularservo createangularservo() {
+		angularservoImpl angularservo = new angularservoImpl();
+		return angularservo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public continuousservo createcontinuousservo() {
+		continuousservoImpl continuousservo = new continuousservoImpl();
+		return continuousservo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public temperaturex_nucleo_iks01a3 createtemperaturex_nucleo_iks01a3() {
+		temperaturex_nucleo_iks01a3Impl temperaturex_nucleo_iks01a3 = new temperaturex_nucleo_iks01a3Impl();
+		return temperaturex_nucleo_iks01a3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public humidityx_nucleo_iks01a3 createhumidityx_nucleo_iks01a3() {
+		humidityx_nucleo_iks01a3Impl humidityx_nucleo_iks01a3 = new humidityx_nucleo_iks01a3Impl();
+		return humidityx_nucleo_iks01a3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public pressurex_nucleo_iks01a3 createpressurex_nucleo_iks01a3() {
+		pressurex_nucleo_iks01a3Impl pressurex_nucleo_iks01a3 = new pressurex_nucleo_iks01a3Impl();
+		return pressurex_nucleo_iks01a3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public accelerometerx_nucleo_iks01a3 createaccelerometerx_nucleo_iks01a3() {
+		accelerometerx_nucleo_iks01a3Impl accelerometerx_nucleo_iks01a3 = new accelerometerx_nucleo_iks01a3Impl();
+		return accelerometerx_nucleo_iks01a3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public gyrox_nucleo_iks01a3 creategyrox_nucleo_iks01a3() {
+		gyrox_nucleo_iks01a3Impl gyrox_nucleo_iks01a3 = new gyrox_nucleo_iks01a3Impl();
+		return gyrox_nucleo_iks01a3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public magnetx_nucleo_iks01a3 createmagnetx_nucleo_iks01a3() {
+		magnetx_nucleo_iks01a3Impl magnetx_nucleo_iks01a3 = new magnetx_nucleo_iks01a3Impl();
+		return magnetx_nucleo_iks01a3;
 	}
 
 	/**

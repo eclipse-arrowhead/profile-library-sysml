@@ -45,20 +45,21 @@ public class JsonUploadToArrowheadDialog extends Dialog{
 	protected Control createDialogArea(Composite parent){
 		Composite container = (Composite) super.createDialogArea(parent);
 		container.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
-        GridLayout layout = new GridLayout(3, false);
+        GridLayout layout = new GridLayout(2, true);
         GridData data = new GridData();
-        data.horizontalSpan = 3;
+        data.horizontalSpan = 2;
         
         container.setLayout(layout);
         container.setData(data);
+        new Label(container, SWT.NONE);
+        new Label(container, SWT.NONE);
+       // new Label(container, SWT.NONE);
       //Informations about the Arrowhead Orchestrator = Port Number + IP Address
         Label lblInfo = new Label(container, SWT.NONE);
         lblInfo.setText("Informations about the Arrowhead Orchestrator :");
         data.horizontalSpan = 2;
        
         new Label(container, SWT.NONE);
-        new Label(container, SWT.NONE);
-        
         //Port Number
         Label lblportNumber = new Label(container, SWT.NONE);
         lblportNumber.setText("Orchestrator Port Number : ");
@@ -71,7 +72,7 @@ public class JsonUploadToArrowheadDialog extends Dialog{
             orchPortNumber = textWidget.getText();
         });
         
-        new Label(container, SWT.NONE);
+        //new Label(container, SWT.NONE);
 
       //Ip Address 
         Label lblIpAddress = new Label(container, SWT.NONE);
@@ -86,16 +87,18 @@ public class JsonUploadToArrowheadDialog extends Dialog{
         });
         
         
+        
         new Label(container, SWT.NONE);
-        
-        
+        new Label(container, SWT.NONE);
+        new Label(container, SWT.NONE);
+        new Label(container, SWT.NONE);
         //clientSystemInfo + Name + address + port
         Label lblClientInfo = new Label(container, SWT.NONE);
-        lblClientInfo.setText("Informations about the Papyrus Customer :                  ");
+        lblClientInfo.setText("Informations about the Papyrus consumer :                  ");
         data.horizontalSpan = 2;
         
         new Label(container, SWT.NONE);
-        new Label(container, SWT.NONE);
+       
         //Client system Name
         Label lblclientSystemName = new Label(container, SWT.NONE);
         lblclientSystemName.setText("System Name : ");
@@ -108,7 +111,7 @@ public class JsonUploadToArrowheadDialog extends Dialog{
             clientSystemName = textWidget.getText();
         });
         
-        new Label(container, SWT.NONE);
+      //  new Label(container, SWT.NONE);
 
       //client system Address 
         Label lblClientSystemAddress = new Label(container, SWT.NONE);
@@ -123,7 +126,7 @@ public class JsonUploadToArrowheadDialog extends Dialog{
         });
         
         
-        new Label(container, SWT.NONE);
+      //  new Label(container, SWT.NONE);
 
       //client system port 
         Label lblClientSystemPort = new Label(container, SWT.NONE);

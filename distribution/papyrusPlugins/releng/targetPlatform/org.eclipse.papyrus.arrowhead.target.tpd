@@ -1,8 +1,8 @@
-target "Arrowhead" with requirements source
+target "Arrowhead 2021-09" with requirements source
 
 /*** Manual Updates ***/
 
-location eclipse "https://download.eclipse.org/releases/latest" {
+location eclipse "https://download.eclipse.org/releases/2022-03" {
 	org.eclipse.equinox.p2.user.ui.feature.group lazy
 	org.eclipse.core.resources lazy
 	org.eclipse.ui.ide lazy
@@ -11,12 +11,10 @@ location eclipse "https://download.eclipse.org/releases/latest" {
 	org.eclipse.m2e.sdk.feature.feature.group lazy
 	org.eclipse.uml2.sdk.feature.group lazy
 }
-
 location xwt "https://download.eclipse.org/xwt/milestones-1.7.0/1.7.0-S/" {
     org.eclipse.xwt.feature.feature.group lazy
 }
-
-location xtext "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.25.0" {
+location xtext "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.26.0" {
 	org.eclipse.xtext.sdk.feature.group
 	org.eclipse.xtend.sdk.feature.group
 	org.eclipse.xtext.redist.feature.group
@@ -24,23 +22,32 @@ location xtext "https://download.eclipse.org/modeling/tmf/xtext/updates/releases
     org.eclipse.xtext.ui.feature.group
 }
 
-location designer "https://download.eclipse.org/modeling/mdt/papyrus/components/designer/2.0.0/" {
+location papyrus "https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2022-03/" {
+    org.eclipse.papyrus.sdk.feature.feature.group lazy
+}
+ 
+location designer "https://download.eclipse.org/modeling/mdt/papyrus/components/designer/2.1.0" {
 	org.eclipse.papyrus.designer.languages.common.feature.feature.group lazy
 	org.eclipse.papyrus.designer.transformation.main.feature.feature.group lazy
 }
+
 location marte "https://download.eclipse.org/modeling/mdt/papyrus/components/marte/" {
 	org.eclipse.papyrus.marte.core.feature.feature.group
 }
-	
-	
-	
 
 
-location papyrus_nightly "https://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/master" {
-	org.eclipse.papyrus.sdk.feature.feature.group lazy
-}
 
-location sysml "https://download.eclipse.org/modeling/mdt/papyrus/components/sysml16/2021-03/"{
+//location orbit "https://download.eclipse.org/tools/orbit/downloads/drops/R20180206163158/repository/" {
+//	org.apache.batik.dom [1.6.0,1.7.0)
+//	org.apache.batik.dom.svg [1.6.0,1.7.0)
+//	org.apache.batik.xml [1.6.0,1.7.0)
+//}
+
+location sysml "https://ci.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/sources/repository/"{
 	org.eclipse.papyrus.sysml16.feature.feature.group
 	org.eclipse.papyrus.sysml16.requirements.extension.feature.feature.group
 }
+
+//location dsml "https://download.eclipse.org/modeling/mdt/papyrus/components/incubation/dsml.validation/"{
+//	org.eclipse.papyrus.dsml.validation.feature.feature.group
+//}

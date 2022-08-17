@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='2'>
-  <unit id='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202110061052' generation='2'>
-    <update id='org.eclipse.papyrus.arrowhead.profile' range='[0.0.0,1.0.0.202110061052)' severity='0'/>
+  <unit id='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202205231242' generation='2'>
+    <update id='org.eclipse.papyrus.arrowhead.profile' range='[0.0.0,1.0.0.202205231242)' severity='0'/>
     <properties size='10'>
       <property name='df_LT.pluginName' value='Papyrus Arrowhead Profile'/>
       <property name='df_LT.pluginDescription' value='SyML profile for Arrowhead '/>
@@ -15,12 +15,12 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='8'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202110061052'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202205231242'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202205231242'/>
       <provided namespace='java.package' name='org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.impl' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.util' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202110061052'>
+      <provided namespace='osgi.identity' name='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202205231242'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -44,19 +44,19 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202110061052'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.profile' version='1.0.0.202205231242'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.profile;singleton:=true&#xA;Bundle-Version: 1.0.0.202110061052&#xA;
+          Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.profile;singleton:=true&#xA;Bundle-Version: 1.0.0.202205231242&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202110061052' singleton='false'>
-    <update id='org.eclipse.papyrus.arrowhead.profile.source' range='[0.0.0,1.0.0.202110061052)' severity='0'/>
+  <unit id='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202205231242' singleton='false'>
+    <update id='org.eclipse.papyrus.arrowhead.profile.source' range='[0.0.0,1.0.0.202205231242)' severity='0'/>
     <properties size='9'>
       <property name='df_LT.bundleVendor' value='CEA LIST'/>
       <property name='df_LT.bundleName' value='Papyrus Arrowhead Profile Source'/>
@@ -69,9 +69,9 @@
       <property name='maven-classifier' value='sources'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202110061052'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202110061052'/>
-      <provided namespace='osgi.identity' name='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202110061052'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202205231242'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202205231242'/>
+      <provided namespace='osgi.identity' name='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202205231242'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -80,13 +80,13 @@
       <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
     </provides>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202110061052'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.arrowhead.profile.source' version='1.0.0.202205231242'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.profile.source&#xA;Bundle-Version: 1.0.0.202110061052&#xA;
+          Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.profile.source&#xA;Bundle-Version: 1.0.0.202205231242&#xA;
         </instruction>
       </instructions>
     </touchpointData>

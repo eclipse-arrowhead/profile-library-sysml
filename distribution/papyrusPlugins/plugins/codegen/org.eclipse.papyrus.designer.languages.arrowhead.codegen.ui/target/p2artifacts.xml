@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='2'>
-  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui' version='1.0.0.202110061052'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui' version='1.0.0.202205231242'>
     <properties size='5'>
       <property name='artifact.size' value='7177'/>
       <property name='download.size' value='7177'/>
@@ -10,7 +10,7 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
   </artifact>
-  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.source' version='1.0.0.202110061052'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.papyrus.designer.languages.arrowhead.codegen.ui.source' version='1.0.0.202205231242'>
     <properties size='6'>
       <property name='artifact.size' value='4635'/>
       <property name='download.size' value='4635'/>

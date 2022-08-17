@@ -36,7 +36,27 @@ public enum DeviceKind implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ACTUATOR(1, "Actuator", "Actuator");
+	ACTUATOR(1, "Actuator", "Actuator"),
+
+	/**
+	 * The '<em><b>Communication</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COMMUNICATION_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COMMUNICATION(2, "Communication", "Communication"),
+
+	/**
+	 * The '<em><b>X</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #X_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	X(3, "X", "X");
 
 	/**
 	 * The '<em><b>Sensor</b></em>' literal value.
@@ -61,6 +81,28 @@ public enum DeviceKind implements Enumerator {
 	public static final int ACTUATOR_VALUE = 1;
 
 	/**
+	 * The '<em><b>Communication</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COMMUNICATION
+	 * @model name="Communication"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int COMMUNICATION_VALUE = 2;
+
+	/**
+	 * The '<em><b>X</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #X
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int X_VALUE = 3;
+
+	/**
 	 * An array of all the '<em><b>Device Kind</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,6 +112,8 @@ public enum DeviceKind implements Enumerator {
 		new DeviceKind[] {
 			SENSOR,
 			ACTUATOR,
+			COMMUNICATION,
+			X,
 		};
 
 	/**
@@ -128,6 +172,8 @@ public enum DeviceKind implements Enumerator {
 		switch (value) {
 			case SENSOR_VALUE: return SENSOR;
 			case ACTUATOR_VALUE: return ACTUATOR;
+			case COMMUNICATION_VALUE: return COMMUNICATION;
+			case X_VALUE: return X;
 		}
 		return null;
 	}

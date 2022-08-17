@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='4'>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' version='1.0.0.202110061052' singleton='false'>
-    <update id='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' range='[0.0.0,1.0.0.202110061052)' severity='0'/>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' version='1.0.0.202205231242' singleton='false'>
+    <update id='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' range='[0.0.0,1.0.0.202205231242)' severity='0'/>
     <properties size='13'>
       <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
       <property name='org.eclipse.equinox.p2.description' value='%description'/>
@@ -18,13 +18,15 @@
       <property name='df_LT.providerName' value='Arrowhead project '/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' version='1.0.0.202205231242'/>
       <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
     </provides>
-    <requires size='3'>
+    <requires size='5'>
       <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.e4.ui.css.swt.theme' range='0.0.0'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp' range='[0.0.1.202110061052,0.0.1.202110061052]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.jar' range='[1.0.0.202110061052,1.0.0.202110061052]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.designer.languages.common.feature.feature.group' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.designer.transformation.main.feature.feature.group' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp' range='[0.0.1.202205231242,0.0.1.202205231242]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.jar' range='[1.0.0.202205231242,1.0.0.202205231242]'>
         <filter>
           (org.eclipse.update.install.features=true)
         </filter>
@@ -40,7 +42,7 @@
       %copyright
     </copyright>
   </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.feature.jar' version='1.0.0.202110061052'>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.feature.jar' version='1.0.0.202205231242'>
     <properties size='12'>
       <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
       <property name='org.eclipse.equinox.p2.description' value='%description'/>
@@ -56,15 +58,15 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='3'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.jar' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.jar' version='1.0.0.202205231242'/>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-      <provided namespace='org.eclipse.update.feature' name='org.eclipse.papyrus.arrowhead.rcp.feature' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.update.feature' name='org.eclipse.papyrus.arrowhead.rcp.feature' version='1.0.0.202205231242'/>
     </provides>
     <filter>
       (org.eclipse.update.install.features=true)
     </filter>
     <artifacts size='1'>
-      <artifact classifier='org.eclipse.update.feature' id='org.eclipse.papyrus.arrowhead.rcp.feature' version='1.0.0.202110061052'/>
+      <artifact classifier='org.eclipse.update.feature' id='org.eclipse.papyrus.arrowhead.rcp.feature' version='1.0.0.202205231242'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
@@ -83,8 +85,8 @@
       %copyright
     </copyright>
   </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.group' version='1.0.0.202110061052' singleton='false'>
-    <update id='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.group' range='[0.0.0,1.0.0.202110061052)' severity='0'/>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.group' version='1.0.0.202205231242' singleton='false'>
+    <update id='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.group' range='[0.0.0,1.0.0.202205231242)' severity='0'/>
     <properties size='14'>
       <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
       <property name='org.eclipse.equinox.p2.description' value='%description'/>
@@ -102,12 +104,12 @@
       <property name='df_LT.providerName' value='Arrowhead project '/>
     </properties>
     <provides size='2'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.group' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.group' version='1.0.0.202205231242'/>
       <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
     </provides>
     <requires size='2'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' range='[1.0.0.202110061052,1.0.0.202110061052]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.jar' range='[1.0.0.202110061052,1.0.0.202110061052]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.feature.group' range='[1.0.0.202205231242,1.0.0.202205231242]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.jar' range='[1.0.0.202205231242,1.0.0.202205231242]'>
         <filter>
           (org.eclipse.update.install.features=true)
         </filter>
@@ -123,7 +125,7 @@
       %copyright
     </copyright>
   </unit>
-  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.jar' version='1.0.0.202110061052'>
+  <unit id='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.jar' version='1.0.0.202205231242'>
     <properties size='13'>
       <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
       <property name='org.eclipse.equinox.p2.description' value='%description'/>
@@ -140,15 +142,15 @@
       <property name='maven-classifier' value='sources-feature'/>
     </properties>
     <provides size='3'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.jar' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.rcp.feature.source.feature.jar' version='1.0.0.202205231242'/>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-      <provided namespace='org.eclipse.update.feature' name='org.eclipse.papyrus.arrowhead.rcp.feature.source' version='1.0.0.202110061052'/>
+      <provided namespace='org.eclipse.update.feature' name='org.eclipse.papyrus.arrowhead.rcp.feature.source' version='1.0.0.202205231242'/>
     </provides>
     <filter>
       (org.eclipse.update.install.features=true)
     </filter>
     <artifacts size='1'>
-      <artifact classifier='org.eclipse.update.feature' id='org.eclipse.papyrus.arrowhead.rcp.feature.source' version='1.0.0.202110061052'/>
+      <artifact classifier='org.eclipse.update.feature' id='org.eclipse.papyrus.arrowhead.rcp.feature.source' version='1.0.0.202205231242'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>

@@ -1,9 +1,13 @@
 {
-    "timestamp" : 1633517602057,
+    "timestamp" : 1653309851957,
     "revision" : {
-        "HEAD" : "1783a1fc7ea505ba13b8ef725151e668a22e5932",
+        "HEAD" : "3e9801687f890f822c9ec52ed58d6759b24227c1",
         "currentBranch" : "refs/heads/master",
-        "knownReferences" : null
+        "knownReferences" : [{
+            "name" : "origin",
+            "url" : "https://github.com/sdhouib/SysML-AHT",
+            "ref" : "master"
+        }]
     },
     "properties" : {
         "TARGET_PLATFORM_VERSION_MAXIMUM" : "null",

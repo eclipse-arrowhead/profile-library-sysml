@@ -415,18 +415,18 @@
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='202110061052.org.eclipse.papyrus.arrowhead.category' version='1.0.0.4--cLaXD57E7EAA77UA7QE'>
+  <unit id='202205231242.org.eclipse.papyrus.arrowhead.category' version='1.0.0.4--cLaX367E7EE7QEIAEME'>
     <properties size='3'>
       <property name='org.eclipse.equinox.p2.name' value='Arrowhead'/>
       <property name='org.eclipse.equinox.p2.description' value='Arrowhead'/>
       <property name='org.eclipse.equinox.p2.type.category' value='true'/>
     </properties>
     <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='202110061052.org.eclipse.papyrus.arrowhead.category' version='1.0.0.4--cLaXD57E7EAA77UA7QE'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='202205231242.org.eclipse.papyrus.arrowhead.category' version='1.0.0.4--cLaX367E7EE7QEIAEME'/>
     </provides>
     <requires size='2'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.feature.feature.group' range='[1.0.0.202110061052,1.0.0.202110061052]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.feature.source.feature.group' range='[1.0.0.202110061052,1.0.0.202110061052]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.feature.source.feature.group' range='[1.0.0.202205231242,1.0.0.202205231242]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.papyrus.arrowhead.feature.feature.group' range='[1.0.0.202205231242,1.0.0.202205231242]'/>
     </requires>
     <touchpoint id='null' version='0.0.0'/>
   </unit>

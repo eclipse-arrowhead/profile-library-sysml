@@ -13,11 +13,10 @@
        Saadia Dhouib (CEA LIST) saadia.dhouib@cea.fr
        Fadwa Tmar (CEA LIST) fadwa.tmar@cea.fr 
  -->
-
 <feature
       id="org.eclipse.papyrus.arrowhead.rcp.feature"
       label="%featureName"
-      version="1.0.0.202110061052"
+      version="1.0.0.202205101023"
       provider-name="%providerName">
 
    <description url="https://eclipse.org/papyrus/">
@@ -33,18 +32,20 @@
    </license>
 
    <url>
-      <discovery label="2020-06" url="http://download.eclipse.org/staging/2021-03/"/>
-      <discovery label="Eclipse Platform 4.16" url="http://download.eclipse.org/eclipse/updates/4.19"/>
+      <discovery label="2022-03" url="http://download.eclipse.org/staging/2022-03/"/>
+      <discovery label="Eclipse Platform 4.23" url="http://download.eclipse.org/eclipse/updates/4.23"/>
    </url>
 
    <requires>
       <import plugin="org.eclipse.e4.ui.css.swt.theme"/>
+      <import feature="org.eclipse.papyrus.designer.languages.common.feature" version="2.1.0.202201261931"/>
+      <import feature="org.eclipse.papyrus.designer.transformation.main.feature" version="2.1.0.202201261931"/>
    </requires>
 
    <plugin
          id="org.eclipse.papyrus.arrowhead.rcp"
          download-size="438"
          install-size="1764"
-         version="0.0.1.202110061052"/>
+         version="0.0.1.202205101023"/>
 
 </feature>

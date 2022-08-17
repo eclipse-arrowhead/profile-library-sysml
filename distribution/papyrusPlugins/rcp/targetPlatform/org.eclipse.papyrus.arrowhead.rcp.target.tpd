@@ -4,7 +4,7 @@ include "../../releng/targetPlatform/org.eclipse.papyrus.arrowhead.target.tpd"
 
 /*** Manual Updates ***/
 
-location eclipse "https://download.eclipse.org/releases/latest" {
+location eclipse "https://download.eclipse.org/releases/2022-03" {
 	org.eclipse.help.feature.group lazy
 	org.eclipse.sdk.feature.group lazy	
 	org.eclipse.emf.sdk.feature.group lazy
@@ -19,7 +19,7 @@ location eclipse "https://download.eclipse.org/releases/latest" {
 
 //updateFrom("Eclipse",0)
 
-location platform "https://download.eclipse.org/eclipse/updates/latest" {
+location platform "https://download.eclipse.org/eclipse/updates/4.23" {
 	org.eclipse.e4.core.tools.feature.feature.group lazy 
 	org.eclipse.rcp.configuration.feature.group lazy
 	org.eclipse.equinox.executable.feature.group lazy

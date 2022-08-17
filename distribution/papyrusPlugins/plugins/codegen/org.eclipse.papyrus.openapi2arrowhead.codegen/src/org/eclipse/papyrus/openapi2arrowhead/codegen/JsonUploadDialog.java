@@ -50,7 +50,7 @@ public class JsonUploadDialog extends Dialog {
         container.setData(data);
         //File uploader service information
         Label lblInfo = new Label(container, SWT.NONE);
-        lblInfo.setText("Upolad the informations about your file uploader service  :  ");
+        lblInfo.setText("Upload the informations about your file uploader service  :  ");
         
         //Port Number
         Label lblportNumber = new Label(container, SWT.NONE);

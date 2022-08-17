@@ -38,7 +38,7 @@
 
 	<properties>
 		<eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
-		<eclipse.simultaneous.release.name>2021-03 (4.19)</eclipse.simultaneous.release.name>
+		<eclipse.simultaneous.release.name>2023-03 (4.23)</eclipse.simultaneous.release.name>
 		<target.platform>org.eclipse.papyrus.arrowhead.rcp.target</target.platform>
 	</properties>
 

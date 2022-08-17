@@ -273,11 +273,11 @@ public class DataSemanticsImpl extends MinimalEObjectImpl.Container implements D
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (SemanticModel: ");
+		result.append(" (semanticModel: ");
 		result.append(semanticModel);
-		result.append(", Ontology: ");
+		result.append(", ontology: ");
 		result.append(ontology);
-		result.append(", Schema: ");
+		result.append(", schema: ");
 		result.append(schema);
 		result.append(')');
 		return result.toString();

@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getNetworkRequirements()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Network-Requirements'"
+ * @model
  * @generated
  */
 public interface NetworkRequirements extends EObject {

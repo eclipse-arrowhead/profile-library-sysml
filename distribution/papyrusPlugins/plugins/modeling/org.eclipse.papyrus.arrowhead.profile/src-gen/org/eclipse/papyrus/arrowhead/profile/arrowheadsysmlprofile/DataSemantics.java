@@ -59,7 +59,7 @@ public interface DataSemantics extends EObject {
 	 * @return the value of the '<em>Ontology</em>' attribute list.
 	 * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.OntologyKind
 	 * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getDataSemantics_Ontology()
-	 * @model default="SenML" ordered="false"
+	 * @model ordered="false"
 	 * @generated
 	 */
 	EList<OntologyKind> getOntology();

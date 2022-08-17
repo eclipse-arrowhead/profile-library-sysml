@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see org.eclipse.papyrus.arrowhead.profile.arrowheadsysmlprofile.ArrowheadSysMLProfilePackage#getLocalCloudEvolution()
- * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='LocalCloud-Evolution'"
+ * @model
  * @generated
  */
 public interface LocalCloudEvolution extends EObject {

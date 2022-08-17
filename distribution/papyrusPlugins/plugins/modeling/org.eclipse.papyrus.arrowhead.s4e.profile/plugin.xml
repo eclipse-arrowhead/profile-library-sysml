@@ -2,17 +2,23 @@
 <?eclipse version="3.0"?>
 
 <!--
+    Copyright (c) 2022 IBM Corporation and others.
+   
+    This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License 2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-2.0/
+   
+    SPDX-License-Identifier: EPL-2.0
+   
+    Contributors:
+        IBM Corporation - initial API and implementation
+ -->
+
+<!--
 -->
 
 <plugin>
-   <extension
-         point="org.eclipse.emf.ecore.uri_mapping">
-      <mapping
-            source="pathmap://S4E_PROFILE/"
-            target="platform:/plugin/org.eclipse.papyrus.arrowhead.s4e.profile/resources/profile/">
-      </mapping>
-   </extension>
-
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated studio4education.profile -->
       <package
@@ -21,14 +27,26 @@
             genModel="resources/profile/studio4education.profile.genmodel"/>
    </extension>
    <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://S4E_PROFILE/"
+            target="platform:/plugin/org.eclipse.papyrus.arrowhead.s4e.profile/resources/profile/">
+      </mapping>
+   </extension>
+   <extension
          point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://S4E_PROFILE/studio4education.profile.uml#_s6xo8DC0EeygCbgFGuzi7Q"
+            uri="http://Papyrus/Studio4EducationProfile">
+      </profile>
    </extension>
    <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
-            description="SysML profile for devices to be configured in S4E"
+            description="S4E profile"
             name="Studio4Education Profile"
-            path="pathmap://S4E_PROFILE/studio4education.profile.uml">
+            path="pathmap://S4E_PROFILE/studio4education.profile.uml"
+            provider="CEA LIST">
       </profile>
    </extension>
 
