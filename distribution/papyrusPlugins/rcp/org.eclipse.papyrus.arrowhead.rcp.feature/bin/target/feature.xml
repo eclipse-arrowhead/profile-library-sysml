@@ -16,7 +16,7 @@
 <feature
       id="org.eclipse.papyrus.arrowhead.rcp.feature"
       label="%featureName"
-      version="1.0.0.202205101023"
+      version="1.0.0.202205231242"
       provider-name="%providerName">
 
    <description url="https://eclipse.org/papyrus/">
@@ -46,6 +46,6 @@
          id="org.eclipse.papyrus.arrowhead.rcp"
          download-size="438"
          install-size="1764"
-         version="0.0.1.202205101023"/>
+         version="0.0.1.202205231242"/>
 
 </feature>

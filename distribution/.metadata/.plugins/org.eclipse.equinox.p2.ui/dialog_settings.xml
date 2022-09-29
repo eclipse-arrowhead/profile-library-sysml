@@ -1,44 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
-<<<<<<< Updated upstream
-		<item key="DIALOG_X_ORIGIN" value="-1286"/>
-		<item key="DIALOG_Y_ORIGIN" value="242"/>
-		<item key="DIALOG_WIDTH" value="861"/>
-		<item key="DIALOG_HEIGHT" value="735"/>
+	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.WizardSettings">
+		<item key="DIALOG_X_ORIGIN" value="460"/>
+		<item key="DIALOG_Y_ORIGIN" value="-29"/>
+		<item key="DIALOG_WIDTH" value="873"/>
+		<item key="DIALOG_HEIGHT" value="1033"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
-=======
-		<item key="DIALOG_X_ORIGIN" value="-842"/>
-		<item key="DIALOG_Y_ORIGIN" value="540"/>
-		<item key="DIALOG_WIDTH" value="1792"/>
-		<item key="DIALOG_HEIGHT" value="706"/>
-		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
-	</section>
-	<section name="AvailableIUsPage">
-		<item key="AvailableViewType" value="1"/>
-		<item key="ShowLatestVersionsOnly" value="true"/>
-		<item key="HideInstalledContent" value="true"/>
-		<item key="ResolveInstallWithAllSites" value="true"/>
-		<item key="FilterOnEnv" value="true"/>
-		<item key="AvailableNameColumnWidth" value="502"/>
-		<item key="AvailableVersionColumnWidth" value="267"/>
-		<item key="AvailableListSashWeight" value="793"/>
-		<item key="AvailableDetailsSashWeight" value="206"/>
-	</section>
-	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.SelectableIUsPage">
+	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.SelectableIUsPage">
 		<item key="NameColumnWidth" value="401"/>
 		<item key="VersionColumnWidth" value="133"/>
 		<item key="IDColumnWidth" value="267"/>
 		<item key="ListSashWeight" value="800"/>
 		<item key="DetailsSashWeight" value="200"/>
 	</section>
-	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.ResolutionResultsPage">
+	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.ResolutionResultsPage">
 		<item key="NameColumnWidth" value="400"/>
 		<item key="VersionColumnWidth" value="200"/>
 		<item key="IDColumnWidth" value="200"/>
 		<item key="ListSashWeight" value="800"/>
 		<item key="DetailsSashWeight" value="200"/>
 	</section>
->>>>>>> Stashed changes
 </section>
