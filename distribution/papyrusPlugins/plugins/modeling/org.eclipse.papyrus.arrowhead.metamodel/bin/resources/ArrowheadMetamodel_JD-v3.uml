@@ -319,9 +319,12 @@ self.Full_Device_Name='_''Device_Name''._''LC_name''._''interface''._''mac_proto
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Cvp5clXMEe21P7HX5btlWg" name="networkconfiguration-designdescription" type="_1xgI4E7kEe2v8Y-cDIcArA" aggregation="composite" association="_CvoEQFXMEe21P7HX5btlWg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CqCkMFXNEe21P7HX5btlWg" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_2FJnQR_JEe28LLOkDW9VeQ" name="intercloudnetwrokdesign" type="_9j8QUBCwEe2Vcvi6exQrpA" association="_2FHyEB_JEe28LLOkDW9VeQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2FJnQR_JEe28LLOkDW9VeQ" name="intercloudnetworkdesign" type="_9j8QUBCwEe2Vcvi6exQrpA" association="_2FHyEB_JEe28LLOkDW9VeQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FKOUB_JEe28LLOkDW9VeQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FKOUR_JEe28LLOkDW9VeQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Wvk1UHSpEe2cDKF0lR0TcA" name="protocol">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wvk1UXSpEe2cDKF0lR0TcA" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_1xgI4E7kEe2v8Y-cDIcArA" name="NetworkConfiguration-DesignDescription"/>
@@ -369,12 +372,6 @@ self.Full_Device_Name='_''Device_Name''._''LC_name''._''interface''._''mac_proto
       <ownedAttribute xmi:type="uml:Property" xmi:id="_h82n1zyyEeywba4O3NkZ_A" name="producerinterfacedescription" visibility="public" type="_h82n0DyyEeywba4O3NkZ_A" isUnique="false" association="_h82AxzyyEeywba4O3NkZ_A">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h82n2DyyEeywba4O3NkZ_A"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h82n2TyyEeywba4O3NkZ_A" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_qn5rIGc2Ee2zrf471liO2w" name="IntercloudNetworkDesignDescription">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_x3wkEmc2Ee2zrf471liO2w" name="intercloudnetwrokdesign" type="_9j8QUBCwEe2Vcvi6exQrpA" association="_x3vV8Gc2Ee2zrf471liO2w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x3xyMGc2Ee2zrf471liO2w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x30OcGc2Ee2zrf471liO2w" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_CXQekGdGEe2LH_l67Mavdg" name="Time2LivePolicy">
@@ -628,19 +625,21 @@ self.Full_Device_Name='_''Device_Name''._''LC_name''._''interface''._''mac_proto
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_MimEglB5Ee2K_twtxyR54Q" name="devicehw-implementation" type="_nUTM0E5SEe2jL6wF5XuZrQ" association="_Mik2YFB5Ee2K_twtxyR54Q"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_4c_d0FCcEe2K_twtxyR54Q" name="InterLocalCloudNetwork-Implementation">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_0UzOQmc2Ee2zrf471liO2w" name="intercloudnetworkdesigndescription" type="_qn5rIGc2Ee2zrf471liO2w" association="_0UyAIGc2Ee2zrf471liO2w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0UzOQ2c2Ee2zrf471liO2w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0UzORGc2Ee2zrf471liO2w" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4c_d0FCcEe2K_twtxyR54Q" name="InterLocalCloudNetwork-Implementation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_bUkR8FCjEe2K_twtxyR54Q" name="DevcieSW-implementation">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8jFsUlCjEe2K_twtxyR54Q" name="devicedesigndescription" type="_h80yoDyyEeywba4O3NkZ_A" association="_8jFFQFCjEe2K_twtxyR54Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8jFsVFCjEe2K_twtxyR54Q" value="*"/>
       </ownedAttribute>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_f6m-sAv0Ee23l4XuqrZP2w" name="Deployment" visibility="public"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_f6m-sAv0Ee23l4XuqrZP2w" name="Deployment" visibility="public">
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_II3nsG8kEe2m2adgWb5oPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_II_jgG8kEe2m2adgWb5oPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href=".#//%http:%2F%2Fwww.eclipse.org%2Fuml2%2F2.0.0%2FUML%/_"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href=".#/"/>
+    </profileApplication>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_0BJK8Av7Ee23l4XuqrZP2w" name="Training" visibility="public">
     <packagedElement xmi:type="uml:Class" xmi:id="_dJcwwAwXEe23l4XuqrZP2w" name="System-of-LocalCloud Training">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8ROhEAwXEe23l4XuqrZP2w" name="system-of-localcloud-deployment" type="_5I5NEPrSEeyGtqWTxsDZ4Q" association="_8RCT0AwXEe23l4XuqrZP2w">
@@ -1447,18 +1446,6 @@ New Arrowhead Core system version necessitating V&amp;V of Microsystem complianc
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dvPMEWc1Ee2zrf471liO2w" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dvPzIWc1Ee2zrf471liO2w" name="requirement" type="_RW-7AD8qEe2mAIOw8vLwcw" association="_dvN98Gc1Ee2zrf471liO2w"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_x3vV8Gc2Ee2zrf471liO2w" visibility="package" memberEnd="_x3wkEmc2Ee2zrf471liO2w _x32DoGc2Ee2zrf471liO2w">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x3wkEGc2Ee2zrf471liO2w" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x3wkEWc2Ee2zrf471liO2w" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_x32DoGc2Ee2zrf471liO2w" name="intercloudnetworkdesigndescription" type="_qn5rIGc2Ee2zrf471liO2w" association="_x3vV8Gc2Ee2zrf471liO2w"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_0UyAIGc2Ee2zrf471liO2w" memberEnd="_0UzOQmc2Ee2zrf471liO2w _0Uz1UGc2Ee2zrf471liO2w">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0UzOQGc2Ee2zrf471liO2w" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0UzOQWc2Ee2zrf471liO2w" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_0Uz1UGc2Ee2zrf471liO2w" name="interlocalcloudnetwork-implementation" type="_4c_d0FCcEe2K_twtxyR54Q" association="_0UyAIGc2Ee2zrf471liO2w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_k0r50Gf7Ee2M9cqslMJvaw" visibility="package" memberEnd="_k0uWEGf7Ee2M9cqslMJvaw _k01q0Gf7Ee2M9cqslMJvaw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k0tvAGf7Ee2M9cqslMJvaw" source="org.eclipse.papyrus">
