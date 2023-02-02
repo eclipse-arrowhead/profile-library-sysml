@@ -14,7 +14,8 @@
     <body>Microsystem</body>
   </ownedComment>
   <ownedComment xmi:type="uml:Comment" xmi:id="_OuxTAGc0Ee2zrf471liO2w" annotatedElement="_tISt4DykEeywba4O3NkZ_A _bKI5gFB1Ee2K_twtxyR54Q">
-    <body>SoS level</body>
+    <body>SoS level
+</body>
   </ownedComment>
   <ownedComment xmi:type="uml:Comment" xmi:id="_NBYj0GsIEe2M9cqslMJvaw">
     <body>Black box functional design</body>
