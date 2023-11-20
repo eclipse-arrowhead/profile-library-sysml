@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_jI5qQJs8Ee22k6yZgsKAfg" name="ArrowheadPrinciples">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jK5OUJs8Ee22k6yZgsKAfg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jLBKIJs8Ee22k6yZgsKAfg">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_YUyBQH_GEe6Xb_ifwf_2_Q">
+      <importedPackage xmi:type="uml:Model" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_GJjFMDdfEe6h28lXN9kaaA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ojkNEJtFEe22gNlMu9xmHA" name="Principles - v5.0">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-5ROUJtGEe22gNlMu9xmHA" name="FoundationalRequirements">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0h_t8JtFEe22gNlMu9xmHA" name="Design and run time engineering"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0GvqcJtHEe22gNlMu9xmHA" name="Local cloud concept"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cz-SEJtIEe22gNlMu9xmHA" name="Network technology agnostic"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_EZdPQJvdEe22gNlMu9xmHA" name="SOA - microservice baseed architecture"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9Yw-QJvdEe22gNlMu9xmHA" name="Micosystem properties"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Zi3pAKFvEe2d4rmOY33MGw" name="Interoperability"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GiqSAKFwEe2d4rmOY33MGw" name="Security AAA"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hIzqMKFwEe2d4rmOY33MGw" name="Engineering process"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0rpXsKFwEe2d4rmOY33MGw" name="Support for multipe stratgy direction"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3cOqgKa2Ee2d4rmOY33MGw" name="Security On-boarding"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__fI7kKa3Ee2d4rmOY33MGw" name="Automation system technology stack"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JpU3kJtHEe22gNlMu9xmHA" name="Architecture levels">
+        <packagedElement xmi:type="uml:Class" xmi:id="_vC6PEJtFEe22gNlMu9xmHA" name="System of Local Clouds"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RgY6cJtHEe22gNlMu9xmHA" name="LocalClouds"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VU1ccJtHEe22gNlMu9xmHA" name="Microsystem"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_XNAfAJtHEe22gNlMu9xmHA" name="Microservice"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_aU9HYJtHEe22gNlMu9xmHA" name="Device"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ci4XgJtHEe22gNlMu9xmHA" name="Network"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_C5SH4JvbEe22gNlMu9xmHA" name="SoS engineering phases">
+        <packagedElement xmi:type="uml:Class" xmi:id="_GZSfoJtGEe22gNlMu9xmHA" name="SoS requirements"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-mEw0JvbEe22gNlMu9xmHA" name="BlackboxDesign"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_L4FZcJvcEe22gNlMu9xmHA" name="WhiteboxDesignDescription"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QgOCMJvcEe22gNlMu9xmHA" name="Implementation"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_S2RTkJvcEe22gNlMu9xmHA" name="Deployment"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UgQJIJvcEe22gNlMu9xmHA" name="Maintenance"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_XgHzkJvcEe22gNlMu9xmHA" name="Evolution"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rXfmoJvcEe22gNlMu9xmHA" name="Training"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_1IoiIKa0Ee2d4rmOY33MGw" name="Operation"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_x_C0UJvaEe22gNlMu9xmHA" name="Strategyies">
+        <packagedElement xmi:type="uml:Class" xmi:id="_N8o8UJtGEe22gNlMu9xmHA" name="Security"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_P-WVYJtGEe22gNlMu9xmHA" name="Maintenance"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SMbWgJtGEe22gNlMu9xmHA" name="LifeCycle"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jbBJcJtGEe22gNlMu9xmHA" name="Audit"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__G40UJvaEe22gNlMu9xmHA" name="Monitoring"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eUPc4JtGEe22gNlMu9xmHA" name="BusinessAdministration"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2j-GIJvcEe22gNlMu9xmHA" name="BusinessModel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8RcbgKPNEe2d4rmOY33MGw" name="Training"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jhpEcKPOEe2d4rmOY33MGw" name="Standardisation"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pYlpsKPOEe2d4rmOY33MGw" name="Engineering"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_lEJ48JvfEe22gNlMu9xmHA" name="Architecture core systems">
+        <packagedElement xmi:type="uml:Class" xmi:id="_s-q4cJvfEe22gNlMu9xmHA" name="ServiceRegistry"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vMI1kJvfEe22gNlMu9xmHA" name="ServiceOrchestration"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_xo5L4JvfEe22gNlMu9xmHA" name="ServiceConsumptionAuthorisation"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0stiMJvfEe22gNlMu9xmHA" name="ConsumerAuthentication"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_lKgUsKa4Ee2d4rmOY33MGw" name="Architecture support system stack">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_L9uoMH_KEe6Xb_ifwf_2_Q">
+          <body>Atributes not typed exists as code in github but are note modelled  yet</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rNsmMKa4Ee2d4rmOY33MGw" name="SOA foundation">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_18_4wH_FEe6Xb_ifwf_2_Q" name="Look-up">
+            <type xmi:type="uml:Class" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_ru-zcDd1Ee6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f4gRYH_GEe6Xb_ifwf_2_Q" name="ServiceOrchestration">
+            <type xmi:type="uml:Class" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_1j1xADd7Ee6hKsppnexuYQ"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_5GSIcH_GEe6Xb_ifwf_2_Q" name="SOA security">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9bywIH_GEe6Xb_ifwf_2_Q" name="Authentication" type="_0stiMJvfEe22gNlMu9xmHA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_izHy8H_HEe6Xb_ifwf_2_Q" name="Authorisation">
+            <type xmi:type="uml:Class" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_rGuboDesEe6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CSt7cH_KEe6Xb_ifwf_2_Q" name="CertificateAuthority"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_F7bukH_KEe6Xb_ifwf_2_Q" name="Onboarding"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zx79IH_KEe6Xb_ifwf_2_Q" name="SystemRegistry"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2YehkH_KEe6Xb_ifwf_2_Q" name="DeviceRegistry"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4AN7cH_KEe6Xb_ifwf_2_Q" name="SecurityCompliance"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6RNtsH_KEe6Xb_ifwf_2_Q" name="SecurityMitigation"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CaceoH_LEe6Xb_ifwf_2_Q" name="Interoperability">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HxPkMH_LEe6Xb_ifwf_2_Q" name="Translation"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OVOOkH_LEe6Xb_ifwf_2_Q" name="FiWarre"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RwGaAH_LEe6Xb_ifwf_2_Q" name="IEC61499"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Tv35YH_LEe6Xb_ifwf_2_Q" name="OPC_UA_Adaptor">
+            <type xmi:type="uml:Class" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_GyaIoFyFEe6dnI6HBiPMog"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pc3xUH_LEe6Xb_ifwf_2_Q" name="ModbusTCP" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wltcQH_LEe6Xb_ifwf_2_Q" name="Z_Wave_Adaptor"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1ZvL8H_LEe6Xb_ifwf_2_Q" name="Basyx"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6h2VQH_LEe6Xb_ifwf_2_Q" name="ROS"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vFYqQH_REe6Xb_ifwf_2_Q" name="Inter cloud services">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zq7SAH_REe6Xb_ifwf_2_Q" name="Gatekeeper" isUnique="false">
+            <type xmi:type="uml:Class" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_lEA6kDz3Ee6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8kJVcH_REe6Xb_ifwf_2_Q" name="GatePath">
+            <type xmi:type="uml:Class" href="platform:/resource/EclipseArrowhead/EclipseArrowhead_v6.uml#_yuTKwETCEe6aQZfmGTTxwA"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IGeJIH_SEe6Xb_ifwf_2_Q" name="SoS_Support">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VT3XgH_SEe6Xb_ifwf_2_Q" name="PlantDescriotion" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aq5GkH_SEe6Xb_ifwf_2_Q" name="Configuration"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_c4oJcH_SEe6Xb_ifwf_2_Q" name="TimeManager"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fjIn4H_SEe6Xb_ifwf_2_Q" name="QoS"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iZM2EH_SEe6Xb_ifwf_2_Q" name="EventHandler" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mRU-MH_SEe6Xb_ifwf_2_Q" name="DataManager"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2LA-QH_TEe6Xb_ifwf_2_Q" name="DigitalTwin"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_1c5wgH_SEe6Xb_ifwf_2_Q" name="Execution support">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PdxRYH_TEe6Xb_ifwf_2_Q" name="Choreography"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TQOPUH_TEe6Xb_ifwf_2_Q" name="WorkflowManager"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UslfoH_TEe6Xb_ifwf_2_Q" name="WorkflowExecution"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XT-_sH_TEe6Xb_ifwf_2_Q" name="NodeRed"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_buOWYH_TEe6Xb_ifwf_2_Q" name="Supplychain business support">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_j9on0H_TEe6Xb_ifwf_2_Q" name="ContractProxy"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pXS0IH_TEe6Xb_ifwf_2_Q" name="Management support">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tI0lAH_TEe6Xb_ifwf_2_Q" name="Management_Tool"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Bm7A4H_UEe6Xb_ifwf_2_Q" name="Engineering_Tools">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SCpzgH_UEe6Xb_ifwf_2_Q" name="DSL_SysML_Profile"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_D8qTwH_VEe6Xb_ifwf_2_Q" name="Arrowhead_Coresystem_Library"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZFB0oH_VEe6Xb_ifwf_2_Q" name="MicrosystemTemplates" isUnique="false"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jJfgIJs8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jJjKgJs8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK3ZIJs8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK3ZIZs8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK3ZIps8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK3ZI5s8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK3ZJJs8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK3ZJZs8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK3ZJps8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK4AMJs8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK4AMZs8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK4AMps8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK4AM5s8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK4ANJs8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK4ANZs8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK4ANps8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK4nQJs8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK4nQZs8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jK4nQps8Ee22k6yZgsKAfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jK4nQ5s8Ee22k6yZgsKAfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VnvZ8H_LEe6Xb_ifwf_2_Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnwBAH_LEe6Xb_ifwf_2_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_vETWMJtFEe22gNlMu9xmHA" base_Class="_vC6PEJtFEe22gNlMu9xmHA"/>
+  <Requirements:Requirement xmi:id="_0iF0kJtFEe22gNlMu9xmHA" base_NamedElement="_0h_t8JtFEe22gNlMu9xmHA" id="AR1" text="Support design time and run time engineering&#xA;&#xA;" base_Class="_0h_t8JtFEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_GZVi8JtGEe22gNlMu9xmHA" base_Class="_GZSfoJtGEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_N8rYkJtGEe22gNlMu9xmHA" base_Class="_N8o8UJtGEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_P-YxoJtGEe22gNlMu9xmHA" base_Class="_P-WVYJtGEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_SMdywJtGEe22gNlMu9xmHA" base_Class="_SMbWgJtGEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_eUR5IJtGEe22gNlMu9xmHA" base_Class="_eUPc4JtGEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_jbDlsJtGEe22gNlMu9xmHA" base_Class="_jbBJcJtGEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_RgbWsJtHEe22gNlMu9xmHA" base_Class="_RgY6cJtHEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_VU34sJtHEe22gNlMu9xmHA" base_Class="_VU1ccJtHEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_XNCUMJtHEe22gNlMu9xmHA" base_Class="_XNAfAJtHEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_aU-8kJtHEe22gNlMu9xmHA" base_Class="_aU9HYJtHEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_ci6MsJtHEe22gNlMu9xmHA" base_Class="_ci4XgJtHEe22gNlMu9xmHA"/>
+  <Requirements:Requirement xmi:id="_0GyGsJtHEe22gNlMu9xmHA" base_NamedElement="_0GvqcJtHEe22gNlMu9xmHA" id="AR2" text="Provide protected segmentation with managed access into a segment and between segments.&#xA; &#xA;" base_Class="_0GvqcJtHEe22gNlMu9xmHA"/>
+  <Requirements:Requirement xmi:id="_c0AuUJtIEe22gNlMu9xmHA" base_NamedElement="_cz-SEJtIEe22gNlMu9xmHA" id="AR3" text="Allow for different network properties inside architecture segments.&#xA;" base_Class="_cz-SEJtIEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="__G73oJvaEe22gNlMu9xmHA" base_Class="__G40UJvaEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_-mHNEJvbEe22gNlMu9xmHA" base_Class="_-mEw0JvbEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_L4H1sJvcEe22gNlMu9xmHA" base_Class="_L4FZcJvcEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_QgQecJvcEe22gNlMu9xmHA" base_Class="_QgOCMJvcEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_S2TIwJvcEe22gNlMu9xmHA" base_Class="_S2RTkJvcEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_UgSlYJvcEe22gNlMu9xmHA" base_Class="_UgQJIJvcEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_XgJowJvcEe22gNlMu9xmHA" base_Class="_XgHzkJvcEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_rXhb0JvcEe22gNlMu9xmHA" base_Class="_rXfmoJvcEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_2j_7UJvcEe22gNlMu9xmHA" base_Class="_2j-GIJvcEe22gNlMu9xmHA"/>
+  <Requirements:Requirement xmi:id="_EZfrgJvdEe22gNlMu9xmHA" base_NamedElement="_EZdPQJvdEe22gNlMu9xmHA" id="AR4" text="Architectural support for SOA Look-uo, Late Binding and loose coupling.&#xA;" base_Class="_EZdPQJvdEe22gNlMu9xmHA"/>
+  <Requirements:Requirement xmi:id="_9YyzcJvdEe22gNlMu9xmHA" base_NamedElement="_9Yw-QJvdEe22gNlMu9xmHA" id="AR5" text="A micosystem can be stateless or statefull. If statefull the microsystem is responsible for its own data stoarage perferable using a database and a well established/standardised datamodel.&#xA;&#xA;  " base_Class="_9Yw-QJvdEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_s-stoJvfEe22gNlMu9xmHA" base_Class="_s-q4cJvfEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_vMKqwJvfEe22gNlMu9xmHA" base_Class="_vMI1kJvfEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_xo7BEJvfEe22gNlMu9xmHA" base_Class="_xo5L4JvfEe22gNlMu9xmHA"/>
+  <Blocks:Block xmi:id="_0svXYJvfEe22gNlMu9xmHA" base_Class="_0stiMJvfEe22gNlMu9xmHA"/>
+  <Requirements:Requirement xmi:id="_ZjCBEKFvEe2d4rmOY33MGw" base_NamedElement="_Zi3pAKFvEe2d4rmOY33MGw" id="AR6" text="Interoperability support at Service leval shall be provided regrding: SOA, IP and legacy protocols, encodings, compressions, security, data models, trough translators or dedicated adaptors. For data models, interoperability between major standards like ISO10303, ISO 15926, IEC 81346 is prioritised but not yet ready fofr prime time.&#xA;&#xA;&#xA;" base_Class="_Zi3pAKFvEe2d4rmOY33MGw"/>
+  <Requirements:Requirement xmi:id="_GiujcKFwEe2d4rmOY33MGw" base_NamedElement="_GiqSAKFwEe2d4rmOY33MGw" id="AR7" text="Security shall be supported at service exchange level with authentication, authorisation and audit. &#xA;" base_Class="_GiqSAKFwEe2d4rmOY33MGw"/>
+  <Requirements:Requirement xmi:id="_hI2tgKFwEe2d4rmOY33MGw" base_NamedElement="_hIzqMKFwEe2d4rmOY33MGw" id="AR8" text="An SOA enabled engineering process shall be supported by a SysML profile integrating the architecture and the engineeering process.&#xA; &#xA; " base_Class="_hIzqMKFwEe2d4rmOY33MGw"/>
+  <Requirements:Requirement xmi:id="_0rsbAKFwEe2d4rmOY33MGw" base_NamedElement="_0rpXsKFwEe2d4rmOY33MGw" id="AR9" text="Strateci directions to be supported may be: Security, LifeCycle, Maintenance, Business, Audit, Monitoring, BusinessAdminstration, BusinessModels. This will also require ways of addressing interdependecies between the various stratgy directions.&#xA;" base_Class="_0rpXsKFwEe2d4rmOY33MGw"/>
+  <Blocks:Block xmi:id="_8Rgs8KPNEe2d4rmOY33MGw" base_Class="_8RcbgKPNEe2d4rmOY33MGw"/>
+  <Blocks:Block xmi:id="_jhrgsKPOEe2d4rmOY33MGw" base_Class="_jhpEcKPOEe2d4rmOY33MGw"/>
+  <Blocks:Block xmi:id="_pYoF8KPOEe2d4rmOY33MGw" base_Class="_pYlpsKPOEe2d4rmOY33MGw"/>
+  <Blocks:Block xmi:id="_1IrlcKa0Ee2d4rmOY33MGw" base_Class="_1IoiIKa0Ee2d4rmOY33MGw"/>
+  <Requirements:Requirement xmi:id="_3cRGwKa2Ee2d4rmOY33MGw" base_NamedElement="_3cOqgKa2Ee2d4rmOY33MGw" id="AR10" text="On-boarding based on authentication of devices, microsystems and microservices shall be supproted.&#xA;" base_Class="_3cOqgKa2Ee2d4rmOY33MGw"/>
+  <Requirements:Requirement xmi:id="__fLX0Ka3Ee2d4rmOY33MGw" base_NamedElement="__fI7kKa3Ee2d4rmOY33MGw" id="AR11" text="Provide a technology stack of support systems for automation/digitalisation solutions.&#xA;&#xA;" base_Class="__fI7kKa3Ee2d4rmOY33MGw"/>
+  <Blocks:Block xmi:id="_rNvCcKa4Ee2d4rmOY33MGw" base_Class="_rNsmMKa4Ee2d4rmOY33MGw"/>
+  <Blocks:Block xmi:id="_5GY2IH_GEe6Xb_ifwf_2_Q" base_Class="_5GSIcH_GEe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_Cafh8H_LEe6Xb_ifwf_2_Q" base_Class="_CaceoH_LEe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_vFcUoH_REe6Xb_ifwf_2_Q" base_Class="_vFYqQH_REe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_IGhMcH_SEe6Xb_ifwf_2_Q" base_Class="_IGeJIH_SEe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_1c8z0H_SEe6Xb_ifwf_2_Q" base_Class="_1c5wgH_SEe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_buQyoH_TEe6Xb_ifwf_2_Q" base_Class="_buOWYH_TEe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_pXVQYH_TEe6Xb_ifwf_2_Q" base_Class="_pXS0IH_TEe6Xb_ifwf_2_Q"/>
+  <Blocks:Block xmi:id="_Bm-EMH_UEe6Xb_ifwf_2_Q" base_Class="_Bm7A4H_UEe6Xb_ifwf_2_Q"/>
+</xmi:XMI>

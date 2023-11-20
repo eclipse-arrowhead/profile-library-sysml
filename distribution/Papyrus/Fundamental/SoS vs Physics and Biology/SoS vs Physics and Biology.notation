@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_eWmogGb9Ee2M9cqslMJvaw" type="PapyrusUMLClassDiagram" name="SoS vs physics and biology" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_OVnYoGfjEe2M9cqslMJvaw" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_OVnYomfjEe2M9cqslMJvaw" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_OVnYo2fjEe2M9cqslMJvaw" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_Xb8D8GfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xb8D8mfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xb8D82fjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Xb8D9GfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Xb8D9WfjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_Xb8D9mfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Xb8D92fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Xb8D-GfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xb8D-WfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Xb8D-mfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_Xb8D-2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Xb8D_GfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Xb8D_WfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xb8D_mfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Xb8D_2fjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_Xb8EAGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Xb8EAWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Xb8EAmfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xb8EA2fjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_XbsMUGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xb8D8WfjEe2M9cqslMJvaw" x="14" y="32" width="181" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZjjQsGfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZjjQsmfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZjjQs2fjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZjjQtGfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZjjQtWfjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZjjQtmfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZjjQt2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZjjQuGfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjjQuWfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZjjQumfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZjjQu2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZjjQvGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZjjQvWfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjjQvmfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZjjQv2fjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZjjQwGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZjjQwWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZjjQwmfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjjQw2fjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ZjY4oGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjjQsWfjEe2M9cqslMJvaw" x="14" y="112" width="181" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_b_VWoGfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_b_VWomfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_b_VWo2fjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_b_VWpGfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_b_VWpWfjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_b_VWpmfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_b_VWp2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_b_VWqGfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b_VWqWfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_b_VWqmfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_b_VWq2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_b_VWrGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_b_VWrWfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b_VWrmfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_b_VWr2fjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_b_VWsGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_b_VWsWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_b_VWsmfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b_VWs2fjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b_VWoWfjEe2M9cqslMJvaw" x="14" y="192" width="181" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_jUCTUGfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_jUCTUmfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_jUCTU2fjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_jUC6YGfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_jUC6YWfjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_jUC6YmfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_jUC6Y2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_jUC6ZGfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jUC6ZWfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_jUC6ZmfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_jUC6Z2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_jUC6aGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_jUC6aWfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jUC6amfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_jUC6a2fjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_jUC6bGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_jUC6bWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_jUC6bmfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jUC6b2fjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_jTvYYGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jUCTUWfjEe2M9cqslMJvaw" x="14" y="272" width="181" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mM374G15Ee2m2adgWb5oPg" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_mM4i8G15Ee2m2adgWb5oPg" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_mM4i8W15Ee2m2adgWb5oPg" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mM4i8m15Ee2m2adgWb5oPg" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_mM4i8215Ee2m2adgWb5oPg" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_mM4i9G15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mM4i9W15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mM4i9m15Ee2m2adgWb5oPg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mM4i9215Ee2m2adgWb5oPg"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_mM4i-G15Ee2m2adgWb5oPg" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_mM4i-W15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mM4i-m15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mM4i-215Ee2m2adgWb5oPg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mM4i_G15Ee2m2adgWb5oPg"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_mM4i_W15Ee2m2adgWb5oPg" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_mM4i_m15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mM4i_215Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mM4jAG15Ee2m2adgWb5oPg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mM4jAW15Ee2m2adgWb5oPg"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_lmcOAG15Ee2m2adgWb5oPg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mM374W15Ee2m2adgWb5oPg" x="234" y="32" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBN8pYwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBN8powREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBN8qIwREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_XbsMUGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBN8p4wREe2zRNviqSINkw" x="214" y="32"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBSOEIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBSOEYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBSOE4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ZjY4oGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBSOEowREe2zRNviqSINkw" x="214" y="112"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBVRZYwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBVRZowREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBV4cIwREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBVRZ4wREe2zRNviqSINkw" x="214" y="192"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBZi04wREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBZi1IwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBZi1owREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_jTvYYGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBZi1YwREe2zRNviqSINkw" x="214" y="272"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBdNM4wREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBdNNIwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBdNNowREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_lmcOAG15Ee2m2adgWb5oPg"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBdNNYwREe2zRNviqSINkw" x="354" y="32"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_WdM_sIwSEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_WdM_sowSEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_WdNmwIwSEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WdNmwYwSEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_WdNmwowSEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_WdNmw4wSEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_WdNmxIwSEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_WdNmxYwSEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdNmxowSEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_WdNmx4wSEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_WdNmyIwSEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_WdNmyYwSEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_WdNmyowSEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdNmy4wSEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_WdNmzIwSEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_WdNmzYwSEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_WdNmzowSEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_WdNmz4wSEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdNm0IwSEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_WcvFoIwSEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdM_sYwSEe2zRNviqSINkw" x="14" y="352" width="181" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_WdRRLIwSEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_WdRRLYwSEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_WdRRL4wSEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_WcvFoIwSEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WdRRLowSEe2zRNviqSINkw" x="200"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_OVnYpGfjEe2M9cqslMJvaw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OVnYpWfjEe2M9cqslMJvaw"/>
+      </children>
+      <element xmi:type="uml:Package" href="SoS%20vs%20Physics%20and%20Biology.uml#_OVmKgGfjEe2M9cqslMJvaw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OVnYoWfjEe2M9cqslMJvaw" x="40" y="40" width="401" height="501"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_puIo8GfjEe2M9cqslMJvaw" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_puIo8mfjEe2M9cqslMJvaw" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_puIo82fjEe2M9cqslMJvaw" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_rNyd0GfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_rNzE4GfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_rNzE4WfjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_rNzE4mfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_rNzE42fjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_rNzE5GfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_rNzE5WfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_rNzE5mfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNzE52fjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_rNzE6GfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_rNzE6WfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_rNzE6mfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_rNzE62fjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNzE7GfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_rNzE7WfjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_rNzE7mfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_rNzE72fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_rNzE8GfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNzE8WfjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_rNgxAGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNyd0WfjEe2M9cqslMJvaw" x="34" y="12" width="81" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_s4wK0GfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_s4wK0mfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_s4wK02fjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_s4wK1GfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_s4wK1WfjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_s4wK1mfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_s4wK12fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_s4wK2GfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4wK2WfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_s4wK2mfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_s4wK22fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_s4wK3GfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_s4wK3WfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4wK3mfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_s4wK32fjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_s4wK4GfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_s4wK4WfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_s4wK4mfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4wK42fjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_s4fsIGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4wK0WfjEe2M9cqslMJvaw" x="34" y="92" width="81" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_u44PgGfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_u442kGfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_u442kWfjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_u442kmfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_u442k2fjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_u442lGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_u442lWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_u442lmfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u442l2fjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_u442mGfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_u442mWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_u442mmfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_u442m2fjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u442nGfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_u442nWfjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_u442nmfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_u442n2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_u442oGfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u442oWfjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_u4misGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u44PgWfjEe2M9cqslMJvaw" x="34" y="172" width="81" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xvgeYGfjEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_xvgeYmfjEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_xvgeY2fjEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_xvgeZGfjEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_xvgeZWfjEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_xvgeZmfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_xvgeZ2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_xvgeaGfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvgeaWfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_xvgeamfjEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_xvgea2fjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_xvgebGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_xvgebWfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvgebmfjEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_xvgeb2fjEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_xvgecGfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_xvgecWfjEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_xvgecmfjEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvgec2fjEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_xvEZgGfjEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvgeYWfjEe2M9cqslMJvaw" x="34" y="252" width="81" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_c4JYgGfkEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_c4J_kGfkEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_c4J_kWfkEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_c4J_kmfkEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_c4J_k2fkEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_c4J_lGfkEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_c4J_lWfkEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_c4J_lmfkEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c4J_l2fkEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_c4J_mGfkEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_c4J_mWfkEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_c4J_mmfkEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_c4J_m2fkEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c4J_nGfkEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_c4J_nWfkEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_c4J_nmfkEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_c4J_n2fkEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_c4J_oGfkEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c4J_oWfkEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_c3zaQGfkEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c4JYgWfkEe2M9cqslMJvaw" x="154" y="12" width="81" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBheoIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBheoYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBheo4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_rNgxAGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBheoowREe2zRNviqSINkw" x="234" y="12"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBlJAIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBlJAYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBlJA4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_s4fsIGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBlJAowREe2zRNviqSINkw" x="234" y="92"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBoMUIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBoMUYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBoMU4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_u4misGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBoMUowREe2zRNviqSINkw" x="234" y="172"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBr2sIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBr2sYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBr2s4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_xvEZgGfjEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBr2sowREe2zRNviqSINkw" x="234" y="252"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBu6AIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBu6AYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBu6A4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_c3zaQGfkEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBu6AowREe2zRNviqSINkw" x="354" y="12"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_puIo9GfjEe2M9cqslMJvaw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_puIo9WfjEe2M9cqslMJvaw"/>
+      </children>
+      <element xmi:type="uml:Package" href="SoS%20vs%20Physics%20and%20Biology.uml#_puHa0GfjEe2M9cqslMJvaw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_puIo8WfjEe2M9cqslMJvaw" x="520" y="40" width="341" height="501"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_OP-YwGflEe2M9cqslMJvaw" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_OP-YwmflEe2M9cqslMJvaw" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_OP-Yw2flEe2M9cqslMJvaw" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_R22_4GflEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_R22_4mflEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_R22_42flEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_R22_5GflEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_R22_5WflEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_R22_5mflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_R22_52flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_R22_6GflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R22_6WflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_R22_6mflEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_R22_62flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_R22_7GflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_R22_7WflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R22_7mflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_R22_72flEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_R22_8GflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_R22_8WflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_R22_8mflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R22_82flEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_R2hosGflEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R22_4WflEe2M9cqslMJvaw" x="14" y="12" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_U8sIYGflEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_U8sIYmflEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_U8sIY2flEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_U8sIZGflEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_U8sIZWflEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_U8sIZmflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_U8sIZ2flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_U8sIaGflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U8sIaWflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_U8sIamflEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_U8sIa2flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_U8sIbGflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_U8sIbWflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U8sIbmflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_U8sIb2flEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_U8sIcGflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_U8sIcWflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_U8sIcmflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U8sIc2flEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_U8EdUGflEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U8sIYWflEe2M9cqslMJvaw" x="14" y="92" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_XvSy4GflEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_XvSy4mflEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_XvSy42flEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_XvSy5GflEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_XvSy5WflEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_XvSy5mflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_XvSy52flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_XvSy6GflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XvSy6WflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_XvSy6mflEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_XvSy62flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_XvSy7GflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_XvSy7WflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XvSy7mflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_XvSy72flEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_XvSy8GflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_XvSy8WflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_XvSy8mflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XvSy82flEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_Xu5xUGflEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XvSy4WflEe2M9cqslMJvaw" x="14" y="172" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ezt34GflEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ezt34mflEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ezt342flEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ezt35GflEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ezt35WflEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ezt35mflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ezt352flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ezt36GflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezt36WflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ezt36mflEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ezt362flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ezt37GflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ezt37WflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezt37mflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ezt372flEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ezt38GflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ezt38WflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ezt38mflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezt382flEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ezXSkGflEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ezt34WflEe2M9cqslMJvaw" x="14" y="252" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_3HSwgGflEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_3HSwgmflEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_3HSwg2flEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_3HSwhGflEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_3HSwhWflEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_3HSwhmflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_3HSwh2flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_3HSwiGflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3HSwiWflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_3HSwimflEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_3HSwi2flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_3HSwjGflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_3HSwjWflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3HSwjmflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_3HSwj2flEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_3HSwkGflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_3HSwkWflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_3HSwkmflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3HSwk2flEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_3G-AYGflEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3HSwgWflEe2M9cqslMJvaw" x="14" y="332" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_5XeqcGflEe2M9cqslMJvaw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_5XfRgGflEe2M9cqslMJvaw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_5XfRgWflEe2M9cqslMJvaw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_5XfRgmflEe2M9cqslMJvaw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5XfRg2flEe2M9cqslMJvaw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5XfRhGflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5XfRhWflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5XfRhmflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XfRh2flEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5XfRiGflEe2M9cqslMJvaw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5XfRiWflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5XfRimflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5XfRi2flEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XfRjGflEe2M9cqslMJvaw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5XfRjWflEe2M9cqslMJvaw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5XfRjmflEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5XfRj2flEe2M9cqslMJvaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5XfRkGflEe2M9cqslMJvaw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XfRkWflEe2M9cqslMJvaw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_5XIsMGflEe2M9cqslMJvaw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XeqcWflEe2M9cqslMJvaw" x="14" y="412" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_jFxoEG15Ee2m2adgWb5oPg" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_jFxoEm15Ee2m2adgWb5oPg" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_jFxoE215Ee2m2adgWb5oPg" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_jFxoFG15Ee2m2adgWb5oPg" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_jFxoFW15Ee2m2adgWb5oPg" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_jFxoFm15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_jFxoF215Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_jFxoGG15Ee2m2adgWb5oPg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jFxoGW15Ee2m2adgWb5oPg"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_jFxoGm15Ee2m2adgWb5oPg" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_jFxoG215Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_jFxoHG15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_jFxoHW15Ee2m2adgWb5oPg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jFxoHm15Ee2m2adgWb5oPg"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_jFxoH215Ee2m2adgWb5oPg" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_jFxoIG15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_jFxoIW15Ee2m2adgWb5oPg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_jFxoIm15Ee2m2adgWb5oPg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jFxoI215Ee2m2adgWb5oPg"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_iWF3kG15Ee2m2adgWb5oPg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jFxoEW15Ee2m2adgWb5oPg" x="154" y="12" width="101" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mBzLcIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mBzLcYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBzLc4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_R2hosGflEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBzLcowREe2zRNviqSINkw" x="214" y="12"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mB2OxYwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mB2OxowREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mB2OyIwREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_U8EdUGflEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mB2Ox4wREe2zRNviqSINkw" x="214" y="92"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mB55IIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mB55IYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mB55I4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_Xu5xUGflEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mB55IowREe2zRNviqSINkw" x="214" y="172"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mB88dYwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mB88dowREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mB88eIwREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ezXSkGflEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mB88d4wREe2zRNviqSINkw" x="214" y="252"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mCAm0IwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mCAm0YwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mCAm04wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_3G-AYGflEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mCAm0owREe2zRNviqSINkw" x="214" y="332"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mCDqIIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mCDqIYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mCDqI4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_5XIsMGflEe2M9cqslMJvaw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mCDqIowREe2zRNviqSINkw" x="214" y="412"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mCGtcIwREe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mCGtcYwREe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mCGtc4wREe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_iWF3kG15Ee2m2adgWb5oPg"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mCGtcowREe2zRNviqSINkw" x="354" y="12"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_OP-YxGflEe2M9cqslMJvaw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OP-YxWflEe2M9cqslMJvaw"/>
+      </children>
+      <element xmi:type="uml:Package" href="SoS%20vs%20Physics%20and%20Biology.uml#_OP9KoGflEe2M9cqslMJvaw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OP-YwWflEe2M9cqslMJvaw" x="960" y="40" width="321" height="541"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_e4Z08IwTEe2zRNviqSINkw" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_e4Z08owTEe2zRNviqSINkw" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_e4Z084wTEe2zRNviqSINkw" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_gVIRoIwTEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_gVI4sIwTEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_gVI4sYwTEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gVI4sowTEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_gVI4s4wTEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_gVI4tIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_gVI4tYwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_gVI4towTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVI4t4wTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_gVI4uIwTEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_gVI4uYwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_gVI4uowTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_gVI4u4wTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVI4vIwTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_gVI4vYwTEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_gVI4vowTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_gVI4v4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_gVI4wIwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVI4wYwTEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_gUvQEIwTEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVIRoYwTEe2zRNviqSINkw" x="54" y="32" width="141" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gVihWYwTEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_gVihWowTEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_gVihXIwTEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_gUvQEIwTEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVihW4wTEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_o19DMIwTEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_o19DMowTEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_o19DM4wTEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o19DNIwTEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_o19DNYwTEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_o19DNowTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_o19DN4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_o19DOIwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o19DOYwTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_o19DOowTEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_o19DO4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_o19DPIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_o19DPYwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o19DPowTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_o19DP4wTEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_o19DQIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_o19DQYwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_o19DQowTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o19DQ4wTEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_o1jakIwTEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o19DMYwTEe2zRNviqSINkw" x="54" y="112" width="141" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_o2RMTIwTEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_o2RMTYwTEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_o2RMT4wTEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_o1jakIwTEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o2RMTowTEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_5i-aIIwTEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_5i-aIowTEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_5i-aI4wTEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_5i-aJIwTEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5i-aJYwTEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5i-aJowTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5i-aJ4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5i-aKIwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5i-aKYwTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5i-aKowTEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5i-aK4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5i-aLIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5i-aLYwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5i-aLowTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5i-aL4wTEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5i-aMIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5i-aMYwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5i-aMowTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5i-aM4wTEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_5ikxgIwTEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5i-aIYwTEe2zRNviqSINkw" x="54" y="192" width="141" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_5jSjM4wTEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_5jSjNIwTEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_5jSjNowTEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_5ikxgIwTEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5jSjNYwTEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_7l-MoIwTEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_7l-MoowTEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_7l-Mo4wTEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7l-MpIwTEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_7l-MpYwTEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_7l-MpowTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_7l-Mp4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_7l-MqIwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7l-MqYwTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_7l-MqowTEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_7l-Mq4wTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_7l-MrIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_7l-MrYwTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7l-MrowTEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_7l-Mr4wTEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_7l-MsIwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_7l-MsYwTEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_7l-MsowTEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7l-Ms4wTEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_7liu0IwTEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7l-MoYwTEe2zRNviqSINkw" x="54" y="272" width="141" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_7mS8zIwTEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_7mS8zYwTEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_7mS8z4wTEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_7liu0IwTEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7mS8zowTEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZDT-_IwVEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_ZDT-_YwVEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ZDUmAIwVEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ZCkYEIwVEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZDT-_owVEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_cswK1YwVEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_cswK1owVEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_cswK2IwVEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_cr8SgIwVEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cswK14wVEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_i-EX7IwVEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_i-EX7YwVEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_i-EX74wVEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_i9RtsIwVEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-EX7owVEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_C8zlYIwWEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_C8zlYowWEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_C80McIwWEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_C80McYwWEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_C80McowWEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_C80Mc4wWEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_C80MdIwWEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_C80MdYwWEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C80MdowWEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_C80Md4wWEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_C80MeIwWEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_C80MeYwWEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_C80MeowWEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C80Me4wWEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_C80MfIwWEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_C80MfYwWEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_C80MfowWEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_C80Mf4wWEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C80MgIwWEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_C8VEQIwWEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C8zlYYwWEe2zRNviqSINkw" x="54" y="352" width="141" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_C9HHbIwWEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_C9HHbYwWEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_C9HHb4wWEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_C8VEQIwWEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C9HHbowWEe2zRNviqSINkw" x="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Ppvb8IwfEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Ppvb8owfEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_Ppvb84wfEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Ppvb9IwfEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Ppvb9YwfEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_Ppvb9owfEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Ppvb94wfEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Ppvb-IwfEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ppvb-YwfEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Ppvb-owfEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_Ppvb-4wfEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Ppvb_IwfEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Ppvb_YwfEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ppvb_owfEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Ppvb_4wfEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_PpvcAIwfEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_PpvcAYwfEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_PpvcAowfEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PpvcA4wfEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_Pos6IIwfEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ppvb8YwfEe2zRNviqSINkw" x="254" y="32" width="141" height="61"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_PqCW4IwfEe2zRNviqSINkw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_PqCW4YwfEe2zRNviqSINkw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_PqCW44wfEe2zRNviqSINkw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_Pos6IIwfEe2zRNviqSINkw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PqCW4owfEe2zRNviqSINkw" x="200"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_e4Z09IwTEe2zRNviqSINkw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e4Z09YwTEe2zRNviqSINkw"/>
+      </children>
+      <element xmi:type="uml:Package" href="SoS%20vs%20Physics%20and%20Biology.uml#_MI3MoIwTEe2zRNviqSINkw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e4Z08YwTEe2zRNviqSINkw" x="340" y="680" width="461" height="501"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_IQ8mQIwbEe2zRNviqSINkw" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IQ8mQowbEe2zRNviqSINkw" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_IQ8mQ4wbEe2zRNviqSINkw" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_i9w14IwVEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_i9w14owVEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_i9w144wVEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_i9w15IwVEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_i9w15YwVEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_i9w15owVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_i9w154wVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_i9w16IwVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9w16YwVEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_i9w16owVEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <children xmi:type="notation:Shape" xmi:id="_ihKVQIwcEe2zRNviqSINkw" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="SoS%20vs%20Physics%20and%20Biology.uml#_igGlUIwcEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ihKVQYwcEe2zRNviqSINkw"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_nFIccIwsEe2zRNviqSINkw" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="SoS%20vs%20Physics%20and%20Biology.uml#_nEFTkIwsEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_nFIccYwsEe2zRNviqSINkw"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_i9w164wVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_i9w17IwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_i9w17YwVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9w17owVEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_i9w174wVEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_i9w18IwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_i9w18YwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_i9w18owVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9w184wVEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_i9RtsIwVEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9w14YwVEe2zRNviqSINkw" x="14" y="15" width="221" height="98"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZC-nwIwVEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZC_O0IwVEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZC_O0YwVEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZC_O0owVEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZC_O04wVEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <children xmi:type="notation:Shape" xmi:id="_tzZT8IwbEe2zRNviqSINkw" type="Property_ClassAttributeLabel">
+              <element xmi:type="uml:Property" href="SoS%20vs%20Physics%20and%20Biology.uml#_tyUV4IwbEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_tzZT8YwbEe2zRNviqSINkw"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZC_O1IwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZC_O1YwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZC_O1owVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZC_O14wVEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZC_O2IwVEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <children xmi:type="notation:Shape" xmi:id="_i8ueoIwWEe2zRNviqSINkw" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="SoS%20vs%20Physics%20and%20Biology.uml#_i8RysIwWEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_i8ueoYwWEe2zRNviqSINkw"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_vcvpoIwWEe2zRNviqSINkw" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="SoS%20vs%20Physics%20and%20Biology.uml#_vcQhcIwWEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_vcvpoYwWEe2zRNviqSINkw"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZC_O2YwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZC_O2owVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZC_O24wVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZC_O3IwVEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZC_O3YwVEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZC_O3owVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZC_O34wVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZC_O4IwVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZC_O4YwVEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ZCkYEIwVEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZC-nwYwVEe2zRNviqSINkw" x="14" y="132" width="221" height="121"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_csaMkIwVEe2zRNviqSINkw" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_csaMkowVEe2zRNviqSINkw" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_csaMk4wVEe2zRNviqSINkw" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_csaMlIwVEe2zRNviqSINkw" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_csaMlYwVEe2zRNviqSINkw" type="Class_AttributeCompartment_CN">
+            <children xmi:type="notation:Shape" xmi:id="_TZJNQIwcEe2zRNviqSINkw" type="Property_ClassAttributeLabel">
+              <element xmi:type="uml:Property" href="SoS%20vs%20Physics%20and%20Biology.uml#_TYGEYIwcEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_TZJNQYwcEe2zRNviqSINkw"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_C0PeQIwhEe2zRNviqSINkw" type="Property_ClassAttributeLabel">
+              <element xmi:type="uml:Property" href="SoS%20vs%20Physics%20and%20Biology.uml#_CzLHQIwhEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_C0PeQYwhEe2zRNviqSINkw"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_V8568IxSEe2zRNviqSINkw" type="Property_ClassAttributeLabel">
+              <element xmi:type="uml:Property" href="SoS%20vs%20Physics%20and%20Biology.uml#_V7flsIxSEe2zRNviqSINkw"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_V8568YxSEe2zRNviqSINkw"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_csaMlowVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_csaMl4wVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_csaMmIwVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_csaMmYwVEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_csaMmowVEe2zRNviqSINkw" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_csaMm4wVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_csaMnIwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_csaMnYwVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_csaMnowVEe2zRNviqSINkw"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_csaMn4wVEe2zRNviqSINkw" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_csaMoIwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_csaMoYwVEe2zRNviqSINkw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_csaMoowVEe2zRNviqSINkw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_csaMo4wVEe2zRNviqSINkw"/>
+          </children>
+          <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_cr8SgIwVEe2zRNviqSINkw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_csaMkYwVEe2zRNviqSINkw" x="14" y="272" width="221" height="141"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_IQ8mRIwbEe2zRNviqSINkw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IQ8mRYwbEe2zRNviqSINkw"/>
+      </children>
+      <element xmi:type="uml:Package" href="SoS%20vs%20Physics%20and%20Biology.uml#_IQ7_MIwbEe2zRNviqSINkw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IQ8mQYwbEe2zRNviqSINkw" x="980" y="680" width="421" height="501"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Pjx6sIwbEe2zRNviqSINkw" type="Comment_Shape_CN">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pjx6sowbEe2zRNviqSINkw" type="Comment_BodyLabel_CN"/>
+      <element xmi:type="uml:Comment" href="SoS%20vs%20Physics%20and%20Biology.uml#_PjUAoIwbEe2zRNviqSINkw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pjx6sYwbEe2zRNviqSINkw" x="80" y="683" width="241" height="81"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_eWmogWb9Ee2M9cqslMJvaw" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_eWmogmb9Ee2M9cqslMJvaw"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_eWmog2b9Ee2M9cqslMJvaw" diagramKindId="org.eclipse.papyrus.sysml16.diagram.blockdefinition">
+      <owner xmi:type="uml:Model" href="SoS%20vs%20Physics%20and%20Biology.uml#_jcW20Gb8Ee2M9cqslMJvaw"/>
+    </styles>
+    <element xmi:type="uml:Model" href="SoS%20vs%20Physics%20and%20Biology.uml#_jcW20Gb8Ee2M9cqslMJvaw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_mBOjsIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_Xb8D8GfjEe2M9cqslMJvaw" target="_mBN8pYwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBOjsYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBOjtYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_XbsMUGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBOjsowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBOjs4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBOjtIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBSOFIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_ZjjQsGfjEe2M9cqslMJvaw" target="_mBSOEIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBSOFYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBSOGYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ZjY4oGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBSOFowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBSOF4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBSOGIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBV4cYwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_b_VWoGfjEe2M9cqslMJvaw" target="_mBVRZYwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBV4cowREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBV4dowREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBV4c4wREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBV4dIwREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBV4dYwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBZi14wREe2zRNviqSINkw" type="StereotypeCommentLink" source="_jUCTUGfjEe2M9cqslMJvaw" target="_mBZi04wREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBZi2IwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBZi3IwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_jTvYYGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBZi2YwREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBZi2owREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBZi24wREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBdNN4wREe2zRNviqSINkw" type="StereotypeCommentLink" source="_mM374G15Ee2m2adgWb5oPg" target="_mBdNM4wREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBdNOIwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBdNPIwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_lmcOAG15Ee2m2adgWb5oPg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBdNOYwREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBdNOowREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBdNO4wREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBhepIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_rNyd0GfjEe2M9cqslMJvaw" target="_mBheoIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBhepYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBheqYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_rNgxAGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBhepowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBhep4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBheqIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBlJBIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_s4wK0GfjEe2M9cqslMJvaw" target="_mBlJAIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBlJBYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBlJCYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_s4fsIGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBlJBowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBlJB4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBlJCIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBoMVIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_u44PgGfjEe2M9cqslMJvaw" target="_mBoMUIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBoMVYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBoMWYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_u4misGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBoMVowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBoMV4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBoMWIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBr2tIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_xvgeYGfjEe2M9cqslMJvaw" target="_mBr2sIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBr2tYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBr2uYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_xvEZgGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBr2towREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBr2t4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBr2uIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBu6BIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_c4JYgGfkEe2M9cqslMJvaw" target="_mBu6AIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBu6BYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBu6CYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_c3zaQGfkEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBu6BowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBu6B4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBu6CIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mBzLdIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_R22_4GflEe2M9cqslMJvaw" target="_mBzLcIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mBzLdYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mBzLeYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_R2hosGflEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBzLdowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBzLd4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBzLeIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mB2OyYwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_U8sIYGflEe2M9cqslMJvaw" target="_mB2OxYwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mB2OyowREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mB210YwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_U8EdUGflEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mB2Oy4wREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mB2OzIwREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mB210IwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mB55JIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_XvSy4GflEe2M9cqslMJvaw" target="_mB55IIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mB55JYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mB55KYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_Xu5xUGflEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mB55JowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mB55J4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mB55KIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mB88eYwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_ezt34GflEe2M9cqslMJvaw" target="_mB88dYwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mB88eowREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mB9jgYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ezXSkGflEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mB88e4wREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mB88fIwREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mB9jgIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mCAm1IwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_3HSwgGflEe2M9cqslMJvaw" target="_mCAm0IwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mCAm1YwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mCAm2YwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_3G-AYGflEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mCAm1owREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCAm14wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCAm2IwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mCDqJIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_5XeqcGflEe2M9cqslMJvaw" target="_mCDqIIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mCDqJYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mCDqKYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_5XIsMGflEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mCDqJowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCDqJ4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCDqKIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mCGtdIwREe2zRNviqSINkw" type="StereotypeCommentLink" source="_jFxoEG15Ee2m2adgWb5oPg" target="_mCGtcIwREe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mCGtdYwREe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mCGteYwREe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_iWF3kG15Ee2m2adgWb5oPg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mCGtdowREe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCGtd4wREe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCGteIwREe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_WdR4MIwSEe2zRNviqSINkw" type="StereotypeCommentLink" source="_WdM_sIwSEe2zRNviqSINkw" target="_WdRRLIwSEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_WdR4MYwSEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_WdR4NYwSEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_WcvFoIwSEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WdR4MowSEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WdR4M4wSEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WdR4NIwSEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_gVihXYwTEe2zRNviqSINkw" type="StereotypeCommentLink" source="_gVIRoIwTEe2zRNviqSINkw" target="_gVihWYwTEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_gVihXowTEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_gVjIYowTEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_gUvQEIwTEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gVihX4wTEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gVjIYIwTEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gVjIYYwTEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_o2RMUIwTEe2zRNviqSINkw" type="StereotypeCommentLink" source="_o19DMIwTEe2zRNviqSINkw" target="_o2RMTIwTEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_o2RMUYwTEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_o2RMVYwTEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_o1jakIwTEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_o2RMUowTEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o2RMU4wTEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o2RMVIwTEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_5jSjN4wTEe2zRNviqSINkw" type="StereotypeCommentLink" source="_5i-aIIwTEe2zRNviqSINkw" target="_5jSjM4wTEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_5jSjOIwTEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_5jSjPIwTEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_5ikxgIwTEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5jSjOYwTEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5jSjOowTEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5jSjO4wTEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_7mS80IwTEe2zRNviqSINkw" type="StereotypeCommentLink" source="_7l-MoIwTEe2zRNviqSINkw" target="_7mS8zIwTEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_7mS80YwTEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_7mS81YwTEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_7liu0IwTEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7mS80owTEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7mS804wTEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7mS81IwTEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ZDUmAYwVEe2zRNviqSINkw" type="StereotypeCommentLink" source="_ZC-nwIwVEe2zRNviqSINkw" target="_ZDT-_IwVEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZDUmAowVEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ZDUmBowVEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_ZCkYEIwVEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZDUmA4wVEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZDUmBIwVEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZDUmBYwVEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_cswK2YwVEe2zRNviqSINkw" type="StereotypeCommentLink" source="_csaMkIwVEe2zRNviqSINkw" target="_cswK1YwVEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_cswK2owVEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_cswK3owVEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_cr8SgIwVEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cswK24wVEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cswK3IwVEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cswK3YwVEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_i-EX8IwVEe2zRNviqSINkw" type="StereotypeCommentLink" source="_i9w14IwVEe2zRNviqSINkw" target="_i-EX7IwVEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_i-EX8YwVEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_i-EX9YwVEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_i9RtsIwVEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i-EX8owVEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i-EX84wVEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i-EX9IwVEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_C9HucIwWEe2zRNviqSINkw" type="StereotypeCommentLink" source="_C8zlYIwWEe2zRNviqSINkw" target="_C9HHbIwWEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_C9HucYwWEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_C9HudYwWEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_C8VEQIwWEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_C9HucowWEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C9Huc4wWEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C9HudIwWEe2zRNviqSINkw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_GZvXkIwcEe2zRNviqSINkw" type="Comment_AnnotatedElementEdge" source="_Pjx6sIwbEe2zRNviqSINkw" target="_e4Z08IwTEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_GZvXkYwcEe2zRNviqSINkw"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GZvXkowcEe2zRNviqSINkw" points="[321, 720, -643984, -643984]$[340, 720, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GbttgIwcEe2zRNviqSINkw" id="(1.0,0.4567901234567901)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GbttgYwcEe2zRNviqSINkw" id="(0.0,0.07984031936127745)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_PqCW5IwfEe2zRNviqSINkw" type="StereotypeCommentLink" source="_Ppvb8IwfEe2zRNviqSINkw" target="_PqCW4IwfEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_PqCW5YwfEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_PqCW6YwfEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_Pos6IIwfEe2zRNviqSINkw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PqCW5owfEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PqCW54wfEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PqCW6IwfEe2zRNviqSINkw"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_n-K8EIwSEe2zRNviqSINkw" type="CompositeStructure" name="Microelectronics" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_n-MKMIwSEe2zRNviqSINkw" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_n-MKMowSEe2zRNviqSINkw" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_n-MKM4wSEe2zRNviqSINkw" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n-MKNIwSEe2zRNviqSINkw" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_n-MKNYwSEe2zRNviqSINkw" type="Class_StructureCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_n-MKNowSEe2zRNviqSINkw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n-MKN4wSEe2zRNviqSINkw"/>
+      </children>
+      <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n-MKMYwSEe2zRNviqSINkw" x="40" y="40" width="601" height="381"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_n_l4YIwSEe2zRNviqSINkw" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_n_l4YYwSEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_n_l4Y4wSEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n_l4YowSEe2zRNviqSINkw" x="240" y="40"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_n-K8EYwSEe2zRNviqSINkw" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_n-K8EowSEe2zRNviqSINkw"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_n-K8E4wSEe2zRNviqSINkw" diagramKindId="org.eclipse.papyrus.sysml16.diagram.internalblock">
+      <owner xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+    </styles>
+    <element xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_n_l4ZIwSEe2zRNviqSINkw" type="StereotypeCommentLink" source="_n-MKMIwSEe2zRNviqSINkw" target="_n_l4YIwSEe2zRNviqSINkw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_n_l4ZYwSEe2zRNviqSINkw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_n_l4aYwSEe2zRNviqSINkw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SoS%20vs%20Physics%20and%20Biology.uml#_b_KXgGfjEe2M9cqslMJvaw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n_l4ZowSEe2zRNviqSINkw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n_l4Z4wSEe2zRNviqSINkw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n_l4aIwSEe2zRNviqSINkw"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
