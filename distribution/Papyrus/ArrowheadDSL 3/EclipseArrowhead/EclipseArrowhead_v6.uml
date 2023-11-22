@@ -179,10 +179,10 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_ad5sgETDEe6aQZfmGTTxwA" name="gp-connect-provider" type="_0XlnUETDEe6aQZfmGTTxwA" aggregation="composite"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_c19wEETDEe6aQZfmGTTxwA" name="gt_connect_consumer">
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_j6ssMETFEe6aQZfmGTTxwA" name="gp_connect_consumer"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_j6ssMETFEe6aQZfmGTTxwA" name="gt_connect_consumer"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_0XlnUETDEe6aQZfmGTTxwA" name="gt_connect_provider">
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_Iiu4sETJEe6aQZfmGTTxwA" name="gp_connect_provider"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_Iiu4sETJEe6aQZfmGTTxwA" name="gt_connect_provider"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_-xdlMETDEe6aQZfmGTTxwA" name="gt_connect_consumer_HTTP">
             <generalization xmi:type="uml:Generalization" xmi:id="_Go_iIETEEe6aQZfmGTTxwA" general="_c19wEETDEe6aQZfmGTTxwA"/>
@@ -191,7 +191,7 @@
             <generalization xmi:type="uml:Generalization" xmi:id="_O1jT4ETEEe6aQZfmGTTxwA" general="_0XlnUETDEe6aQZfmGTTxwA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_MaIdgETIEe6aQZfmGTTxwA" name="gt_close_session">
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_uimiMETJEe6aQZfmGTTxwA" name="gp_close_session"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_uimiMETJEe6aQZfmGTTxwA" name="gt_close_session"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_UbH4cETIEe6aQZfmGTTxwA" name="gt_close_session_HTTP">
             <generalization xmi:type="uml:Generalization" xmi:id="_5pc60ETJEe6aQZfmGTTxwA" general="_MaIdgETIEe6aQZfmGTTxwA"/>
@@ -201,9 +201,9 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_vEumIGT6Ee6xc7ZIuB6OIw" name="ServiceDiscovery_HTTP" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_-5CzcGT6Ee6xc7ZIuB6OIw" name="GetPublicKey_HTTP" type="_Lc3CADeYEe6hKsppnexuYQ" aggregation="composite" subsettedProperty="_xXeykDetEe6hKsppnexuYQ" isConjugated="true"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_DwdOUGT7Ee6xc7ZIuB6OIw" name="ServiceOrchestration_HTTP" type="_WUcVwDd7Ee6hKsppnexuYQ" aggregation="composite" subsettedProperty="_BYWg4Dd8Ee6hKsppnexuYQ" isConjugated="true"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_HPPpYGT7Ee6xc7ZIuB6OIw" name="gp-connect-consumer_HTTP" type="_-xdlMETDEe6aQZfmGTTxwA" aggregation="composite" subsettedProperty="_YM-LsETDEe6aQZfmGTTxwA"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_rRrV0GT7Ee6xc7ZIuB6OIw" name="gp-connect-producer_HTTP" type="_J80DUETEEe6aQZfmGTTxwA" aggregation="composite" subsettedProperty="_ad5sgETDEe6aQZfmGTTxwA"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_5WqTgGT7Ee6xc7ZIuB6OIw" name="gp-close-session_HTTP" type="_UbH4cETIEe6aQZfmGTTxwA" aggregation="composite" subsettedProperty="_S0j8kETDEe6aQZfmGTTxwA"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_HPPpYGT7Ee6xc7ZIuB6OIw" name="gt-connect-consumer_HTTP" type="_-xdlMETDEe6aQZfmGTTxwA" aggregation="composite" subsettedProperty="_YM-LsETDEe6aQZfmGTTxwA"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_rRrV0GT7Ee6xc7ZIuB6OIw" name="gt-connect-producer_HTTP" type="_J80DUETEEe6aQZfmGTTxwA" aggregation="composite" subsettedProperty="_ad5sgETDEe6aQZfmGTTxwA"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_5WqTgGT7Ee6xc7ZIuB6OIw" name="gt-close-session_HTTP" type="_UbH4cETIEe6aQZfmGTTxwA" aggregation="composite" subsettedProperty="_S0j8kETDEe6aQZfmGTTxwA"/>
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Model" xmi:id="_lNMlUIIPEe6-FNmRLM_UMA" name="CertificateAuthority">
@@ -684,13 +684,13 @@
   <PortsAndFlows:FullPort xmi:id="_ad7hsETDEe6aQZfmGTTxwA" base_Port="_ad5sgETDEe6aQZfmGTTxwA"/>
   <Blocks:Block xmi:id="_mXIkUETDEe6aQZfmGTTxwA" base_Class="_c19wEETDEe6aQZfmGTTxwA"/>
   <Blocks:Block xmi:id="_0XncgETDEe6aQZfmGTTxwA" base_Class="_0XlnUETDEe6aQZfmGTTxwA"/>
-  <JD6:SD xmi:id="_3ghuMETDEe6aQZfmGTTxwA" base_Class="_0XlnUETDEe6aQZfmGTTxwA" MicroserviceName="gp-connect-provider"/>
+  <JD6:SD xmi:id="_3ghuMETDEe6aQZfmGTTxwA" base_Class="_0XlnUETDEe6aQZfmGTTxwA" MicroserviceName="gt-connect-provider"/>
   <Blocks:Block xmi:id="_-xgBcETDEe6aQZfmGTTxwA" base_Class="_-xdlMETDEe6aQZfmGTTxwA"/>
   <JD6:IDD xmi:id="_D-CXwETEEe6aQZfmGTTxwA" base_Class="_-xdlMETDEe6aQZfmGTTxwA" MicroserviceName="gp-connect-consumer"/>
   <Blocks:Block xmi:id="_J82fkETEEe6aQZfmGTTxwA" base_Class="_J80DUETEEe6aQZfmGTTxwA"/>
   <JD6:IDD xmi:id="_Lfv1sETEEe6aQZfmGTTxwA" base_Class="_J80DUETEEe6aQZfmGTTxwA" MicroserviceName="gp-connect-provider"/>
   <Blocks:Block xmi:id="_MaK5wETIEe6aQZfmGTTxwA" base_Class="_MaIdgETIEe6aQZfmGTTxwA"/>
-  <JD6:SD xmi:id="_TNH0QETIEe6aQZfmGTTxwA" base_Class="_MaIdgETIEe6aQZfmGTTxwA" MicroserviceName="gp-close-session"/>
+  <JD6:SD xmi:id="_TNH0QETIEe6aQZfmGTTxwA" base_Class="_MaIdgETIEe6aQZfmGTTxwA" MicroserviceName="gt-close-session"/>
   <Blocks:Block xmi:id="_UbJtoETIEe6aQZfmGTTxwA" base_Class="_UbH4cETIEe6aQZfmGTTxwA"/>
   <JD6:IDD xmi:id="_VyX_QETIEe6aQZfmGTTxwA" base_Class="_UbH4cETIEe6aQZfmGTTxwA" MicroserviceName="gp-close-session"/>
   <Blocks:Block xmi:id="_awt2oETKEe6aQZfmGTTxwA" base_Class="_awraYETKEe6aQZfmGTTxwA"/>
@@ -889,7 +889,7 @@
   <PortsAndFlows:ProxyPort xmi:id="_-lFLEGT5Ee6xc7ZIuB6OIw" base_Port="_-lCHwGT5Ee6xc7ZIuB6OIw"/>
   <PortsAndFlows:ProxyPort xmi:id="_vExCYGT6Ee6xc7ZIuB6OIw" base_Port="_vEumIGT6Ee6xc7ZIuB6OIw"/>
   <PortsAndFlows:ProxyPort xmi:id="_HPSFoGT7Ee6xc7ZIuB6OIw" base_Port="_HPPpYGT7Ee6xc7ZIuB6OIw"/>
-  <JD6:SD xmi:id="_hY22kGT7Ee6xc7ZIuB6OIw" base_Class="_c19wEETDEe6aQZfmGTTxwA" MicroserviceName="gp-connect-consumer"/>
+  <JD6:SD xmi:id="_hY22kGT7Ee6xc7ZIuB6OIw" base_Class="_c19wEETDEe6aQZfmGTTxwA" MicroserviceName="gt-connect-consumer"/>
   <PortsAndFlows:ProxyPort xmi:id="_rRtLAGT7Ee6xc7ZIuB6OIw" base_Port="_rRrV0GT7Ee6xc7ZIuB6OIw"/>
   <PortsAndFlows:ProxyPort xmi:id="_5W-ckGT7Ee6xc7ZIuB6OIw" base_Port="_5WqTgGT7Ee6xc7ZIuB6OIw"/>
   <JD6:SysDD xmi:id="_2WbzAGUXEe6xc7ZIuB6OIw" base_Class="_R1SNYDd8Ee6hKsppnexuYQ" Time2Live="1d">
