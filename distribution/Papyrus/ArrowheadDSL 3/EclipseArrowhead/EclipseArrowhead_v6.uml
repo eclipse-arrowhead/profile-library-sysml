@@ -212,6 +212,9 @@
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_XQTCEIIOEe6-FNmRLM_UMA" name="CheckCertificate_HTTP" isActive="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_ljDWAIIOEe6-FNmRLM_UMA" general="_ISGQUIIBEe6-FNmRLM_UMA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_z7HW0IlYEe6o_Kn9jFdFwA" name="HTTP_1.1">
+              <type xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_tBgZUDy4Eeywba4O3NkZ_A"/>
+            </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_M0l4MIIOEe6-FNmRLM_UMA" name="CertificateManqagement"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_ISGQUIIBEe6-FNmRLM_UMA" name="CheckCertificate" visibility="public">
@@ -223,9 +226,9 @@
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedParameter>
             </ownedOperation>
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_wZGlcIIBEe6-FNmRLM_UMA" name="Monitor" isQuery="true">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_wZGlcIIBEe6-FNmRLM_UMA" name="Monitor" concurrency="concurrent" isQuery="true">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_3PmjMIIBEe6-FNmRLM_UMA" name="Echo" effect="update">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <type xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_p5yDkEPZEe2mAIOw8vLwcw"/>
               </ownedParameter>
             </ownedOperation>
           </packagedElement>
