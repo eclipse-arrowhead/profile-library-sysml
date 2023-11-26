@@ -8,6 +8,400 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UmKr9TIeEe6ldMRwfXEyUg" key="Date" value=""/>
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UmKr9jIeEe6ldMRwfXEyUg" key="Author" value="&lt;undefined>"/>
     </eAnnotations>
+    <contents xmi:type="ecore:EPackage" xmi:id="_8QQnUIyOEe63QcKS2b5ntg" name="JD6" nsURI="http:///schemas/JD6/_8QLHwIyOEe63QcKS2b5ntg/91" nsPrefix="JD6">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnUYyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnUoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/4.0.0/UML">
+        <references xmi:type="uml:Package" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_IuFCwEPQEe2mAIOw8vLwcw"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QURs4yOEe63QcKS2b5ntg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QURtIyOEe63QcKS2b5ntg" key="Version" value="0.2.65"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QURtYyOEe63QcKS2b5ntg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QURtoyOEe63QcKS2b5ntg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QURt4yOEe63QcKS2b5ntg" key="Date" value="2023-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QURuIyOEe63QcKS2b5ntg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQnU4yOEe63QcKS2b5ntg" name="SysD">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnVIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2RtnADLCEe6ldMRwfXEyUg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnVYyOEe63QcKS2b5ntg" name="MicrosystemName" ordered="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnV4yOEe63QcKS2b5ntg" name="SystemDatabase" ordered="false" unique="false" lowerBound="1" eType="_8QQnXoyOEe63QcKS2b5ntg" defaultValueLiteral="MySQL"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnWYyOEe63QcKS2b5ntg" name="MicrosystemBehaviour" ordered="false" lowerBound="1" eType="_8QQnZoyOEe63QcKS2b5ntg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnW4yOEe63QcKS2b5ntg" name="FunctionalProperties" ordered="false" unique="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnXoyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_SystemDatabaseKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnX4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnYIyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_SystemDatabaseKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_nDHLEFBTEe2K_twtxyR54Q"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnYYyOEe63QcKS2b5ntg" name="MySQL"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnYoyOEe63QcKS2b5ntg" name="Undefined" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnY4yOEe63QcKS2b5ntg" name="MariaDB" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnZIyOEe63QcKS2b5ntg" name="mongoDB" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnZYyOEe63QcKS2b5ntg" name="neo4j" value="4"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnZoyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_MonitoringPolicyKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnZ4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnaIyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_MonitoringPolicyKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_CHO-MGdJEe2LH_l67Mavdg"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnaYyOEe63QcKS2b5ntg" name="ISA95"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnaoyOEe63QcKS2b5ntg" name="OtherMonitoringPolicy" value="1"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQna4yOEe63QcKS2b5ntg" name="IDD" eSuperTypes="_8QQnhIyOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnbIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_13t8MDLOEe6ldMRwfXEyUg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnbYyOEe63QcKS2b5ntg" name="protocol" ordered="false" lowerBound="1" eType="_8QQnjYyOEe63QcKS2b5ntg" defaultValueLiteral="http"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnb4yOEe63QcKS2b5ntg" name="encoding" ordered="false" lowerBound="1" eType="_8QQnlYyOEe63QcKS2b5ntg" defaultValueLiteral="JSON"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQncYyOEe63QcKS2b5ntg" name="security" ordered="false" lowerBound="1" eType="_8QQnnIyOEe63QcKS2b5ntg" defaultValueLiteral="TOKEN"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnc4yOEe63QcKS2b5ntg" name="compression" ordered="false" lowerBound="1" eType="_8QQnooyOEe63QcKS2b5ntg" defaultValueLiteral="None"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQndYyOEe63QcKS2b5ntg" name="token" ordered="false" lowerBound="1" eType="_8QQnqIyOEe63QcKS2b5ntg" defaultValueLiteral="ArrowheadToken"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnd4yOEe63QcKS2b5ntg" name="cryptoalgorithm" ordered="false" lowerBound="1" eType="_8QQnrYyOEe63QcKS2b5ntg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQneIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQneYyOEe63QcKS2b5ntg" key="originalName" value="crypto-algorithm"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQne4yOEe63QcKS2b5ntg" name="Port" ordered="false" unique="false" lowerBound="1" defaultValueLiteral="0">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnfYyOEe63QcKS2b5ntg" name="Datamodel" ordered="false" lowerBound="1" eType="_8QQntoyOEe63QcKS2b5ntg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnf4yOEe63QcKS2b5ntg" name="certificatelevel" ordered="false" lowerBound="1" eType="_8QQnwYyOEe63QcKS2b5ntg" defaultValueLiteral="ApplicationSystem">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQngIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQngYyOEe63QcKS2b5ntg" key="originalName" value="certificate-level"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQnhIyOEe63QcKS2b5ntg" name="SD">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnhYyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_awzE4D0kEe60840L8fIbKA"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eOperations xmi:type="ecore:EOperation" xmi:id="_8QQnhoyOEe63QcKS2b5ntg" name="Operation3" ordered="false" lowerBound="1"/>
+        <eOperations xmi:type="ecore:EOperation" xmi:id="_8QQnh4yOEe63QcKS2b5ntg" name="Operation4" ordered="false" lowerBound="1"/>
+        <eOperations xmi:type="ecore:EOperation" xmi:id="_8QQniIyOEe63QcKS2b5ntg" name="Operation5" ordered="false" lowerBound="1"/>
+        <eOperations xmi:type="ecore:EOperation" xmi:id="_8QQniYyOEe63QcKS2b5ntg" name="Operation6" ordered="false" lowerBound="1"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQnioyOEe63QcKS2b5ntg" name="MicroserviceName" ordered="false" unique="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnjYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_ApplicationProtocolKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnjoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnj4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_ApplicationProtocolKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_E6fWcFRlEe28uLty1jwnxA"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnkIyOEe63QcKS2b5ntg" name="http"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnkYyOEe63QcKS2b5ntg" name="mqtt" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnkoyOEe63QcKS2b5ntg" name="coap" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnk4yOEe63QcKS2b5ntg" name="websocket" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnlIyOEe63QcKS2b5ntg" name="OtherApplicationProtocol" value="4"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnlYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_EncodingKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnloyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnl4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_EncodingKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_HmAH8Pq0EeyGtqWTxsDZ4Q"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnmIyOEe63QcKS2b5ntg" name="XML"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnmYyOEe63QcKS2b5ntg" name="JSON" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnmoyOEe63QcKS2b5ntg" name="CBOR" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnm4yOEe63QcKS2b5ntg" name="OtherEncoding" value="3"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnnIyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_ArrowheadSecurityKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnnYyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnnoyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_ArrowheadSecurityKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_d1hc8EPYEe2mAIOw8vLwcw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnn4yOEe63QcKS2b5ntg" name="CERTIFICATE"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnoIyOEe63QcKS2b5ntg" name="TOKEN" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnoYyOEe63QcKS2b5ntg" name="NOT_SECURE" value="2"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnooyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_ComprressionKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQno4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnpIyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_ComprressionKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_mFG8QEPSEe2mAIOw8vLwcw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnpYyOEe63QcKS2b5ntg" name="EXI"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnpoyOEe63QcKS2b5ntg" name="None" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnp4yOEe63QcKS2b5ntg" name="OtherCompression" value="2"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnqIyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_TokenKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnqYyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnqoyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_TokenKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_VRSVkEPZEe2mAIOw8vLwcw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnq4yOEe63QcKS2b5ntg" name="ArrowheadToken"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnrIyOEe63QcKS2b5ntg" name="OtherToken" value="1"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnrYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_CryptoAlgorithmKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnroyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnr4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_CryptoAlgorithmKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_zTykEEPSEe2mAIOw8vLwcw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnsIyOEe63QcKS2b5ntg" name="RSA"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnsYyOEe63QcKS2b5ntg" name="ElipticCurve" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnsoyOEe63QcKS2b5ntg" name="DiffieHellman" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQns4yOEe63QcKS2b5ntg" name="Serpent" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQntIyOEe63QcKS2b5ntg" name="AES" value="4"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQntYyOEe63QcKS2b5ntg" name="Other" value="5"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQntoyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_DatamodelStandardKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnt4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnuIyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_DatamodelStandardKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_K_XB8GppEe2M9cqslMJvaw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnuYyOEe63QcKS2b5ntg" name="ISO_10303"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnuoyOEe63QcKS2b5ntg" name="ISO_15926" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnu4yOEe63QcKS2b5ntg" name="SenML" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnvIyOEe63QcKS2b5ntg" name="ISO_12006" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnvYyOEe63QcKS2b5ntg" name="IEC_81346" value="4"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnvoyOEe63QcKS2b5ntg" name="ISO_15739_IFC" value="5"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnv4yOEe63QcKS2b5ntg" name="IEC_61850" value="6"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnwIyOEe63QcKS2b5ntg" name="OtherDatamodelStandard" value="7"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQnwYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_ArrowheadCertificateKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnwoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQnw4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_ArrowheadCertificateKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_MQM-UEPTEe2mAIOw8vLwcw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnxIyOEe63QcKS2b5ntg" name="Device"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnxYyOEe63QcKS2b5ntg" name="ApplicationSystem" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnxoyOEe63QcKS2b5ntg" name="CoreSystem" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnx4yOEe63QcKS2b5ntg" name="Management" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnyIyOEe63QcKS2b5ntg" name="InterCloud" value="4"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQnyYyOEe63QcKS2b5ntg" name="Other" value="5"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQnyoyOEe63QcKS2b5ntg" name="ArrowheadDSLRequirement">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQny4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Y58WkDLUEe6ldMRwfXEyUg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQnzYyOEe63QcKS2b5ntg" name="ArrowheadUseCase">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQnzoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Xegd4DLVEe6ldMRwfXEyUg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQn0IyOEe63QcKS2b5ntg" name="LocalCloudDesign">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn0YyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ILHE8DLYEe6ldMRwfXEyUg"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn0oyOEe63QcKS2b5ntg" name="SecurityStrategy" ordered="false" unique="false" lowerBound="1" eType="_8QQn24yOEe63QcKS2b5ntg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn1IyOEe63QcKS2b5ntg" name="LC_Name" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn1oyOEe63QcKS2b5ntg" name="LifcycleStrategy" ordered="false" upperBound="-1" eType="_8QQn4IyOEe63QcKS2b5ntg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn2IyOEe63QcKS2b5ntg" name="BusinessStrategy" ordered="false" upperBound="-1" eType="_8QQn5IyOEe63QcKS2b5ntg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQn24yOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_SecurityPolicyKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn3IyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQn3YyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_SecurityPolicyKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_IkF-kJsrEe22k6yZgsKAfg"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQn3oyOEe63QcKS2b5ntg" name="NGAC"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQn34yOEe63QcKS2b5ntg" name="Other" value="1"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQn4IyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_LifecyclePolicyKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn4YyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQn4oyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_LifecyclePolicyKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_VVKdUJsrEe22k6yZgsKAfg"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQn44yOEe63QcKS2b5ntg" name="Other"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQn5IyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_BusinessPolicyKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn5YyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQn5oyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_BusinessPolicyKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_fLBIIJsrEe22k6yZgsKAfg"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQn54yOEe63QcKS2b5ntg" name="Other"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQn6IyOEe63QcKS2b5ntg" name="System_of_LocalcloudsDesign">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn6YyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_k2DlMDOCEe6hdPlp_7DYew"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn6oyOEe63QcKS2b5ntg" name="SoLCName" ordered="false" lowerBound="1">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn64yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQn7IyOEe63QcKS2b5ntg" key="originalName" value="SoLC-Name"/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn7oyOEe63QcKS2b5ntg" name="SecurityStrategy" ordered="false" upperBound="-1" eType="_8QQn24yOEe63QcKS2b5ntg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn8IyOEe63QcKS2b5ntg" name="Lifecyclestrategy" ordered="false" upperBound="-1" eType="_8QQn4IyOEe63QcKS2b5ntg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn8YyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQn8oyOEe63QcKS2b5ntg" key="originalName" value="Lifecycle strategy"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn9IyOEe63QcKS2b5ntg" name="BusinessStrategy" ordered="false" upperBound="-1" eType="_8QQn5IyOEe63QcKS2b5ntg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQn94yOEe63QcKS2b5ntg" name="DeviceDesign">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn-IyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_e5m_cDODEe6hdPlp_7DYew"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQn-YyOEe63QcKS2b5ntg" name="DeviceName" ordered="false" lowerBound="1" upperBound="-1">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn-oyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQn-4yOEe63QcKS2b5ntg" key="originalName" value="Device Name"/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQn_oyOEe63QcKS2b5ntg" name="IntracloudNetworkDesign">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQn_4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_q6FuwDODEe6hdPlp_7DYew"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoAIyOEe63QcKS2b5ntg" name="IntraNetworkMacLayer" ordered="false" unique="false" lowerBound="1" upperBound="-1" eType="_8QQoBYyOEe63QcKS2b5ntg" defaultValueLiteral="CDMA"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoAoyOEe63QcKS2b5ntg" name="IntraNetworkDomain" ordered="false" unique="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQoBYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_MacLayerKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoBoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQoB4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_MacLayerKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_C0beoDyvEeywba4O3NkZ_A"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoCIyOEe63QcKS2b5ntg" name="TDMA"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoCYyOEe63QcKS2b5ntg" name="CDMA" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoCoyOEe63QcKS2b5ntg" name="OtherMacLayer" value="2"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoC4yOEe63QcKS2b5ntg" name="IntercloudNetworkDesign">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoDIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9PD68DODEe6hdPlp_7DYew"/>
+        <eSuperTypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks/Block"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoDYyOEe63QcKS2b5ntg" name="InterNetworkMacLayer" ordered="false" unique="false" lowerBound="1" upperBound="-1" eType="_8QQoBYyOEe63QcKS2b5ntg" defaultValueLiteral="CDMA"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoD4yOEe63QcKS2b5ntg" name="InterNetworkDomainName" ordered="false" unique="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoEoyOEe63QcKS2b5ntg" name="DeviceDesignDescription" eSuperTypes="_8QQn94yOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoE4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ErU_gDRFEe6hdPlp_7DYew"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoFIyOEe63QcKS2b5ntg" name="operatingSystem" ordered="false" lowerBound="1" eType="_8QQoKYyOEe63QcKS2b5ntg" defaultValueLiteral="Linux"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8QQoFoyOEe63QcKS2b5ntg" name="memory" ordered="false" upperBound="-1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8QQoGIyOEe63QcKS2b5ntg" name="processor" ordered="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8QQoGoyOEe63QcKS2b5ntg" name="IOports" ordered="false" upperBound="-1">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoG4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQoHIyOEe63QcKS2b5ntg" key="originalName" value="I/O ports"/>
+          </eAnnotations>
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoHoyOEe63QcKS2b5ntg" name="ArrowheadCertificate" ordered="false" unique="false" lowerBound="1" eType="_8QQnwYyOEe63QcKS2b5ntg" defaultValueLiteral="Device"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoIIyOEe63QcKS2b5ntg" name="IntraNetworkRouter" ordered="false" unique="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoIoyOEe63QcKS2b5ntg" name="IntraNetworkRouterConfig" ordered="false" unique="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoJIyOEe63QcKS2b5ntg" name="IntraNetworkMacLayer" ordered="false" unique="false" lowerBound="1" upperBound="-1" eType="_8QQoBYyOEe63QcKS2b5ntg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoJoyOEe63QcKS2b5ntg" name="IntraNetworkDomainName" ordered="false" unique="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQoKYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_OSKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoKoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQoK4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_OSKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_E5fFEPq5EeyGtqWTxsDZ4Q"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoLIyOEe63QcKS2b5ntg" name="Windows"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoLYyOEe63QcKS2b5ntg" name="MacOS" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoLoyOEe63QcKS2b5ntg" name="Linux" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoL4yOEe63QcKS2b5ntg" name="OtherOS" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoMIyOEe63QcKS2b5ntg" name="ROS" value="4"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoMYyOEe63QcKS2b5ntg" name="IntracloudNetworkDesignDescription" eSuperTypes="_8QQn_oyOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoMoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Plc20DRdEe6hdPlp_7DYew"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoM4yOEe63QcKS2b5ntg" name="IntraNetworkRouter" ordered="false" unique="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoNYyOEe63QcKS2b5ntg" name="IntraNetworkRouterConfig" ordered="false" unique="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoN4yOEe63QcKS2b5ntg" name="IntraNetworkInterface" ordered="false" unique="false" lowerBound="1" eType="_8QQoOoyOEe63QcKS2b5ntg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQoOoyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_PhysicalLayerKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoO4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQoPIyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_PhysicalLayerKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_jGfloD1QEeywba4O3NkZ_A"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoPYyOEe63QcKS2b5ntg" name="IEEE802_3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoPoyOEe63QcKS2b5ntg" name="IEEE802_15_4" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoP4yOEe63QcKS2b5ntg" name="IEEE802_11a" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoQIyOEe63QcKS2b5ntg" name="IEEE802_11b" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoQYyOEe63QcKS2b5ntg" name="OtherPhysicalLayer" value="4"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoQoyOEe63QcKS2b5ntg" name="IntercloudNetworkDesignDescription" eSuperTypes="_8QQoC4yOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoQ4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4aMWgDRvEe6hdPlp_7DYew"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoRIyOEe63QcKS2b5ntg" name="InterNetworkRouter" ordered="false" unique="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoRoyOEe63QcKS2b5ntg" name="InterNetworkRouterConfig" ordered="false" unique="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoSIyOEe63QcKS2b5ntg" name="InterNetworkInterface" ordered="false" upperBound="-1" eType="_8QQoOoyOEe63QcKS2b5ntg" defaultValueLiteral="IEEE802_3"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoS4yOEe63QcKS2b5ntg" name="SysDD" eSuperTypes="_8QQnU4yOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoTIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_XDloEDR4Ee6Jk_FX_xio9g"/>
+        <eOperations xmi:type="ecore:EOperation" xmi:id="_8QQoTYyOEe63QcKS2b5ntg" name="Operation" ordered="false" lowerBound="1"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoToyOEe63QcKS2b5ntg" name="Time2LivePolicy" ordered="false" lowerBound="1" eType="_8QQoU4yOEe63QcKS2b5ntg" defaultValueLiteral="RFC_3339"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoUIyOEe63QcKS2b5ntg" name="Time2Live" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQoU4yOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_TimeFormatKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoVIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQoVYyOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_TimeFormatKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_0gWPEEPYEe2mAIOw8vLwcw"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoVoyOEe63QcKS2b5ntg" name="RFC_3339"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoV4yOEe63QcKS2b5ntg" name="ISO_8601" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoWIyOEe63QcKS2b5ntg" name="Unix_time" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoWYyOEe63QcKS2b5ntg" name="OtherTimeFormat" value="3"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoWoyOEe63QcKS2b5ntg" name="LocalcloudDesignDescription" eSuperTypes="_8QQn0IyOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoW4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Z4_oQDXTEe6Jk_FX_xio9g"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoXIyOEe63QcKS2b5ntg" name="OrchestratinRules" ordered="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoXoyOEe63QcKS2b5ntg" name="WorkflowDescription" ordered="false" upperBound="-1" eType="_8QQoYYyOEe63QcKS2b5ntg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8QQoYYyOEe63QcKS2b5ntg" name="ArrowheadMetamodel_Enumerationdefenitions_WorkflowKind">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoYoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8QQoY4yOEe63QcKS2b5ntg" key="originalName" value="ArrowheadMetamodel_Enumeration defenitions_WorkflowKind"/>
+          <references xmi:type="uml:Enumeration" href="../JD3.ArrowheadMetamodel/ArrowheadMetamodel_JD-v6.uml#_iE3DUGdHEe2LH_l67Mavdg"/>
+        </eAnnotations>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoZIyOEe63QcKS2b5ntg" name="BPMN"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoZYyOEe63QcKS2b5ntg" name="SysML_Statemachine" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoZoyOEe63QcKS2b5ntg" name="NodeRed" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoZ4yOEe63QcKS2b5ntg" name="OtherWorkflowLanguage" value="3"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8QQoaIyOEe63QcKS2b5ntg" name="PetriNet" value="4"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQoaYyOEe63QcKS2b5ntg" name="System_of_LocacloudsDesignDescription" eSuperTypes="_8QQn6IyOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoaoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Lovj0DXVEe6Jk_FX_xio9g"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoa4yOEe63QcKS2b5ntg" name="OrchestratinRules" ordered="false" lowerBound="1" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQobYyOEe63QcKS2b5ntg" name="WorkflowDescription" ordered="false" upperBound="-1" eType="_8QQoYYyOEe63QcKS2b5ntg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQocIyOEe63QcKS2b5ntg" name="System_of_LocalcloudsImplementation" eSuperTypes="_8QQoaYyOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQocYyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SF0lsGtvEe6kMpvvcnNq_g"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQocoyOEe63QcKS2b5ntg" name="SoLC_Documentation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQodIyOEe63QcKS2b5ntg" name="SecurityPolicy" ordered="false" lowerBound="1" eType="_8QQn24yOEe63QcKS2b5ntg" defaultValueLiteral="NGAC"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQod4yOEe63QcKS2b5ntg" name="LoclacloudImplementation" eSuperTypes="_8QQoWoyOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQoeIyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_33V14GuKEe6kMpvvcnNq_g"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQoeYyOEe63QcKS2b5ntg" name="LC_Documentation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//UnlimitedNatural"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8QQoe4yOEe63QcKS2b5ntg" name="LC_OrchestrationRules" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8QQofYyOEe63QcKS2b5ntg" name="LC_SecurityPolicy" ordered="false" unique="false" lowerBound="1" upperBound="-1" eType="_8QQn24yOEe63QcKS2b5ntg" defaultValueLiteral="NGAC"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8QQof4yOEe63QcKS2b5ntg" name="LC_Workflow" ordered="false" unique="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQogoyOEe63QcKS2b5ntg" name="System_Implementation" eSuperTypes="_8QQoS4yOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQog4yOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_AVrcgH8FEe6b-N5jlkvbYg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8QQohYyOEe63QcKS2b5ntg" name="IDD_Implementation" eSuperTypes="_8QQna4yOEe63QcKS2b5ntg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8QQohoyOEe63QcKS2b5ntg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5pMDcH8REe6Xb_ifwf_2_Q"/>
+      </eClassifiers>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_vDDVwH8SEe6Xb_ifwf_2_Q" name="JD6" nsURI="http:///schemas/JD6/_vDCusH8SEe6Xb_ifwf_2_Q/90" nsPrefix="JD6">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vDDVwX8SEe6Xb_ifwf_2_Q" source="http://www.eclipse.org/uml2/4.1.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
