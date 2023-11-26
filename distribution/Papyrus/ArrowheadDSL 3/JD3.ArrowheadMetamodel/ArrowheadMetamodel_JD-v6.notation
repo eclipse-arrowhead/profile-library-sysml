@@ -3640,7 +3640,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlf4kUP0Ee2mAIOw8vLwcw"/>
           </children>
           <element xmi:type="uml:Enumeration" href="ArrowheadMetamodel_JD-v6.uml#_i8fMMEPXEe2mAIOw8vLwcw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlf4iUP0Ee2mAIOw8vLwcw" x="284" y="433" height="290"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlf4iUP0Ee2mAIOw8vLwcw" x="324" y="432" height="290"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_nlf4kkP0Ee2mAIOw8vLwcw" type="Enumeration_Shape_CN">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_npEJ6UP0Ee2mAIOw8vLwcw" source="PapyrusCSSForceValue">
@@ -3829,7 +3829,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlhGqUP0Ee2mAIOw8vLwcw"/>
           </children>
           <element xmi:type="uml:Enumeration" href="ArrowheadMetamodel_JD-v6.uml#_p5yDkEPZEe2mAIOw8vLwcw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlhGoUP0Ee2mAIOw8vLwcw" x="794" y="432" width="198" height="281"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlhGoUP0Ee2mAIOw8vLwcw" x="844" y="432" width="198" height="281"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_vnBoAEU-Ee2mAIOw8vLwcw" type="Enumeration_Shape_CN">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vrLvQEU-Ee2mAIOw8vLwcw" source="PapyrusCSSForceValue">
@@ -3890,7 +3890,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnBoCUU-Ee2mAIOw8vLwcw"/>
           </children>
           <element xmi:type="uml:Enumeration" href="ArrowheadMetamodel_JD-v6.uml#_vlqWEEU-Ee2mAIOw8vLwcw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnBoAUU-Ee2mAIOw8vLwcw" x="154" y="433" height="290"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vnBoAUU-Ee2mAIOw8vLwcw" x="184" y="432" height="290"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_yAO7QEVjEe2mAIOw8vLwcw" type="Enumeration_Shape_CN">
           <children xmi:type="notation:DecorationNode" xmi:id="_yAPiUEVjEe2mAIOw8vLwcw" type="Enumeration_NameLabel_CN"/>
@@ -3986,7 +3986,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IBL2uUV0Ee2mAIOw8vLwcw"/>
           </children>
           <element xmi:type="uml:Enumeration" href="ArrowheadMetamodel_JD-v6.uml#_IALKEEV0Ee2mAIOw8vLwcw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IBL2sUV0Ee2mAIOw8vLwcw" x="414" y="432" width="161" height="291"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IBL2sUV0Ee2mAIOw8vLwcw" x="464" y="432" width="161" height="291"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_WVmqMEYGEe2mAIOw8vLwcw" type="Enumeration_Shape_CN">
           <children xmi:type="notation:DecorationNode" xmi:id="_WVmqMkYGEe2mAIOw8vLwcw" type="Enumeration_NameLabel_CN"/>
@@ -4059,7 +4059,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WVmqOUYGEe2mAIOw8vLwcw"/>
           </children>
           <element xmi:type="uml:Enumeration" href="ArrowheadMetamodel_JD-v6.uml#_WUhFEEYGEe2mAIOw8vLwcw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WVmqMUYGEe2mAIOw8vLwcw" x="596" y="432" width="179" height="291"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WVmqMUYGEe2mAIOw8vLwcw" x="644" y="432" width="179" height="291"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_ChgzwE5NEe2jL6wF5XuZrQ" type="Enumeration_Shape_CN">
           <children xmi:type="notation:DecorationNode" xmi:id="_Chgzwk5NEe2jL6wF5XuZrQ" type="Enumeration_NameLabel_CN"/>

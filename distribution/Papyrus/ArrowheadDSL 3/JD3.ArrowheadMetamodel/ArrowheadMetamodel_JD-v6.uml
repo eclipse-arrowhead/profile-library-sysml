@@ -582,7 +582,7 @@ self.Device_Name='_Device_Name'</body>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_IuFCwEPQEe2mAIOw8vLwcw" name="Enumeration defenitions" visibility="public">
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tBgZUDy4Eeywba4O3NkZ_A" name="Http1.1MethodKind">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tBgZUDy4Eeywba4O3NkZ_A" name="HTTP_1.1_MethodKind">
       <ownedComment xmi:type="uml:Comment" xmi:id="_E9_bAEU-Ee2mAIOw8vLwcw">
         <ownedComment xmi:type="uml:Comment" xmi:id="_LjuY4EU-Ee2mAIOw8vLwcw" annotatedElement="_E9_bAEU-Ee2mAIOw8vLwcw">
           <body>https://www.rfc-editor.org/rfc/rfc9110.html
