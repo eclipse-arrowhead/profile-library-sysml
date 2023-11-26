@@ -239,6 +239,22 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_kXuzYIIDEe6-FNmRLM_UMA" name="GetPublicKey" type="_F3tgwDd_Ee6hKsppnexuYQ" aggregation="composite" isConjugated="true"/>
           </packagedElement>
         </packagedElement>
+        <packagedElement xmi:type="uml:Model" xmi:id="_oebVMIyGEe63QcKS2b5ntg" name="Authentication">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0NeWQIyGEe63QcKS2b5ntg" name="ConsumerAuthentication_Design">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_HcAyQIyIEe63QcKS2b5ntg" name="AuthenticateConsumer" type="_fJbfQIyHEe63QcKS2b5ntg" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_BG08YIyJEe63QcKS2b5ntg" name="ServiceDiscovery" type="_kZCioDdfEe6h28lXN9kaaA" aggregation="composite" isConjugated="true"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_8FfbYIyGEe63QcKS2b5ntg" name="AuthenticateConsumeer_HTTP">
+            <generalization xmi:type="uml:Generalization" xmi:id="_l0HOkIyHEe63QcKS2b5ntg" general="_fJbfQIyHEe63QcKS2b5ntg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_WG_1cIyHEe63QcKS2b5ntg" name="ConsumerAuthentication_DesignDescription">
+            <generalization xmi:type="uml:Generalization" xmi:id="__uFdQIyHEe63QcKS2b5ntg" general="_0NeWQIyGEe63QcKS2b5ntg"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_rWwiUIyIEe63QcKS2b5ntg" name="Authenticate_consumer_HTTP" type="_8FfbYIyGEe63QcKS2b5ntg" aggregation="composite" subsettedProperty="_HcAyQIyIEe63QcKS2b5ntg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_fJbfQIyHEe63QcKS2b5ntg" name="AuthneticateConsumer">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8bm_4IyHEe63QcKS2b5ntg" name="Operation1"/>
+          </packagedElement>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_mieN4GjvEe68YqagBUFKng" name="Arrowhead.support.microsystem.package">
@@ -937,4 +953,19 @@
   <JD6:SD xmi:id="_-3oekIdyEe6o_Kn9jFdFwA" base_Class="_1TvGcIdyEe6o_Kn9jFdFwA"/>
   <Blocks:Block xmi:id="_Oa5YIIdzEe6o_Kn9jFdFwA" base_Class="_Oa1twIdzEe6o_Kn9jFdFwA"/>
   <JD6:IDD xmi:id="_VtbKkIdzEe6o_Kn9jFdFwA" base_Class="_Oa1twIdzEe6o_Kn9jFdFwA"/>
+  <Blocks:Block xmi:id="_0N4l8IyGEe63QcKS2b5ntg" base_Class="_0NeWQIyGEe63QcKS2b5ntg"/>
+  <JD6:SysD xmi:id="_6Z-UwIyGEe63QcKS2b5ntg" base_Class="_0NeWQIyGEe63QcKS2b5ntg">
+    <MicrosystemName>ConsumerAuthentication</MicrosystemName>
+  </JD6:SysD>
+  <Blocks:Block xmi:id="_8FiesIyGEe63QcKS2b5ntg" base_Class="_8FfbYIyGEe63QcKS2b5ntg"/>
+  <JD6:IDD xmi:id="_CES8IIyHEe63QcKS2b5ntg" base_Class="_8FfbYIyGEe63QcKS2b5ntg" MicroserviceName="AuthenticateConsumer"/>
+  <Blocks:Block xmi:id="_WHCRsIyHEe63QcKS2b5ntg" base_Class="_WG_1cIyHEe63QcKS2b5ntg"/>
+  <Blocks:Block xmi:id="_fJd7gIyHEe63QcKS2b5ntg" base_Class="_fJbfQIyHEe63QcKS2b5ntg"/>
+  <JD6:SD xmi:id="_lCJmIIyHEe63QcKS2b5ntg" base_Class="_fJbfQIyHEe63QcKS2b5ntg"/>
+  <JD6:SysDD xmi:id="_rrWuwIyHEe63QcKS2b5ntg" base_Class="_WG_1cIyHEe63QcKS2b5ntg">
+    <MicrosystemName>ConsumerAuthentication</MicrosystemName>
+  </JD6:SysDD>
+  <PortsAndFlows:FullPort xmi:id="_HcFqwIyIEe63QcKS2b5ntg" base_Port="_HcAyQIyIEe63QcKS2b5ntg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_rWy-kIyIEe63QcKS2b5ntg" base_Port="_rWwiUIyIEe63QcKS2b5ntg"/>
+  <PortsAndFlows:FullPort xmi:id="_BG2xkIyJEe63QcKS2b5ntg" base_Port="_BG08YIyJEe63QcKS2b5ntg"/>
 </xmi:XMI>
