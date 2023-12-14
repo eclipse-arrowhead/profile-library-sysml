@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:JD6="http:///schemas/JD6/_vDCusH8SEe6Xb_ifwf_2_Q/90" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/JD6/_vDCusH8SEe6Xb_ifwf_2_Q/90 ../JD6.ArrowheadProfile/JD6.ArrowheadProfile.profile.uml#_vDDVwH8SEe6Xb_ifwf_2_Q http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
   <uml:Model xmi:id="_GJjFMDdfEe6h28lXN9kaaA" name="EclipseArrowhead_v6">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_GK5wEjdfEe6h28lXN9kaaA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -675,6 +675,19 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../JD6.ArrowheadProfile/JD6.ArrowheadProfile.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hOcmQJNyEe69oeBOw5VrOQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TJ5jgJpvEe6U99HogCXF3A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TJ5jgZpvEe6U99HogCXF3A" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TJ5jgppvEe6U99HogCXF3A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TJ5jg5pvEe6U99HogCXF3A" key="Copyright" value="Jerker Delsing, jerker.delsing@ltu.se"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TJ5jhJpvEe6U99HogCXF3A" key="Date" value="2023-12-07"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TJ5jhZpvEe6U99HogCXF3A" key="Author" value="Jerker Delsing"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hOfpkJNyEe69oeBOw5VrOQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../ArrowheadProfile/ArrowheadProfile_v5.0.profile.uml#_0whUEJT5Ee6U99HogCXF3A"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../ArrowheadProfile/ArrowheadProfile_v5.0.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
+    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_-6ECYETVEe6aQZfmGTTxwA" base_Class="_ru-zcDd1Ee6hKsppnexuYQ"/>
   <Blocks:Block xmi:id="_qjykcETjEe6aQZfmGTTxwA" base_Class="_WwqLsD9SEe6BGOWVtNQ9Cw"/>
@@ -703,20 +716,11 @@
   <PortsAndFlows:FullPort xmi:id="_ad7hsETDEe6aQZfmGTTxwA" base_Port="_ad5sgETDEe6aQZfmGTTxwA"/>
   <Blocks:Block xmi:id="_mXIkUETDEe6aQZfmGTTxwA" base_Class="_c19wEETDEe6aQZfmGTTxwA"/>
   <Blocks:Block xmi:id="_0XncgETDEe6aQZfmGTTxwA" base_Class="_0XlnUETDEe6aQZfmGTTxwA"/>
-  <JD6:SD xmi:id="_3ghuMETDEe6aQZfmGTTxwA" base_Class="_0XlnUETDEe6aQZfmGTTxwA" MicroserviceName="gt-connect-provider"/>
   <Blocks:Block xmi:id="_-xgBcETDEe6aQZfmGTTxwA" base_Class="_-xdlMETDEe6aQZfmGTTxwA"/>
-  <JD6:IDD xmi:id="_D-CXwETEEe6aQZfmGTTxwA" base_Class="_-xdlMETDEe6aQZfmGTTxwA" MicroserviceName="gp-connect-consumer"/>
   <Blocks:Block xmi:id="_J82fkETEEe6aQZfmGTTxwA" base_Class="_J80DUETEEe6aQZfmGTTxwA"/>
-  <JD6:IDD xmi:id="_Lfv1sETEEe6aQZfmGTTxwA" base_Class="_J80DUETEEe6aQZfmGTTxwA" MicroserviceName="gp-connect-provider"/>
   <Blocks:Block xmi:id="_MaK5wETIEe6aQZfmGTTxwA" base_Class="_MaIdgETIEe6aQZfmGTTxwA"/>
-  <JD6:SD xmi:id="_TNH0QETIEe6aQZfmGTTxwA" base_Class="_MaIdgETIEe6aQZfmGTTxwA" MicroserviceName="gt-close-session"/>
   <Blocks:Block xmi:id="_UbJtoETIEe6aQZfmGTTxwA" base_Class="_UbH4cETIEe6aQZfmGTTxwA"/>
-  <JD6:IDD xmi:id="_VyX_QETIEe6aQZfmGTTxwA" base_Class="_UbH4cETIEe6aQZfmGTTxwA" MicroserviceName="gp-close-session"/>
   <Blocks:Block xmi:id="_awt2oETKEe6aQZfmGTTxwA" base_Class="_awraYETKEe6aQZfmGTTxwA"/>
-  <JD6:SysDD xmi:id="_f3_5gETKEe6aQZfmGTTxwA" base_Class="_awraYETKEe6aQZfmGTTxwA"/>
-  <JD6:SysD xmi:id="_1t4hUETCEe6aQZfmGTTxwA" base_Class="_yuTKwETCEe6aQZfmGTTxwA">
-    <MicrosystemName>GateTunnel</MicrosystemName>
-  </JD6:SysD>
   <Blocks:Block xmi:id="_5KhFoETVEe6aQZfmGTTxwA" base_Class="_94MJoDd3Ee6hKsppnexuYQ"/>
   <Blocks:Block xmi:id="_8v0_cETVEe6aQZfmGTTxwA" base_Class="_DwkuwDd3Ee6hKsppnexuYQ"/>
   <Blocks:Block xmi:id="_H5KEUETWEe6aQZfmGTTxwA" base_Class="_IyAdwDd2Ee6hKsppnexuYQ"/>
@@ -726,26 +730,14 @@
   <Blocks:Block xmi:id="_9QzwIETWEe6aQZfmGTTxwA" base_Class="_QaN4kDezEe6hKsppnexuYQ"/>
   <Blocks:Block xmi:id="_ChPH8ETXEe6aQZfmGTTxwA" base_Class="_Wxyn8DheEe6hKsppnexuYQ"/>
   <Blocks:Block xmi:id="_KVu_AETXEe6aQZfmGTTxwA" base_Class="_t3SR8DhgEe6hKsppnexuYQ"/>
-  <JD6:IDD xmi:id="_jqXyMES6Ee6aQZfmGTTxwA" base_Class="_7CJJsDhgEe6hKsppnexuYQ" MicroserviceName="Monitor" security="CERTIFICATE" Port="1000"/>
-  <JD6:IDD xmi:id="_0PwFgES5Ee6aQZfmGTTxwA" base_Class="_EMjMYDe0Ee6hKsppnexuYQ" MicroserviceName="Historian" security="CERTIFICATE"/>
-  <JD6:IDD xmi:id="_1Q6AgES5Ee6aQZfmGTTxwA" base_Class="_DCWo4DheEe6hKsppnexuYQ" MicroserviceName="Historian" protocol="websocket" security="CERTIFICATE"/>
   <Blocks:Block xmi:id="_nVy04ETXEe6aQZfmGTTxwA" base_Class="_1u6AYDheEe6hKsppnexuYQ"/>
-  <JD6:IDD xmi:id="_z-A_0ES6Ee6aQZfmGTTxwA" base_Class="_LcrUYDhfEe6hKsppnexuYQ" MicroserviceName="ProxyHistorian" protocol="websocket" security="CERTIFICATE" Port="1001"/>
   <Blocks:Block xmi:id="_GvIPQETYEe6aQZfmGTTxwA" base_Class="_GvGaEETYEe6aQZfmGTTxwA"/>
-  <JD6:LocalcloudDesignDescription xmi:id="_KMef4ETYEe6aQZfmGTTxwA" base_Class="_GvGaEETYEe6aQZfmGTTxwA" LC_Name="GenericLocalcloud-A"/>
-  <JD6:SysDD xmi:id="_xq49gD9SEe6BGOWVtNQ9Cw" base_Class="_mc6CID9SEe6BGOWVtNQ9Cw" Time2Live="1d">
-    <MicrosystemName>GenericMicrosystem-AA</MicrosystemName>
-  </JD6:SysDD>
   <Blocks:Block xmi:id="_5Q8qgETlEe6aQZfmGTTxwA" base_Class="_wqEkQD9TEe6BGOWVtNQ9Cw"/>
-  <JD6:SysDD xmi:id="_rj7hsES1Ee6aQZfmGTTxwA" base_Class="_sRwDsD9UEe6BGOWVtNQ9Cw">
-    <MicrosystemName>GenericMicrosystem-BB</MicrosystemName>
-  </JD6:SysDD>
   <Blocks:Block xmi:id="_A2HsIETmEe6aQZfmGTTxwA" base_Class="_Q1JMUD9OEe6BGOWVtNQ9Cw"/>
   <Blocks:Block xmi:id="_KThasETmEe6aQZfmGTTxwA" base_Class="_0R-mcD9QEe6BGOWVtNQ9Cw"/>
   <Blocks:Block xmi:id="_MZTbcETmEe6aQZfmGTTxwA" base_Class="_5HzX0D9OEe6BGOWVtNQ9Cw"/>
   <Blocks:Block xmi:id="_Ndli8ETmEe6aQZfmGTTxwA" base_Class="_SqrDMD9REe6BGOWVtNQ9Cw"/>
   <Blocks:Block xmi:id="_EDOLMETvEe6otvzTLJeGww" base_Class="_EDLu8ETvEe6otvzTLJeGww"/>
-  <JD6:System_of_LocacloudsDesignDescription xmi:id="_HAU1gETvEe6otvzTLJeGww" base_Class="_EDLu8ETvEe6otvzTLJeGww"/>
   <Blocks:NestedConnectorEnd xmi:id="_-nkI4ETwEe6otvzTLJeGww" base_Element="_-njh0ETwEe6otvzTLJeGww" propertyPath="_Id3VEETwEe6otvzTLJeGww" base_ConnectorEnd="_-njh0ETwEe6otvzTLJeGww"/>
   <Blocks:NestedConnectorEnd xmi:id="_-nkv8ETwEe6otvzTLJeGww" base_Element="_-njh0UTwEe6otvzTLJeGww" propertyPath="_hBBh0ETwEe6otvzTLJeGww" base_ConnectorEnd="_-njh0UTwEe6otvzTLJeGww"/>
   <Blocks:NestedConnectorEnd xmi:id="_tvY1YkTxEe6otvzTLJeGww" base_Element="_tvY1YETxEe6otvzTLJeGww" propertyPath="_Id3VEETwEe6otvzTLJeGww" base_ConnectorEnd="_tvY1YETxEe6otvzTLJeGww"/>
@@ -796,7 +788,6 @@
   <PortsAndFlows:ProxyPort xmi:id="_hzw1QEUPEe6otvzTLJeGww" base_Port="_hzvAEEUPEe6otvzTLJeGww"/>
   <Blocks:Block xmi:id="_4-WDEEWfEe6i5cegHl59uw" base_Class="_4-HZkEWfEe6i5cegHl59uw"/>
   <Blocks:Block xmi:id="_IIM-IEWgEe6i5cegHl59uw" base_Class="_IIJTwEWgEe6i5cegHl59uw"/>
-  <JD6:IntracloudNetworkDesign xmi:id="_oRHbUEWgEe6i5cegHl59uw" base_Class="_4-HZkEWfEe6i5cegHl59uw"/>
   <Blocks:Block xmi:id="_p3FTkEWgEe6i5cegHl59uw" base_Class="_p3C3UEWgEe6i5cegHl59uw"/>
   <Blocks:Block xmi:id="_szpyYEWgEe6i5cegHl59uw" base_Class="_szmvEEWgEe6i5cegHl59uw"/>
   <PortsAndFlows:FullPort xmi:id="_FnEBoEWhEe6i5cegHl59uw" base_Port="_Fm_wMEWhEe6i5cegHl59uw"/>
@@ -809,16 +800,7 @@
   <PortsAndFlows:FullPort xmi:id="_Fljr4EZIEe6i5cegHl59uw" base_Port="_FlhPoEZIEe6i5cegHl59uw"/>
   <Blocks:Block xmi:id="_vCpNsEZJEe6i5cegHl59uw" base_Class="_vCmxcEZJEe6i5cegHl59uw"/>
   <PortsAndFlows:FullPort xmi:id="_AjX5gEZKEe6i5cegHl59uw" base_Port="_AjRL0EZKEe6i5cegHl59uw"/>
-  <JD6:IntercloudNetworkDesign xmi:id="_WTLYYEZLEe6i5cegHl59uw" base_Class="_p3C3UEWgEe6i5cegHl59uw"/>
-  <JD6:IntercloudNetworkDesignDescription xmi:id="_XppcEEZLEe6i5cegHl59uw" base_Class="_szmvEEWgEe6i5cegHl59uw">
-    <InterNetworkInterface>IEEE802_11a</InterNetworkInterface>
-  </JD6:IntercloudNetworkDesignDescription>
-  <JD6:IntracloudNetworkDesign xmi:id="_a0FXwEZLEe6i5cegHl59uw" base_Class="_vCmxcEZJEe6i5cegHl59uw"/>
   <Blocks:Block xmi:id="_csrREEZLEe6i5cegHl59uw" base_Class="_cspb4EZLEe6i5cegHl59uw"/>
-  <JD6:IntracloudNetworkDesignDescription xmi:id="_eXAE4EZLEe6i5cegHl59uw" base_Class="_cspb4EZLEe6i5cegHl59uw"/>
-  <JD6:IntracloudNetworkDesignDescription xmi:id="_FbkQIEZNEe6i5cegHl59uw" base_Class="_IIJTwEWgEe6i5cegHl59uw">
-    <IntraNetworkMacLayer>CDMA</IntraNetworkMacLayer>
-  </JD6:IntracloudNetworkDesignDescription>
   <PortsAndFlows:ProxyPort xmi:id="_JOE-0EZVEe6i5cegHl59uw" base_Port="_JN9DAEZVEe6i5cegHl59uw"/>
   <PortsAndFlows:ProxyPort xmi:id="_VW4jsEZVEe6i5cegHl59uw" base_Port="_VW2ugEZVEe6i5cegHl59uw"/>
   <PortsAndFlows:ProxyPort xmi:id="_sJicIEZVEe6i5cegHl59uw" base_Port="_sJgm8EZVEe6i5cegHl59uw"/>
@@ -828,78 +810,24 @@
   <PortsAndFlows:ProxyPort xmi:id="_F84Y8FDLEe6dd44TFP4A2A" base_Port="_F8vPAFDLEe6dd44TFP4A2A"/>
   <PortsAndFlows:ProxyPort xmi:id="_AlfoEFDMEe6dd44TFP4A2A" base_Port="_AldL0FDMEe6dd44TFP4A2A"/>
   <Blocks:Block xmi:id="_Xe8bkFx-Ee6dnI6HBiPMog" base_Class="_XevnQFx-Ee6dnI6HBiPMog"/>
-  <JD6:SD xmi:id="_dUYk8Fx-Ee6dnI6HBiPMog" base_Class="_XevnQFx-Ee6dnI6HBiPMog"/>
   <Blocks:Block xmi:id="_tHJEUFyEEe6dnI6HBiPMog" base_Class="_tHFZ8FyEEe6dnI6HBiPMog"/>
-  <JD6:IDD xmi:id="_w7oCkFyEEe6dnI6HBiPMog" base_Class="_tHFZ8FyEEe6dnI6HBiPMog" Port="1100" Datamodel="SenML"/>
   <Blocks:Block xmi:id="_GydzAFyFEe6dnI6HBiPMog" base_Class="_GyaIoFyFEe6dnI6HBiPMog"/>
   <PortsAndFlows:FullPort xmi:id="_VluzAFyFEe6dnI6HBiPMog" base_Port="_VlqhkFyFEe6dnI6HBiPMog"/>
-  <JD6:SysD xmi:id="_u04jEFyFEe6dnI6HBiPMog" base_Class="_GyaIoFyFEe6dnI6HBiPMog"/>
   <Blocks:Block xmi:id="_zXP7AFyFEe6dnI6HBiPMog" base_Class="_zXNewFyFEe6dnI6HBiPMog"/>
-  <JD6:SysDD xmi:id="_81SiwFyFEe6dnI6HBiPMog" base_Class="_zXNewFyFEe6dnI6HBiPMog" Time2Live="1d">
-    <MicrosystemName>OPC-AU_Adaptor</MicrosystemName>
-  </JD6:SysDD>
   <PortsAndFlows:ProxyPort xmi:id="_y2FSMFyGEe6dnI6HBiPMog" base_Port="_y2C18FyGEe6dnI6HBiPMog"/>
   <PortsAndFlows:FullPort xmi:id="_HYNScFyHEe6dnI6HBiPMog" base_Port="_HYK2MFyHEe6dnI6HBiPMog"/>
   <Blocks:Block xmi:id="_YExWYFyHEe6dnI6HBiPMog" base_Class="_YEvhMFyHEe6dnI6HBiPMog"/>
   <PortsAndFlows:FullPort xmi:id="_cORs8FyIEe6dnI6HBiPMog" base_Port="_cOPQsFyIEe6dnI6HBiPMog"/>
   <PortsAndFlows:FullPort xmi:id="_hJgQ0FyIEe6dnI6HBiPMog" base_Port="_hJaKMFyIEe6dnI6HBiPMog"/>
-  <JD6:IDD xmi:id="_2RBy4GEXEe6dnI6HBiPMog" base_Class="_iJYXsDdgEe6h28lXN9kaaA" token="OtherToken"/>
   <Blocks:Block xmi:id="_-aDIcGEXEe6dnI6HBiPMog" base_Class="_kZCioDdfEe6h28lXN9kaaA"/>
-  <JD6:SD xmi:id="_-aE9oGEXEe6dnI6HBiPMog" base_Class="_kZCioDdfEe6h28lXN9kaaA"/>
-  <JD6:SysD xmi:id="_EzmrgGEYEe6dnI6HBiPMog" base_Class="_ru-zcDd1Ee6hKsppnexuYQ">
-    <MicrosystemName>Serviceregistry</MicrosystemName>
-  </JD6:SysD>
-  <JD6:SysDD xmi:id="_GvFgwGEYEe6dnI6HBiPMog" base_Class="_IyAdwDd2Ee6hKsppnexuYQ" Time2Live="1d">
-    <MicrosystemName>ServiceRegistry</MicrosystemName>
-  </JD6:SysDD>
-  <JD6:SD xmi:id="_boW1sGEYEe6dnI6HBiPMog" base_Class="_DwkuwDd3Ee6hKsppnexuYQ"/>
-  <JD6:IDD xmi:id="_ggHO0GEYEe6dnI6HBiPMog" base_Class="_94MJoDd3Ee6hKsppnexuYQ"/>
-  <JD6:SysD xmi:id="_v5p5wGEaEe6dnI6HBiPMog" base_Class="_rGuboDesEe6hKsppnexuYQ">
-    <MicrosystemName>Authorisation</MicrosystemName>
-  </JD6:SysD>
-  <JD6:SysDD xmi:id="_yKkMcGEaEe6dnI6HBiPMog" base_Class="_7qP4UDesEe6hKsppnexuYQ" Time2Live="1d">
-    <MicrosystemName>Authorisation</MicrosystemName>
-  </JD6:SysDD>
-  <JD6:SD xmi:id="_AR5TgGEbEe6dnI6HBiPMog" base_Class="_F3tgwDd_Ee6hKsppnexuYQ" MicroserviceName="GetPublicKey"/>
-  <JD6:IDD xmi:id="_EXNjEGEbEe6dnI6HBiPMog" base_Class="_Lc3CADeYEe6hKsppnexuYQ" MicroserviceName="GetPublicKey" Port="2000"/>
-  <JD6:SD xmi:id="_Sd3UsGEbEe6dnI6HBiPMog" base_Class="_1hI8IDeYEe6hKsppnexuYQ" MicroserviceName="TokenGeneration"/>
-  <JD6:IDD xmi:id="_ZglJgGEbEe6dnI6HBiPMog" base_Class="_gA1m8DeZEe6hKsppnexuYQ" MicroserviceName="TokenGeneration" Port="2000"/>
-  <JD6:SysDD xmi:id="_yX3zMGEbEe6dnI6HBiPMog" base_Class="_NHtkwDhdEe6hKsppnexuYQ"/>
-  <JD6:SysD xmi:id="_0052UGEbEe6dnI6HBiPMog" base_Class="_tC8-IDe0Ee6hKsppnexuYQ">
-    <MicrosystemName>DataManager</MicrosystemName>
-  </JD6:SysD>
-  <JD6:SD xmi:id="_SDVfYGEcEe6dnI6HBiPMog" base_Class="_QaN4kDezEe6hKsppnexuYQ" MicroserviceName="Historian"/>
   <PortsAndFlows:ProxyPort xmi:id="_uV6kMGEcEe6dnI6HBiPMog" base_Port="_uV4vAGEcEe6dnI6HBiPMog"/>
-  <JD6:SD xmi:id="_C9BI0GRDEe6rHpCSGR7gEg" base_Class="_5fZdEDd6Ee6hKsppnexuYQ" MicroserviceName="ServiceOrchestration"/>
-  <JD6:SysD xmi:id="_diB4kGRDEe6rHpCSGR7gEg" base_Class="_1j1xADd7Ee6hKsppnexuYQ">
-    <MicrosystemName>ServiceOrchesttration</MicrosystemName>
-  </JD6:SysD>
-  <JD6:IDD xmi:id="_jjpcwGRDEe6rHpCSGR7gEg" base_Class="_WUcVwDd7Ee6hKsppnexuYQ" MicroserviceName="ServiceOrchestration"/>
-  <JD6:SD xmi:id="_NU4poGRFEe6rHpCSGR7gEg" base_Class="_1geegDd8Ee6hKsppnexuYQ" MicroserviceName="OrchestrationStoreManagement"/>
-  <JD6:IDD xmi:id="_myivwGRFEe6rHpCSGR7gEg" base_Class="_pxhHkDd9Ee6hKsppnexuYQ" MicroserviceName="OrchestrationStoreManagement"/>
-  <JD6:SD xmi:id="_T2VvAGRGEe6rHpCSGR7gEg" base_Class="_875_YDeqEe6hKsppnexuYQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_BqfNIGRHEe6rHpCSGR7gEg" base_Port="_BqDIQGRHEe6rHpCSGR7gEg"/>
   <PortsAndFlows:ProxyPort xmi:id="_B9BSIGRIEe6rHpCSGR7gEg" base_Port="_B8-14GRIEe6rHpCSGR7gEg"/>
   <PortsAndFlows:ProxyPort xmi:id="_fRsGEGRIEe6rHpCSGR7gEg" base_Port="_fRpp0GRIEe6rHpCSGR7gEg"/>
   <PortsAndFlows:ProxyPort xmi:id="_3yfiYGRIEe6rHpCSGR7gEg" base_Port="_3ycfEGRIEe6rHpCSGR7gEg"/>
   <PortsAndFlows:ProxyPort xmi:id="_aNmc8GRPEe6rHpCSGR7gEg" base_Port="_aNkAsGRPEe6rHpCSGR7gEg"/>
-  <JD6:SD xmi:id="_2BnWcGRPEe6rHpCSGR7gEg" base_Class="_Wxyn8DheEe6hKsppnexuYQ" MicroserviceName="ProxyHistorian"/>
-  <JD6:IDD xmi:id="_4TWvkGRPEe6rHpCSGR7gEg" base_Class="_1u6AYDheEe6hKsppnexuYQ" MicroserviceName="ProxyHistorian"/>
-  <JD6:SD xmi:id="_7DU80GRPEe6rHpCSGR7gEg" base_Class="_t3SR8DhgEe6hKsppnexuYQ" MicroserviceName="Monitor"/>
   <PortsAndFlows:ProxyPort xmi:id="_nKIvYGRQEe6rHpCSGR7gEg" base_Port="_nKGTIGRQEe6rHpCSGR7gEg"/>
   <PortsAndFlows:ProxyPort xmi:id="_MDF0IGRREe6rHpCSGR7gEg" base_Port="_MDD-8GRREe6rHpCSGR7gEg"/>
-  <JD6:SysD xmi:id="_LH46sGRSEe6rHpCSGR7gEg" base_Class="_lEA6kDz3Ee6hKsppnexuYQ">
-    <MicrosystemName>GateKeeper</MicrosystemName>
-  </JD6:SysD>
-  <JD6:SysDD xmi:id="_XfmeQGRSEe6rHpCSGR7gEg" base_Class="_ng8IoDz6Ee6hKsppnexuYQ" Time2Live="1d">
-    <MicrosystemName>GateKeeper</MicrosystemName>
-  </JD6:SysDD>
-  <JD6:SD xmi:id="_iVEzAGRSEe6rHpCSGR7gEg" base_Class="_CB-ZkDxGEe6hKsppnexuYQ" MicroserviceName="GlobalServiceDiscovery"/>
-  <JD6:IDD xmi:id="_qJyFcGRSEe6rHpCSGR7gEg" base_Class="_hnlVYDxGEe6hKsppnexuYQ" MicroserviceName="GlobalServicediscovery"/>
-  <JD6:SD xmi:id="_1zSfMGRSEe6rHpCSGR7gEg" base_Class="_OhicIDxHEe6hKsppnexuYQ" MicroserviceName="InterCloudNegotiation"/>
-  <JD6:IDD xmi:id="_7pkWEGRSEe6rHpCSGR7gEg" base_Class="_hRRRsDxHEe6hKsppnexuYQ" MicroserviceName="InterCloudNegotiation"/>
-  <JD6:SD xmi:id="_H9rMAGRTEe6rHpCSGR7gEg" base_Class="_9BWGYDxHEe6hKsppnexuYQ" MicroserviceName="GateKeeperManagement"/>
-  <JD6:IDD xmi:id="_QNftIGRTEe6rHpCSGR7gEg" base_Class="_41lVsDz5Ee6hKsppnexuYQ" MicroserviceName="GateKeeperManagement"/>
   <PortsAndFlows:ProxyPort xmi:id="_QTZHQGT3Ee6qA-lqEhJWdQ" base_Port="_QTPWQGT3Ee6qA-lqEhJWdQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_byr1EGT3Ee6qA-lqEhJWdQ" base_Port="_byoxwGT3Ee6qA-lqEhJWdQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_L7PJUGT5Ee6xc7ZIuB6OIw" base_Port="_L7CVAGT5Ee6xc7ZIuB6OIw"/>
@@ -908,23 +836,8 @@
   <PortsAndFlows:ProxyPort xmi:id="_-lFLEGT5Ee6xc7ZIuB6OIw" base_Port="_-lCHwGT5Ee6xc7ZIuB6OIw"/>
   <PortsAndFlows:ProxyPort xmi:id="_vExCYGT6Ee6xc7ZIuB6OIw" base_Port="_vEumIGT6Ee6xc7ZIuB6OIw"/>
   <PortsAndFlows:ProxyPort xmi:id="_HPSFoGT7Ee6xc7ZIuB6OIw" base_Port="_HPPpYGT7Ee6xc7ZIuB6OIw"/>
-  <JD6:SD xmi:id="_hY22kGT7Ee6xc7ZIuB6OIw" base_Class="_c19wEETDEe6aQZfmGTTxwA" MicroserviceName="gt-connect-consumer"/>
   <PortsAndFlows:ProxyPort xmi:id="_rRtLAGT7Ee6xc7ZIuB6OIw" base_Port="_rRrV0GT7Ee6xc7ZIuB6OIw"/>
   <PortsAndFlows:ProxyPort xmi:id="_5W-ckGT7Ee6xc7ZIuB6OIw" base_Port="_5WqTgGT7Ee6xc7ZIuB6OIw"/>
-  <JD6:SysDD xmi:id="_2WbzAGUXEe6xc7ZIuB6OIw" base_Class="_R1SNYDd8Ee6hKsppnexuYQ" Time2Live="1d">
-    <MicrosystemName>ServiceOrchestration</MicrosystemName>
-  </JD6:SysDD>
-  <JD6:IDD xmi:id="_BMPe8GUYEe6xc7ZIuB6OIw" base_Class="_0mEgYDerEe6hKsppnexuYQ" MicroserviceName="AuthorisationManagement"/>
-  <JD6:SysD xmi:id="_LXcusGUYEe6xc7ZIuB6OIw" base_Class="_wqEkQD9TEe6BGOWVtNQ9Cw">
-    <MicrosystemName>GenericMicrosystem-BB</MicrosystemName>
-  </JD6:SysD>
-  <JD6:SysD xmi:id="_W8IS0GUYEe6xc7ZIuB6OIw" base_Class="_WwqLsD9SEe6BGOWVtNQ9Cw">
-    <MicrosystemName>GenericMicrosystem-AA</MicrosystemName>
-  </JD6:SysD>
-  <JD6:SD xmi:id="_ceM0QGUYEe6xc7ZIuB6OIw" base_Class="_Q1JMUD9OEe6BGOWVtNQ9Cw"/>
-  <JD6:SD xmi:id="_ehT7gGUYEe6xc7ZIuB6OIw" base_Class="_0R-mcD9QEe6BGOWVtNQ9Cw"/>
-  <JD6:IDD xmi:id="_fyw8UGUYEe6xc7ZIuB6OIw" base_Class="_5HzX0D9OEe6BGOWVtNQ9Cw"/>
-  <JD6:IDD xmi:id="_hELg4GUYEe6xc7ZIuB6OIw" base_Class="_SqrDMD9REe6BGOWVtNQ9Cw"/>
   <PortsAndFlows:ProxyPort xmi:id="_QtTmMHaJEe6kMpvvcnNq_g" base_Port="_QtGK0HaJEe6kMpvvcnNq_g"/>
   <PortsAndFlows:ProxyPort xmi:id="_ug9cMHaJEe6kMpvvcnNq_g" base_Port="_ug6_8HaJEe6kMpvvcnNq_g"/>
   <PortsAndFlows:ProxyPort xmi:id="_5rbJgHaJEe6kMpvvcnNq_g" base_Port="_5rYtQHaJEe6kMpvvcnNq_g"/>
@@ -936,35 +849,20 @@
   <PortsAndFlows:ProxyPort xmi:id="_pyx0QH14Ee677atL5vdEtQ" base_Port="_pyuJ4H14Ee677atL5vdEtQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_eassQH15Ee677atL5vdEtQ" base_Port="_eapo8H15Ee677atL5vdEtQ"/>
   <Blocks:Block xmi:id="_kf-QwIIAEe6-FNmRLM_UMA" base_Class="_kfoSgIIAEe6-FNmRLM_UMA"/>
-  <JD6:SysD xmi:id="_3JUxgIIAEe6-FNmRLM_UMA" base_Class="_kfoSgIIAEe6-FNmRLM_UMA"/>
   <Blocks:Block xmi:id="_ISJ6sIIBEe6-FNmRLM_UMA" base_Class="_ISGQUIIBEe6-FNmRLM_UMA"/>
-  <JD6:SD xmi:id="_MRHDkIIBEe6-FNmRLM_UMA" base_Class="_ISGQUIIBEe6-FNmRLM_UMA"/>
   <PortsAndFlows:FullPort xmi:id="_Ee_gMIIDEe6-FNmRLM_UMA" base_Port="_Ee710IIDEe6-FNmRLM_UMA"/>
   <PortsAndFlows:FullPort xmi:id="_QQL2UIIDEe6-FNmRLM_UMA" base_Port="_QQIzAIIDEe6-FNmRLM_UMA"/>
   <PortsAndFlows:FullPort xmi:id="_WeekkIIDEe6-FNmRLM_UMA" base_Port="_WecIUIIDEe6-FNmRLM_UMA"/>
   <PortsAndFlows:FullPort xmi:id="_kXwokIIDEe6-FNmRLM_UMA" base_Port="_kXuzYIIDEe6-FNmRLM_UMA"/>
   <Blocks:Block xmi:id="_M0ntYIIOEe6-FNmRLM_UMA" base_Class="_M0l4MIIOEe6-FNmRLM_UMA"/>
   <Blocks:Block xmi:id="_XQVeUIIOEe6-FNmRLM_UMA" base_Class="_XQTCEIIOEe6-FNmRLM_UMA"/>
-  <JD6:IDD xmi:id="_bJoEEIIOEe6-FNmRLM_UMA" base_Class="_XQTCEIIOEe6-FNmRLM_UMA" MicroserviceName="CheckCertificate" Datamodel="OtherDatamodelStandard"/>
-  <JD6:SD xmi:id="_xRCAEIIOEe6-FNmRLM_UMA" base_Class="_M0l4MIIOEe6-FNmRLM_UMA"/>
   <Blocks:Block xmi:id="_y-3a4IIOEe6-FNmRLM_UMA" base_Class="_y-0-oIIOEe6-FNmRLM_UMA"/>
-  <JD6:IDD xmi:id="_--Ov4IIOEe6-FNmRLM_UMA" base_Class="_y-0-oIIOEe6-FNmRLM_UMA" Datamodel="OtherDatamodelStandard"/>
   <Blocks:Block xmi:id="_1T5egIdyEe6o_Kn9jFdFwA" base_Class="_1TvGcIdyEe6o_Kn9jFdFwA"/>
-  <JD6:SD xmi:id="_-3oekIdyEe6o_Kn9jFdFwA" base_Class="_1TvGcIdyEe6o_Kn9jFdFwA"/>
   <Blocks:Block xmi:id="_Oa5YIIdzEe6o_Kn9jFdFwA" base_Class="_Oa1twIdzEe6o_Kn9jFdFwA"/>
-  <JD6:IDD xmi:id="_VtbKkIdzEe6o_Kn9jFdFwA" base_Class="_Oa1twIdzEe6o_Kn9jFdFwA"/>
   <Blocks:Block xmi:id="_0N4l8IyGEe63QcKS2b5ntg" base_Class="_0NeWQIyGEe63QcKS2b5ntg"/>
-  <JD6:SysD xmi:id="_6Z-UwIyGEe63QcKS2b5ntg" base_Class="_0NeWQIyGEe63QcKS2b5ntg">
-    <MicrosystemName>ConsumerAuthentication</MicrosystemName>
-  </JD6:SysD>
   <Blocks:Block xmi:id="_8FiesIyGEe63QcKS2b5ntg" base_Class="_8FfbYIyGEe63QcKS2b5ntg"/>
-  <JD6:IDD xmi:id="_CES8IIyHEe63QcKS2b5ntg" base_Class="_8FfbYIyGEe63QcKS2b5ntg" MicroserviceName="AuthenticateConsumer"/>
   <Blocks:Block xmi:id="_WHCRsIyHEe63QcKS2b5ntg" base_Class="_WG_1cIyHEe63QcKS2b5ntg"/>
   <Blocks:Block xmi:id="_fJd7gIyHEe63QcKS2b5ntg" base_Class="_fJbfQIyHEe63QcKS2b5ntg"/>
-  <JD6:SD xmi:id="_lCJmIIyHEe63QcKS2b5ntg" base_Class="_fJbfQIyHEe63QcKS2b5ntg"/>
-  <JD6:SysDD xmi:id="_rrWuwIyHEe63QcKS2b5ntg" base_Class="_WG_1cIyHEe63QcKS2b5ntg">
-    <MicrosystemName>ConsumerAuthentication</MicrosystemName>
-  </JD6:SysDD>
   <PortsAndFlows:FullPort xmi:id="_HcFqwIyIEe63QcKS2b5ntg" base_Port="_HcAyQIyIEe63QcKS2b5ntg"/>
   <PortsAndFlows:ProxyPort xmi:id="_rWy-kIyIEe63QcKS2b5ntg" base_Port="_rWwiUIyIEe63QcKS2b5ntg"/>
   <PortsAndFlows:FullPort xmi:id="_BG2xkIyJEe63QcKS2b5ntg" base_Port="_BG08YIyJEe63QcKS2b5ntg"/>

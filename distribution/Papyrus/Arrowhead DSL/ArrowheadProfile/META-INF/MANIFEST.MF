@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ArrowheadProfile
+Bundle-SymbolicName: ArrowheadProfile;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.papyrus.uml.extensionpoints,
+ org.eclipse.wst.common.emf
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: ArrowheadProfile

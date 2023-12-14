@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            name="ArrowheadProfile.profile"
+            path="ArrowheadProfile.profile1">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.wst.common.emf.packageURIMap">
+      <map
+            prefix="ArrowheadProfile.map1"
+            uri="ArrowheadProfile.map1">
+      </map>
+   </extension>
+
+</plugin>
