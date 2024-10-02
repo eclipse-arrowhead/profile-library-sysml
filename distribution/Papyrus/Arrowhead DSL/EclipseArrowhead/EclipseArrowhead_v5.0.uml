@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ArrowheadDSL="http:///schemas/ArrowheadDSL/_0wgF8JT5Ee6U99HogCXF3A/3" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/ArrowheadDSL/_0wgF8JT5Ee6U99HogCXF3A/3 ../ArrowheadProfile/ArrowheadProfile_v5.0.profile.uml#_0whUEJT5Ee6U99HogCXF3A http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
   <uml:Model xmi:id="_GJjFMDdfEe6h28lXN9kaaA" name="EclipseArrowhead_v6">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_GK5wEjdfEe6h28lXN9kaaA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -866,4 +866,12 @@
   <PortsAndFlows:FullPort xmi:id="_HcFqwIyIEe63QcKS2b5ntg" base_Port="_HcAyQIyIEe63QcKS2b5ntg"/>
   <PortsAndFlows:ProxyPort xmi:id="_rWy-kIyIEe63QcKS2b5ntg" base_Port="_rWwiUIyIEe63QcKS2b5ntg"/>
   <PortsAndFlows:FullPort xmi:id="_BG2xkIyJEe63QcKS2b5ntg" base_Port="_BG08YIyJEe63QcKS2b5ntg"/>
+  <ArrowheadDSL:SysD xmi:id="_G56l8AC0Ee-_6_wvF0Whpg" base_Class="_ru-zcDd1Ee6hKsppnexuYQ"/>
+  <ArrowheadDSL:SysDD xmi:id="_JhMKMAC0Ee-_6_wvF0Whpg" base_Class="_IyAdwDd2Ee6hKsppnexuYQ"/>
+  <ArrowheadDSL:SD xmi:id="_YSII8AhJEe-DQOCwnkQLjg" base_Class="_kZCioDdfEe6h28lXN9kaaA"/>
+  <ArrowheadDSL:IDD xmi:id="_cnNS0AhJEe-DQOCwnkQLjg" base_Class="_iJYXsDdgEe6h28lXN9kaaA"/>
+  <ArrowheadDSL:SD xmi:id="_gDX3sAhJEe-DQOCwnkQLjg" base_Class="_DwkuwDd3Ee6hKsppnexuYQ"/>
+  <ArrowheadDSL:SD xmi:id="_hlw3gAhJEe-DQOCwnkQLjg" base_Class="_1TvGcIdyEe6o_Kn9jFdFwA"/>
+  <ArrowheadDSL:IDD xmi:id="_jvXoUAhJEe-DQOCwnkQLjg" base_Class="_94MJoDd3Ee6hKsppnexuYQ"/>
+  <ArrowheadDSL:IDD xmi:id="_k4rZwAhJEe-DQOCwnkQLjg" base_Class="_Oa1twIdzEe6o_Kn9jFdFwA"/>
 </xmi:XMI>
