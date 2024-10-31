@@ -1,0 +1,27 @@
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+--
+-- Host: localhost    Database: arrowhead
+-- ------------------------------------------------------
+-- Server version	5.7.21-log
+USE `arrowhead`;
+#foreach( $system in $systemList)
+INSERT INTO `system_` (`system_name`,`address`, `port`) 
+VALUES ('$system[0]','$system[1]','$system[2]');
+#end
+
+#foreach( $interfaceName in $interfaceNameList)
+INSERT INTO `service_definition` (`service_definition`)
+VALUES ('$interfaceName');
+#end
+
+#foreach( $service in $serviceList)
+SELECT @serviceID :=id FROM service_definition WHERE service_definition='$service[0]';
+SELECT @systemID :=id FROM system_ WHERE system_name='$service[1]';
+INSERT INTO `service_registry` (`service_id`,`system_id`, `service_uri`) 
+VALUES (@serviceID,@systemID, '$service[2]');
+
+SELECT @serviceRegistryID :=id FROM service_registry WHERE service_id=@serviceID AND system_id=@systemID;
+INSERT INTO `service_registry_interface_connection` (`service_registry_id`,`interface_id`) 
+VALUES (@serviceRegistryID, 2);
+
+#end

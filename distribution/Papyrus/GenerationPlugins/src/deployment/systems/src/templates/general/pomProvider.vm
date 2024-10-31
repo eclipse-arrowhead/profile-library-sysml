@@ -1,0 +1,92 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+    	<groupId>eu.arrowhead</groupId>
+    	<artifactId>${name}</artifactId>
+    	<version>4.4.0.2</version>
+  	</parent>
+	
+	<artifactId>${sysName}-provider</artifactId>
+	<name>Arrowhead Provider ${sysName}</name>
+	
+		    <dependencies>
+         <dependency>
+            <groupId>org.eclipse.californium</groupId>
+            <artifactId>californium-core</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+         <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+             <version>2.11.0</version>
+        </dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+          <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-cbor</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+          <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-cbor-provider</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+         <dependency>
+             <groupId>javax.activation</groupId>
+             <artifactId>activation</artifactId>
+             <version>1.1.1</version>
+        </dependency>
+	 </dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+    			<groupId>org.springframework.boot</groupId>
+    			<artifactId>spring-boot-maven-plugin</artifactId>
+    			<executions>
+    				<execution>
+    					<goals>
+    						<goal>repackage</goal>
+    					</goals>
+    				</execution>
+    			</executions>
+  			</plugin>
+  			
+  			<plugin>
+	 			<artifactId>maven-resources-plugin</artifactId>
+	        	<version>3.1.0</version>
+	        	<executions>
+	          		<execution>
+	            		<id>copy-resources</id>
+	            		<phase>validate</phase>
+		            	<goals>
+		              		<goal>copy-resources</goal>
+		            	</goals>
+		            	<configuration>
+		              		<outputDirectory>${basedir}/target</outputDirectory>
+		              		<resources>
+		                		<resource>
+		                  			<directory>src/main/resources</directory>
+		                  			<includes>
+		                  				<include>application.properties</include>
+		                  			</includes>
+		                		</resource>
+		              		</resources>
+		            	</configuration>
+	          		</execution>
+	        	</executions>
+	      	</plugin> 			
+		</plugins>
+	</build>	
+	
+</project>

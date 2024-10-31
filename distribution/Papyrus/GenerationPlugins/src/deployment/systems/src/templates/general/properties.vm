@@ -1,0 +1,55 @@
+#set ( $hash = '#' )
+
+$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash
+$hash$hash$hash     CUSTOM PARAMETERS     $hash$hash$hash
+$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash
+
+$hash Name of the client system
+application_system_name=${sysName}
+
+#if($type=="provider")
+$hash Client web-server parameters
+server.address=127.0.0.1
+server.port=${port}
+
+$hash Client application-server paramters
+container.max_keep_alive_requests=500
+
+#elseif($type=="provider-consumer")
+$hash Set the web application type to 'servlet' if your consumer client should act as a web-server
+$hash and fill the address and port propetries with valid values [Defaults, when not adjusted: localhost:8080]
+spring.main.web-application-type=servlet
+server.address=127.0.0.1
+server.port=${port}
+#else
+$hash Set the web application type to 'servlet' if your consumer client should act as a web-server
+$hash and fill the address and port propetries with valid values [Defaults, when not adjusted: localhost:8080]
+spring.main.web-application-type=none
+server.address=127.0.0.1
+server.port=${port}
+#end
+
+$hash Service Registry Core System web-server parameters
+sr_address=127.0.0.1
+sr_port=8443
+
+$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash
+$hash$hash$hash   SECURE MODE    $hash$hash$hash          
+$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash$hash
+
+$hash configure secure mode
+
+$hash Set this to false to disable https mode
+server.ssl.enabled=false
+$hash Set this to false to deactivate the token security filter
+token.security.filter.enabled=false
+
+server.ssl.key-store-type=PKCS12
+server.ssl.key-store=classpath:certificates/provider_skeleton.p12
+server.ssl.key-store-password=123456
+server.ssl.key-alias=providerskeleton
+server.ssl.key-password=123456
+server.ssl.client-auth=need
+server.ssl.trust-store-type=PKCS12
+server.ssl.trust-store=classpath:certificates/truststore.p12
+server.ssl.trust-store-password=123456

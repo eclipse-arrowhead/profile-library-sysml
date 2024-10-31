@@ -1,0 +1,56 @@
+package eu.arrowhead.provider;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+#foreach( $dto in $dtos )
+import eu.arrowhead.provider.dto.$dto;
+#end
+
+@RestController
+@RequestMapping("/") 
+public class ServiceControllerHttp {
+	
+	//=================================================================================================
+	// members
+
+
+	//=================================================================================================
+	// methods
+	
+#foreach( $interface in $interfaces )
+#set($operations=$interface.getOperations())
+	#foreach( $operation in $operations )  
+		#if($operation.getMethod() == "GET")  ## Only response type
+	@GetMapping(value="$operation.getPath()", produces = MediaType.APPLICATION_$interface.getEncoding()_VALUE)
+			#if($operation.getResponseType().contains("DTO"))
+    public $operation.getResponseType() $interface.getName()_$operation.getName() () {
+		// Complete with your own code
+		$operation.getResponseType() response = new $operation.getResponseType()();
+			#else
+	public String $interface.getName()_$operation.getName()() {
+		// Complete with your own code
+		String response = "";	
+			#end
+		return response;
+    }
+		#elseif($operation.getMethod() == "POST") ## Only request type (TODO Add response type)
+	@PostMapping(value="$operation.getPath()", consumes = MediaType.APPLICATION_$interface.getEncoding()_VALUE, produces = MediaType.APPLICATION_$interface.getEncoding()_VALUE)
+    		#if($operation.getRequestType().contains("DTO"))
+	@ResponseBody public String $interface.getName()_$operation.getName() (@RequestBody final $operation.getRequestType() request) {
+			#else
+	@ResponseBody public String $interface.getName()_$operation.getName() (@RequestBody final String request) {
+			#end	
+		// Complete with your own code               
+       	String response= "";
+    	return response;
+	} 
+		#end
+	#end   
+#end 
+}

@@ -1,0 +1,8 @@
+cp -r ${workspace}/.temp/resources/provider/. ${outputDirectory}/arrowhead/${name}/cloud-systems/${sysName}-provider
+cd ${outputDirectory}/arrowhead/${name}/cloud-systems/${sysName}-provider/src/main/java/eu/arrowhead
+echo ...
+mkdir provider
+cd provider
+mkdir security
+mkdir dto
+echo ...

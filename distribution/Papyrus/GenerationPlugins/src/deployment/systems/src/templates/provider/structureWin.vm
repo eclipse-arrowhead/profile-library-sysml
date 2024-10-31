@@ -1,0 +1,7 @@
+%systemroot%\System32\xcopy  ${workspace}\.temp\resources\provider ${outputDirectory}\\arrowhead\\${name}\\cloud-systems\\${sysName}-provider /e
+${disk}
+cd ${outputDirectory}\\arrowhead\\${name}\\cloud-systems\\${sysName}-provider\src\main\java\eu\arrowhead
+mkdir provider
+cd provider
+mkdir security
+mkdir dto

@@ -1,0 +1,55 @@
+@ECHO OFF
+
+SET time_to_sleep=10
+
+echo Starting Core Systems... Service initializations usually need around 20 seconds.
+
+cd core-systems
+
+START /B javaw -jar arrowhead-serviceregistry-${version}.jar > sout_sr.log
+echo Service Registry started
+timeout /t %time_to_sleep% /nobreak > NUL
+
+START /B javaw -jar arrowhead-authorization-${version}.jar > sout_auth.log
+echo Authorization started
+
+START /B javaw -jar arrowhead-orchestrator-${version}.jar > sout_orch.log
+echo Orchestrator started
+
+cd ../support-systems
+
+START /B javaw -jar arrowhead-gateway-${version}.jar > sout_gateway.log
+echo Gateway started
+
+START /B javaw -jar arrowhead-eventhandler-${version}.jar > sout_eventhandler.log
+echo Event Handler started
+
+START /B javaw -jar arrowhead-datamanager-${version}.jar > sout_datamanager.log
+echo DataManager started
+
+START /B javaw -jar arrowhead-timemanager-${version}.jar > sout_timemanager.log
+echo TimeManager started
+
+START /B javaw -jar arrowhead-gatekeeper-${version}.jar > sout_gk.log
+echo Gatekeeper started
+
+START /B javaw -jar arrowhead-choreographer-${version}.jar > sout_choreographer.log
+echo Choreographer started
+
+START /B javaw -jar arrowhead-configuration-${version}.jar > sout_configuration.log
+echo Configuration started
+
+START /B javaw -jar arrowhead-certificate-authority-${version}.jar > sout_ca.log
+echo Certificate Authority started
+
+START /B javaw -jar arrowhead-deviceregistry-${version}.jar > sout_deviceregistry.log
+echo Device Registry started
+
+START /B javaw -jar arrowhead-systemregistry-${version}.jar > sout_systemregistry.log
+echo System Registry started
+
+START /B javaw -jar arrowhead-onboarding-${version}.jar > sout_onboarding.log
+echo Onboarding Controller started
+
+START /B javaw -jar arrowhead-plantdescriptionengine-${version}.jar > sout_plantdescriptionengine.log
+echo Plant Description Engine started

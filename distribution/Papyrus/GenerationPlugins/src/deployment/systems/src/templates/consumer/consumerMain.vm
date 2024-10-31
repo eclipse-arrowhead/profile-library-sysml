@@ -1,0 +1,551 @@
+package eu.arrowhead.consumer;
+
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
+import ai.aitia.arrowhead.application.library.ArrowheadService;
+import eu.arrowhead.common.CommonConstants;
+import eu.arrowhead.common.SSLProperties;
+import eu.arrowhead.common.Utilities;
+import eu.arrowhead.common.dto.shared.OrchestrationFlags.Flag;
+import eu.arrowhead.common.dto.shared.OrchestrationFormRequestDTO;
+import eu.arrowhead.common.dto.shared.OrchestrationFormRequestDTO.Builder;
+import eu.arrowhead.common.dto.shared.OrchestrationResponseDTO;
+import eu.arrowhead.common.dto.shared.OrchestrationResultDTO;
+import eu.arrowhead.common.dto.shared.ServiceInterfaceResponseDTO;
+import eu.arrowhead.common.dto.shared.ServiceQueryFormDTO;
+import eu.arrowhead.common.exception.InvalidParameterException;
+import java.io.File;
+import java.io.IOException;
+
+#if($httpFlag==true)
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+#end
+
+#if($coapFlag==true)
+import java.net.URI;
+import java.net.URISyntaxException;
+import org.eclipse.californium.core.CoapClient;
+import org.eclipse.californium.core.CoapResponse;
+import org.eclipse.californium.core.coap.MediaTypeRegistry;
+import org.eclipse.californium.core.network.config.NetworkConfig;
+import org.eclipse.californium.core.network.config.NetworkConfigDefaultHandler;
+import org.eclipse.californium.elements.exception.ConnectorException;
+#end
+
+#foreach( $dto in $dtos )
+import eu.arrowhead.consumer.dto.$dto;
+#end
+
+@SpringBootApplication
+@ComponentScan(basePackages = {CommonConstants.BASE_PACKAGE, "eu.arrowhead", "ai.aitia"})
+public class ${sysName}ConsumerMain implements ApplicationRunner {
+    
+    //=================================================================================================
+	// members
+	
+    @Autowired
+	private ArrowheadService arrowheadService;
+    
+    @Autowired
+	protected SSLProperties sslProperties;
+    
+    private final Logger logger = LogManager.getLogger(${sysName}ConsumerMain.class);
+    
+    
+    //=================================================================================================
+	// methods
+
+	//------------------------------------------------------------------------------------------------
+    public static void main( final String[] args ) {
+    	SpringApplication.run(${sysName}ConsumerMain.class, args);
+    }
+
+    //-------------------------------------------------------------------------------------------------
+   @Override
+	public void run(final ApplicationArguments args) throws Exception {
+		#foreach( $interface in $interfaces )
+			#set($operations=$interface.getOperations())
+			#foreach( $operation in $operations  )
+    	$interface.getName()_$operation.getName()_Consumption();
+    		#end
+    	#end
+	}
+	
+	#set($GET_HTTP=0)
+	#set($POST_HTTP=0)
+	#set($GET_COAP=0)
+	#set($POST_COAP=0)
+    
+	#foreach( $interface in $interfaces )  ## For each interface
+		#set($operations=$interface.getOperations())
+		#foreach( $operation in $operations )  ## For each operation
+    //-------------------------------------------------------------------------------------------------
+    public void $interface.getName()_$operation.getName()_Consumption() {
+    	logger.info("Orchestration request for " + "$interface.getName()" + " service:");
+    	final ServiceQueryFormDTO serviceQueryForm = new ServiceQueryFormDTO.Builder("$interface.getName()").interfaces(getInterface()).build();
+    	
+		final Builder orchestrationFormBuilder = arrowheadService.getOrchestrationFormBuilder();
+		final OrchestrationFormRequestDTO orchestrationFormRequest = orchestrationFormBuilder.requestedService(serviceQueryForm)
+																					   .flag(Flag.MATCHMAKING, false)
+																					   .flag(Flag.OVERRIDE_STORE, true)
+																					   .build();
+		printOut(orchestrationFormRequest);		
+		
+		final OrchestrationResponseDTO orchestrationResponse = arrowheadService.proceedOrchestration(orchestrationFormRequest);
+		logger.info("Orchestration response:");
+		printOut(orchestrationResponse);		
+		
+		if (orchestrationResponse == null) {
+			logger.info("No orchestration response received");
+		} else if (orchestrationResponse.getResponse().isEmpty()) {
+			logger.info("No provider found during the orchestration");
+		} else {
+			final OrchestrationResultDTO orchestrationResult = orchestrationResponse.getResponse().get(0);
+			validateOrchestrationResult(orchestrationResult, "$interface.getName()");
+			
+			try{ 
+		## If the interface implements CoAP
+		#if($interface.getProtocol()=="CoAP")	
+			## If the CoAP operation is a GET method	
+			#if($operation.getMethod() == "GET")
+			#set($GET_COAP=$GET_COAP+1)
+				String result = sendCoapGet("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri());
+			## If the CoAP operation is a POST method
+			#elseif($operation.getMethod()== "POST")
+			#set($POST_COAP=$POST_COAP+1)
+				## If the CoAP operation has CBOR encoding
+				#if($interface.getEncoding()=="CBOR")
+				// Payload Generation
+			 	CBORFactory f = new CBORFactory();
+	    		ObjectMapper mapper = new ObjectMapper(f);
+	    		$operation.getRequestType() request = new $operation.getRequestType()();
+				byte[] payload = mapper.writeValueAsBytes(request);
+				
+				// Service Consumption
+				byte[] result= sendCoapPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);
+				## If the CoAP operation has JSON encoding
+				#elseif($interface.getEncoding()=="JSON")
+				
+				// Payload Generation
+				JsonFactory jsonFactory_objMapper = new JsonFactory();
+				ObjectMapper objMapper = new ObjectMapper(jsonFactory_objMapper);
+				$operation.getRequestType() request = new $operation.getRequestType()();
+				String payload = objMapper.writeValueAsString(request);
+				
+				// Service Consumption	
+				String result = sendCoapPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);
+				## If the CoAP operation has XML encoding
+				#elseif($interface.getEncoding()=="XML")
+				
+				// Payload Generation
+				ObjectMapper objMapper=new XmlMapper();
+				$operation.getRequestType() request = new $operation.getRequestType()();
+				String payload = objMapper.writeValueAsString(request);
+				
+				// Service Consumption	
+				String result = sendCoapPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);
+				## If the CoAP operation has a different encoding
+				#else 
+				// TODO Not implemented encoding payload generation
+				// Service Consumption	
+				String result = sendCoapPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);	
+				#end
+			## If the CoAP operation is a different method
+			#else
+				// TODO Not implemented PUT and DELETE methods
+			#end
+			}catch (Exception e) {
+	          e.printStackTrace();
+	       	}	
+		}
+	}
+    		## If the CoAP operation is a GET method
+			#if($operation.getMethod()=="GET")
+				## If the CoAP operation is a GET method
+ 				#if($GET_COAP==1)
+	// Service Consumption - GET COAP
+					## If the CoAP operation has CBOR encoding
+   					#if($interface.getEncoding()=="CBOR")
+    public static byte[] sendCoapGet(String url) throws IOException {
+    				## If the CoAP operation has a different encoding
+   					#else
+    public static String sendCoapGet(String url) throws IOException {
+   					#end
+	    File CONFIG_FILE = new File("Californium.properties");
+		
+		String CONFIG_HEADER = "Californium CoAP Properties file for Fileclient";
+		int DEFAULT_MAX_RESOURCE_SIZE = 2 * 1024 * 1024; // 2 MB
+		int DEFAULT_BLOCK_SIZE = 512;
+	        	 
+	    NetworkConfigDefaultHandler DEFAULTS = new NetworkConfigDefaultHandler() {
+        		@Override
+        		public void applyDefaults(NetworkConfig config) {
+        			config.setInt(NetworkConfig.Keys.MAX_RESOURCE_BODY_SIZE, DEFAULT_MAX_RESOURCE_SIZE);
+        			config.setInt(NetworkConfig.Keys.MAX_MESSAGE_SIZE, DEFAULT_BLOCK_SIZE);
+        			config.setInt(NetworkConfig.Keys.PREFERRED_BLOCK_SIZE, DEFAULT_BLOCK_SIZE);
+        		};
+        };
+				
+	    NetworkConfig config = NetworkConfig.createWithFile(CONFIG_FILE, CONFIG_HEADER, DEFAULTS);
+	    NetworkConfig.setStandard(config);
+	    URI uri=null;
+    
+	    try {
+	      	uri = new URI(url);
+	    } catch(URISyntaxException e) {
+	      	System.err.println("Invalid URI: " + e.getMessage());
+	      	System.exit(-1);
+	    }
+	    CoapClient client= new CoapClient(uri);
+	    CoapResponse response = null;
+					## If the CoAP operations has CBOR encoding
+     				#if($interface.getEncoding()=="CBOR")
+      	byte[] responseText= null; 
+      				## If the CoAP operation has a different encoding
+      				#else
+      	String responseText= " ";
+      				#end  
+
+    	try {
+    				## If the CoAP operation is a GET method
+					#if($operation.getMethod()=="GET")
+        	response = client.get();
+        			## If the CoAP operation is a POST method
+					#elseif($operation.getMethod()=="POST")
+         	response = client.post(payload,MediaTypeRegistry.APPLICATION_$interface.getEncoding());
+         			## If the CoAP operation is a different method
+         			#else
+         	// TODO Not implemented PUT and DELETE methods
+					#end
+	
+	    } catch(ConnectorException e) {
+	      System.err.println("Got an error: " + e);
+	    }
+	    if(response!=null) {
+	    			## If the CoAP operations has CBOR encoding
+	    			#if($interface.getEncoding()=="CBOR")
+	      responseText= response.getPayload();
+	      			## If the CoAP operation has a different encoding
+	      			#else
+	      responseText= response.getResponseText();
+	      			#end  
+	    } else {
+	      System.out.println("No response received.");
+	    }
+	    client.shutdown();
+
+	    return responseText;
+	}
+				#end
+			## If the CoAP operation is a different method
+  			#else
+  				## If the CoAP operation is a POST method
+  				#if($POST_COAP==1)
+ 	// Service Consumption - POST COAP
+ 					## If the CoAP operations has CBOR encoding
+					#if($interface.getEncoding()=="CBOR")
+	public static byte[] sendCoapPost(String url, String payload) throws IOException {
+					## If the CoAP operations has a different encoding
+					#else 
+	public static String sendCoapPost(String url, String payload) throws IOException {
+					#end
+		File CONFIG_FILE = new File("Californium.properties");
+    	
+    	String CONFIG_HEADER = "Californium CoAP Properties file for Fileclient";
+    	int DEFAULT_MAX_RESOURCE_SIZE = 2 * 1024 * 1024; // 2 MB
+    	int DEFAULT_BLOCK_SIZE = 512;
+	        	 
+	    NetworkConfigDefaultHandler DEFAULTS = new NetworkConfigDefaultHandler() {
+	        		@Override
+	        		public void applyDefaults(NetworkConfig config) {
+	        			config.setInt(NetworkConfig.Keys.MAX_RESOURCE_BODY_SIZE, DEFAULT_MAX_RESOURCE_SIZE);
+	        			config.setInt(NetworkConfig.Keys.MAX_MESSAGE_SIZE, DEFAULT_BLOCK_SIZE);
+	        			config.setInt(NetworkConfig.Keys.PREFERRED_BLOCK_SIZE, DEFAULT_BLOCK_SIZE);
+	        		};
+	    };
+					
+	    NetworkConfig config = NetworkConfig.createWithFile(CONFIG_FILE, CONFIG_HEADER, DEFAULTS);
+	    NetworkConfig.setStandard(config);
+	    URI uri=null;
+		
+	    try {
+	      uri = new URI(url);
+	    } catch(URISyntaxException e) {
+	      System.err.println("Invalid URI: " + e.getMessage());
+	      System.exit(-1);
+	    }
+	    CoapClient client= new CoapClient(uri);
+	    CoapResponse response = null;
+	
+					## If the CoAP operations has CBOR encoding
+	      			#if($interface.getEncoding()=="CBOR")
+      	byte[] responseText= null; 
+      				## If the CoAP operations has a different encoding
+	     			#else
+      	String responseText= " ";
+	      			#end  
+	
+	    try {
+	    			## If the CoAP operations is a GET method ¿?
+					#if($operation.getMethod()=="GET")
+	        response = client.get();
+	        		## If the CoAP operations is a POST method
+					#elseif($operation.getMethod()=="POST")
+	        response = client.post(payload,MediaTypeRegistry.APPLICATION_$interface.getEncoding());
+	        		## If the CoAP operations is a different method
+	        		#else
+	        //TODO Not implemented PUT and DELETE methods
+					#end
+	    } catch(ConnectorException e) {
+	      System.err.println("Got an error: " + e);
+	    }
+	    
+	    if(response!=null) {
+	    			## If the CoAP operations has CBOR encoding
+	      			#if($interface.getEncoding()=="CBOR")
+	      responseText= response.getPayload();
+	      			## If the CoAP operations has a different encoding
+	      			#else
+	      responseText= response.getResponseText();
+	      			#end  
+	    } else {
+	      System.out.println("No response received.");
+	    }
+	    client.shutdown();
+	  
+	    return responseText;
+	}
+ 				#end    
+  			#end
+		
+		## If the interface implements HTTP  
+  		#elseif($interface.getProtocol()=="HTTP_1_1")
+  			## If the HTTP operation is a GET method
+  			#if($operation.getMethod() == "GET")
+			String result= sendGet("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri());
+			#set($GET_HTTP=$GET_HTTP+1)
+			## If the HTTP operation is a POST method
+			#elseif($operation.getMethod()== "POST")
+			#set($POST_HTTP=$POST_HTTP+1)
+				## If the HTTP operation has CBOR encoding
+				#if($interface.getEncoding()=="CBOR")
+				
+			// Payload Generation
+		 	CBORFactory f = new CBORFactory();
+    		ObjectMapper mapper = new ObjectMapper(f);
+    		$operation.getRequestType() request = new $operation.getRequestType()();
+			byte[] payload=mapper.writeValueAsBytes(request);
+				
+			// Service Consumption	
+			byte[] result= sendPost_Bytes("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);
+				## If the HTTP operation has JSON encoding
+				#elseif($interface.getEncoding()=="JSON")
+				
+			// Payload Generation
+			JsonFactory jsonFactory_objMapper = new JsonFactory();
+			ObjectMapper objMapper = new ObjectMapper(jsonFactory_objMapper);
+			$operation.getRequestType() request = new $operation.getRequestType()();
+			String payload=objMapper.writeValueAsString(request);
+			
+			// Service Consumption	
+			String result = sendPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);
+				## If the HTTP operation has XML encoding
+				#elseif($interface.getEncoding()=="XML")
+				
+			// Payload Generation
+			ObjectMapper objMapper=new XmlMapper();
+			$operation.getRequestType() request = new $operation.getRequestType()();
+			String payload=objMapper.writeValueAsString(request);
+			
+			// Service Consumption	
+			String result= sendPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);
+				## If the HTTP operation has a different encoding
+				#else 
+				
+			// Not implemented encoding payload generation
+			
+			// Service Consumption	
+			String result= sendPost("http://"+orchestrationResult.getProvider().getAddress()+":"+orchestrationResult.getProvider().getPort()+"/"+orchestrationResult.getServiceUri(),payload);	
+				#end
+			## If the HTTP operation is a different method
+			#else
+			
+			//TODO Not implemented PUT and DELETE methods
+			#end
+			
+		}catch (Exception e) {
+          e.printStackTrace();
+        }	
+	}
+}
+    		## If the HTTP operation is a GET method
+    		#if($operation.getMethod()== "GET")
+    			## If the HTTP operation is a GET method
+				#if($GET_HTTP==1)
+	// Service Consumption GET HTTP
+	private static String sendGet(String url) throws IOException {
+        
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+    	String result="";
+        
+        try {
+            HttpGet request = new HttpGet(url);
+			CloseableHttpResponse response = httpClient.execute(request);
+
+            try {
+            	if (response.getEntity() != null) { 		
+					result = EntityUtils.toString(response.getEntity()); // Return it as a String
+					System.out.println(result);
+                }
+            } finally {
+                response.close();
+            }
+        } finally {
+            httpClient.close();
+        }
+    
+        return result;
+    }
+    			#end
+    		## If the HTTP operation is a POST method
+			#elseif($operation.getMethod() == "POST")
+				## If the HTTP operation is a POST method
+				#if($POST_HTTP==1)
+	// Service Consumption POST HTTP
+					## If the HTTP operation has CBOR encoding
+		 			#if( $interface.getEncoding()== "CBOR")
+	private static  byte[] sendPost_Bytes(String url, byte[]  payload) throws IOException {
+
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        byte[] result;
+        
+        try {
+            HttpPost request = new HttpPost(url);
+
+       		// Add request headers
+            request.addHeader("content-type", "application/cbor");
+             
+        	// Send CBOR data
+          	EntityBuilder eb = EntityBuilder.create();
+            eb.setBinary(payload);
+            request.setEntity(eb.build());
+            CloseableHttpResponse response = httpClient.execute(request);
+           
+            try {
+                System.out.println(response.getStatusLine().toString());	// HTTP/1.1 200 OK
+                if (response.getEntity() != null) { 
+                    result = EntityUtils.toByteArray(response.getEntity());
+                    System.out.println("Response:" +result.toString());
+                }
+            } finally {
+                response.close();
+            }
+        } finally {
+            httpClient.close();
+        }
+    
+        return result;
+    }
+    				## If the HTTP operation has a different encoding
+		 			#else	
+	private static String sendPost(String url, String payload) throws IOException {
+
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        String result = "";
+        
+        try {
+            HttpPost request = new HttpPost(url);
+
+       		// Add request headers
+ 			request.addHeader("content-type", "application/$interface.getEncoding().toLowerCase()");
+             
+        	// Send $interface.getEncoding() data
+            request.setEntity(new StringEntity(payload.toString()));
+            CloseableHttpResponse response = httpClient.execute(request);
+           
+            try {
+                System.out.println(response.getStatusLine().toString());	// HTTP/1.1 200 OK
+                if (response.getEntity() != null) {
+                   result = EntityUtils.toString(response.getEntity());		// Return it as a String
+                   System.out.println("Response:" +result);
+                }
+            } finally {
+                response.close();
+            }
+        } finally {
+            httpClient.close();
+        }
+    
+        return result;
+    }
+					#end
+				#end
+			## If the HTTP operation is a different method		
+			#else
+			
+	//Service Consumption METHOD
+	//TODO Not implemented PUT and DELETE methods 
+			#end
+		## If the interface implements a different protocol
+		#else
+		//TODO Not implemented protocol	
+	
+		}catch (Exception e) {
+	      e.printStackTrace();
+	   	}	
+	}
+}	
+  		#end
+	#end 
+#end 
+    
+    //=================================================================================================
+	// assistant methods
+    
+    //-------------------------------------------------------------------------------------------------
+    private String getInterface() {
+    	return sslProperties.isSslEnabled() ? "HTTPS-SECURE-JSON" : "HTTP-INSECURE-JSON";
+    }
+    //-------------------------------------------------------------------------------------------------
+    private void validateOrchestrationResult(final OrchestrationResultDTO orchestrationResult, final String serviceDefinitin) {
+    	if (!orchestrationResult.getService().getServiceDefinition().equalsIgnoreCase(serviceDefinitin)) {
+			throw new InvalidParameterException("Requested and orchestrated service definition do not match");
+		}
+    	
+    	boolean hasValidInterface = false;
+    	for (final ServiceInterfaceResponseDTO serviceInterface : orchestrationResult.getInterfaces()) {
+			if (serviceInterface.getInterfaceName().equalsIgnoreCase(getInterface())) {
+				hasValidInterface = true;
+				break;
+			}
+		}
+    	if (!hasValidInterface) {
+    		throw new InvalidParameterException("Requested and orchestrated interface do not match");
+		}
+    }
+    
+    //-------------------------------------------------------------------------------------------------
+    private void printOut(final Object object) {
+    	System.out.println(Utilities.toPrettyJson(Utilities.toJson(object)));
+    }
+}

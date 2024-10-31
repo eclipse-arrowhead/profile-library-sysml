@@ -1,0 +1,53 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+	<groupId>eu.arrowhead</groupId>	
+	<artifactId>${name}</artifactId>
+	<version>4.4.0.2</version>
+	<packaging>pom</packaging>
+	<name>${name}</name>
+	<description>Arrowhead Application Systems using Spring Boot</description>
+	
+	<url>https://github.com/arrowhead-f/client-java-spring</url>
+	<licenses>
+    	<license>
+	     	<name>Eclipse Public License - v 2.0</name>
+	     	<url>https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt</url>
+	   </license>
+  	</licenses>
+	
+	<repositories>
+		<repository>
+			<id>arrowhead-client</id>
+			<url>https://github.com/arrowhead-f/client-library-java-spring/raw/master/client-mvn-repo</url>
+		</repository>
+	</repositories>
+	
+	<modules>
+	   ${modules}
+  	</modules>
+		
+	<dependencies>
+		<dependency>
+			<groupId>ai.aitia</groupId>
+			<artifactId>arrowhead-application-library-java-spring</artifactId>
+			<version>4.4.0.2</version>
+		</dependency>	
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+    			<groupId>org.springframework.boot</groupId>
+    			<artifactId>spring-boot-maven-plugin</artifactId>
+  			</plugin>  			
+  		</plugins>
+  	</build>
+</project>

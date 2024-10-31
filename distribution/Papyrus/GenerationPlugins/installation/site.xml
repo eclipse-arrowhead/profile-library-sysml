@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.papyrus.arrowhead.common.feature_1.0.0.202410311059.jar" id="org.eclipse.papyrus.arrowhead.common.feature" version="1.0.0.202410311059">
+      <category name="Requirements"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.arrowhead.deployment.feature_1.0.0.202410311059.jar" id="org.eclipse.papyrus.arrowhead.deployment.feature" version="1.0.0.202410311059">
+      <category name="Installation"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.arrowhead.setup.feature_1.0.0.202410311059.jar" id="org.eclipse.papyrus.arrowhead.setup.feature" version="1.0.0.202410311059">
+      <category name="Installation"/>
+   </feature>
+   <feature url="features/org.eclipse.papyrus.arrowhead.validation.feature_1.0.0.202410311059.jar" id="org.eclipse.papyrus.arrowhead.validation.feature" version="1.0.0.202410311059">
+      <category name="Installation"/>
+   </feature>
+   <category-def name="Requirements" label="Requirements"/>
+   <category-def name="Installation" label="Installation"/>
+</site>

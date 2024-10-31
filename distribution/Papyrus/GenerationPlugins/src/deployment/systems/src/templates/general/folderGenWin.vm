@@ -1,0 +1,9 @@
+${disk}
+cd ${outputDirectory}\\
+mkdir arrowhead
+cd arrowhead
+mkdir ${name}
+cd ${name}
+mkdir cloud-systems
+cd cloud-systems
+${createFolders}

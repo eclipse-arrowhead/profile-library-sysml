@@ -1,0 +1,7 @@
+cp -r ${workspace}/.temp/resources/consumer/. ${outputDirectory}/arrowhead/${name}/cloud-systems/${sysName}-consumer
+cd ${outputDirectory}/arrowhead/${name}/cloud-systems/${sysName}-consumer/src/main/java/eu/arrowhead
+echo ...
+mkdir consumer
+cd consumer
+mkdir dto
+echo ...

@@ -1,0 +1,28 @@
+
+cd ${outputDirectory}
+
+git clone https://github.com/CristinaPaniagua/MinimalLocalCloud.git
+cd MinimalLocalCloud
+mvn clean install ${skipTest}
+
+cd ..
+mkdir arrowhead
+cd arrowhead
+
+mkdir core-systems
+cd core-systems
+
+
+
+cp ${outputDirectory}/MinimalLocalCloud/serviceregistry/target/arrowhead-serviceregistry-4.4.1.jar ${outputDirectory}/arrowhead/core-systems
+cp ${outputDirectory}/MinimalLocalCloud/authorization/target/arrowhead-authorization-4.4.1.jar ${outputDirectory}/arrowhead/core-systems
+cp ${outputDirectory}/MinimalLocalCloud/orchestrator/target/arrowhead-orchestrator-4.4.1.jar ${outputDirectory}/arrowhead/core-systems
+echo  moving files
+
+cd ${workSpace}/.temp/
+echo .....
+cp StartMandatoryCoreSystems.${fileEnd} ${outputDirectory}/arrowhead/core-systems
+sleep 60s
+
+rm corescript.sh
+rm init.sh
