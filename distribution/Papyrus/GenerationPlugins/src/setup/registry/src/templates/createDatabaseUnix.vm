@@ -1,0 +1,4 @@
+cd ${workspace}/.temp/
+mysql --user=${user} --password=${password} --host=${host} < createEmptyArrowheadDB.sql
+Echo ...
+mysql --user=${user} --password=${password} --host=${host}  < /Users/cristina.paniagua/Desktop/EclipseWorkSpace/.temp/createArrowheadUser.sql

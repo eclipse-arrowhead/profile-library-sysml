@@ -1,0 +1,15 @@
+@ECHO OFF
+
+SET time_to_sleep=10
+
+echo Starting Core Systems... Service initializations usually need around 20 seconds.
+
+START /B javaw -jar arrowhead-serviceregistry-${version}.jar > sout_sr.log
+echo Service Registry started
+timeout /t %time_to_sleep% /nobreak > NUL
+
+START /B javaw -jar arrowhead-authorization-${version}.jar > sout_auth.log
+echo Authorization started
+
+START /B javaw -jar arrowhead-orchestrator-${version}.jar > sout_orch.log
+echo Orchestrator started

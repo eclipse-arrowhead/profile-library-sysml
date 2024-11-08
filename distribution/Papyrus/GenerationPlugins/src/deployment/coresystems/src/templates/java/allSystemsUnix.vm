@@ -1,0 +1,36 @@
+cd ${outputDirectory}
+mkdir Arrowhead_mandatory_systems
+cd Arrowhead_mandatory_systems
+git clone https://github.com/eclipse-arrowhead/core-java-spring.git
+echo maven starting...
+cd core-java-spring
+mvn clean install ${skipTest}
+cd ..
+
+cd ..
+mkdir arrowhead
+cd arrowhead
+mkdir core-support-systems
+
+
+
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/serviceregistry/target/arrowhead-serviceregistry-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/authorization/target/arrowhead-authorization-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/orchestrator/target/arrowhead-orchestrator-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/certificate-authority/target/arrowhead-certificate-authority-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/choreographer/target/arrowhead-choreographer-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/datamanager/target/arrowhead-datamanager-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/deviceregistry/target/arrowhead-deviceregistry-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/eventhandler/target/arrowhead-eventhandler-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/gatekeeper/target/arrowhead-gatekeeper-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/gateway/target/arrowhead-gateway-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/onboarding/target/arrowhead-onboarding-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/systemregistry/target/arrowhead-systemregistry-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+cp ${outputDirectory}/Arrowhead_mandatory_systems/core-java-spring/translator/target/arrowhead-translator-4.6.1.jar ${outputDirectory}/arrowhead/core-support-systems
+echo  moving files
+cd ${workSpace}/.temp
+echo .....
+cp StartMandatoryCoreSystems.${fileEnd} ${outputDirectory}/arrowhead/core-support-systems
+sleep 60s
+rm corescript.sh
+rm init.sh

@@ -1,0 +1,214 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package generator;
+
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import javax.lang.model.element.Modifier;
+
+import com.squareup.javapoet.JavaFile;
+import com.squareup.javapoet.MethodSpec;
+import com.squareup.javapoet.TypeName;
+import com.squareup.javapoet.TypeSpec;
+
+import dto.APXInterfaceDesignDescription;
+import parsing.workspace.ParsingUtils;
+import utils.CodgenUtil;
+import utils.ExecutionUtils;
+
+/**
+ *
+ * Generate nested class with constructor, getters, setters and toString methods
+ *
+ * @author cripan
+ * 
+ */
+public class ClassNested {
+
+	// =================================================================================================
+	// attributes
+	
+	private String Directory = "";
+	private String system = "";
+	private String foldername = "";
+	public ArrayList<String> classesDummy = new ArrayList<String>();
+
+	
+	// =================================================================================================
+	// methods
+
+	// -------------------------------------------------------------------------------------------------
+	/**
+	 * 
+	 * ???
+	 * 
+	 * @param payload List of elements in payload
+	 * @param parentClass The parent class of the payload
+	 * @return A dummy list of classes
+	 */
+	public ArrayList<String> complexelement(ArrayList<APXInterfaceDesignDescription.APXServiceDescription.APXPayload> payload, String parentClass) { // TODO Not Used
+		boolean boo = false; // TODO Not Used
+		for (APXInterfaceDesignDescription.APXServiceDescription.APXPayload element : payload) {
+			String e = element.getName();
+			if (e != null) {
+				if (e.equals("Newclass")) {
+					i = "StopClass".equals(payload.get(i + 1)[0]) ? payload.size() + 1 : genComplex(payload, i, parentClass);
+					boo = true;
+				}
+			}
+		}
+		return classesDummy;
+	}
+	
+	// -------------------------------------------------------------------------------------------------
+	/**
+	 * 
+	 * ???
+	 * 
+	 * @param elements List of elements in the payload
+	 * @param i Index of the element
+	 * @param parentClass Name of the parent class
+	 * @return
+	 */
+	public int genComplex(ArrayList<String[]> elements, int i, String parentClass) {
+		ArrayList<String[]> newclass = new ArrayList<String[]>();
+		boolean out = false;
+		int j = i + 1;
+
+		String className = elements.get(i)[1];
+		while (out == false) {
+			if ("StopClass".equals(elements.get(j)[0]))
+				out = true;
+			else if ("child:Newclass".equals(elements.get(j)[0])) {
+				int current_j = genComplex(elements, j, parentClass);
+				
+				if ("single".equals(elements.get(j)[2]))
+					newclass.add(new String[] {elements.get(j)[1], elements.get(j)[1]});
+				else if ("list".equals(elements.get(j)[2]))
+					newclass.add(new String[] {elements.get(j)[1], "List"});
+
+				if ("StopClass".equals(elements.get(current_j)[0]))
+					out = true;
+				else
+					j++;
+
+			} else {
+				String value = elements.get(j)[0];
+				
+				while ("child".equals(value)) {
+					newclass.add(new String[] {elements.get(j)[1], elements.get(j)[2]});
+					j++;
+					value = elements.get(j)[0];
+				}
+			}
+		}
+
+		ClassSimple c = new ClassSimple();
+		classesDummy.add(c.generateObject(className, newclass));
+		this.classGen(newclass, className, parentClass);
+		
+		return j;
+	}
+
+	// -------------------------------------------------------------------------------------------------
+	/**
+	 * 
+	 * Build full constructor method
+	 * 
+	 * @param elements List of attributes of the class
+	 * @param className Name of the class
+	 * @return Constructor object
+	 */
+	public MethodSpec fullConstructor(ArrayList<String[]> elements, String className) {
+
+		MethodSpec.Builder BFullConsructor = MethodSpec.constructorBuilder().addModifiers(Modifier.PUBLIC);
+
+		for (int i = 0; i < elements.size(); i++) { // For each of the attributes
+			String name = elements.get(i)[0];
+			String type = elements.get(i)[1];
+
+			if (type.equalsIgnoreCase("single") || type.startsWith("List")) {
+				TypeName t = CodgenUtil.getComplexType(name, type);
+				BFullConsructor.addParameter(t, name).addStatement("this.$N = $N", name, name);
+			} else
+				BFullConsructor.addParameter(CodgenUtil.getType(type), name).addStatement("this.$N = $N", name, name);
+		}
+		
+		return BFullConsructor.build();
+	}
+
+	// -------------------------------------------------------------------------------------------------
+	/**
+	 * 
+	 * Build nested class with constructor, getters, setters and toString methods
+	 * 
+	 * @param elements List of payload elements
+	 * @param className Name of the class
+	 * @param parentClass Name of the parent class
+	 */
+	public void classGen(ArrayList<String[]> elements, String className, String parentClass) {
+
+		ClassSimple cg = new ClassSimple();
+		String ClassName = className.substring(0, 1).toUpperCase() + className.substring(1, className.length());
+
+		MethodSpec constructor = cg.constructor(); // Generate simple constructor
+		MethodSpec fullConstructor = fullConstructor(elements, ClassName); // Generate full constructor
+		MethodSpec toString = cg.toString(elements); // Generate toString
+
+		// Add generated methods
+		TypeSpec.Builder BclassGen = TypeSpec.classBuilder(ClassName).addModifiers(Modifier.PUBLIC)
+				.addMethod(constructor).addMethod(fullConstructor).addMethod(toString);
+
+		for (int i = 0; i < elements.size(); i++) { // For each of the elements of the payload
+			String name = elements.get(i)[0];
+			String type = elements.get(i)[1];
+			
+			MethodSpec methodget = cg.get(name, type); // Generate getter method
+			MethodSpec methodset = cg.set(name, type); // Generate setter method
+			
+			// Add generated methods
+			if (type.equalsIgnoreCase("single") || type.startsWith("List")) {
+				TypeName t = CodgenUtil.getComplexType(name, type);
+				BclassGen.addField(t, name, Modifier.PRIVATE).addMethod(methodget).addMethod(methodset);
+			} else {
+				Type T = CodgenUtil.getType(type);
+				BclassGen.addField(T, name, Modifier.PRIVATE).addMethod(methodget).addMethod(methodset);
+			}
+		}
+
+		// Create and write the new class
+		TypeSpec classGen = BclassGen.build();
+		String packageName = "eu.arrowhead." + system.split("-")[system.split("-").length - 1];
+		JavaFile javaFile = JavaFile.builder(packageName, classGen).addFileComment("Auto generated").build();
+		try {
+			javaFile.writeTo(Paths.get(Directory + "\\arrowhead\\" + foldername + "\\cloud-systems\\" + ParsingUtils.toKebabCase(system) + "\\src\\main\\java\\"));
+		} catch (IOException ex) {
+			System.err.print("Exception:" + ex.getMessage());
+		}
+
+	}
+
+	
+	// =================================================================================================
+	// auxiliary methods
+	
+	// -------------------------------------------------------------------------------------------------
+	public ClassNested() {}
+	
+	// -------------------------------------------------------------------------------------------------
+	public String getDirectory() { return Directory; }
+	public String getSystem() { return system; }
+	public String getFoldername() { return foldername; }
+	public ArrayList<String> getClassesDummy() { return classesDummy; }
+
+	// -------------------------------------------------------------------------------------------------
+	public void setDirectory(String directory) { Directory = directory; }
+	public void setSystem(String system) { this.system = system; }
+	public void setFoldername(String foldername) { this.foldername = foldername; }
+	public void setClassesDummy(ArrayList<String> classesDummy) { this.classesDummy = classesDummy; }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="org.eclipse.papyrus.arrowhead.validation.commands.category"
+            name="Validation Category">
+      </category>
+      <command
+            categoryId="org.eclipse.papyrus.arrowhead.validation.commands.category"
+            id="org.eclipse.papyrus.arrowhead.validation.registry.command"
+            name="Validate Model with Database">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="validation.registry.handlers.Generation"
+            commandId="org.eclipse.papyrus.arrowhead.validation.registry.command">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="org.eclipse.papyrus.arrowhead.menu"
+               label="Arrowhead"
+               mnemonic="M">
+            <menu
+                  id="org.eclipse.papyrus.arrowhead.validation.menu"
+                  label="Validation">
+               <command
+                     commandId="org.eclipse.papyrus.arrowhead.validation.registry.command"
+                     id="org.eclipse.papyrus.arrowhead.validation.registry.menu"
+                     mnemonic="C"
+                     style="push">
+               </command>
+            </menu>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

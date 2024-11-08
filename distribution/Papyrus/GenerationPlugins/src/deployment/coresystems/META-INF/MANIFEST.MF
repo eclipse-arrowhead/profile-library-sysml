@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Arrowhead Papyrus Core Systems Deploment
+Bundle-SymbolicName: org.eclipse.papyrus.arrowhead.deployment.coresystems;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: deployment.coresystems.handlers;uses:="org.eclipse.swt.widgets,org.eclipse.jface.dialogs,org.eclipse.core.commands"
+Require-Bundle: org.eclipse.papyrus.arrowhead.common;bundle-version="1.0.0"
+Automatic-Module-Name: eu.arrowhead.coreSystems.deployment
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ClassPath: .,
+ bin/
+Import-Package: org.apache.commons.io,
+ org.eclipse.core.commands,
+ org.eclipse.jface.dialogs,
+ org.eclipse.jface.window,
+ org.eclipse.swt,
+ org.eclipse.swt.events,
+ org.eclipse.swt.layout,
+ org.eclipse.swt.widgets,
+ org.eclipse.ui.commands

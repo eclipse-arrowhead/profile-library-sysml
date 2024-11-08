@@ -1,0 +1,108 @@
+package eu.arrowhead.provider;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import java.lang.Exception;
+import java.lang.String;
+import org.eclipse.californium.core.CoapResource;
+import org.eclipse.californium.core.coap.CoAP;
+import org.eclipse.californium.core.server.resources.CoapExchange;
+
+public class ServiceControllerCoap extends CoapResource {
+	  public ServiceControllerCoap() {
+	     super("publish");
+	     getAttributes().setTitle("Publish Resource");
+	  }
+#set($GET=0)
+#set($POST=0)
+#foreach( $interface in $interfaces )
+#set($operations=$interface.getOperations())
+	#foreach( $operation in $operations )  
+		#if($operation.getMethod()=="GET")
+		#set($GET=$GET+1)
+			#if($GET==1)
+	public void handleGET(CoapExchange exchange) {
+	  	exchange.accept();
+	  	// Complete with your own code
+	 	
+		try {
+			#end  
+	 	
+		System.out.println(exchange.advanced().getEndpoint().getUri().getPath());
+		System.out.println(exchange.advanced().getEndpoint().getUri().toString());
+	 
+		if(exchange.advanced().getEndpoint().getUri().getPath().equalsIgnoreCase("$operation.getPath()")){
+	  $operation.capitalizeService()ResponseDTO $operation.capitalizeService()Response=new $operation.capitalizeService()ResponseDTO();
+	  
+			#if($interface.getEncoding()=="CBOR")
+			CBORFactory f = new CBORFactory();
+	    	ObjectMapper objMapper_$operation.capitalizeService() = new ObjectMapper(f);
+			byte [] response_out = objMapper_${operation.capitalizeService()}.writeValueAsBytes( ${operation.capitalizeService()}Response);
+	        exchange.respond(CoAP.ResponseCode.CONTENT,response_out,60); //60- application/cbor
+			#elseif($interface.getEncoding()=="XML")
+			ObjectMapper objMapper_$operation.capitalizeService() = new XmlMapper();
+			String response_out = objMapper_${operation.capitalizeService()}.writeValueAsString( ${operation.capitalizeService()}Response);
+	        exchange.respond(CoAP.ResponseCode.CONTENT,response_out,41); //41- application/xml
+      		#else
+			JsonFactory jsonFactory_objMapper = new JsonFactory();
+			ObjectMapper objMapper_$operation.capitalizeService() = new ObjectMapper(jsonFactory_objMapper);
+	        String response_out = objMapper_${operation.capitalizeService()}.writeValueAsString( {$operation.capitalizeService()}Response);
+	        exchange.respond(CoAP.ResponseCode.CONTENT,response_out,50); //50- application/json
+			#end	
+		}
+		#end
+	#end
+#end
+			
+#if($GET>=1)	
+		}
+	    catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+#end
+#foreach( $interface in $interfaces )
+#set($operations=$interface.getOperations())
+	#foreach( $operation in $operations ) 
+		#if($operation.getMethod()=="POST")
+		#set($POST=$POST+1)
+			#if($POST==1)
+    public void handlePOST(CoapExchange exchange){
+   		exchange.accept();
+		try {     
+			#end
+	
+		if(exchange.advanced().getEndpoint().getUri().getPath().equalsIgnoreCase("$operation.getPath()")){
+	        #if($interface.getEncoding()=="CBOR")
+       		byte[] receivedPayload = exchange.getRequest();
+            byte[] response_out = null;
+            CBORFactory f = new CBORFactory();
+            ObjectMapper objMapper_$operation.capitalizeService() = new ObjectMapper(f);
+	        #elseif($interface.getEncoding()=="JSON")
+	        String receivedPayload = exchange.getRequestText();
+			String response_out = " ";
+            JsonFactory jsonFactory_objMapper_consumer = new JsonFactory();
+			ObjectMapper objMapper_$operation.capitalizeService() = new ObjectMapper(jsonFactory_objMapper_consumer);
+		  	#elseif($interface.getEncoding()=="XML")
+       		String receivedPayload = exchange.getRequestText();
+            String response_out = " ";
+            ObjectMapper objMapper_$operation.capitalizeService() = new XmlMapper();
+		  	#else
+			//TODO Implement rest of encodings
+		  	#end
+			$operation.capitalizeService()RequestDTO request=objMapper_${operation.capitalizeService()}.readValue(receivedPayload,$operation.capitalizeService()RequestDTO.class);
+		}
+	           
+	  	#end
+	#end
+#end
+	
+ #if($POST>=1)  
+		// Complete with your own code
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+    }
+#end
+}

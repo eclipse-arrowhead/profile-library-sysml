@@ -1,0 +1,42 @@
+${disk}
+cd \
+git clone https://github.com/eclipse-arrowhead/core-java-spring.git 
+cd core-java-spring 
+CALL mvn clean install ${skipTest}
+
+cd ${outputDirectory}
+mkdir arrowhead
+cd arrowhead
+
+rmdir core-systems\ /S /Q
+mkdir core-systems
+
+rmdir support-systems\ /S /Q
+mkdir support-systems
+
+copy ${workSpace}\.temp\startAllSystems.bat .
+copy ${workSpace}\.temp\stopAllSystems.bat .
+
+cd core-systems
+
+copy ${disk}\core-java-spring\serviceregistry\target\arrowhead-serviceregistry-${version}.jar .
+copy ${disk}\core-java-spring\authorization\target\arrowhead-authorization-${version}.jar .
+copy ${disk}\core-java-spring\orchestrator\target\arrowhead-orchestrator-${version}.jar .
+copy ${workSpace}\.temp\startCoreSystems.bat .
+copy ${workSpace}\.temp\stopCoreSystems.bat .
+
+cd ..\support-systems
+
+copy ${disk}\core-java-spring\certificate-authority\target\arrowhead-certificate-authority-${version}.jar .
+copy ${disk}\core-java-spring\choreographer\target\arrowhead-choreographer-${version}.jar .
+copy ${disk}\core-java-spring\datamanager\target\arrowhead-datamanager-${version}.jar .
+copy ${disk}\core-java-spring\deviceregistry\target\arrowhead-deviceregistry-${version}.jar .
+copy ${disk}\core-java-spring\eventhandler\target\arrowhead-eventhandler-${version}.jar .
+copy ${disk}\core-java-spring\gatekeeper\target\arrowhead-gatekeeper-${version}.jar .
+copy ${disk}\core-java-spring\gateway\target\arrowhead-gateway-${version}.jar .
+copy ${disk}\core-java-spring\onboarding\target\arrowhead-onboarding-${version}.jar .
+copy ${disk}\core-java-spring\systemregistry\target\arrowhead-systemregistry-${version}.jar .
+copy ${disk}\core-java-spring\translator\target\arrowhead-translator-${version}.jar .
+
+rmdir ${disk}\core-java-spring /S /Q
+rmdir ${workSpace}\.temp\ /S /Q

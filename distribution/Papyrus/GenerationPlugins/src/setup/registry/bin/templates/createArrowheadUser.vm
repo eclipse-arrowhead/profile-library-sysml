@@ -1,0 +1,9 @@
+DROP USER IF EXISTS '${user}'@'${host}';
+DROP USER IF EXISTS '${user}'@'%';
+
+CREATE USER '${user}'@'${host}' IDENTIFIED BY '${password}';
+CREATE USER '${user}'@'%' IDENTIFIED BY '${password}';
+
+GRANT ALL PRIVILEGES ON arrowhead.* TO '${user}'@'${host}';
+GRANT ALL PRIVILEGES ON arrowhead.* TO '${user}'@'%';
+FLUSH PRIVILEGES;
