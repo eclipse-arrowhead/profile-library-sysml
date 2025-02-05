@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <sashModel currentSelection="//@sashModel/@windows.0/@children.0" restoreActivePage="true">
+    <windows>
+      <children xsi:type="di:TabFolder" currentSelection="//@sashModel/@windows.0/@children.0/@children.3">
+        <children>
+          <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_2R_rgCTQEe-9KvpFZizseA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_SU6PIIR1Ee-74fVJZfD0CQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_1DmDQKGWEe-ECrqMg-vLmA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_h8khsN7kEe-dFPPNzRaG3A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_sxVr0N7kEe-dFPPNzRaG3A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_VPk_wN7mEe-dFPPNzRaG3A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_UZjAwN8UEe-dFPPNzRaG3A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_57NEQN8UEe-dFPPNzRaG3A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_-bLvYN88Ee-dFPPNzRaG3A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_TDnB4DMYEe-MpZcrQa1Yrg"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_GtALkCclEe-kO5sLBQPK1Q"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_cf8koHwCEe-pfuk0_UG7TQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_MAmJQDHzEe-glMgvGnKGPg"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_r3d-cCciEe-kO5sLBQPK1Q"/>
+        </children>
+      </children>
+    </windows>
+  </sashModel>
+</di:SashWindowsMngr>

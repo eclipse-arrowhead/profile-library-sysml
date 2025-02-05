@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <di:SashWindowsMngr>
+    <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0" restoreActivePage="true">
+      <windows>
+        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.4">
+          <children>
+            <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_UZjAwN8UEe-dFPPNzRaG3A"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_nEUikDIlEe-glMgvGnKGPg"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_-bLvYN88Ee-dFPPNzRaG3A"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_sxVr0N7kEe-dFPPNzRaG3A"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_57NEQN8UEe-dFPPNzRaG3A"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_L8R4UOFrEe-77ZTM5jexAw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/EclipseArrowhead-5.0/Arrowhead-5.0.notation#_XIQBgOFrEe-77ZTM5jexAw"/>
+          </children>
+        </children>
+      </windows>
+    </sashModel>
+  </di:SashWindowsMngr>
+  <architecture:ArchitectureDescriptionPreferences>
+    <viewpointIds>arrowhead.vp</viewpointIds>
+  </architecture:ArchitectureDescriptionPreferences>
+</xmi:XMI>

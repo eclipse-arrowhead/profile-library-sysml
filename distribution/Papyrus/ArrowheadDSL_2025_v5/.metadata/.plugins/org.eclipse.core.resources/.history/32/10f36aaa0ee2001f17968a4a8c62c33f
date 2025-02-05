@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_YeaCUOFOEe-77ZTM5jexAw" name="PRISMA">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_YgH5kuFOEe-77ZTM5jexAw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_YgKV0OFOEe-77ZTM5jexAw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hYaI4OFOEe-77ZTM5jexAw" name="PRISMA_basics">
+      <packagedElement xmi:type="uml:Model" xmi:id="_hYaI4eFOEe-77ZTM5jexAw" name="UEDS">
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaI4uFOEe-77ZTM5jexAw" name="UED-Design">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI4-FOEe-77ZTM5jexAw" name="UEDM" visibility="public" type="_hYaI6eFOEe-77ZTM5jexAw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI5OFOEe-77ZTM5jexAw" name="EnvironmentalDataStorage" visibility="public" type="_hYaI-uFOEe-77ZTM5jexAw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI5eFOEe-77ZTM5jexAw" name="ServiceDiscovery" visibility="public" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI5uFOEe-77ZTM5jexAw" name="ServiceOrchestration" visibility="public" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI5-FOEe-77ZTM5jexAw" name="GetPublicKey" visibility="public" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbBZACclEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI6OFOEe-77ZTM5jexAw" name="ConsumerAuthentication" visibility="public" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaI6eFOEe-77ZTM5jexAw" name="UEDM">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYaI6uFOEe-77ZTM5jexAw" name="LCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYaI6-FOEe-77ZTM5jexAw" name="DPP"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYaI7OFOEe-77ZTM5jexAw" name="EU-EnvironmentalData"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaI7eFOEe-77ZTM5jexAw" name="UEDM-HTTP">
+          <generalization xmi:type="uml:Generalization" xmi:id="_hYaI7uFOEe-77ZTM5jexAw" general="_hYaI6eFOEe-77ZTM5jexAw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaI7-FOEe-77ZTM5jexAw" name="UED-DesignDescription">
+          <generalization xmi:type="uml:Generalization" xmi:id="_hYaI8OFOEe-77ZTM5jexAw" general="_hYaI4uFOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI8eFOEe-77ZTM5jexAw" name="UEDM-HTTP" visibility="package" type="_hYaI7eFOEe-77ZTM5jexAw" aggregation="composite" subsettedProperty="_hYaI4-FOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI8uFOEe-77ZTM5jexAw" name="EnvironmentalDataStorage-HTTP" visibility="public" type="_hYaI_uFOEe-77ZTM5jexAw" aggregation="composite" subsettedProperty="_hYaJAeFOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI8-FOEe-77ZTM5jexAw" name="ServiceDiscovery-HTTP" visibility="public" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_iJYXsDdgEe6h28lXN9kaaA"/>
+            <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_RH4GwEUPEe6otvzTLJeGww"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI9OFOEe-77ZTM5jexAw" name="GetPublicKey-HTTP" visibility="public" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_Lc3CADeYEe6hKsppnexuYQ"/>
+            <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_xXeykDetEe6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI9eFOEe-77ZTM5jexAw" name="ServiceOrchesttration-HTTP" visibility="public" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_WUcVwDd7Ee6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI9uFOEe-77ZTM5jexAw" name="CopyOf_ServiceDiscovery-HTTP_6" visibility="package" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_iJYXsDdgEe6h28lXN9kaaA"/>
+            <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_RH4GwEUPEe6otvzTLJeGww"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI9-FOEe-77ZTM5jexAw" name="CopyOf_GetPublicKey-HTTP_6" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_Lc3CADeYEe6hKsppnexuYQ"/>
+            <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_xXeykDetEe6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI-OFOEe-77ZTM5jexAw" name="CopyOf_ServiceOrchesttration-HTTP_6" aggregation="composite">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead/EclipseArrowhead_v5.0.uml#_WUcVwDd7Ee6hKsppnexuYQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaI-eFOEe-77ZTM5jexAw" name="ConsumerAuthentication-HTTP" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_4XXX4G9TEe-sN-reFm5zLA"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaI-uFOEe-77ZTM5jexAw" name="EnvironmentalDataStorage">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYaI--FOEe-77ZTM5jexAw" name="Selsa"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYaI_OFOEe-77ZTM5jexAw" name="ABS"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYaI_eFOEe-77ZTM5jexAw" name="Tata"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaI_uFOEe-77ZTM5jexAw" name="EnvironmentalDataStorage-HTTP">
+          <generalization xmi:type="uml:Generalization" xmi:id="_hYaI_-FOEe-77ZTM5jexAw" general="_hYaI-uFOEe-77ZTM5jexAw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaJAOFOEe-77ZTM5jexAw" name="PlantData2UEDM-Design">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJAeFOEe-77ZTM5jexAw" name="EnvironmentalDataStorage" visibility="public" type="_hYaI-uFOEe-77ZTM5jexAw" aggregation="composite" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJAuFOEe-77ZTM5jexAw" name="PlantDataInput" visibility="public" aggregation="composite" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJA-FOEe-77ZTM5jexAw" name="ServiceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJBOFOEe-77ZTM5jexAw" name="ServiceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJBeFOEe-77ZTM5jexAw" name="GetPublicKey" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbBZACclEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJBuFOEe-77ZTM5jexAw" name="ConsumerAuthentication" visibility="public" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaJB-FOEe-77ZTM5jexAw" name="PlantDataInput"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaJCOFOEe-77ZTM5jexAw" name="PlanData2UEDM-DesingDescription">
+          <generalization xmi:type="uml:Generalization" xmi:id="_hYaJCeFOEe-77ZTM5jexAw" general="_hYaJAOFOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJCuFOEe-77ZTM5jexAw" name="EnvironmentDataStorage-HTTP" visibility="public" type="_hYaI_uFOEe-77ZTM5jexAw" aggregation="composite" subsettedProperty="_hYaJAeFOEe-77ZTM5jexAw" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYaJC-FOEe-77ZTM5jexAw" name="PlantDataInput-HTTP" visibility="public" type="_hYaJDOFOEe-77ZTM5jexAw" aggregation="composite" subsettedProperty="_hYaJAuFOEe-77ZTM5jexAw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaJDOFOEe-77ZTM5jexAw" name="PlandDataInput-HTTP">
+          <generalization xmi:type="uml:Generalization" xmi:id="_hYaJDeFOEe-77ZTM5jexAw" general="_hYaJB-FOEe-77ZTM5jexAw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_hYaJDuFOEe-77ZTM5jexAw" name="PRISMA_OpenLocalCloud">
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaJD-FOEe-77ZTM5jexAw" name="UEDM_OpenLocalCloud_Design">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJEOFOEe-77ZTM5jexAw" name="PRISMA_ServiceRegistry">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_30sNUCTQEe-9KvpFZizseA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJEeFOEe-77ZTM5jexAw" name="PRISMA-ServiceOrchestration">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AQzcoCcDEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJEuFOEe-77ZTM5jexAw" name="PRISMA-Authentication">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_TzZgEDMYEe-MpZcrQa1Yrg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJE-FOEe-77ZTM5jexAw" name="PRISMA_ConsumptionAuthorisation">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCnJiclEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJFOFOEe-77ZTM5jexAw" name="PRISMA_UED" type="_hYaI4uFOEe-77ZTM5jexAw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_hYaJFeFOEe-77ZTM5jexAw" name="PRISMA_PilotLocalCloud">
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYaJFuFOEe-77ZTM5jexAw" name="UED_PilotLocalCloud_Design">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJF-FOEe-77ZTM5jexAw" name="PRISMA_ServiceRegistry">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_30sNUCTQEe-9KvpFZizseA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYaJGOFOEe-77ZTM5jexAw" name="PRISMA-ServiceOrchestration">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AQzcoCcDEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav8OFOEe-77ZTM5jexAw" name="PRISMA-Authentication">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_TzZgEDMYEe-MpZcrQa1Yrg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav8eFOEe-77ZTM5jexAw" name="PRISMA_ConsumptionAuthorisation">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCnJiclEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav8uFOEe-77ZTM5jexAw" name="PRISMA_UED" type="_hYaI4uFOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav8-FOEe-77ZTM5jexAw" name="PRISMA_PlantData2UEDM" type="_hYaJAOFOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYav9OFOEe-77ZTM5jexAw" name="FullPort7" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav9eFOEe-77ZTM5jexAw" name="PRISMA_PlantDataCollection" type="_hYav_-FOEe-77ZTM5jexAw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav9uFOEe-77ZTM5jexAw" name="Push UEDM data to UE data store UEDS"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYav9-FOEe-77ZTM5jexAw" name="Property11">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_csJBkT0MEe-UlLZofXFl5A"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_hYav-OFOEe-77ZTM5jexAw" name="Connector11">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hYav-eFOEe-77ZTM5jexAw" partWithPort="_hYav8-FOEe-77ZTM5jexAw" role="_hYaJAeFOEe-77ZTM5jexAw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hYav-uFOEe-77ZTM5jexAw" partWithPort="_hYav9-FOEe-77ZTM5jexAw">
+              <role xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#__LaTUD0mEe-UlLZofXFl5A"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_hYav--FOEe-77ZTM5jexAw" name="Connector12">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hYav_OFOEe-77ZTM5jexAw" partWithPort="_hYav8-FOEe-77ZTM5jexAw" role="_hYaJAuFOEe-77ZTM5jexAw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hYav_eFOEe-77ZTM5jexAw" partWithPort="_hYav9eFOEe-77ZTM5jexAw" role="_hYawAuFOEe-77ZTM5jexAw"/>
+          </ownedConnector>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_hYav_uFOEe-77ZTM5jexAw" name="PRISMA_PlantData">
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYav_-FOEe-77ZTM5jexAw" name="PrismaPlantData-Design">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYawAOFOEe-77ZTM5jexAw" name="PlantDataCollector" visibility="public" type="_hYawCeFOEe-77ZTM5jexAw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYawAeFOEe-77ZTM5jexAw" name="Data collection from plant SCAD and DCS"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYawAuFOEe-77ZTM5jexAw" name="PlantDataInput" visibility="public" type="_hYaJB-FOEe-77ZTM5jexAw" aggregation="composite" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYawA-FOEe-77ZTM5jexAw" name="Aggregating plant data to UEDM"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYawBOFOEe-77ZTM5jexAw" name="ServiceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYawBeFOEe-77ZTM5jexAw" name="ServiceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYawBuFOEe-77ZTM5jexAw" name="GetPublicKey" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbBZACclEe-kO5sLBQPK1Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_hYawB-FOEe-77ZTM5jexAw" name="ConsumerAuthentication" visibility="public" aggregation="composite" isConjugated="true">
+            <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYawCOFOEe-77ZTM5jexAw" name="Pusch UEDM data to UE data storage -UEDS"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hYawCeFOEe-77ZTM5jexAw" name="PlantDataCollector">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hYawCuFOEe-77ZTM5jexAw" name="Get-ScadaDCS-Data"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_hYawC-FOEe-77ZTM5jexAw" name="Expose1&#xA;" client="_hYawAOFOEe-77ZTM5jexAw" supplier="_hYawAeFOEe-77ZTM5jexAw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_hYawDOFOEe-77ZTM5jexAw" name="Expose3" client="_hYawA-FOEe-77ZTM5jexAw" supplier="_hYawCOFOEe-77ZTM5jexAw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_hYawDeFOEe-77ZTM5jexAw" name="Expose4" client="_hYawCOFOEe-77ZTM5jexAw" supplier="_hYawAuFOEe-77ZTM5jexAw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_hYawDuFOEe-77ZTM5jexAw" name="Expose2" client="_hYawAeFOEe-77ZTM5jexAw" supplier="_hYawA-FOEe-77ZTM5jexAw"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ye05EOFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ye2HMOFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Arrowhead_Profile/ArrowheadProfile_v5.0.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgGEYOFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgGEYeFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgGrcOFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgGrceFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgGrcuFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgGrc-FOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgGrdOFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgHSgOFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgHSgeFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgHSguFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgHSg-FOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgHShOFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgHSheFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgHShuFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgHSh-FOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgHSiOFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgHSieFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgHSiuFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YgH5kOFOEe-77ZTM5jexAw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YgH5keFOEe-77ZTM5jexAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <ArrowheadDSL:SysD xmi:id="_hYdzVeFOEe-77ZTM5jexAw" base_Class="_hYaI4uFOEe-77ZTM5jexAw">
+    <MicrosystemName>UED-Design</MicrosystemName>
+  </ArrowheadDSL:SysD>
+</xmi:XMI>
