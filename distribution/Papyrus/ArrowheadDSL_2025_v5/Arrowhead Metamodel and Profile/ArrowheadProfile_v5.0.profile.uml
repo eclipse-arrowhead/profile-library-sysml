@@ -242,11 +242,11 @@
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Plc20DRdEe6hdPlp_7DYew" name="IntracloudNetworkDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_os41UDRdEe6hdPlp_7DYew" general="_q6FuwDODEe6hdPlp_7DYew"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_z2Q4UDRvEe6hdPlp_7DYew" name="IntraNetworkRouter" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z2Q4UTRvEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_z2T7oDRvEe6hdPlp_7DYew" name="IntraNetworkRouterConfig" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z2T7oTRvEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i4z_kLcPEe6kWpre1ze5sg" name="devicedesigndescription" type="_ErU_gDRFEe6hdPlp_7DYew" association="_i4JRMLcPEe6kWpre1ze5sg">
@@ -257,7 +257,7 @@
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_4aMWgDRvEe6hdPlp_7DYew" name="IntercloudNetworkDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_G2j74I41Ee6ZtIoJ221FFA" general="_9PD68DODEe6hdPlp_7DYew"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_K8UN4DRwEe6hdPlp_7DYew" name="InterNetworkRouter" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8UN4TRwEe6hdPlp_7DYew"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8UN4jRwEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
@@ -396,11 +396,13 @@
       </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-d3YLaOEe6et-4ox6TWyg" name="ApplicationProtocolKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YbaOEe6et-4ox6TWyg" name="http"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YraOEe6et-4ox6TWyg" name="mqtt"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3Y7aOEe6et-4ox6TWyg" name="coap"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZLaOEe6et-4ox6TWyg" name="websocket"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YbaOEe6et-4ox6TWyg" name="HTTP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YraOEe6et-4ox6TWyg" name="MQTT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3Y7aOEe6et-4ox6TWyg" name="CoAP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZLaOEe6et-4ox6TWyg" name="Websocket"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZbaOEe6et-4ox6TWyg" name="OtherApplicationProtocol"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V2l5wAS0EfC_w72n92hbwA" name="AMQP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bjsmgAS0EfC_w72n92hbwA" name="DDS"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-fFgLaOEe6et-4ox6TWyg" name="ArrowheadCertificateKind">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFgraOEe6et-4ox6TWyg" name="ApplicationSystem"/>
@@ -734,6 +736,17 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jAgvEBKNEe-2EvZLzkcjBQ" name="208 - Already Reported">
         <specification xmi:type="uml:LiteralString" xmi:id="_zlgycBKNEe-2EvZLzkcjBQ"/>
       </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_h4oIQAS0EfC_w72n92hbwA" name="AMQPMetodKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3RhtkAS2EfC_w72n92hbwA" name="Open"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4udloAS2EfC_w72n92hbwA" name="Begin"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__ukyYAS2EfC_w72n92hbwA" name="Attach"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A0eDcAS3EfC_w72n92hbwA" name="Flow"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_B7dgsAS3EfC_w72n92hbwA" name="Transfer"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DBNAwAS3EfC_w72n92hbwA" name="Disposition"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EKQ6kAS3EfC_w72n92hbwA" name="Detach"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GC4pEAS3EfC_w72n92hbwA" name="End"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gywm0AS3EfC_w72n92hbwA" name="Close"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
