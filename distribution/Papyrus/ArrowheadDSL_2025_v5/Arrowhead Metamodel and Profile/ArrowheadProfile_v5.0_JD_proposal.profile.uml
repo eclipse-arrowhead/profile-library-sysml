@@ -19,6 +19,24 @@
       <body>Implementation
 </body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_VuBtcFfTEfCk7siGunZRsQ">
+      <body>NEW
+NetworkPhysicalLayer</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_nzmLsFfTEfCk7siGunZRsQ">
+      <body>NEW
+IntraCloudDMZNetworkImplementation
+</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_xXlN8FfUEfCk7siGunZRsQ">
+      <body>NEW
+InterCloudNetworkImplementation</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_3DNUAFfUEfCk7siGunZRsQ">
+      <body>NEW
+IntraCloudDMZNetworkImplementation
+</body>
+    </ownedComment>
     <elementImport xmi:type="uml:ElementImport" xmi:id="_sqJsIKo9Ee6fDNrwXJadFA" alias="Port">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </elementImport>
@@ -239,6 +257,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1_WyoLcPEe6kWpre1ze5sg" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_4nykEFTSEfCSefG7MbQVLQ" name="NetworkPhysicalLayer" type="_g-klELaOEe6et-4ox6TWyg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_klKrYFfUEfCk7siGunZRsQ" name="intraclouddmznetwrokdesigndescription" type="_E1VckFfUEfCk7siGunZRsQ" association="_kkYoQFfUEfCk7siGunZRsQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Plc20DRdEe6hdPlp_7DYew" name="IntracloudNetworkDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_os41UDRdEe6hdPlp_7DYew" general="_q6FuwDODEe6hdPlp_7DYew"/>
@@ -749,14 +768,34 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GC4pEAS3EfC_w72n92hbwA" name="End"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gywm0AS3EfC_w72n92hbwA" name="Close"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_lhfBsFNKEfC54qQdBIk9eA" name="IntracloudDmzNetworkImplementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_lhfBsFNKEfC54qQdBIk9eA" name="IntraCloudNetworkImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_wjldMFNKEfC54qQdBIk9eA" general="_Plc20DRdEe6hdPlp_7DYew"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Hmk3sFNLEfC54qQdBIk9eA" name="DeviceImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_JuwsMFNLEfC54qQdBIk9eA" general="_ErU_gDRFEe6hdPlp_7DYew"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_JiiswFNZEfC54qQdBIk9eA" name="IntracloudNetworkImplementation">
-      <generalization xmi:type="uml:Generalization" xmi:id="_K_6CoFNZEfC54qQdBIk9eA" general="_Plc20DRdEe6hdPlp_7DYew"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_JiiswFNZEfC54qQdBIk9eA" name="IntraCloudDmzNetworkImplementation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_K_6CoFNZEfC54qQdBIk9eA" general="_E1VckFfUEfCk7siGunZRsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_6wQC8FfTEfCk7siGunZRsQ" name="InterCloudNetworkImplementation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uSg6cFfUEfCk7siGunZRsQ" general="_4aMWgDRvEe6hdPlp_7DYew"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_E1VckFfUEfCk7siGunZRsQ" name="IntraCloudDmzNetwrokDesignDescription">
+      <generalization xmi:type="uml:Generalization" xmi:id="_KbbiYFfUEfCk7siGunZRsQ" general="_q6FuwDODEe6hdPlp_7DYew"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d37XUFfUEfCk7siGunZRsQ" name="IntraNetworkRouterConfig" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d37XUVfUEfCk7siGunZRsQ" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d4A24FfUEfCk7siGunZRsQ" name="IntraNetworkRouter" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d4A24VfUEfCk7siGunZRsQ" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kk_sQFfUEfCk7siGunZRsQ" name="devicedesigndescription" type="_ErU_gDRFEe6hdPlp_7DYew" association="_kkYoQFfUEfCk7siGunZRsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kkYoQFfUEfCk7siGunZRsQ" memberEnd="_kk_sQFfUEfCk7siGunZRsQ _klKrYFfUEfCk7siGunZRsQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kk4XgFfUEfCk7siGunZRsQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kk7a0FfUEfCk7siGunZRsQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
