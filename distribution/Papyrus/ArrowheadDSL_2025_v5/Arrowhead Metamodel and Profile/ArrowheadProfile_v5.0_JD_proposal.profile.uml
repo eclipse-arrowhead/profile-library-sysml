@@ -37,6 +37,9 @@ InterCloudNetworkImplementation</body>
 IntraCloudDMZNetworkImplementation
 </body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_iNCigGbfEfCT0_-7z0FvBA">
+      <body>Deployment</body>
+    </ownedComment>
     <elementImport xmi:type="uml:ElementImport" xmi:id="_sqJsIKo9Ee6fDNrwXJadFA" alias="Port">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </elementImport>
@@ -98,7 +101,7 @@ IntraCloudDMZNetworkImplementation
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iFXTYjLLEe6ldMRwfXEyUg" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_uJ1vcDXMEe6Jk_FX_xio9g" name="FunctionalProperties" visibility="public" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__uaSEDXPEe6Jk_FX_xio9g" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_nxS-oJR3Ee6U99HogCXF3A" name="SystemDatabase" visibility="public" type="_g-lMILaOEe6et-4ox6TWyg" isUnique="false"/>
@@ -133,7 +136,7 @@ IntraCloudDMZNetworkImplementation
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_lt3JkI4cEe6ZtIoJ221FFA" name="FunctionalProperties" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ccPK4JR3Ee6U99HogCXF3A" name="LC_SecurityStrategy" visibility="public" type="_g-klFraOEe6et-4ox6TWyg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ccPK4ZR3Ee6U99HogCXF3A"/>
@@ -311,6 +314,8 @@ IntraCloudDMZNetworkImplementation
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tjuNAJBVEe6K7urRRxg5bw" name="SoLC_Workflow">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZX3msGbhEfCT0_-7z0FvBA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZYGQMGbhEfCT0_-7z0FvBA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_rUAbsjXVEe6Jk_FX_xio9g" name="localclouddesigndescription" type="_Z4_oQDXTEe6Jk_FX_xio9g" association="_rT_0oDXVEe6Jk_FX_xio9g">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z1vm4Ld0Ee6i2JWyFlnI5w"/>
@@ -342,7 +347,9 @@ IntraCloudDMZNetworkImplementation
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_SF0lsGtvEe6kMpvvcnNq_g" name="System_of_LocalcloudsImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_H4ce0GuHEe6kMpvvcnNq_g" general="_Lovj0DXVEe6Jk_FX_xio9g"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_N1fksGuKEe6kMpvvcnNq_g" name="SoLC_Documentation">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wx300GbhEfCT0_-7z0FvBA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Uxji4GbhEfCT0_-7z0FvBA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_dzOI4JB6Ee69oeBOw5VrOQ" name="localcloudimplementation" type="_33V14GuKEe6kMpvvcnNq_g" association="_dzLFkJB6Ee69oeBOw5VrOQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KauPsLd1Ee6i2JWyFlnI5w"/>
@@ -352,24 +359,16 @@ IntraCloudDMZNetworkImplementation
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_33V14GuKEe6kMpvvcnNq_g" name="LocalcloudImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_QXo74GuLEe6kMpvvcnNq_g" general="_Z4_oQDXTEe6Jk_FX_xio9g"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_QAKtgH8HEe6Xb_ifwf_2_Q" name="LC_Documentation">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_dzOv8JB6Ee69oeBOw5VrOQ" name="system_of_localcloudsimplementation" type="_SF0lsGtvEe6kMpvvcnNq_g" association="_dzLFkJB6Ee69oeBOw5VrOQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LAl84Ld1Ee6i2JWyFlnI5w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LB6LgLd1Ee6i2JWyFlnI5w" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z9kmQH8REe6Xb_ifwf_2_Q" name="systemimplementation" type="_AVrcgH8FEe6b-N5jlkvbYg" association="_Z9hi8H8REe6Xb_ifwf_2_Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lOB6ILd1Ee6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cUG_0H8REe6Xb_ifwf_2_Q" value="*"/>
-      </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_AVrcgH8FEe6b-N5jlkvbYg" name="System_Implementation">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_AVrcgH8FEe6b-N5jlkvbYg" name="SystemImplementation">
       <generalization xmi:type="uml:Generalization" xmi:id="__owhsI6SEe6cjupWzwXjHg" general="_7a8dcI6SEe6cjupWzwXjHg"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_IAFQgn8SEe6Xb_ifwf_2_Q" name="idd_implementation" type="_5pMDcH8REe6Xb_ifwf_2_Q" association="_IAEpcH8SEe6Xb_ifwf_2_Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Y--ALdzEe6i2JWyFlnI5w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QcO9cH8SEe6Xb_ifwf_2_Q" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z9lNUH8REe6Xb_ifwf_2_Q" name="loclacloudimplementation" type="_33V14GuKEe6kMpvvcnNq_g" association="_Z9hi8H8REe6Xb_ifwf_2_Q">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z9lNUH8REe6Xb_ifwf_2_Q" name="loclacloudimplementation" type="_33V14GuKEe6kMpvvcnNq_g" aggregation="composite" association="_Z9hi8H8REe6Xb_ifwf_2_Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lyLJALd1Ee6i2JWyFlnI5w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ly_BULd1Ee6i2JWyFlnI5w" value="*"/>
       </ownedAttribute>
@@ -378,10 +377,14 @@ IntraCloudDMZNetworkImplementation
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z9j_MH8REe6Xb_ifwf_2_Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z9j_MX8REe6Xb_ifwf_2_Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Z9kmQH8REe6Xb_ifwf_2_Q" name="systemimplementation" type="_AVrcgH8FEe6b-N5jlkvbYg" association="_Z9hi8H8REe6Xb_ifwf_2_Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lOB6ILd1Ee6i2JWyFlnI5w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cUG_0H8REe6Xb_ifwf_2_Q" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_5pMDcH8REe6Xb_ifwf_2_Q" name="IDD_Implementation">
       <generalization xmi:type="uml:Generalization" xmi:id="_qcb24I4vEe6ZtIoJ221FFA" general="_bDW0EI4vEe6ZtIoJ221FFA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_IAF3kH8SEe6Xb_ifwf_2_Q" name="systemimplementation" type="_AVrcgH8FEe6b-N5jlkvbYg" association="_IAEpcH8SEe6Xb_ifwf_2_Q">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IAF3kH8SEe6Xb_ifwf_2_Q" name="systemimplementation" type="_AVrcgH8FEe6b-N5jlkvbYg" aggregation="composite" association="_IAEpcH8SEe6Xb_ifwf_2_Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5BcsMLdzEe6i2JWyFlnI5w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5DBZgLdzEe6i2JWyFlnI5w" value="*"/>
       </ownedAttribute>
@@ -390,6 +393,10 @@ IntraCloudDMZNetworkImplementation
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IAFQgH8SEe6Xb_ifwf_2_Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IAFQgX8SEe6Xb_ifwf_2_Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IAFQgn8SEe6Xb_ifwf_2_Q" name="idd_implementation" type="_5pMDcH8REe6Xb_ifwf_2_Q" association="_IAEpcH8SEe6Xb_ifwf_2_Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Y--ALdzEe6i2JWyFlnI5w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QcO9cH8SEe6Xb_ifwf_2_Q" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_bDW0EI4vEe6ZtIoJ221FFA" name="IDD">
       <generalization xmi:type="uml:Generalization" xmi:id="_hz3ekI4vEe6ZtIoJ221FFA" general="_awzE4D0kEe60840L8fIbKA"/>
@@ -796,6 +803,15 @@ IntraCloudDMZNetworkImplementation
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kk4XgFfUEfCk7siGunZRsQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kk7a0FfUEfCk7siGunZRsQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_mTokcGbfEfCT0_-7z0FvBA" name="System_of_LocalCloudsDeployment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nla8cGbfEfCT0_-7z0FvBA" general="_SF0lsGtvEe6kMpvvcnNq_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_yjdXUGbfEfCT0_-7z0FvBA" name="LocalCloudDeployment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6EL90GbfEfCT0_-7z0FvBA" general="_33V14GuKEe6kMpvvcnNq_g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_RUGaAGbgEfCT0_-7z0FvBA" name="SystemDeployment">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Zlkg8GbgEfCT0_-7z0FvBA" general="_AVrcgH8FEe6b-N5jlkvbYg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
