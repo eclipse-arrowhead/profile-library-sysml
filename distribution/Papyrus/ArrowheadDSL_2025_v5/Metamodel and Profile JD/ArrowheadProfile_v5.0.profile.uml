@@ -12,12 +12,23 @@
       <body>White Box Design Description</body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_FBA-oDaVEe6EL4TwIGCjdw" annotatedElement="_awzE4D0kEe60840L8fIbKA">
-      <body>ServiceInterfaces: add more if required. Define Method name and parameters
- </body>
+      <body>ServiceInterfaces: add more if required. Define operations: 
+- Method (e.g. REST or MQTT methods), 
+- Address (different dependet on protocol used, REST-subURL, MQTT-topicname)  and 
+- Owned parameters
+</body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_1mxFMI0aEe66q99mtyWBAg">
       <body>Implementation
 </body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_B6kOAKNWEfCLnoKuDBHI9g">
+      <body>NEW
+</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_EVnUIKNWEfCLnoKuDBHI9g">
+      <body>Add attribyute
+PhysicalLayerKind</body>
     </ownedComment>
     <elementImport xmi:type="uml:ElementImport" xmi:id="_sqJsIKo9Ee6fDNrwXJadFA" alias="Port">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
@@ -135,7 +146,7 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_A-WsoDODEe6hdPlp_7DYew">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_IxtRYI4eEe6ZtIoJ221FFA" name="SoLC-Name">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IxtRYI4eEe6ZtIoJ221FFA" name="SoLC_Name">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_z9oIkJN6Ee69oeBOw5VrOQ"/>
       </ownedAttribute>
@@ -157,7 +168,7 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_uGUcUDRWEe6hdPlp_7DYew">
         <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block"/>
       </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_m5DiQDODEe6hdPlp_7DYew" name="Device Name">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_m5DiQDODEe6hdPlp_7DYew" name="DeviceName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m5DiQTODEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
@@ -214,7 +225,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_ErU_gDRFEe6hdPlp_7DYew" name="DeviceDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_BlDpwDRTEe6hdPlp_7DYew" general="_e5m_cDODEe6hdPlp_7DYew"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_twWxMDRHEe6hdPlp_7DYew" name="I/O ports">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_twWxMDRHEe6hdPlp_7DYew" name="I/Oports">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_twWxMTRHEe6hdPlp_7DYew"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_twWxMjRHEe6hdPlp_7DYew" value="*"/>
@@ -238,16 +249,15 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1-oZ4LcPEe6kWpre1ze5sg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1_WyoLcPEe6kWpre1ze5sg" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_4nykEFTSEfCSefG7MbQVLQ" name="NetworkPhysicalLayer" type="_g-klELaOEe6et-4ox6TWyg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_Plc20DRdEe6hdPlp_7DYew" name="IntracloudNetworkDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_os41UDRdEe6hdPlp_7DYew" general="_q6FuwDODEe6hdPlp_7DYew"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_z2Q4UDRvEe6hdPlp_7DYew" name="IntraNetworkRouter" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z2Q4UTRvEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_z2T7oDRvEe6hdPlp_7DYew" name="IntraNetworkRouterConfig" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z2T7oTRvEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i4z_kLcPEe6kWpre1ze5sg" name="devicedesigndescription" type="_ErU_gDRFEe6hdPlp_7DYew" association="_i4JRMLcPEe6kWpre1ze5sg">
@@ -258,12 +268,12 @@
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_4aMWgDRvEe6hdPlp_7DYew" name="IntercloudNetworkDesignDescription">
       <generalization xmi:type="uml:Generalization" xmi:id="_G2j74I41Ee6ZtIoJ221FFA" general="_9PD68DODEe6hdPlp_7DYew"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_K8UN4DRwEe6hdPlp_7DYew" name="InterNetworkRouter" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8UN4TRwEe6hdPlp_7DYew"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8UN4jRwEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_K8VcADRwEe6hdPlp_7DYew" name="InterNetworkRouterConfig" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8VcATRwEe6hdPlp_7DYew"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8VcAjRwEe6hdPlp_7DYew" value="*"/>
       </ownedAttribute>
@@ -381,9 +391,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIYS4JSJEe6U99HogCXF3A" name="Encoding" type="_g-hhwLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIavIJSJEe6U99HogCXF3A" name="Security" type="_g-fFh7aOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIckUJSJEe6U99HogCXF3A" name="Compression" type="_g-gTpraOEe6et-4ox6TWyg" isUnique="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_tIeZgJSJEe6U99HogCXF3A" name="Certificate_level" type="_g-fFgLaOEe6et-4ox6TWyg" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tIeZgJSJEe6U99HogCXF3A" name="CertificateLevel" visibility="public" type="_g-fFgLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIg1wJSJEe6U99HogCXF3A" name="Token" type="_g-lzMLaOEe6et-4ox6TWyg" isUnique="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_tIjSAJSJEe6U99HogCXF3A" name="Crypto_algorithm" type="_g-g6sLaOEe6et-4ox6TWyg" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tIjSAJSJEe6U99HogCXF3A" name="CryptoAlgorithm" type="_g-g6sLaOEe6et-4ox6TWyg" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_tIoKgJSJEe6U99HogCXF3A" name="Datamodel" type="_g-g6t7aOEe6et-4ox6TWyg" isUnique="false"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_7a8dcI6SEe6cjupWzwXjHg" name="SysDD">
@@ -397,13 +407,12 @@
       </eAnnotations>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-d3YLaOEe6et-4ox6TWyg" name="ApplicationProtocolKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YbaOEe6et-4ox6TWyg" name="HTTP"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YraOEe6et-4ox6TWyg" name="MQTT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3Y7aOEe6et-4ox6TWyg" name="CoAP"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZLaOEe6et-4ox6TWyg" name="Websocket"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YbaOEe6et-4ox6TWyg" name="http"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3YraOEe6et-4ox6TWyg" name="mqtt"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3Y7aOEe6et-4ox6TWyg" name="coap"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZLaOEe6et-4ox6TWyg" name="websocket"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-d3ZbaOEe6et-4ox6TWyg" name="OtherApplicationProtocol"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V2l5wAS0EfC_w72n92hbwA" name="AMQP"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bjsmgAS0EfC_w72n92hbwA" name="DDS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euLz0KFoEfCXaaY-CNi9hA" name="amqp"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-fFgLaOEe6et-4ox6TWyg" name="ArrowheadCertificateKind">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-fFgraOEe6et-4ox6TWyg" name="ApplicationSystem"/>
@@ -464,7 +473,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhw7aOEe6et-4ox6TWyg" name="CBOR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-hhxLaOEe6et-4ox6TWyg" name="OtherEncoding"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-hhxbaOEe6et-4ox6TWyg" name="HTTP1.1MethodKind">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-hhxbaOEe6et-4ox6TWyg" name="HTTP1.1_MethodKind">
       <ownedComment xmi:type="uml:Comment" xmi:id="_g-hhxraOEe6et-4ox6TWyg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_g-hhx7aOEe6et-4ox6TWyg" annotatedElement="_g-hhxraOEe6et-4ox6TWyg">
           <body>https://www.rfc-editor.org/rfc/rfc9110.html
@@ -517,7 +526,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-iv6LaOEe6et-4ox6TWyg" name="ISA95"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-iv6baOEe6et-4ox6TWyg" name="OtherMonitoringPolicy"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-jW8LaOEe6et-4ox6TWyg" name="MQTT3.1.1-MessageTypeKind">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-jW8LaOEe6et-4ox6TWyg" name="MQTT3.1.1_MessageTypeKind">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_g-jW8baOEe6et-4ox6TWyg" name="Connect"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-jW8raOEe6et-4ox6TWyg" name="CONNACK"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-jW87aOEe6et-4ox6TWyg" name="CONNECT"/>
@@ -534,7 +543,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-jW_raOEe6et-4ox6TWyg" name="UNSUBACK"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-jW_7aOEe6et-4ox6TWyg" name="UNSUBSCRIBE"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-jXALaOEe6et-4ox6TWyg" name="MQTT5.0-MessageTypeKind">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g-jXALaOEe6et-4ox6TWyg" name="MQTT5.0_MessageTypeKind">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_g-jXAbaOEe6et-4ox6TWyg" name="Connect"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-jXAraOEe6et-4ox6TWyg" name="CONNECT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g-jXA7aOEe6et-4ox6TWyg" name="DISCONNECT"/>
@@ -647,46 +656,49 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iHmmoLdzEe6i2JWyFlnI5w" key="nature" value="UML_Nature"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_X13jIPfUEe6gwtrMxoScjw" name="ArrowHeadServiceInterfaceHTTP">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_X13jIPfUEe6gwtrMxoScjw" name="ServiceProtocol_HTTP">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_lofJAPfVEe6gwtrMxoScjw" name="Method" type="_g-hhxbaOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_1TJEAPfVEe6gwtrMxoScjw" name="SubURL">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tx1CgOnnEe-WF5xRCFzKCw" name="StatusCode" type="_qEsekBIAEe-Pu-YQlZuncw" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_EZ6M0ffsEe68Gq79QBA0lw" name="base_Operation" association="_EZ3JgPfsEe68Gq79QBA0lw">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZ6M0vfsEe68Gq79QBA0lw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZIVQkPfUEe6gwtrMxoScjw" name="ArrowHeadServiceInterfaceMQTT">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_5puCsPfVEe6gwtrMxoScjw" name="Method" type="_g-hhxbaOEe6et-4ox6TWyg"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZIVQkPfUEe6gwtrMxoScjw" name="ServiceProtocol_MQTT">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5puCsPfVEe6gwtrMxoScjw" name="Method" type="_g-jW8LaOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_9V4LYPfVEe6gwtrMxoScjw" name="Topic">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wZgE0OnmEe-WF5xRCFzKCw" name="StatusCode" type="_qEsekBIAEe-Pu-YQlZuncw" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_GOS7kffsEe68Gq79QBA0lw" name="base_Operation" association="_GOSUgPfsEe68Gq79QBA0lw">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GOS7kvfsEe68Gq79QBA0lw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aPjXUPfUEe6gwtrMxoScjw" name="ArrowHeadServiceInterfaceCOAP">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aPjXUPfUEe6gwtrMxoScjw" name="ServiceProtocol_COAP">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_BuM2gPfWEe6gwtrMxoScjw" name="Method" type="_g-gToLaOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_H1_SIffsEe68Gq79QBA0lw" name="base_Operation" association="_H1-rEPfsEe68Gq79QBA0lw">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H1_SIvfsEe68Gq79QBA0lw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rPg2wOnnEe-WF5xRCFzKCw" name="StatusCode" type="_qEsekBIAEe-Pu-YQlZuncw" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_P46mwPfsEe68Gq79QBA0lw" name="SubURL">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_EZ3JgPfsEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceHTTP_Operation1" memberEnd="_EZ6M0PfsEe68Gq79QBA0lw _EZ6M0ffsEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_EZ6M0PfsEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceHTTP" type="_X13jIPfUEe6gwtrMxoScjw" aggregation="composite" association="_EZ3JgPfsEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_EZ3JgPfsEe68Gq79QBA0lw" name="E_ServiceProtocol_HTTP_Operation1" memberEnd="_EZ6M0PfsEe68Gq79QBA0lw _EZ6M0ffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_EZ6M0PfsEe68Gq79QBA0lw" name="extension_ServiceProtocol_HTTP" type="_X13jIPfUEe6gwtrMxoScjw" aggregation="composite" association="_EZ3JgPfsEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_GOSUgPfsEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceMQTT_Operation1" memberEnd="_GOS7kPfsEe68Gq79QBA0lw _GOS7kffsEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GOS7kPfsEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceMQTT" type="_ZIVQkPfUEe6gwtrMxoScjw" aggregation="composite" association="_GOSUgPfsEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_GOSUgPfsEe68Gq79QBA0lw" name="E_ServiceProtocol_MQTT_Operation1" memberEnd="_GOS7kPfsEe68Gq79QBA0lw _GOS7kffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GOS7kPfsEe68Gq79QBA0lw" name="extension_ServiceProtocol_MQTT" type="_ZIVQkPfUEe6gwtrMxoScjw" aggregation="composite" association="_GOSUgPfsEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_H1-rEPfsEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceCOAP_Operation1" memberEnd="_H1_SIPfsEe68Gq79QBA0lw _H1_SIffsEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_H1_SIPfsEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceCOAP" type="_aPjXUPfUEe6gwtrMxoScjw" aggregation="composite" association="_H1-rEPfsEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_H1-rEPfsEe68Gq79QBA0lw" name="E_ServiceProtocol_COAP_Operation1" memberEnd="_H1_SIPfsEe68Gq79QBA0lw _H1_SIffsEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_H1_SIPfsEe68Gq79QBA0lw" name="extension_ServiceProtocol_COAP" type="_aPjXUPfUEe6gwtrMxoScjw" aggregation="composite" association="_H1-rEPfsEe68Gq79QBA0lw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_bH1g0PftEe68Gq79QBA0lw" name="ArrowHeadServiceInterfaceWebsocket">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_bH1g0PftEe68Gq79QBA0lw" name="ServiceIProtocol_Websocket">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_hSDAUPftEe68Gq79QBA0lw" name="Method" type="_g-lzNraOEe6et-4ox6TWyg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_iPkYgPftEe68Gq79QBA0lw" name="SubURL">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -696,8 +708,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_woipMvftEe68Gq79QBA0lw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_woiCIPftEe68Gq79QBA0lw" name="E_ArrowHeadServiceInterfaceWebsocket_Operation1" memberEnd="_woipMPftEe68Gq79QBA0lw _woipMfftEe68Gq79QBA0lw">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_woipMPftEe68Gq79QBA0lw" name="extension_ArrowHeadServiceInterfaceWebsocket" type="_bH1g0PftEe68Gq79QBA0lw" aggregation="composite" association="_woiCIPftEe68Gq79QBA0lw"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_woiCIPftEe68Gq79QBA0lw" name="E_ServiceIProtocol_Websocket_Operation1" memberEnd="_woipMPftEe68Gq79QBA0lw _woipMfftEe68Gq79QBA0lw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_woipMPftEe68Gq79QBA0lw" name="extension_ServiceIProtocol_Websocket" type="_bH1g0PftEe68Gq79QBA0lw" aggregation="composite" association="_woiCIPftEe68Gq79QBA0lw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_oXf0IPyPEe6MDucytuqm6Q" name="FullPort">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_raE0UfyPEe6MDucytuqm6Q" name="base_Port" association="_raENQPyPEe6MDucytuqm6Q">
@@ -738,25 +750,8 @@
         <specification xmi:type="uml:LiteralString" xmi:id="_zlgycBKNEe-2EvZLzkcjBQ"/>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_h4oIQAS0EfC_w72n92hbwA" name="AMQPMetodKind">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3RhtkAS2EfC_w72n92hbwA" name="Open"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4udloAS2EfC_w72n92hbwA" name="Begin"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__ukyYAS2EfC_w72n92hbwA" name="Attach"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A0eDcAS3EfC_w72n92hbwA" name="Flow"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_B7dgsAS3EfC_w72n92hbwA" name="Transfer"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DBNAwAS3EfC_w72n92hbwA" name="Disposition"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EKQ6kAS3EfC_w72n92hbwA" name="Detach"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GC4pEAS3EfC_w72n92hbwA" name="End"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gywm0AS3EfC_w72n92hbwA" name="Close"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_lhfBsFNKEfC54qQdBIk9eA" name="IntracloudDmzNetworkImplementation">
-      <generalization xmi:type="uml:Generalization" xmi:id="_wjldMFNKEfC54qQdBIk9eA" general="_Plc20DRdEe6hdPlp_7DYew"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Hmk3sFNLEfC54qQdBIk9eA" name="DeviceImplementation">
-      <generalization xmi:type="uml:Generalization" xmi:id="_JuwsMFNLEfC54qQdBIk9eA" general="_ErU_gDRFEe6hdPlp_7DYew"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_JiiswFNZEfC54qQdBIk9eA" name="IntracloudNetworkImplementation">
-      <generalization xmi:type="uml:Generalization" xmi:id="_K_6CoFNZEfC54qQdBIk9eA" general="_Plc20DRdEe6hdPlp_7DYew"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_vQ9poKFoEfCXaaY-CNi9hA" name="DeviceImplementation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_EzCrAKFpEfCXaaY-CNi9hA" general="_ErU_gDRFEe6hdPlp_7DYew"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HPL28LaoEe6zC_b0ESqWTw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPgAALaoEe6zC_b0ESqWTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
