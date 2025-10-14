@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_1DLM0G1HEfCxoaNHwLkbaw" name="SmartCityDSL-2">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_1HkkoW1HEfCxoaNHwLkbaw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_1HzOIG1HEfCxoaNHwLkbaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_1IaSIG1HEfCxoaNHwLkbaw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AFPVN_LIB/Arrowhead-5.0.uml#_LdWEYCTQEe-9KvpFZizseA"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_4B5LQG1IEfCzdfr4cbN6HQ">
+      <importedPackage xmi:type="uml:Model" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_LdWEYCTQEe-9KvpFZizseA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_p15KIG1JEfCzdfr4cbN6HQ" name="Microsystems and services">
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xN21JEfCzdfr4cbN6HQ" name="lampLight">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_p15xOG1JEfCzdfr4cbN6HQ" name="on-off">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_p15xOW1JEfCzdfr4cbN6HQ">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xOm1JEfCzdfr4cbN6HQ" name="presenceSensorV1">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_p15xO21JEfCzdfr4cbN6HQ" name="detection">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_p15xPG1JEfCzdfr4cbN6HQ" name="precense">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <defaultValue xmi:type="uml:InstanceValue" xmi:id="_p15xPW1JEfCzdfr4cbN6HQ">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </defaultValue>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_GqRDQKElEfCjoLGrkE7Zrw" name="detection" concurrency="concurrent">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nt76UKElEfCjoLGrkE7Zrw" name="detected" isUnique="false" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xSW1JEfCzdfr4cbN6HQ" name="lampLightHTTP">
+        <generalization xmi:type="uml:Generalization" xmi:id="_p15xSm1JEfCzdfr4cbN6HQ" general="_p15xN21JEfCzdfr4cbN6HQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rbHjoKEfEfCjoLGrkE7Zrw" name="precenseSensorImplV1">
+        <generalization xmi:type="uml:Generalization" xmi:id="_8dvIYKElEfCjoLGrkE7Zrw" general="_1ggQgKElEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xVG1JEfCzdfr4cbN6HQ" name="StreetLight">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xVW1JEfCzdfr4cbN6HQ" name="lampLight" visibility="public" type="_p15xN21JEfCzdfr4cbN6HQ" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xVm1JEfCzdfr4cbN6HQ" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xV21JEfCzdfr4cbN6HQ" name="serviceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xWG1JEfCzdfr4cbN6HQ" name="serviceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xWW1JEfCzdfr4cbN6HQ" name="identify" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xWm1JEfCzdfr4cbN6HQ" name="autohrisatiion" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAEiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15KIW1JEfCzdfr4cbN6HQ" name="ControlerVer1">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xMG1JEfCzdfr4cbN6HQ" name="lampLight" visibility="public" type="_p15xN21JEfCzdfr4cbN6HQ" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xMW1JEfCzdfr4cbN6HQ" name="precenseSensor" visibility="public" type="_p15xOm1JEfCzdfr4cbN6HQ" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xMm1JEfCzdfr4cbN6HQ" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xM21JEfCzdfr4cbN6HQ" name="serviceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xNG1JEfCzdfr4cbN6HQ" name="serviceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xNW1JEfCzdfr4cbN6HQ" name="identify" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xNm1JEfCzdfr4cbN6HQ" name="autohrisatiion" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAEiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_TWXBsKHxEfCTFPa_YbzaSg" name="handover" visibility="public" type="_wPdwcKHwEfCTFPa_YbzaSg" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4Gl0IKCEEfCwhZIV0Y_tfA" name="ControlerVer2">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbMKCEEfCwhZIV0Y_tfA" name="lampLight" visibility="public" type="_p15xN21JEfCzdfr4cbN6HQ" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbMaCEEfCwhZIV0Y_tfA" name="precenseSensor" visibility="public" type="_p15xOm1JEfCzdfr4cbN6HQ" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbMqCEEfCwhZIV0Y_tfA" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbM6CEEfCwhZIV0Y_tfA" name="serviceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbNKCEEfCwhZIV0Y_tfA" name="serviceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbNaCEEfCwhZIV0Y_tfA" name="identify" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4GmbNqCEEfCwhZIV0Y_tfA" name="autohrisatiion" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAEiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_po7HEKE8EfCfk9zI_eoXgw" name="precenseSensorV2" visibility="public" type="_C3dGsKEqEfCjoLGrkE7Zrw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_3byaAKE8EfCfk9zI_eoXgw" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xPm1JEfCzdfr4cbN6HQ" name="ControlerVer1">
+        <generalization xmi:type="uml:Generalization" xmi:id="_zeVJUG4gEfCwTuOZJPUbDA" general="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xQG1JEfCzdfr4cbN6HQ" name="serviceOrchestrationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_81HcECcGEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_Iy9q8CcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xQW1JEfCzdfr4cbN6HQ" name="identifyHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_4XXX4G9TEe-sN-reFm5zLA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_o2558G6_Ee-JReobqA7-4Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xQm1JEfCzdfr4cbN6HQ" name="authorisationTokenHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAFCclEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_8imgMCc8Ee-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xQ21JEfCzdfr4cbN6HQ" name="sysMonitorAMQP" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_InJPICTXEe-9KvpFZizseA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p15xRG1JEfCzdfr4cbN6HQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p15xRW1JEfCzdfr4cbN6HQ" value="*"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_bVZBUCckEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xRm1JEfCzdfr4cbN6HQ" name="serviceDiscoveryHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_QJ_5YCTTEe-9KvpFZizseA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_MdsRoCTREe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xR21JEfCzdfr4cbN6HQ" name="lampLightHTTP" visibility="public" type="_p15xSW1JEfCzdfr4cbN6HQ" aggregation="composite" subsettedProperty="_p15xMG1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xSG1JEfCzdfr4cbN6HQ" name="precenseSensorHTTP" visibility="public" type="_1ggQgKElEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_p15xMW1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_skznIKHxEfCTFPa_YbzaSg" name="handoverHttp" visibility="public" type="_JnMNsKHxEfCTFPa_YbzaSg" aggregation="composite" subsettedProperty="_TWXBsKHxEfCTFPa_YbzaSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xTW1JEfCzdfr4cbN6HQ" name="PrecenseDetectionV1">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xTm1JEfCzdfr4cbN6HQ" name="precenseSensor" visibility="public" type="_p15xOm1JEfCzdfr4cbN6HQ" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xT21JEfCzdfr4cbN6HQ" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xUG1JEfCzdfr4cbN6HQ" name="serviceDiscovery" visibility="protected" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xUW1JEfCzdfr4cbN6HQ" name="serviceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xUm1JEfCzdfr4cbN6HQ" name="identify" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_p15xU21JEfCzdfr4cbN6HQ" name="autohrisatiion" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAEiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xW21JEfCzdfr4cbN6HQ" name="StreetLight">
+        <generalization xmi:type="uml:Generalization" xmi:id="_9yZV0KCDEfCwhZIV0Y_tfA" general="_p15xVG1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_1HZG8G4iEfCwTuOZJPUbDA" name="lampLightHTTP" visibility="public" type="_p15xSW1JEfCzdfr4cbN6HQ" aggregation="composite" subsettedProperty="_p15xMG1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ax2WkG4iEfCwTuOZJPUbDA" name="sysMonitorAMQP" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_InJPICTXEe-9KvpFZizseA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ax29oG4iEfCwTuOZJPUbDA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ax29oW4iEfCwTuOZJPUbDA" value="*"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_bVZBUCckEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_lk4bUG4iEfCwTuOZJPUbDA" name="serviceDiscoveryHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_QJ_5YCTTEe-9KvpFZizseA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_MdsRoCTREe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kJ5rEG4iEfCwTuOZJPUbDA" name="serviceOrchestrationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_81HcECcGEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_Iy9q8CcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kJ7gQG4iEfCwTuOZJPUbDA" name="identifyHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_4XXX4G9TEe-sN-reFm5zLA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_o2558G6_Ee-JReobqA7-4Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kJ8uYG4iEfCwTuOZJPUbDA" name="authorisationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAFCclEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_8imgMCc8Ee-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p15xXW1JEfCzdfr4cbN6HQ" name="PrecenseDetectionV1">
+        <generalization xmi:type="uml:Generalization" xmi:id="_33-qIG4gEfCwTuOZJPUbDA" general="_p15xTW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Y86qsG4hEfCwTuOZJPUbDA" name="servcieDiscoveryHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_QJ_5YCTTEe-9KvpFZizseA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_MdsRoCTREe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_mzeK0G4hEfCwTuOZJPUbDA" name="serviceOrchestrationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_81HcECcGEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_aPgaUCcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_FsuW8G4iEfCwTuOZJPUbDA" name="identifyHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_4XXX4G9TEe-sN-reFm5zLA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_o2558G6_Ee-JReobqA7-4Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_FtJNsG4iEfCwTuOZJPUbDA" name="authorisationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAFCclEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_8imgMCc8Ee-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_bG1IEG4iEfCwTuOZJPUbDA" name="sysMonitorAMQP" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_InJPICTXEe-9KvpFZizseA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bG1IEW4iEfCwTuOZJPUbDA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bG1IEm4iEfCwTuOZJPUbDA" value="*"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_bVZBUCckEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4_KCsG4iEfCwTuOZJPUbDA" name="precenseSensorHTTP" visibility="public" type="_1ggQgKElEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_p15xMW1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nuGtUKCFEfCwhZIV0Y_tfA" name="ControlerVer2">
+        <generalization xmi:type="uml:Generalization" xmi:id="_nuHUYKCFEfCwhZIV0Y_tfA" general="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_rlvtQKCFEfCwhZIV0Y_tfA" general="_4Gl0IKCEEfCwhZIV0Y_tfA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUYaCFEfCwhZIV0Y_tfA" name="serviceOrchestrationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_81HcECcGEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_Iy9q8CcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUYqCFEfCwhZIV0Y_tfA" name="identifyHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_4XXX4G9TEe-sN-reFm5zLA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_o2558G6_Ee-JReobqA7-4Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUY6CFEfCwhZIV0Y_tfA" name="authorisationTokenHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAFCclEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_8imgMCc8Ee-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUZKCFEfCwhZIV0Y_tfA" name="sysMonitorAMQP" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_InJPICTXEe-9KvpFZizseA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nuHUZaCFEfCwhZIV0Y_tfA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nuHUZqCFEfCwhZIV0Y_tfA" value="*"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_bVZBUCckEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUZ6CFEfCwhZIV0Y_tfA" name="serviceDiscoveryHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_QJ_5YCTTEe-9KvpFZizseA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_MdsRoCTREe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUaKCFEfCwhZIV0Y_tfA" name="lampLightHTTP" visibility="public" type="_p15xSW1JEfCzdfr4cbN6HQ" aggregation="composite" subsettedProperty="_p15xMG1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nuHUaaCFEfCwhZIV0Y_tfA" name="precenseSensorHTTP" visibility="public" aggregation="composite" subsettedProperty="_p15xMW1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_7_JQcKE8EfCfk9zI_eoXgw" name="precenseSensorHttpV2" visibility="public" type="_eIqOEKEqEfCjoLGrkE7Zrw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8ocyUKEfEfCjoLGrkE7Zrw" name="PrecenseDetectionV1">
+        <generalization xmi:type="uml:Generalization" xmi:id="_AwV0wKEgEfCjoLGrkE7Zrw" general="_p15xXW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_NPZ9gKEgEfCjoLGrkE7Zrw" name="precenseSensorImpl" visibility="package" type="_rbHjoKEfEfCjoLGrkE7Zrw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f9afUKEhEfCjoLGrkE7Zrw" name="StreetLight">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qg2o4KEhEfCjoLGrkE7Zrw" general="_p15xW21JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_w-uEMKEhEfCjoLGrkE7Zrw" name="lampLightImpl" visibility="public" type="_R8VKMKEhEfCjoLGrkE7Zrw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_R8VKMKEhEfCjoLGrkE7Zrw" name="lampLightImpl">
+        <generalization xmi:type="uml:Generalization" xmi:id="_XWOAAKEhEfCjoLGrkE7Zrw" general="_p15xSW1JEfCzdfr4cbN6HQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1ggQgKElEfCjoLGrkE7Zrw" name="precenseSensorHttpV1">
+        <generalization xmi:type="uml:Generalization" xmi:id="_7cUusKElEfCjoLGrkE7Zrw" general="_p15xOm1JEfCzdfr4cbN6HQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ihXwMKEpEfCjoLGrkE7Zrw" name="PrecenseDetectionV2">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_79VPYKE4EfCjoLGrkE7Zrw" name="precenseSensorV2" visibility="public" type="_C3dGsKEqEfCjoLGrkE7Zrw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ETV4EKE5EfCjoLGrkE7Zrw" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mPu4UKEpEfCjoLGrkE7Zrw" name="PrecenseDetectionV2">
+        <generalization xmi:type="uml:Generalization" xmi:id="_onxtwKEpEfCjoLGrkE7Zrw" general="_ihXwMKEpEfCjoLGrkE7Zrw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_KsH_EKE5EfCjoLGrkE7Zrw" name="precenseSensorHttpV2" visibility="public" type="_eIqOEKEqEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_79VPYKE4EfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tj1_IKEpEfCjoLGrkE7Zrw" name="PrecenseDetectorV2">
+        <generalization xmi:type="uml:Generalization" xmi:id="_1pAIYKEpEfCjoLGrkE7Zrw" general="_mPu4UKEpEfCjoLGrkE7Zrw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_E_sLQKE6EfCfk9zI_eoXgw" name="precenseSensorImplv2" visibility="public" type="_toHlsKEqEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_KsH_EKE5EfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C3dGsKEqEfCjoLGrkE7Zrw" name="presenceSensorV2">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_yoP3sKEqEfCjoLGrkE7Zrw" name="detected" visibility="package">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_6HNjoKEqEfCjoLGrkE7Zrw" name="detected" isUnique="false" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_lTckUKErEfCjoLGrkE7Zrw" name="distance" isUnique="false" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigDecimal"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eIqOEKEqEfCjoLGrkE7Zrw" name="precenseSensorHttpV2" visibility="public">
+        <generalization xmi:type="uml:Generalization" xmi:id="_GuKdEKErEfCjoLGrkE7Zrw" general="_C3dGsKEqEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_toHlsKEqEfCjoLGrkE7Zrw" name="precenseSensorImplV2">
+        <generalization xmi:type="uml:Generalization" xmi:id="_HtqyQKErEfCjoLGrkE7Zrw" general="_eIqOEKEqEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_g2IPAKEsEfCjoLGrkE7Zrw" name="PrecneseDetectionV3">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_8kqR8KE0EfCjoLGrkE7Zrw" name="precenseSensorV3" visibility="public" type="_g2IPAKEsEfCjoLGrkE7Zrw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_R3qVgKE1EfCjoLGrkE7Zrw" name="serviceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_beFdMKE1EfCjoLGrkE7Zrw" name="serviceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_t3YIsKE1EfCjoLGrkE7Zrw" name="identity" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_10LAIKE1EfCjoLGrkE7Zrw" name="authorization" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAEiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_AztP0KE2EfCjoLGrkE7Zrw" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pA_-sKEsEfCjoLGrkE7Zrw" name="PrecenseDetectionV3">
+        <generalization xmi:type="uml:Generalization" xmi:id="_0b5UsKEsEfCjoLGrkE7Zrw" general="_g2IPAKEsEfCjoLGrkE7Zrw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Gg5cIKE2EfCjoLGrkE7Zrw" name="sysMonitorAmqp" visibility="public" aggregation="composite" subsettedProperty="_AztP0KE2EfCjoLGrkE7Zrw">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_InJPICTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_SWn3gKE3EfCjoLGrkE7Zrw" name="precenseSensorMqttV3" visibility="public" type="_YS-FsKEtEfCjoLGrkE7Zrw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uOAPEKEsEfCjoLGrkE7Zrw" name="PrecenseDetectionV3">
+        <generalization xmi:type="uml:Generalization" xmi:id="_zb9hsKEsEfCjoLGrkE7Zrw" general="_pA_-sKEsEfCjoLGrkE7Zrw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kgCbUKE0EfCjoLGrkE7Zrw" name="precenseSensorImplV3" visibility="public" type="_gqMPUKEtEfCjoLGrkE7Zrw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_y7780KE3EfCjoLGrkE7Zrw" name="precenseSensorImplV3" visibility="package" aggregation="composite" subsettedProperty="_Gg5cIKE2EfCjoLGrkE7Zrw">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_VUPHQPQkEe-BW9IdvHP9cA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2imigKEsEfCjoLGrkE7Zrw" name="presenceSensorV3">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_4vw9oKEsEfCjoLGrkE7Zrw" name="detection">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="__YEHUKEsEfCjoLGrkE7Zrw" name="detected" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FHPQoKEtEfCjoLGrkE7Zrw" name="distance" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigDecimal"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_QEclEKEtEfCjoLGrkE7Zrw" name="direction" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigInteger"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_V1ldQKEtEfCjoLGrkE7Zrw" name="speed" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigDecimal"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YS-FsKEtEfCjoLGrkE7Zrw" name="precenseSensorMqttV3">
+        <generalization xmi:type="uml:Generalization" xmi:id="_Z70S0KEtEfCjoLGrkE7Zrw" general="_2imigKEsEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gqMPUKEtEfCjoLGrkE7Zrw" name="precenseSensorImplV3">
+        <generalization xmi:type="uml:Generalization" xmi:id="_jfwuQKEtEfCjoLGrkE7Zrw" general="_YS-FsKEtEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gpxKAKFYEfCRZPJ2X2P5sw" name="ControlerV3">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYIKFYEfCRZPJ2X2P5sw" name="lampLight" visibility="public" type="_p15xN21JEfCzdfr4cbN6HQ" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYIqFYEfCRZPJ2X2P5sw" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYI6FYEfCRZPJ2X2P5sw" name="serviceDiscovery" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_6UnzcCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYJKFYEfCRZPJ2X2P5sw" name="serviceOrchestration" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_e_uoECcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYJaFYEfCRZPJ2X2P5sw" name="identify" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_dE6HsDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYJqFYEfCRZPJ2X2P5sw" name="autohrisatiion" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAEiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_gpyYKKFYEfCRZPJ2X2P5sw" name="sysMonitor" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AIbWYCTXEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_M-vUYKFZEfCRZPJ2X2P5sw" name="precenseSensorV3" visibility="public" type="_2imigKEsEfCjoLGrkE7Zrw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_juYKgKFYEfCRZPJ2X2P5sw" name="ControlerV3">
+        <generalization xmi:type="uml:Generalization" xmi:id="_juYKgaFYEfCRZPJ2X2P5sw" general="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_juYKgqFYEfCRZPJ2X2P5sw" general="_4Gl0IKCEEfCwhZIV0Y_tfA"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_0jl0IKFYEfCRZPJ2X2P5sw" general="_gpxKAKFYEfCRZPJ2X2P5sw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKg6FYEfCRZPJ2X2P5sw" name="serviceOrchestrationHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_81HcECcGEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_Iy9q8CcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKhKFYEfCRZPJ2X2P5sw" name="identifyHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_4XXX4G9TEe-sN-reFm5zLA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_o2558G6_Ee-JReobqA7-4Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKhaFYEfCRZPJ2X2P5sw" name="authorisationTokenHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCAFCclEe-kO5sLBQPK1Q"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_8imgMCc8Ee-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKhqFYEfCRZPJ2X2P5sw" name="sysMonitorAMQP" visibility="public" aggregation="composite">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_InJPICTXEe-9KvpFZizseA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_juYKh6FYEfCRZPJ2X2P5sw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_juYKiKFYEfCRZPJ2X2P5sw" value="*"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_bVZBUCckEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKiaFYEfCRZPJ2X2P5sw" name="serviceDiscoveryHTTP" visibility="public" aggregation="composite" isConjugated="true">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_QJ_5YCTTEe-9KvpFZizseA"/>
+          <subsettedProperty xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_MdsRoCTREe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKiqFYEfCRZPJ2X2P5sw" name="lampLightHTTP" visibility="public" type="_p15xSW1JEfCzdfr4cbN6HQ" aggregation="composite" subsettedProperty="_p15xMG1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKi6FYEfCRZPJ2X2P5sw" name="precenseSensorHTTP" visibility="public" aggregation="composite" subsettedProperty="_p15xMW1JEfCzdfr4cbN6HQ" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_juYKjKFYEfCRZPJ2X2P5sw" name="precenseSensorHttpV2" visibility="public" type="_eIqOEKEqEfCjoLGrkE7Zrw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ebsTcKFZEfCRZPJ2X2P5sw" name="precenseSensorMqttV3" visibility="protected" type="_YS-FsKEtEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_M-vUYKFZEfCRZPJ2X2P5sw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_22rREKFYEfCRZPJ2X2P5sw" name="ControlerVer2">
+        <generalization xmi:type="uml:Generalization" xmi:id="_EbKJwKFZEfCRZPJ2X2P5sw" general="_nuGtUKCFEfCwhZIV0Y_tfA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_5dVxUKFYEfCRZPJ2X2P5sw" name="precenseSensorImplV2" visibility="public" type="_toHlsKEqEfCjoLGrkE7Zrw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GHGHIKFZEfCRZPJ2X2P5sw" name="ControlerVer3">
+        <generalization xmi:type="uml:Generalization" xmi:id="_-VU-gKFZEfCRZPJ2X2P5sw" general="_juYKgKFYEfCRZPJ2X2P5sw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_-3AIMKFZEfCRZPJ2X2P5sw" name="precenseSensorImplV3" visibility="public" type="_gqMPUKEtEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_ebsTcKFZEfCRZPJ2X2P5sw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wxilMKFgEfCRZPJ2X2P5sw" name="IntracloudDMZNetwork">
+        <generalization xmi:type="uml:Generalization" xmi:id="_kfFfoKFhEfCRZPJ2X2P5sw" general="_PWEGMKFbEfCRZPJ2X2P5sw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_2g4toKFgEfCRZPJ2X2P5sw" name="LamPoleDmzIntracloudNetwork" visibility="public" type="_nBMewKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_K2Wx8KFhEfCRZPJ2X2P5sw" name="LampPoleIntercloudNetwork" visibility="public" type="_2SI5QKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wPdwcKHwEfCTFPa_YbzaSg" name="handover">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_xrS1QKHwEfCTFPa_YbzaSg" name="detection">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_DMgpQKHxEfCTFPa_YbzaSg" name="detectionID" direction="out" effect="update">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JnMNsKHxEfCTFPa_YbzaSg" name="handoverHttp">
+        <generalization xmi:type="uml:Generalization" xmi:id="_Lyj5EKHxEfCTFPa_YbzaSg" general="_wPdwcKHwEfCTFPa_YbzaSg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_QxfxoKKIEfCTFPa_YbzaSg" name="pictur"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eSLPAKHxEfCTFPa_YbzaSg" name="handoverImpl" visibility="package">
+        <generalization xmi:type="uml:Generalization" xmi:id="_iUcKkKHxEfCTFPa_YbzaSg" general="_JnMNsKHxEfCTFPa_YbzaSg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lYfxcKHxEfCTFPa_YbzaSg" name="ControlerVer1" visibility="package">
+        <generalization xmi:type="uml:Generalization" xmi:id="_p252cKHxEfCTFPa_YbzaSg" general="_p15xPm1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_3tyGsKHxEfCTFPa_YbzaSg" name="precenseSensor" visibility="public" type="_rbHjoKEfEfCjoLGrkE7Zrw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_CWi1IKHyEfCTFPa_YbzaSg" name="lampLight" visibility="public" type="_R8VKMKEhEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_p15xR21JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_L5M3IKHyEfCTFPa_YbzaSg" name="handoverImpl" visibility="public" type="_eSLPAKHxEfCTFPa_YbzaSg" aggregation="composite" subsettedProperty="_skznIKHxEfCTFPa_YbzaSg"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nTawkKHyEfCTFPa_YbzaSg" name="sysMonitor" visibility="public" aggregation="composite" subsettedProperty="_p15xQ21JEfCzdfr4cbN6HQ">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_VUPHQPQkEe-BW9IdvHP9cA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9w7fcKHyEfCTFPa_YbzaSg" name="StreetLight">
+        <generalization xmi:type="uml:Generalization" xmi:id="__xQYcKHyEfCTFPa_YbzaSg" general="_p15xW21JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Mv0goKHzEfCTFPa_YbzaSg" name="lampLightImpl" visibility="public" type="_FeAf4KHzEfCTFPa_YbzaSg" aggregation="composite" subsettedProperty="_1HZG8G4iEfCwTuOZJPUbDA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_YTcU0KHzEfCTFPa_YbzaSg" name="sysMonitor" visibility="public" aggregation="composite" subsettedProperty="_ax2WkG4iEfCwTuOZJPUbDA">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_VUPHQPQkEe-BW9IdvHP9cA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FeAf4KHzEfCTFPa_YbzaSg" name="lampLightImpl" visibility="package">
+        <generalization xmi:type="uml:Generalization" xmi:id="_I1k4oKHzEfCTFPa_YbzaSg" general="_p15xSW1JEfCzdfr4cbN6HQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_zG7q8KB-EfCwhZIV0Y_tfA" name="UseCase">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_JFiQQKB_EfCwhZIV0Y_tfA" name="Actor22"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_jzEs0KEiEfCjoLGrkE7Zrw" name="DetectorGen1"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_pPNlYKEiEfCjoLGrkE7Zrw" name="DetectoreGen2"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_tIiAUKEiEfCjoLGrkE7Zrw" name="DetectorGen3"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_ImETgKEjEfCjoLGrkE7Zrw" name="ControlerGen1"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_MAzVAKEjEfCjoLGrkE7Zrw" name="ControlerGen2"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_OsnbAKEjEfCjoLGrkE7Zrw" name="ControlerGen3"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cKBbUKEjEfCjoLGrkE7Zrw" name="Handover" memberEnd="_cKfVYKEjEfCjoLGrkE7Zrw _cKnRMKEjEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cKYnsKEjEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cKcSEKEjEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cKfVYKEjEfCjoLGrkE7Zrw" name="controlergen2" type="_MAzVAKEjEfCjoLGrkE7Zrw" association="_cKBbUKEjEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cKnRMKEjEfCjoLGrkE7Zrw" name="controlergen1" type="_ImETgKEjEfCjoLGrkE7Zrw" association="_cKBbUKEjEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gphFcKEjEfCjoLGrkE7Zrw" name="Handover" memberEnd="_gpnMEaEjEfCjoLGrkE7Zrw _gppBQKEjEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gpmlAKEjEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gpnMEKEjEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_gpnMEaEjEfCjoLGrkE7Zrw" name="controlergen3" type="_OsnbAKEjEfCjoLGrkE7Zrw" association="_gphFcKEjEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_gppBQKEjEfCjoLGrkE7Zrw" name="controlergen2" type="_MAzVAKEjEfCjoLGrkE7Zrw" association="_gphFcKEjEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_m9wDoKEjEfCjoLGrkE7Zrw" name="Lamp"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qbdgoKEjEfCjoLGrkE7Zrw" name="LampOnOff" memberEnd="_qb4XYKEjEfCjoLGrkE7Zrw _qcA6QKEjEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qby30KEjEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qb2iMKEjEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qb4XYKEjEfCjoLGrkE7Zrw" name="lamp" type="_m9wDoKEjEfCjoLGrkE7Zrw" association="_qbdgoKEjEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qcA6QKEjEfCjoLGrkE7Zrw" name="controlergen1" type="_ImETgKEjEfCjoLGrkE7Zrw" association="_qbdgoKEjEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_s93zAKEjEfCjoLGrkE7Zrw" name="Lamp"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_yK__MKEjEfCjoLGrkE7Zrw" name="Lamp"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OMvLoKEkEfCjoLGrkE7Zrw" name="Detection" memberEnd="_ONeygKEkEfCjoLGrkE7Zrw _ONmHQKEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ONYE0KEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ONcWQKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ONeygKEkEfCjoLGrkE7Zrw" name="detectorgen1" type="_jzEs0KEiEfCjoLGrkE7Zrw" association="_OMvLoKEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ONmHQKEkEfCjoLGrkE7Zrw" name="controlergen1" type="_ImETgKEjEfCjoLGrkE7Zrw" association="_OMvLoKEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R5WnUKEkEfCjoLGrkE7Zrw" name="Detection" memberEnd="_R5aRsKEkEfCjoLGrkE7Zrw _R5bf0KEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R5ZDkKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R5ZqoKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_R5aRsKEkEfCjoLGrkE7Zrw" name="detectoregen2" type="_pPNlYKEiEfCjoLGrkE7Zrw" association="_R5WnUKEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_R5bf0KEkEfCjoLGrkE7Zrw" name="controlergen2" type="_MAzVAKEjEfCjoLGrkE7Zrw" association="_R5WnUKEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_TkRRAKEkEfCjoLGrkE7Zrw" name="Detection" memberEnd="_TkvyIKEkEfCjoLGrkE7Zrw _Tk3t8KEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TkpEcKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tksu0KEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_TkvyIKEkEfCjoLGrkE7Zrw" name="detectorgen3" type="_tIiAUKEiEfCjoLGrkE7Zrw" association="_TkRRAKEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Tk3t8KEkEfCjoLGrkE7Zrw" name="controlergen3" type="_OsnbAKEjEfCjoLGrkE7Zrw" association="_TkRRAKEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Vq0t0KEkEfCjoLGrkE7Zrw" name="LamponOff" memberEnd="_Vq6NYKEkEfCjoLGrkE7Zrw _Vq60cKEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vq4_QKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Vq5mUKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Vq6NYKEkEfCjoLGrkE7Zrw" name="controlergen2" type="_MAzVAKEjEfCjoLGrkE7Zrw" association="_Vq0t0KEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Vq60cKEkEfCjoLGrkE7Zrw" name="lamp" type="_s93zAKEjEfCjoLGrkE7Zrw" association="_Vq0t0KEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZdV9MKEkEfCjoLGrkE7Zrw" name="LampOnOff" memberEnd="_Zdz3QKEkEfCjoLGrkE7Zrw _Zd8aIKEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZdtwoKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZdxbAKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Zdz3QKEkEfCjoLGrkE7Zrw" name="controlergen3" type="_OsnbAKEjEfCjoLGrkE7Zrw" association="_ZdV9MKEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Zd8aIKEkEfCjoLGrkE7Zrw" name="lamp" type="_yK__MKEjEfCjoLGrkE7Zrw" association="_ZdV9MKEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_h1BZ0KEkEfCjoLGrkE7Zrw" name="Detection" memberEnd="_h1FrQaEkEfCjoLGrkE7Zrw _h1G5YKEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h1FEMKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h1FrQKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_h1FrQaEkEfCjoLGrkE7Zrw" name="actor22" type="_JFiQQKB_EfCwhZIV0Y_tfA" association="_h1BZ0KEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_h1G5YKEkEfCjoLGrkE7Zrw" name="detectorgen1" type="_jzEs0KEiEfCjoLGrkE7Zrw" association="_h1BZ0KEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_meam0KEkEfCjoLGrkE7Zrw" name="Detection" memberEnd="_me4g4KEkEfCjoLGrkE7Zrw _mfBq0KEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_meyaQKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_me2EoKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_me4g4KEkEfCjoLGrkE7Zrw" name="actor22" type="_JFiQQKB_EfCwhZIV0Y_tfA" association="_meam0KEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mfBq0KEkEfCjoLGrkE7Zrw" name="detectoregen2" type="_pPNlYKEiEfCjoLGrkE7Zrw" association="_meam0KEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oW_SAKEkEfCjoLGrkE7Zrw" name="Detection" memberEnd="_oXEKgaEkEfCjoLGrkE7Zrw _oXExkKEkEfCjoLGrkE7Zrw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oXDjcKEkEfCjoLGrkE7Zrw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oXEKgKEkEfCjoLGrkE7Zrw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oXEKgaEkEfCjoLGrkE7Zrw" name="actor22" type="_JFiQQKB_EfCwhZIV0Y_tfA" association="_oW_SAKEkEfCjoLGrkE7Zrw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oXExkKEkEfCjoLGrkE7Zrw" name="detectorgen3" type="_tIiAUKEiEfCjoLGrkE7Zrw" association="_oW_SAKEkEfCjoLGrkE7Zrw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_lZ-KsKCJEfC8YPhuLvNlqw" name="CityBlockGen1">
+      <packagedElement xmi:type="uml:Class" xmi:id="_YahxYKCMEfC8YPhuLvNlqw" name="CityBlockGen1">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_pzqcMKj3EfCLnoKuDBHI9g"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wdiecKCMEfC8YPhuLvNlqw" name="ServiceRegistrty">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_30sNUCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wdolEKCMEfC8YPhuLvNlqw" name="ServiceOrchestration">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_AQzcoCcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wdpzMKCMEfC8YPhuLvNlqw" name="Authentication">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_TzZgEDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wdqaRKCMEfC8YPhuLvNlqw" name="GatekeeperX">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_2jmY4CdBEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wdrBUKCMEfC8YPhuLvNlqw" name="GateTunnelY">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_csJBkT0MEe-UlLZofXFl5A"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_wdrBUaCMEfC8YPhuLvNlqw" name="globalServiceDiscovery" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gx0dYKCVEfC8YPhuLvNlqw" name="ConsumerAuthorization">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_CbCnJiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rAu_AKFyEfCQVIlX6lCodg" name="SL-1" type="_p15xVG1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_C7w0wKFzEfCQVIlX6lCodg" name="C-1" type="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_c-uAUKFzEfCQVIlX6lCodg" name="PS-1" type="_p15xTW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Zqdk0KF0EfCQVIlX6lCodg" name="SL-2" type="_p15xVG1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Zq7e4KF0EfCQVIlX6lCodg" name="C-2" type="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Zq_wUKF0EfCQVIlX6lCodg" name="PS-2" type="_p15xTW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4MyTUKj2EfCLnoKuDBHI9g" name="CopyOf_SL-2_19" type="_p15xVG1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4M_usKj2EfCLnoKuDBHI9g" name="CopyOf_PS-2_19" type="_p15xTW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4NFOQKj2EfCLnoKuDBHI9g" name="CopyOf_C-2_19" type="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_wVF_IKFzEfCQVIlX6lCodg" name="Connector12">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_wVirEKFzEfCQVIlX6lCodg" partWithPort="_rAu_AKFyEfCQVIlX6lCodg" role="_p15xVW1JEfCzdfr4cbN6HQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_wVluYKFzEfCQVIlX6lCodg" partWithPort="_C7w0wKFzEfCQVIlX6lCodg" role="_p15xMG1JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_03mhAKFzEfCQVIlX6lCodg" name="Connector13">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_03_ikKFzEfCQVIlX6lCodg" partWithPort="_c-uAUKFzEfCQVIlX6lCodg" role="_p15xTm1JEfCzdfr4cbN6HQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_04BXwKFzEfCQVIlX6lCodg" partWithPort="_C7w0wKFzEfCQVIlX6lCodg" role="_p15xMW1JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_vDQR4KF1EfCQVIlX6lCodg" name="Connector17">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vDx2UKF1EfCQVIlX6lCodg" partWithPort="_Zq7e4KF0EfCQVIlX6lCodg" role="_p15xMG1JEfCzdfr4cbN6HQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vD05oKF1EfCQVIlX6lCodg" partWithPort="_Zqdk0KF0EfCQVIlX6lCodg" role="_p15xVW1JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_xLeioKF1EfCQVIlX6lCodg" name="Connector18">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xL71oKF1EfCQVIlX6lCodg" partWithPort="_Zq7e4KF0EfCQVIlX6lCodg" role="_p15xMW1JEfCzdfr4cbN6HQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xL-R4KF1EfCQVIlX6lCodg" partWithPort="_Zq_wUKF0EfCQVIlX6lCodg" role="_p15xTm1JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_6imrYKJ4EfCTFPa_YbzaSg" name="Connector19">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_6jDXUKJ4EfCTFPa_YbzaSg" partWithPort="_C7w0wKFzEfCQVIlX6lCodg" role="_TWXBsKHxEfCTFPa_YbzaSg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_6jHBsKJ4EfCTFPa_YbzaSg" partWithPort="_Zq7e4KF0EfCQVIlX6lCodg" role="_TWXBsKHxEfCTFPa_YbzaSg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_FsLA0KJ5EfCTFPa_YbzaSg" name="Connector20">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_FstMUKJ5EfCTFPa_YbzaSg" partWithPort="_wdiecKCMEfC8YPhuLvNlqw">
+            <role xmi:type="uml:Port" href="../EclipseArrowhead-5.0/Arrowhead-5.0.uml#_MdsRoCTREe-9KvpFZizseA"/>
+          </end>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_FsxdwKJ5EfCTFPa_YbzaSg" partWithPort="_rAu_AKFyEfCQVIlX6lCodg" role="_p15xV21JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2_o8YKHzEfCTFPa_YbzaSg" name="CityBlockGen1">
+        <generalization xmi:type="uml:Generalization" xmi:id="__guMoKHzEfCTFPa_YbzaSg" general="_YahxYKCMEfC8YPhuLvNlqw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_GAsVcKFfEfCRZPJ2X2P5sw" name="Devices and Network">
+      <packagedElement xmi:type="uml:Class" xmi:id="_PWEGMKFbEfCRZPJ2X2P5sw" name="LampPole">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_47lLQKFcEfCRZPJ2X2P5sw" name="IntracloudNetwork" visibility="public" type="_ixHwsKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bRmEEKFbEfCRZPJ2X2P5sw" name="LampPole">
+        <generalization xmi:type="uml:Generalization" xmi:id="_vIxp4KFbEfCRZPJ2X2P5sw" general="_PWEGMKFbEfCRZPJ2X2P5sw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_YOdQ8KFgEfCRZPJ2X2P5sw" name="IntracloudNetwork" visibility="public" type="_nBMewKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xpD1UKFbEfCRZPJ2X2P5sw" name="LampPoleIntercloudNetwork"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2SI5QKFbEfCRZPJ2X2P5sw" name="LampPoleIntercloudNetwork">
+        <generalization xmi:type="uml:Generalization" xmi:id="_6Q504KFbEfCRZPJ2X2P5sw" general="_xpD1UKFbEfCRZPJ2X2P5sw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ixHwsKFbEfCRZPJ2X2P5sw" name="LampPoleIntracloudNetwork"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nBMewKFbEfCRZPJ2X2P5sw" name="LampPoleIntracloudNetwork">
+        <generalization xmi:type="uml:Generalization" xmi:id="_v4sq8KFbEfCRZPJ2X2P5sw" general="_ixHwsKFbEfCRZPJ2X2P5sw"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1Eh3sG1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1EqakG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Arrowhead_Profile/ArrowheadProfile_v5.0.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1HUtAG1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HYXYG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1Hco0G1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HgTMG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1Hg6QG1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HhhUG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1HhhUW1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HiIYG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1HiIYW1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HiIYm1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1HiIY21HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HiIZG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1HiIZW1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HiIZm1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1HjWgG1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HjWgW1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1Hj9kG1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1Hj9kW1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1Hj9km1HEfCxoaNHwLkbaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1HkkoG1HEfCxoaNHwLkbaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <ArrowheadDSL:SysD xmi:id="_p2EwUG1JEfCzdfr4cbN6HQ" base_Class="_p15KIW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SD xmi:id="_AAdH0G1KEfCzdfr4cbN6HQ" base_Class="_p15xOm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SD xmi:id="_CnnXUG1KEfCzdfr4cbN6HQ" base_Class="_p15xN21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:IDD xmi:id="_HP_QoG1KEfCzdfr4cbN6HQ" base_Class="_p15xSW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SysD xmi:id="_S3hUcG1KEfCzdfr4cbN6HQ" base_Class="_p15xVG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SysDD xmi:id="_V9u3cG1KEfCzdfr4cbN6HQ" base_Class="_p15xW21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SysD xmi:id="_Z5Gg0G1KEfCzdfr4cbN6HQ" base_Class="_p15xTW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SysDD xmi:id="_bumC0G1KEfCzdfr4cbN6HQ" base_Class="_p15xXW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:SysDD xmi:id="_hezt8G1KEfCzdfr4cbN6HQ" base_Class="_p15xPm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_-z6o4G4dEfCwTuOZJPUbDA" base_Port="_p15xNW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_AHsk8G4eEfCwTuOZJPUbDA" base_Port="_p15xNm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_CsEmMG4eEfCwTuOZJPUbDA" base_Port="_p15xNG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_HJwScG4eEfCwTuOZJPUbDA" base_Port="_p15xM21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_S324UG4eEfCwTuOZJPUbDA" base_Port="_p15xMG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_UHgiUG4eEfCwTuOZJPUbDA" base_Port="_p15xMW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_VatPkG4eEfCwTuOZJPUbDA" base_Port="_p15xMm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_2xz-MG4eEfCwTuOZJPUbDA" base_Port="_p15xTm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_3xHfEG4eEfCwTuOZJPUbDA" base_Port="_p15xT21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_4-cN0G4eEfCwTuOZJPUbDA" base_Port="_p15xUG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_6GAS0G4eEfCwTuOZJPUbDA" base_Port="_p15xUW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_7wMjwG4eEfCwTuOZJPUbDA" base_Port="_p15xUm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_SQcdkG4fEfCwTuOZJPUbDA" base_Port="_p15xVW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_TThEIG4fEfCwTuOZJPUbDA" base_Port="_p15xVm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_UePK0G4fEfCwTuOZJPUbDA" base_Port="_p15xV21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_VgWvIG4fEfCwTuOZJPUbDA" base_Port="_p15xWG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_Wkhh4G4fEfCwTuOZJPUbDA" base_Port="_p15xWW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_X4gSQG4fEfCwTuOZJPUbDA" base_Port="_p15xWm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_lLvC4G4fEfCwTuOZJPUbDA" base_Port="_p15xU21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_-jRdcG4gEfCwTuOZJPUbDA" base_Port="_p15xQG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="__7ZG8G4gEfCwTuOZJPUbDA" base_Port="_p15xQW1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_BCOMIG4hEfCwTuOZJPUbDA" base_Port="_p15xQm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_CSdE8G4hEfCwTuOZJPUbDA" base_Port="_p15xQ21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_EgZjMG4hEfCwTuOZJPUbDA" base_Port="_p15xRm1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_FwZygG4hEfCwTuOZJPUbDA" base_Port="_p15xR21JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_HBEJIG4hEfCwTuOZJPUbDA" base_Port="_p15xSG1JEfCzdfr4cbN6HQ"/>
+  <ArrowheadDSL:FullPort xmi:id="_Y96wQG4hEfCwTuOZJPUbDA" base_Port="_Y86qsG4hEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_mz4agG4hEfCwTuOZJPUbDA" base_Port="_mzeK0G4hEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_HHIfcG4iEfCwTuOZJPUbDA" base_Port="_FsuW8G4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_Ij6mgG4iEfCwTuOZJPUbDA" base_Port="_FtJNsG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_cgitAG4iEfCwTuOZJPUbDA" base_Port="_bG1IEG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_ebZ3MG4iEfCwTuOZJPUbDA" base_Port="_ax2WkG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_nAihAG4iEfCwTuOZJPUbDA" base_Port="_kJ5rEG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_n_juAG4iEfCwTuOZJPUbDA" base_Port="_kJ7gQG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_pIMxEG4iEfCwTuOZJPUbDA" base_Port="_kJ8uYG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_qmPcYG4iEfCwTuOZJPUbDA" base_Port="_lk4bUG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_2KmQYG4iEfCwTuOZJPUbDA" base_Port="_1HZG8G4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:FullPort xmi:id="_6XfuoG4iEfCwTuOZJPUbDA" base_Port="_4_KCsG4iEfCwTuOZJPUbDA"/>
+  <ArrowheadDSL:SysD xmi:id="_60AcoKCEEfCwhZIV0Y_tfA" base_Class="_4Gl0IKCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:SysDD xmi:id="_p9ShsKCFEfCwhZIV0Y_tfA" base_Class="_nuGtUKCFEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_BqVwYKCHEfCwhZIV0Y_tfA" base_Port="_4GmbMKCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_GSx7IKCHEfCwhZIV0Y_tfA" base_Port="_4GmbMaCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_Jgks0KCHEfCwhZIV0Y_tfA" base_Port="_4GmbMqCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_LHjRsKCHEfCwhZIV0Y_tfA" base_Port="_4GmbM6CEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_MPRHsKCHEfCwhZIV0Y_tfA" base_Port="_4GmbNKCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_NVIjkKCHEfCwhZIV0Y_tfA" base_Port="_4GmbNaCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:FullPort xmi:id="_O0ju8KCHEfCwhZIV0Y_tfA" base_Port="_4GmbNqCEEfCwhZIV0Y_tfA"/>
+  <ArrowheadDSL:LocalCloudDesign xmi:id="_YaulsKCMEfC8YPhuLvNlqw" base_Class="_YahxYKCMEfC8YPhuLvNlqw" LC_Name="CityBlockGen1"/>
+  <ArrowheadDSL:IDD_Implementation xmi:id="_rbuAkKEfEfCjoLGrkE7Zrw" base_Class="_rbHjoKEfEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_8pHgsKEfEfCjoLGrkE7Zrw" base_Class="_8ocyUKEfEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_NQOc4KEgEfCjoLGrkE7Zrw" base_Port="_NPZ9gKEgEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:IDD_Implementation xmi:id="_R9KQoKEhEfCjoLGrkE7Zrw" base_Class="_R8VKMKEhEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_f9xrsKEhEfCjoLGrkE7Zrw" base_Class="_f9afUKEhEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_w_s7oKEhEfCjoLGrkE7Zrw" base_Port="_w-uEMKEhEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:IDD xmi:id="_1gykYKElEfCjoLGrkE7Zrw" base_Class="_1ggQgKElEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:SysD xmi:id="_ihmZsKEpEfCjoLGrkE7Zrw" base_Class="_ihXwMKEpEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:SysDD xmi:id="_mQlM4KEpEfCjoLGrkE7Zrw" base_Class="_mPu4UKEpEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_tklmAKEpEfCjoLGrkE7Zrw" base_Class="_tj1_IKEpEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:SD xmi:id="_C4CVgKEqEfCjoLGrkE7Zrw" base_Class="_C3dGsKEqEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:IDD xmi:id="_eJfUgKEqEfCjoLGrkE7Zrw" base_Class="_eIqOEKEqEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:IDD_Implementation xmi:id="_tojqkKEqEfCjoLGrkE7Zrw" base_Class="_toHlsKEqEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:SysD xmi:id="_g2NukKEsEfCjoLGrkE7Zrw" base_Class="_g2IPAKEsEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:SysDD xmi:id="_pBd4wKEsEfCjoLGrkE7Zrw" base_Class="_pA_-sKEsEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_uOjosKEsEfCjoLGrkE7Zrw" base_Class="_uOAPEKEsEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:SD xmi:id="_2jKjMKEsEfCjoLGrkE7Zrw" base_Class="_2imigKEsEfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:IDD xmi:id="_YTRAoKEtEfCjoLGrkE7Zrw" base_Class="_YS-FsKEtEfCjoLGrkE7Zrw" Protocol="mqtt"/>
+  <ArrowheadDSL:IDD_Implementation xmi:id="_gqua0KEtEfCjoLGrkE7Zrw" base_Class="_gqMPUKEtEfCjoLGrkE7Zrw" Protocol="mqtt"/>
+  <ArrowheadDSL:FullPort xmi:id="_kgvl8KE0EfCjoLGrkE7Zrw" base_Port="_kgCbUKE0EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_8mNxIKE0EfCjoLGrkE7Zrw" base_Port="_8kqR8KE0EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_R4kUcKE1EfCjoLGrkE7Zrw" base_Port="_R3qVgKE1EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_beyAwKE1EfCjoLGrkE7Zrw" base_Port="_beFdMKE1EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_t4IWoKE1EfCjoLGrkE7Zrw" base_Port="_t3YIsKE1EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_107OEKE1EfCjoLGrkE7Zrw" base_Port="_10LAIKE1EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_A0bBgKE2EfCjoLGrkE7Zrw" base_Port="_AztP0KE2EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_GhKh4KE2EfCjoLGrkE7Zrw" base_Port="_Gg5cIKE2EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_SXYsgKE3EfCjoLGrkE7Zrw" base_Port="_SWn3gKE3EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_y8YowKE3EfCjoLGrkE7Zrw" base_Port="_y7780KE3EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_79eZUKE4EfCjoLGrkE7Zrw" base_Port="_79VPYKE4EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_ETm90KE5EfCjoLGrkE7Zrw" base_Port="_ETV4EKE5EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_KsaS8KE5EfCjoLGrkE7Zrw" base_Port="_KsH_EKE5EfCjoLGrkE7Zrw"/>
+  <ArrowheadDSL:FullPort xmi:id="_FBDdMKE6EfCfk9zI_eoXgw" base_Port="_E_sLQKE6EfCfk9zI_eoXgw"/>
+  <ArrowheadDSL:FullPort xmi:id="_ppqG4KE8EfCfk9zI_eoXgw" base_Port="_po7HEKE8EfCfk9zI_eoXgw"/>
+  <ArrowheadDSL:FullPort xmi:id="_3cKNcKE8EfCfk9zI_eoXgw" base_Port="_3byaAKE8EfCfk9zI_eoXgw"/>
+  <ArrowheadDSL:FullPort xmi:id="_7_43UKE8EfCfk9zI_eoXgw" base_Port="_7_JQcKE8EfCfk9zI_eoXgw"/>
+  <ArrowheadDSL:SysD xmi:id="_no6GYKFYEfCRZPJ2X2P5sw" base_Class="_gpxKAKFYEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:SysDD xmi:id="_q559EKFYEfCRZPJ2X2P5sw" base_Class="_juYKgKFYEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_23fwcKFYEfCRZPJ2X2P5sw" base_Class="_22rREKFYEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_5d380KFYEfCRZPJ2X2P5sw" base_Port="_5dVxUKFYEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_GHkBMKFZEfCRZPJ2X2P5sw" base_Class="_GHGHIKFZEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_M_UjMKFZEfCRZPJ2X2P5sw" base_Port="_M-vUYKFZEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_eb5HwKFZEfCRZPJ2X2P5sw" base_Port="_ebsTcKFZEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_-3PYwKFZEfCRZPJ2X2P5sw" base_Port="_-3AIMKFZEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:DeviceDesign xmi:id="_PWT90KFbEfCRZPJ2X2P5sw" base_Class="_PWEGMKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:DeviceDesignDescription xmi:id="_bSeN0KFbEfCRZPJ2X2P5sw" base_Class="_bRmEEKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:IntracloudNetworkDesign xmi:id="_ixnf8KFbEfCRZPJ2X2P5sw" base_Class="_ixHwsKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:IntracloudNetworkDesignDescription xmi:id="_nBn8kKFbEfCRZPJ2X2P5sw" base_Class="_nBMewKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:IntercloudNetworkDesign xmi:id="_xpbowKFbEfCRZPJ2X2P5sw" base_Class="_xpD1UKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:IntercloudNetworkDesignDescription xmi:id="_2ShTwKFbEfCRZPJ2X2P5sw" base_Class="_2SI5QKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_48GIoKFcEfCRZPJ2X2P5sw" base_Port="_47lLQKFcEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_YPLpsKFgEfCRZPJ2X2P5sw" base_Port="_YOdQ8KFgEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:IntracloudNetworkDesignDescription xmi:id="_wyHM8KFgEfCRZPJ2X2P5sw" base_Class="_wxilMKFgEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_2htNAKFgEfCRZPJ2X2P5sw" base_Port="_2g4toKFgEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:FullPort xmi:id="_K3JcIKFhEfCRZPJ2X2P5sw" base_Port="_K2Wx8KFhEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:SD xmi:id="_wQz0QKHwEfCTFPa_YbzaSg" base_Class="_wPdwcKHwEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:IDD xmi:id="_JnnrgKHxEfCTFPa_YbzaSg" base_Class="_JnMNsKHxEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_TXFacKHxEfCTFPa_YbzaSg" base_Port="_TWXBsKHxEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:IDD_Implementation xmi:id="_eSdi4KHxEfCTFPa_YbzaSg" base_Class="_eSLPAKHxEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_lZHcgKHxEfCTFPa_YbzaSg" base_Class="_lYfxcKHxEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_slNPwKHxEfCTFPa_YbzaSg" base_Port="_skznIKHxEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_3uIE8KHxEfCTFPa_YbzaSg" base_Port="_3tyGsKHxEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_CWyswKHyEfCTFPa_YbzaSg" base_Port="_CWi1IKHyEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_L5d84KHyEfCTFPa_YbzaSg" base_Port="_L5M3IKHyEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_nTu5oKHyEfCTFPa_YbzaSg" base_Port="_nTawkKHyEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:System_Implementation xmi:id="_9xWWMKHyEfCTFPa_YbzaSg" base_Class="_9w7fcKHyEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:IDD_Implementation xmi:id="_Fe5QsKHzEfCTFPa_YbzaSg" base_Class="_FeAf4KHzEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_MwBU8KHzEfCTFPa_YbzaSg" base_Port="_Mv0goKHzEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:FullPort xmi:id="_YT6O4KHzEfCTFPa_YbzaSg" base_Port="_YTcU0KHzEfCTFPa_YbzaSg"/>
+  <ArrowheadDSL:LocalcloudDesignDescription xmi:id="_2_7QQKHzEfCTFPa_YbzaSg" base_Class="_2_o8YKHzEfCTFPa_YbzaSg" LC_Name="CityBlockGen1"/>
+</xmi:XMI>
