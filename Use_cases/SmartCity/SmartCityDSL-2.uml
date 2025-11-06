@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
-  <uml:Model xmi:id="_1DLM0G1HEfCxoaNHwLkbaw" name="SmartCityDSL-2">
+  <uml:Model xmi:id="_1DLM0G1HEfCxoaNHwLkbaw" name="SmartCityDSL-2.1">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SxczcLgOEfCLX4uJPDmNBw">
+      <body>Lamp pole gen 1</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_e-qXMLgOEfCLX4uJPDmNBw">
+      <body>Lamp pole Gen 2</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_jUkAcLgOEfCLX4uJPDmNBw">
+      <body>Lamp pole Gen 3</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_1HkkoW1HEfCxoaNHwLkbaw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -389,9 +398,9 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_-VU-gKFZEfCRZPJ2X2P5sw" general="_juYKgKFYEfCRZPJ2X2P5sw"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_-3AIMKFZEfCRZPJ2X2P5sw" name="precenseSensorImplV3" visibility="public" type="_gqMPUKEtEfCjoLGrkE7Zrw" aggregation="composite" subsettedProperty="_ebsTcKFZEfCRZPJ2X2P5sw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wxilMKFgEfCRZPJ2X2P5sw" name="IntracloudDMZNetwork">
+      <packagedElement xmi:type="uml:Class" xmi:id="_wxilMKFgEfCRZPJ2X2P5sw" name="IntracloudDMZNetwork" visibility="package">
         <generalization xmi:type="uml:Generalization" xmi:id="_kfFfoKFhEfCRZPJ2X2P5sw" general="_PWEGMKFbEfCRZPJ2X2P5sw"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_2g4toKFgEfCRZPJ2X2P5sw" name="LamPoleDmzIntracloudNetwork" visibility="public" type="_nBMewKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_2g4toKFgEfCRZPJ2X2P5sw" name="LamPoleDmzIntracloudNetwork" visibility="public" type="_nBMewKFbEfCRZPJ2X2P5sw" aggregation="composite" subsettedProperty="_47lLQKFcEfCRZPJ2X2P5sw"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_K2Wx8KFhEfCRZPJ2X2P5sw" name="LampPoleIntercloudNetwork" visibility="public" type="_2SI5QKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wPdwcKHwEfCTFPa_YbzaSg" name="handover">
@@ -545,9 +554,9 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Zqdk0KF0EfCQVIlX6lCodg" name="SL-2" type="_p15xVG1JEfCzdfr4cbN6HQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Zq7e4KF0EfCQVIlX6lCodg" name="C-2" type="_p15KIW1JEfCzdfr4cbN6HQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Zq_wUKF0EfCQVIlX6lCodg" name="PS-2" type="_p15xTW1JEfCzdfr4cbN6HQ"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_4MyTUKj2EfCLnoKuDBHI9g" name="CopyOf_SL-2_19" type="_p15xVG1JEfCzdfr4cbN6HQ"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_4M_usKj2EfCLnoKuDBHI9g" name="CopyOf_PS-2_19" type="_p15xTW1JEfCzdfr4cbN6HQ"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_4NFOQKj2EfCLnoKuDBHI9g" name="CopyOf_C-2_19" type="_p15KIW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4MyTUKj2EfCLnoKuDBHI9g" name="SL-3" visibility="public" type="_p15xVG1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4M_usKj2EfCLnoKuDBHI9g" name="PS-3" type="_p15xTW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4NFOQKj2EfCLnoKuDBHI9g" name="C-3" type="_p15KIW1JEfCzdfr4cbN6HQ"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_wVF_IKFzEfCQVIlX6lCodg" name="Connector12">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_wVirEKFzEfCQVIlX6lCodg" partWithPort="_rAu_AKFyEfCQVIlX6lCodg" role="_p15xVW1JEfCzdfr4cbN6HQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_wVluYKFzEfCQVIlX6lCodg" partWithPort="_C7w0wKFzEfCQVIlX6lCodg" role="_p15xMG1JEfCzdfr4cbN6HQ"/>
@@ -574,9 +583,24 @@
           </end>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_FsxdwKJ5EfCTFPa_YbzaSg" partWithPort="_rAu_AKFyEfCQVIlX6lCodg" role="_p15xV21JEfCzdfr4cbN6HQ"/>
         </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_7mxmkKj5EfC7Uo0ypWLiwQ" name="Connector24">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_7nyTMKj5EfC7Uo0ypWLiwQ" partWithPort="_4NFOQKj2EfCLnoKuDBHI9g" role="_TWXBsKHxEfCTFPa_YbzaSg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_7n3ywKj5EfC7Uo0ypWLiwQ" partWithPort="_C7w0wKFzEfCQVIlX6lCodg" role="_TWXBsKHxEfCTFPa_YbzaSg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_BBm3kKj6EfC7Uo0ypWLiwQ" name="Connector25">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_BCLfUKj6EfC7Uo0ypWLiwQ" partWithPort="_4NFOQKj2EfCLnoKuDBHI9g" role="_p15xMW1JEfCzdfr4cbN6HQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_BCPJsKj6EfC7Uo0ypWLiwQ" partWithPort="_4M_usKj2EfCLnoKuDBHI9g" role="_p15xTm1JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_InENEKj6EfC7Uo0ypWLiwQ" name="Connector26">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_InxXsKj6EfC7Uo0ypWLiwQ" partWithPort="_4NFOQKj2EfCLnoKuDBHI9g" role="_p15xMG1JEfCzdfr4cbN6HQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_In1CEKj6EfC7Uo0ypWLiwQ" partWithPort="_4MyTUKj2EfCLnoKuDBHI9g" role="_p15xVW1JEfCzdfr4cbN6HQ"/>
+        </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_2_o8YKHzEfCTFPa_YbzaSg" name="CityBlockGen1">
         <generalization xmi:type="uml:Generalization" xmi:id="__guMoKHzEfCTFPa_YbzaSg" general="_YahxYKCMEfC8YPhuLvNlqw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rRiBAKj6EfC7Uo0ypWLiwQ" name="System_of_CityBlocks">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_I5VMUKj7EfC7Uo0ypWLiwQ" name="cityBlockGen1" type="_YahxYKCMEfC8YPhuLvNlqw"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_GAsVcKFfEfCRZPJ2X2P5sw" name="Devices and Network">
@@ -586,6 +610,9 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_bRmEEKFbEfCRZPJ2X2P5sw" name="LampPole">
         <generalization xmi:type="uml:Generalization" xmi:id="_vIxp4KFbEfCRZPJ2X2P5sw" general="_PWEGMKFbEfCRZPJ2X2P5sw"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_YOdQ8KFgEfCRZPJ2X2P5sw" name="IntracloudNetwork" visibility="public" type="_nBMewKFbEfCRZPJ2X2P5sw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rXFigKkSEfC7Uo0ypWLiwQ" name="LampPoleN" type="_p15xPm1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__mpzIKkSEfC7Uo0ypWLiwQ" name="LampPoleN" visibility="public" type="_p15xXW1JEfCzdfr4cbN6HQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IoBtAKkTEfC7Uo0ypWLiwQ" name="LampPoleN" type="_p15xW21JEfCzdfr4cbN6HQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xpD1UKFbEfCRZPJ2X2P5sw" name="LampPoleIntercloudNetwork"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_2SI5QKFbEfCRZPJ2X2P5sw" name="LampPoleIntercloudNetwork">
@@ -765,7 +792,9 @@
   <ArrowheadDSL:FullPort xmi:id="_eb5HwKFZEfCRZPJ2X2P5sw" base_Port="_ebsTcKFZEfCRZPJ2X2P5sw"/>
   <ArrowheadDSL:FullPort xmi:id="_-3PYwKFZEfCRZPJ2X2P5sw" base_Port="_-3AIMKFZEfCRZPJ2X2P5sw"/>
   <ArrowheadDSL:DeviceDesign xmi:id="_PWT90KFbEfCRZPJ2X2P5sw" base_Class="_PWEGMKFbEfCRZPJ2X2P5sw"/>
-  <ArrowheadDSL:DeviceDesignDescription xmi:id="_bSeN0KFbEfCRZPJ2X2P5sw" base_Class="_bRmEEKFbEfCRZPJ2X2P5sw"/>
+  <ArrowheadDSL:DeviceDesignDescription xmi:id="_bSeN0KFbEfCRZPJ2X2P5sw" base_Class="_bRmEEKFbEfCRZPJ2X2P5sw" operatingSystem="Linux">
+    <DeviceName>Pole_G1_n</DeviceName>
+  </ArrowheadDSL:DeviceDesignDescription>
   <ArrowheadDSL:IntracloudNetworkDesign xmi:id="_ixnf8KFbEfCRZPJ2X2P5sw" base_Class="_ixHwsKFbEfCRZPJ2X2P5sw"/>
   <ArrowheadDSL:IntracloudNetworkDesignDescription xmi:id="_nBn8kKFbEfCRZPJ2X2P5sw" base_Class="_nBMewKFbEfCRZPJ2X2P5sw"/>
   <ArrowheadDSL:IntercloudNetworkDesign xmi:id="_xpbowKFbEfCRZPJ2X2P5sw" base_Class="_xpD1UKFbEfCRZPJ2X2P5sw"/>
@@ -790,4 +819,5 @@
   <ArrowheadDSL:FullPort xmi:id="_MwBU8KHzEfCTFPa_YbzaSg" base_Port="_Mv0goKHzEfCTFPa_YbzaSg"/>
   <ArrowheadDSL:FullPort xmi:id="_YT6O4KHzEfCTFPa_YbzaSg" base_Port="_YTcU0KHzEfCTFPa_YbzaSg"/>
   <ArrowheadDSL:LocalcloudDesignDescription xmi:id="_2_7QQKHzEfCTFPa_YbzaSg" base_Class="_2_o8YKHzEfCTFPa_YbzaSg" LC_Name="CityBlockGen1"/>
+  <ArrowheadDSL:System_of_LocalcloudsDesign xmi:id="_rR50cKj6EfC7Uo0ypWLiwQ" base_Class="_rRiBAKj6EfC7Uo0ypWLiwQ"/>
 </xmi:XMI>
