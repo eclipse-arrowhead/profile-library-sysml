@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.cea.afpvn.arrowhead.AFPVNFeature25_1.0.0.202509051047.jar" id="com.cea.afpvn.arrowhead.AFPVNFeature25" version="1.0.0.202509051047">
+      <category name="AFPVN2025"/>
+   </feature>
+   <category-def name="AFPVN2025" label="AFPVN"/>
+</site>
